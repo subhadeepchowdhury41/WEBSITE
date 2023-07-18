@@ -1,0 +1,521 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.bodyOfGallery {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  overflow-x: hidden;
+  /* height:100vh; */
+}
+
+/*######################## Scrollbar ############################################### */
+body::-webkit-scrollbar {
+  width: 2px;
+  z-index: -1;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+  /* display: none; */
+  background: black;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: aliceblue;
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/*######################## Scrollbar ############################################### */
+
+
+
+/* .mega-menu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+} */
+
+/* .animate-mega-menu-open{
+  background-color: rgba(122, 180, 219, 0.837);
+  color: #191919;
+} */
+
+/*######################## Appbar ############################################### */
+
+.navItems{
+  font-size: 22px;
+  /* padding-top: 1.8vh; */
+  /* padding-right: 1vw; */
+  font-weight: 400;
+}
+
+.navItems li {
+  padding: 2.4vh 0.5vh 2.4vh 0.5vh;
+  border-radius: 10px;
+}
+
+.navItems li:hover {
+  background-color: rgba(127, 218, 244, 1);
+  color: black;
+  /* padding: 10px; */
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.dropdown-content {
+  /* display: none; */
+  border-radius: 10px;
+  position: absolute;
+  background-color: #525151;
+  background-color: rgba(0, 0, 0, 0.83);
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  /* margin-left: 500px; */
+}
+
+.dropdown-link {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-link:hover {
+  background-color: #ddd;
+  border-radius: 10px;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar a {
+  /* float: left; */
+  font-size: 16px;
+  color: white;
+  /* text-align: center; */
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.Menu-trigger {
+  display: none;
+}
+.Menu-trigger-nd {
+  display: none;
+}
+
+.textSizer {
+  font-size: 70px;
+}
+
+.planned {
+  position: absolute;
+  bottom: 15px;
+  font-size: 25px;
+  color: white;
+  background-color: rgb(0, 0, 0, 0.7);
+  padding: 10px 20px;
+  left: 100px;
+  font-family: Courier,
+    monospace;
+    font-weight: 600;
+  /* opacity: 0.7; */
+  border-radius: 10px;
+}
+
+/* .welcome-text{
+    font-family: Roboto Serif;
+} */
+
+/*######################## Appbar ############################################### */
+
+@media (min-width:900px) {
+  .hindi-name {
+    letter-spacing: 2px;
+    /* letter-spacing: 50em; */
+  }
+
+}
+
+@media (max-width:900px) {
+  .navItems li {
+    padding: 2.8vh .1vh 2.8vh .1vh;
+    font-size: 15px;
+  }
+
+  .textSizer {
+    font-size: 40px;
+  }
+
+  .iiitk-name {
+    /* flex-direction: column; */
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2), transparent);
+    margin-top: 0;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+  .mobile-head{
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .hindi-name {
+    /* margin-left: 6; */
+    /* display: none; */
+    /* letter-spacing: 10px; */
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .iiitk-name{
+    display: flex;
+    padding-left: 1vw;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: center;
+  }
+
+  .welcome-text {
+    margin-top: 0px;
+   }
+  .carousel{
+    height: 55vh;
+  }
+
+  .mobile-logo {
+    height: 80px;
+    width: 65px;
+  }
+
+  .planned {
+    bottom: 47vh;
+    font-size: 1vh;
+    border-radius: 5px;
+    padding: 5px 5px;
+    left: 5vw;
+    /* display: none; */
+  }
+}
+
+@media (max-width: 660px) {
+  .mobile-head {
+    font-size: 10px;
+    line-height: 15px;
+  }
+  .hindi-name {
+    /* margin-left: 6; */
+    /* display: none; */
+    letter-spacing: .5px;
+    font-size: 10px;
+    line-height: 15px;
+  }
+  .iiitk-name{
+    padding-left: 1.5vw;
+  }
+  .mobile-logo {
+    height: 70px;
+    width: 58px;
+  }
+  .carousel {
+    height: 45vh;
+  }
+  .planned {
+    bottom: 57vh;
+    /* display: none; */
+  }
+}
+
+@media (max-width:580px) {
+  .navItems li {
+    padding: 1.6vh .1vh 1.6vh .1vh;
+    font-size: 12px;
+  }
+
+  .mobile-logo {
+    height: 50px;
+    width: 40px;
+  }
+
+  .textSizer {
+    font-size: 30px;
+  }
+  .mobile-head {
+    font-size: 9.5px;
+    line-height: 13px;
+    margin: 0 10px;
+  }
+  .iiitk-name{
+    margin:0;
+    padding-left: 2vw;
+  }
+  .hindi-name {
+    /* margin-left: 6; */
+    /* display: none; */
+    letter-spacing: .5px;
+    font-size: 9.5px;
+    line-height: 13px;
+  }
+  .carousel {
+    height: 40vh;
+  }
+  .planned {
+    bottom: 61vh;
+    /* display: none; */
+  }
+}
+
+@media (max-width:450px) {
+  .mobile-head {
+    font-size: 8px;
+    line-height: 10px;
+    margin: 0 10px;
+  }
+  .mobile-logo {
+    height: 45px;
+    width: 37px;
+  }
+  .hindi-name {
+    /* margin-left: 6; */
+    /* display: none; */
+    letter-spacing: .5px;
+    font-size: 8px;
+    line-height: 10px;
+  }
+  .carousel {
+    height: 33vh;
+  }
+  .welcome-text{
+    font-size: 20px;
+  }
+  .iiitk-name{
+    padding-left: 3vw;
+  }
+  .planned {
+    bottom: 62vh;
+    /* display: none; */
+  }
+}
+
+@media(max-width:380px) {
+  .mobile-head {
+    font-size: 7px;
+    line-height: 9px;
+    margin: 0 8px;
+  }
+  .hindi-name {
+    /* margin-left: 6; */
+    /* display: none; */
+    letter-spacing: 0.5px;
+    font-size: 7px;
+    line-height: 9px;
+  }
+  .mobile-logo{
+    height: 30px;
+    width:25px;
+  }
+  .carousel {
+    height: 30vh;
+  }
+  .planned {
+    bottom: 65vh;
+    /* display: none; */
+  }
+} 
+@media (max-width:357px){
+  .mobile-head{
+    font-size: 6px;
+    letter-spacing: 0px;
+    line-height: 8px;
+  }
+  .hindi-name {
+    /* margin-left: 6; */
+    /* display: none; */
+    letter-spacing: .5px;
+    font-size: 6px;
+    line-height: 8px;
+  }
+  .mobile-logo{
+    height: 24px;
+    width: 20px;
+  }
+  .textSizer{
+    font-size: 20px;
+  }
+  .carousel {
+    height: 28vh;
+  }
+  .iiitk-name{
+    padding-left: 4vw;
+  }
+  .planned {
+    /* bottom: 61vh; */
+    display: none;
+  }
+}
+@media (max-width:310px) {
+  .hindi-name{
+    display: none;
+  } 
+  .carousel {
+    height: 25vh;
+  }
+
+}
+@media (max-width:900px) {
+  .navItems {
+    display: none;
+  }
+
+  .Menu-trigger {
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding-right: 20px;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .Menu-trigger-nd{
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    padding-right: 20px;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+/*######################## Payment Portal ############################################### */
+
+.ppayment{
+  z-index: 10000;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 30px 30px;
+}
+.Payment-button{
+  position: absolute;
+  z-index: 1000;
+  bottom: 0;
+  left: 0;
+}
+
+.details {
+  background-color: wheat;
+  border-radius: 10px;
+  padding: 7px;
+  font-size: 0.6em;
+  width: 300px;
+  height: 70px;
+  overflow: hidden;
+  display: none;
+}
+
+.payment-button {
+  position: sticky;
+  bottom: 30px;
+  right: 0px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-image: linear-gradient(to bottom, #fefefe, #cbcedb);
+  background: rgb(255, 255, 255, 0.7);
+  box-shadow: 2px 3px 5px#0e1220be;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.payment-button:hover + .details{
+  display: block;
+}
+
+.payment-button:hover{
+  transform: scale(1.05);
+}
+
+.payment-circle {
+  position: relative;
+  background: white;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid lightblue;
+}
+
+.payment-circle::before {
+  content: '';
+  width: 0;
+}
+
+.payment-circle:hover.payment-circle::before {
+  content: 'Payments';
+  position: absolute;
+  height: 50px;
+  width: 80px;
+  background: white;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+  right: 25px;
+  padding-right: 15px;
+  /* border: 2px solid lightblue; */
+  border-radius: 20px 0 0 20px;
+}
+
+.payment-text{
+  background: white;
+  height: 40px;
+  width: 0px;
+  position: absolute;
+  top: 5px;
+  z-index: -1;
+  left: 40px;
+  border-radius: 0 20px 20px 0;
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+  transition: all 0.5s;
+}
+.payment-circle:hover .payment-text{
+  width: 100px;
+}
+/*######################## Payment Portal ############################################### */
