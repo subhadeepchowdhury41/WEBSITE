@@ -1,0 +1,15 @@
+.achievment-header{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 42px;
+    font-weight: 500;
+    /* font-family: arial; */
+}
+.achievment-header hr{
+    width: 15vw;
+    height: 2px;
+    background-color: lightblue;
+    border: none;
+    margin: 5px 10px 0 10px;
+}

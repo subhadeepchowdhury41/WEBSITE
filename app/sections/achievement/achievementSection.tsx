@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import { Reveal} from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 import CelebrationOutlinedIcon from '@mui/icons-material/CelebrationOutlined';
+import HEADER from '../../designSystem/header';
 // import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 // import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 
@@ -60,12 +61,12 @@ const Achievement = () => {
     return (
         <div className="Discover-Box acheivment">
             <Reveal keyframes={customAnimation2} triggerOnce>
-                <span className='achievment-header'>
+                {/* <span className='achievment-header'>
                     <hr/>
                     <p>Achievements</p>
                     <hr/>
-                    {/* <CelebrationOutlinedIcon style={{ marginLeft: "5px", fontSize: "32px", marginBottom:"0px" }} />  */}
-                </span>
+                </span> */}
+                <HEADER text='Achievements'/>
             </Reveal>
             <div className='slider' >
                 <div className='discover-slide-track' >
