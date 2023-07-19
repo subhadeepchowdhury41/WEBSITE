@@ -1,0 +1,25 @@
+.staff-sub-header{
+    justify-content:flex-start;
+    align-items:center;
+    display: flex;
+    font-size: 30px;
+    font-weight: 400;
+    margin-left: 4vw;
+    margin-top: 50px;
+    width: 100%;
+    /* font-family: arial; */
+}
+.staff-sub-header hr{
+    width: 70vw;
+    height: 2px;
+    background-color: lightblue;
+    border: none;
+    margin: 5px 10px 0 10px;
+}
+.staff-card{
+    width: 60vw;
+    height: 10vh;
+    border: 1px solid red;
+    margin-left: 6vw;
+    margin-top: 4vh;
+}
