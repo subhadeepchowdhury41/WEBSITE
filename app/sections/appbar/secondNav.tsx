@@ -29,7 +29,6 @@ const acadamics = [
       { label: 'Fee Structure', link: 'https://iiitkalyani.ac.in/php/fee_structure.php' },
       { label: 'Regulations', link: 'https://iiitkalyani.ac.in/php/ugregulations.php' },
       { label: 'NPTEL Collaboration', link: 'https://iiitkalyani.ac.in/php/nptel.php' },
-      { label: 'Institute Innovation Council', link: 'https://iiitkalyani.ac.in/images/notification2021/Circular_IIC.pdf' },
     ],
   },
 ];
@@ -43,10 +42,7 @@ const about = [
       { label: 'Staff', link: 'https://iiitkalyani.ac.in/php/staff.php' },
       { label: 'Gallery', link: 'https://iiitkalyani.ac.in/php/gallery/gallery.php' },
       { label: 'All Facilities', link: 'https://iiitkalyani.ac.in/php/Facilities_landing_page-v6.php' },
-      { label: 'Sports', link: 'https://iiitkalyani.ac.in/php/sports.php' },
-      { label: 'Film and Media Club (FMC)', link: 'https://iiitkalyani.ac.in/fmc/index.html' },
-      { label: 'Symphony (Music Club)', link: 'https://iiitkalyani.ac.in/html/music.html' },
-      { label: 'Algoholic (Technical Club)', link: 'https://iiitkalyani.ac.in/html/algoholic3.0.html' },
+      { label: 'Gymkhana', link: '#' },
     ],
   },
 ];
@@ -126,7 +122,20 @@ const mobileMenu = [
   },
 ];
 const NavBar = () => {
-
+  const [stick, setStick] = useState<Boolean>(false);
+  const handleScroll = () => {
+    if (globalThis.window?.scrollY > 118) {
+      setStick(true);
+    } else {
+      setStick(false);
+    }
+  }
+  useEffect(() => {
+    globalThis.window?.addEventListener('scroll', handleScroll);
+    return () => {
+      globalThis.window?.removeEventListener('scroll', handleScroll);
+    }
+  }, []);
   return (
     <div className={`grid content-center z-50 w-full top-0`} style={{
          backgroundColor: "rgb(0,0,0,0.85)",
@@ -143,9 +152,13 @@ const NavBar = () => {
         </div>
       </div>
       {/* Option for custom color subhadeep*/}
-      <div className={`flex text-white font-semibold navBar  w-full`} style={{ zIndex: '100', boxShadow: '0 0 5px black', backgroundColor: "rgb(0,0,0,0.5)",justifyContent:"center" }}>
-        {/* <Image width={53} className={`px-2 py-3 h-[70px] opacity-100 transition-opacity ease-in-out duration-500`} src={IIITKalyaniLogo} alt="IIIT Kalynai Logo" /> */}
-        { <MobileNav menu={<MobileNavMenu menus={mobileMenu} />} />}
+      <div className={`flex text-white font-semibold ${stick ? ' navBar' : ''}
+               ${stick ? 'fixed top-0 justify-between' : 'justify-center'} w-full`} style={!stick ? { zIndex: '100' } : { zIndex: '100', boxShadow: '0 0 5px black', backgroundColor: "rgb(0,0,0,0.8 )" }}>
+      <Image width={53} className={`px-2 py-3 h-[70px]
+                 ${stick ? 'opacity-100 transition-opacity ease-in-out duration-500' : 'hidden'}`} src={IIITKalyaniLogo} alt="IIIT Kalynai Logo" />
+        {/* { <MobileNav menu={<MobileNavMenu menus={mobileMenu} />} />} */}
+        {stick ? <MobileNav menu={<MobileNavMenu menus={mobileMenu} />} /> : <></>}
+
         <ul className={`flex navItems animate-randimation right-0 opacity-100 `} style={{ listStyle: 'none',zIndex: '1000', }}>
            <NavItem
             title="Home"

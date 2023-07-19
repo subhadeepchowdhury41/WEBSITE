@@ -33,7 +33,7 @@ const MobileNavMenu: React.FC<MegaMenuProps> = ({ menus }) => {
     }
     return (
 
-        < div className='mobile-menu-outbox-nd' >
+        < div className='mobile-menu-outbox' >
             {
                 menus.map((menu, idx) => (
                     <div className='menu-box'>
@@ -43,7 +43,7 @@ const MobileNavMenu: React.FC<MegaMenuProps> = ({ menus }) => {
                                 <hr className='menu-hr' />
                                 <span>{index.submenu.map((iter) => (
                                     <div className={sub === index.index ? 'menu-sub-box active' : 'menu-sub-box'}
-                                        style={sub === index.index ? { height: `${iter.items.length * 32 + 20}px` } : {}}>
+                                        style={sub === index.index ? { height: `${iter.items.length * 62 + 20}px` } : {}}>
                                         {iter.items.map((ind) => (
                                             // eslint-disable-next-line react/jsx-key
                                             <div className='menu-sub-title'>

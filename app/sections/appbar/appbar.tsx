@@ -22,7 +22,6 @@ const acadamics = [
       { label: 'Fee Structure', link: 'https://iiitkalyani.ac.in/php/fee_structure.php' },
       { label: 'Regulations', link: 'https://iiitkalyani.ac.in/php/ugregulations.php' },
       { label: 'NPTEL Collaboration', link: 'https://iiitkalyani.ac.in/php/nptel.php' },
-      { label: 'Institute Innovation Council', link: 'https://iiitkalyani.ac.in/images/notification2021/Circular_IIC.pdf' },
     ],
   },
 ];
@@ -36,10 +35,7 @@ const about = [
       { label: 'Staff', link: 'about/staff' },
       { label: 'Gallery', link: 'https://iiitkalyani.ac.in/php/gallery/gallery.php' },
       { label: 'All Facilities', link: 'https://iiitkalyani.ac.in/php/Facilities_landing_page-v6.php' },
-      { label: 'Sports', link: 'https://iiitkalyani.ac.in/php/sports.php' },
-      { label: 'Film and Media Club (FMC)', link: 'https://iiitkalyani.ac.in/fmc/index.html' },
-      { label: 'Symphony (Music Club)', link: 'https://iiitkalyani.ac.in/html/music.html' },
-      { label: 'Algoholic (Technical Club)', link: 'https://iiitkalyani.ac.in/html/algoholic3.0.html' },
+      { label: 'Gymkhana', link: '#' },
     ],
   },
 ];

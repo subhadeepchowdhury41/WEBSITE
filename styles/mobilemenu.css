@@ -1,18 +1,18 @@
-.mobile-menu-outbox-nd{
+/* .mobile-menu-outbox-nd{
     position: absolute;
     height: 100vh;
     width: 100vw;
     background-color: rgba(21, 21, 21, 0.8);
-    /* transform: translateX(-52px); */
+    transform: translateX(-52px);
     display: flex;
     flex-direction: column;
     align-items: center;
     /* justify-content: center; */
-    text-align: center;
+    /* text-align: center;
     left: 0;
     top: 8vh;
     padding-top: 50px;
-}
+} */ 
 .mobile-menu-outbox{
     position: absolute;
     height: 100vh;
@@ -63,5 +63,5 @@
 
 .menu-sub-box.active{
     padding: 10px 15px 10px 15px;
-    /* height: fit-content; */
+    /* height: 500px; */
 }
