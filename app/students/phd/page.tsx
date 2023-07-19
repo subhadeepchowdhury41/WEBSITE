@@ -16,8 +16,8 @@ const PHDStudents = () => {
     const [active, setActive] = useState(-1)
     return (
         <div style={{}}>
-            <NavBar/>
-            <div style={{marginTop: '25px'}} className='phd-outbox'>
+            <NavBar />
+            <div style={{ marginTop: '25px' }} className='phd-outbox'>
                 {
                     data.map((index) => {
                         return (
@@ -74,8 +74,10 @@ const PHDStudents = () => {
                     })
                 }
             </div>
-            <Footer/>
-        </div>);
-}
+            <Footer />
+        </div>)
+        ;
+};
+
 
 export default PHDStudents;

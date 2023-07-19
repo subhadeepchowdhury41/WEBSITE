@@ -206,14 +206,6 @@ export default function AppBar() {
                 <MegaMenu menus={placements} />
               }
             />
-            {/* <Link href={"/announcements"}>
-              <NavItem
-                title="Announcements"
-                menu={<></>}
-              />
-            </Link> */}
-
-
           </ul>
         </div>
       </div> : <></>}
