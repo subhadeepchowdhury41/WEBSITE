@@ -36,7 +36,16 @@ export default function PayButton() {
     setFees((fees) => !fees);
   };
   return (
-    <>
+    <div
+      style={{
+        position: "fixed",
+        height: "7vh",
+        width: "7vw",
+        zIndex: "10000",
+        bottom: "0",
+        right: "0",
+      }}
+    >
       {fees ? (
         <div className="ppayment">
           <div className="details">
@@ -92,6 +101,6 @@ export default function PayButton() {
           fontSize={"large"}
         />
       </button>
-    </>
+    </div>
   );
 }

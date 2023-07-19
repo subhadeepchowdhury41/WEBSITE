@@ -428,10 +428,10 @@ body::-webkit-scrollbar-thumb:hover {
   transition-duration: 2s;
 }
 .payment-button{
-  position: absolute;
-  z-index: 1000;
-  width: fit-content;
-  bottom: 30;
+  z-index: 100000;
+  position: fixed;
+  /* width: fit-content; */
+  bottom: 100;
   right: 30;
 }
 
