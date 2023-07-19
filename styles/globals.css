@@ -427,11 +427,12 @@ body::-webkit-scrollbar-thumb:hover {
   padding: 30px 30px;
   transition-duration: 2s;
 }
-.Payment-button{
+.payment-button{
   position: absolute;
   z-index: 1000;
-  bottom: 0;
-  left: 0;
+  width: fit-content;
+  bottom: 30;
+  right: 30;
 }
 
 .details {

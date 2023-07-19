@@ -36,44 +36,46 @@ export default function PayButton() {
     setFees((fees) => !fees);
   };
   return (
-    <div className="ppayment">
+    <>
       {fees ? (
-        <div className="details">
-          <Reveal keyframes={customAnimation2}>
-            <div className="details-fees">
-              <h1>
-                Instructions to pay fees online :{" "}
-                <CloseIcon className="closeicon" onClick={handleClick} />
-              </h1>
-              <br />
-              <p>1. Click on payment option given below.</p>
-              <p>2. Select West Bengal as State of Corporate/Institution.</p>
-              <p>
-                3. Select Educational Institution as type of
-                Corporate/Institution.
-              </p>
-              <p>4. Click on GO.</p>
-              <p>
-                5. Select INDIAN INSTITUTE OF INFORMATION TECHNOLOGY,KALYANI as
-                Educational Institute Name.
-              </p>
-              <p>6. Click on Submit.</p>
-              <p>
-                7. Select the payment category as per requirement (Select FEES
-                PAYMENT FOR NEW STUDENTS for payment of PART A).
-              </p>
-              <p>8. Fill all the details and then click on Submit.</p>
-              <a
-                className="sbi-portal"
-                href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm"
-                target="_blank"
-                rel="noreferrer"
-                title="SBI Portal"
-              >
-                <button>Payment Portal</button>
-              </a>
-            </div>
-          </Reveal>
+        <div className="ppayment">
+          <div className="details">
+            <Reveal keyframes={customAnimation2}>
+              <div className="details-fees">
+                <h1>
+                  Instructions to pay fees online :{" "}
+                  <CloseIcon className="closeicon" onClick={handleClick} />
+                </h1>
+                <br />
+                <p>1. Click on payment option given below.</p>
+                <p>2. Select West Bengal as State of Corporate/Institution.</p>
+                <p>
+                  3. Select Educational Institution as type of
+                  Corporate/Institution.
+                </p>
+                <p>4. Click on GO.</p>
+                <p>
+                  5. Select INDIAN INSTITUTE OF INFORMATION TECHNOLOGY,KALYANI
+                  as Educational Institute Name.
+                </p>
+                <p>6. Click on Submit.</p>
+                <p>
+                  7. Select the payment category as per requirement (Select FEES
+                  PAYMENT FOR NEW STUDENTS for payment of PART A).
+                </p>
+                <p>8. Fill all the details and then click on Submit.</p>
+                <a
+                  className="sbi-portal"
+                  href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm"
+                  target="_blank"
+                  rel="noreferrer"
+                  title="SBI Portal"
+                >
+                  <button>Payment Portal</button>
+                </a>
+              </div>
+            </Reveal>
+          </div>
         </div>
       ) : (
         ""
@@ -90,6 +92,6 @@ export default function PayButton() {
           fontSize={"large"}
         />
       </button>
-    </div>
+    </>
   );
 }
