@@ -3,6 +3,7 @@ import '../../../styles/cards.css'
 import ITKButton from '../../designSystem/ITKButton'
 import projectData from './projectData'
 import BiotechOutlinedIcon from '@mui/icons-material/BiotechOutlined';
+import TravelExploreOutlinedIcon from '@mui/icons-material/TravelExploreOutlined';
 import { Reveal, Fade } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 
@@ -25,7 +26,7 @@ const Research = () => {
                 <Reveal keyframes={customAnimation} triggerOnce>
                     <span className='card-heading'>
                         Research
-                        <BiotechOutlinedIcon style={{ marginLeft: "3px", marginBottom: "5px", fontSize: "32px" }} />
+                        <TravelExploreOutlinedIcon style={{ marginLeft: "3px", marginBottom: "5px", fontSize: "32px" }} />
                     </span>
                 </Reveal>
                 <a href='https://iiitkalyani.ac.in/php/proj_spons.php' target='_blank' >

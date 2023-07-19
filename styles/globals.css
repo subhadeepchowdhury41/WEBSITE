@@ -142,15 +142,13 @@ body::-webkit-scrollbar-thumb:hover {
 
 .planned {
   position: absolute;
-  bottom: 15px;
-  font-size: 25px;
+  bottom: 10px;
+  font-size: 15px;
   color: white;
   background-color: rgb(0, 0, 0, 0.7);
   padding: 10px 20px;
-  left: 100px;
-  font-family: Courier,
-    monospace;
-    font-weight: 600;
+  left: 30px;
+  font-weight: 500;
   /* opacity: 0.7; */
   border-radius: 10px;
 }
@@ -422,9 +420,12 @@ body::-webkit-scrollbar-thumb:hover {
 .ppayment{
   z-index: 10000;
   position: fixed;
+  height: 100vh;
+  width: 100vw;
   bottom: 0;
   right: 0;
   padding: 30px 30px;
+  transition-duration: 2s;
 }
 .Payment-button{
   position: absolute;
@@ -434,23 +435,47 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .details {
-  background-color: wheat;
+  /* background-color: wheat; */
   border-radius: 10px;
   padding: 7px;
-  font-size: 0.6em;
-  width: 300px;
-  height: 70px;
+  font-size: 15px;
   overflow: hidden;
-  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  /* display: none; */
+}
+.details-fees{
+  background-color: rgb(250, 230, 196,0.9);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px black;
+}
+.details-fees h1{
+  font-size: 25px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.closeicon{
+  cursor: pointer;
 }
 
+.details-fees p{
+  background-color: rgb(255, 255, 255, 0.4);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px 0;
+}
 .payment-button {
-  position: sticky;
+  position: absolute;
   bottom: 30px;
-  right: 0px;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
+  right: 30px;
+  border-radius: 10px;
+  padding: 5px;
   background-image: linear-gradient(to bottom, #fefefe, #cbcedb);
   background: rgb(255, 255, 255, 0.7);
   box-shadow: 2px 3px 5px#0e1220be;
@@ -459,63 +484,31 @@ body::-webkit-scrollbar-thumb:hover {
   justify-content: center;
 }
 
-.payment-button:hover + .details{
-  display: block;
-}
-
 .payment-button:hover{
   transform: scale(1.05);
 }
-
-.payment-circle {
-  position: relative;
-  background: white;
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
+.sbi-portal{
   display: flex;
-  align-items: center;
+  padding: 10px;
+  background-color: rgb(21,21,21);
+  width: 50%;
+  margin: 30px auto 0 auto;
+  border-radius: 10px;
   justify-content: center;
-  border: 2px solid lightblue;
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
 }
 
-.payment-circle::before {
-  content: '';
-  width: 0;
-}
-
-.payment-circle:hover.payment-circle::before {
-  content: 'Payments';
-  position: absolute;
-  height: 50px;
-  width: 80px;
-  background: white;
-  z-index: -1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.5s;
-  right: 25px;
-  padding-right: 15px;
-  /* border: 2px solid lightblue; */
-  border-radius: 20px 0 0 20px;
-}
-
-.payment-text{
-  background: white;
-  height: 40px;
-  width: 0px;
-  position: absolute;
-  top: 5px;
-  z-index: -1;
-  left: 40px;
-  border-radius: 0 20px 20px 0;
-  display: flex;
-  align-items: center;  
-  justify-content: center;
-  transition: all 0.5s;
-}
-.payment-circle:hover .payment-text{
-  width: 100px;
+@media (max-width:500px) {
+  .details-fees h1{
+    font-size: 15px;
+  }
+  .details-fees p{
+    font-size: 10px;
+  }
+  .sbi-portal{
+    font-size: 12px;
+  }
 }
 /*######################## Payment Portal ############################################### */

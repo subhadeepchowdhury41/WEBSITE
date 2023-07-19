@@ -11,6 +11,7 @@ import PhotoFilterIcon from '@mui/icons-material/PhotoFilter';
 // import ArrowBackwardIosIcon from '@mui/icons-material/ArrowBackwardIos';
 // import gsap from 'gsap';
 import ITKButton from "../../designSystem/ITKButton";
+import ContactlessOutlinedIcon from "@mui/icons-material/ContactlessOutlined";
 
 const Discover = () => {
 
@@ -33,7 +34,7 @@ const Discover = () => {
 
   to {
         opacity: 1;
-        transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);    
     }
 `;
     const [i, setI] = useState(1);
@@ -67,7 +68,7 @@ const Discover = () => {
             <Reveal keyframes={customAnimation} triggerOnce>
                 <span className='card-heading Discover-Heading'>  
                     Discover
-                    <PhotoFilterIcon style={{marginLeft:"7px", fontSize:"30px"}}/>  
+                    <ContactlessOutlinedIcon style={{marginLeft:"7px", fontSize:"30px"}}/>  
                 </span>
             </Reveal>
             <Reveal keyframes={customAnimation2} triggerOnce>
