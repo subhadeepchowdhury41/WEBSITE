@@ -90,27 +90,27 @@ export default function Footer() {
             <div className="footer-social">
               {/* <!-- Facebook --> */}
               <a className="btn " href="https://www.facebook.com/iiitkalyani/" role="button" target="blank">
-                  <FacebookIcon sx={{color: grey[50]}} />
+                  <FacebookIcon sx={{color: grey[50]}} className="btn-btn fb" />
               </a>
 
               {/* <!-- Twitter --> */}
               <a className="btn" href="https://twitter.com/iiit_kalyani?lang=en" role="button" target="blank">
-                <TwitterIcon sx={{color: grey[50]}}/>
+                <TwitterIcon sx={{color: grey[50]}} className="btn-btn tt"/>
               </a>
 
               {/* <!-- Google --> */}
               <a className="btn" href="https://www.youtube.com/channel/UCdnaperuWO_6YfXzEov6-QA/videos" role="button" target="blank">
-                <YouTubeIcon sx={{color: grey[50]}}/>
+                <YouTubeIcon sx={{color: grey[50]}} className="btn-btn yt"/>
               </a>
 
               {/* <!-- Instagram --> */}
-              <a className="btn" href="" role="button" target="blank">
-                <InstagramIcon sx={{color: grey[50]}}/>
+              <a className="btn" href="https://www.instagram.com/iiitkalyaniofficial/" role="button" target="blank">
+                <InstagramIcon sx={{color: grey[50]}} className="btn-btn ig"/>
               </a>
 
               {/* <!-- Linkedin --> */}
               <a className="btn " href="https://www.linkedin.com/in/tnpiniiitkalyani/" role="button" target="blank">
-                <LinkedInIcon sx={{color: grey[50]}}/>
+                <LinkedInIcon sx={{color: grey[50]}} className="btn-btn ld"/>
               </a>
 
               {/* <!-- Github --> */}
