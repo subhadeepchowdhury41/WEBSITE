@@ -70,14 +70,7 @@ const EventSection = () => {
                                     <div className='event-slide-text'>
                                         <span className='event-heading'>{index.title}</span>
                                     </div>
-                                </div>
-                                {/* <div className="card">
-                                    <div className="profile-image">
-                                        <div className="inner-area" style={{ backgroundImage: `url(${index.url})` }}></div>
-                                    </div>
-                                    <div className="title">{index.title}</div>
-                                    
-                                    </div> */}
+                                </div> 
                             </div>
                         )
                     })}
