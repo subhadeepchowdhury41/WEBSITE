@@ -41,10 +41,10 @@ const MobileNavMenu: React.FC<MegaMenuProps> = ({ menus }) => {
                             <div className='menu-title' onClick={() => ShowSubMenuFunc(index.index)}>
                                 <span>{index.label}</span>
                                 <hr className='menu-hr' />
-                                <span>{index.submenu.map((iter) => (
+                                <span>{index?.submenu?.map((iter) => (
                                     <div className={sub === index.index ? 'menu-sub-box active' : 'menu-sub-box'}
                                         style={sub === index.index ? { height: `${iter.items.length * 62 + 20}px` } : {}}>
-                                        {iter.items.map((ind) => (
+                                        {iter?.items?.map((ind) => (
                                             // eslint-disable-next-line react/jsx-key
                                             <div className='menu-sub-title'>
                                                 <a href={ind.link}>{ind.label}</a>

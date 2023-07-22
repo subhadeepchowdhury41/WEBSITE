@@ -1,9 +1,9 @@
 const achievement = [
   {
     id: 1,
-    title: "Top 30 in Electhon 2023",
+    title: "Finalist in Electhon 2023",
     description:
-      'Team "Hacking Commission" consisting Aditya Agarwal, Akash Parua and Subham Maji won selected for the final round in this national level Hackathon',
+      'Team "Hacking Commission" consisting Aditya Agarwal, Akash Parua and Subham Maji was selected for the final round in this national level Hackathon',
     url: "https://pbs.twimg.com/media/Fq2h5CcWAAA06DF?format=jpg&name=large",
   },
 

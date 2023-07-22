@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&display=swap');
+
+*{
+    font-family: 'Dosis', sans-serif;
+}
+.fluid-center{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+
+.faculty-main-page{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    padding: 1%;
+}
+.main-bar-body{
+    width: 100%;
+}
+.faculty-line{
+    justify-content: space-around;
+    width: 63%;
+    height: 2vh;
+    border-bottom: 1px solid black;
+    font-size: 1.3vw;
+    padding-bottom: 1%;
+}
+.faculty-main-page h1{
+    font-size: min(4vh,4vw);
+    margin-bottom: 5%;
+}
+.faculty-main-bar{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+    width: 60%;
+    height: fit-content;
+    padding: 1%;
+    margin-bottom: 1%;
+}
+.faculty-profile-pic{
+    border-radius: 50%;
+    color: antiquewhite;
+    height: max(11vh,11vw);
+    width: max(11vh,11vw);
+    background-color: aqua;
+}
+.faculty-profile{
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    height: 15vh;
+    width: 42vh;
+}
+.faculty-topic{
+    align-items: center;
+    justify-content: start;
+    height: fit-content;
+    width: 25%;
+    font-size: max(1.1vh,1.1vw);
+}
+.faculty-profile-icon{
+    font-size:max(3vh,2vw);
+    cursor:pointer;
+}
+.faculty-more-button{
+    width: 50px;
+    height: 50px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    transform: rotate(45deg);
+    transition: all .05s;
+}
+.faculty-more-button:hover{
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+}
+
+@media screen and (max-width:1024px){
+    .faculty-main-bar{
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+    .faculty-line{
+        display: none;
+    }
+    .faculty-profile{
+        margin-top: 2%;
+        margin-bottom: 2%;
+        align-items: center;
+    }
+    .faculty-topic{
+        height: 20vh;
+        width: 55vh;
+        justify-content: center;
+        font-size: min(2vh,2vw);
+        border: none;
+    }
+    .faculty-more-button{
+        width: 25px;
+        height: 25px;
+    }
+    .faculty-profile-email{
+        font-size: min(2vh,2vw);
+    }
+}
+@media screen and (max-width:768px){
+    .faculty-main-bar{
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+    .faculty-line{
+        display: none;
+    }
+    .faculty-profile{
+        margin-top: 2%;
+        margin-bottom: 2%;
+        align-items: center;
+    }
+    .faculty-topic{
+        height: 20vh;
+        width: 55vh;
+        justify-content: center;
+        font-size: max(1.7vh,1.7vw);
+        border: none;
+    }
+    .faculty-more-button{
+        width: 25px;
+        height: 25px;
+    }
+    .faculty-profile-email{
+        font-size: min(2.5vh,2.5vw);
+    }
+    .faculty-profile-pic{
+        margin-top: 5%;
+    }
+}

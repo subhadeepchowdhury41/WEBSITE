@@ -47,10 +47,27 @@ const Discover = () => {
             setI(i - 1);
     }
     const AddOne = () => {
-        if (i === l - 2 && scrolling===1)
-            setI(1);
-        else if(scrolling===1)
-            setI(i + 1);
+        const screenWidth = globalThis.window?.innerWidth;
+
+        if (screenWidth > 1450) {
+            if (i === l - 2 && scrolling === 1) {
+                setI(1);
+            } else if (scrolling === 1) {
+                setI(i + 1);
+            }
+        } else if (screenWidth >= 975 && screenWidth <= 1500) {
+            if (i === l - 1 && scrolling === 1) {
+                setI(1);
+            } else if (scrolling === 1) {
+                setI(i + 1);
+            }
+        } else {
+            if (i === l && scrolling === 1) {
+                setI(1);
+            } else if (scrolling === 1) {
+                setI(i + 1);
+            }
+        }
     }
     const [seconds, setSeconds] = useState(0);
     useEffect(() => {
@@ -66,13 +83,13 @@ const Discover = () => {
     return (
         <div className="Discover-Box">
             <Reveal keyframes={customAnimation} triggerOnce>
-                <span className='card-heading Discover-Heading'>  
+                <span className='card-heading Discover-Heading'>
                     Discover
-                    <ContactlessOutlinedIcon style={{marginLeft:"7px", fontSize:"30px"}}/>  
+                    <ContactlessOutlinedIcon style={{ marginLeft: "7px", fontSize: "30px" }} />
                 </span>
             </Reveal>
             <Reveal keyframes={customAnimation2} triggerOnce>
-                <div className='discover-slider' onMouseEnter={()=>{setScrolling(0)}} onMouseLeave={()=>{setScrolling(1)}}>
+                <div className='discover-slider' onMouseEnter={() => { setScrolling(0) }} onMouseLeave={() => { setScrolling(1) }}>
                     <div className='discover-slide-track' style={globalThis.window?.innerWidth > 550 ? { transform: `translate(${(-480 * (i - 1))}px,0px)` } : globalThis.window?.innerWidth > 350 ? { transform: `translate(${(-330 * (i - 1))}px,0px)` } : { transform: `translate(${(-270 * (i - 1))}px,0px)` }}>
                         {ImageData.map((index) => {
                             return (<div key={index.id}>
@@ -94,8 +111,8 @@ const Discover = () => {
                     {/* <ITKButton text="View More" /> */}
                     <div className='view-more'>View More</div>
                     <div className='discover-buttons'>
-                        <button className='button-prev' onClick={() => { ReduceOne() }}><ArrowLeftIcon className="hover:bg-purple-100" style={{fontSize: "30px",borderRadius:"50%",boxShadow:"1px 1px 2px rgb(0,0,0,0.3)",marginRight:"10px"}} /></button>
-                        <button className='button-next' onClick={() => { AddOne() }}><ArrowRightIcon className="hover:bg-purple-100" style={{ fontSize: "30px",borderRadius:"50%",boxShadow:"1px 1px 2px rgb(0,0,0,0.3)" }} /></button>
+                        <button className='button-prev' onClick={() => { ReduceOne() }}><ArrowLeftIcon className="hover:bg-purple-100" style={{ fontSize: "30px", borderRadius: "50%", boxShadow: "1px 1px 2px rgb(0,0,0,0.3)", marginRight: "10px" }} /></button>
+                        <button className='button-next' onClick={() => { AddOne() }}><ArrowRightIcon className="hover:bg-purple-100" style={{ fontSize: "30px", borderRadius: "50%", boxShadow: "1px 1px 2px rgb(0,0,0,0.3)" }} /></button>
                     </div>
 
                 </div>

@@ -14,7 +14,8 @@ const acadamics = [
   {
     items: [
       { label: 'Programmes', link: 'https://iiitkalyani.ac.in/php/programmes.php' },
-      { label: 'Faculty', link: 'https://iiitkalyani.ac.in/newfacultypages/faculty1.php' },
+      { label: 'Faculty', link: '/faculty/[id]' },
+      //{ label: 'Faculty', link: 'https://iiitkalyani.ac.in/newfacultypages/faculty1.php' },
       { label: 'Admissions', link: 'https://iiitkalyani.ac.in/php/admissionall.php' },
       { label: 'Academic Calendar', link: 'https://iiitkalyani.ac.in/php/Academic_cal.php' },
       { label: 'Course Structure', link: 'https://iiitkalyani.ac.in/php/Course_stru.php' },
@@ -153,7 +154,7 @@ export default function AppBar() {
         </div>
         {/* Option for custom color subhadeep*/}
         <div className={`flex text-white font-semibold ${stick ? ' navBar' : ''}
-               ${stick ? 'fixed top-0' : 'justify-center'} w-full`} style={!stick ? { zIndex: '100' } : { zIndex: '100', boxShadow: '0 0 5px black', backgroundColor: "rgb(0,0,0,0.8 )" }}>
+               ${stick ? 'fixed top-0' : 'justify-center'} w-full`} style={!stick ? { zIndex: '100000' } : { zIndex: '100', boxShadow: '0 0 5px black', backgroundColor: "rgb(0,0,0,0.8 )" }}>
           <Image width={53} className={`px-2 py-3 h-[70px]
                  ${stick ? 'opacity-100 transition-opacity ease-in-out duration-500' : 'hidden'}`} src={IIITKalyaniLogo} alt="IIIT Kalynai Logo" />
           {stick ? <MobileNav menu={<MobileMegaMenu menus={mobileMenu} />} /> : <></>}
@@ -206,14 +207,6 @@ export default function AppBar() {
                 <MegaMenu menus={placements} />
               }
             />
-            {/* <Link href={"/announcements"}>
-              <NavItem
-                title="Announcements"
-                menu={<></>}
-              />
-            </Link> */}
-
-
           </ul>
         </div>
       </div> : <></>}

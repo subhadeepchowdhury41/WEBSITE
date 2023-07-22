@@ -28,8 +28,11 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts"
-, "app/sections/gallery", "app/sections/cardSection/events.js"  ],
+    ".next/types/**/*.ts",
+    "app/sections/gallery",
+    "app/sections/cardSection/events.js",
+    "app/students/phd/[name].js"
+  ],
   "exclude": [
     "node_modules"
   ]
