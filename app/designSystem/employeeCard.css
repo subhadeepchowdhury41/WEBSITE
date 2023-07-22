@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap');
+
+
+.employee-card{
+    width: 16vw;
+    min-width: 240px;
+    height: fit-content;
+    box-shadow: 0 0 5px grey;
+    align-items: center;
+    justify-content: center;
+    /* margin-bottom: 20px; */
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 1rem;
+    background-color: rgb(255, 255, 255);
+}
+hr{
+    width: 25vw;
+    /* max-width: 190px; */
+    margin-bottom: 20px;
+    height: 2px;
+    background-color: (99, 50, 50);
+}
+.employee-dp img{
+    height: 200px;
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.employee-details{
+    height: fit-content;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.employee-name{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Lumanosimo', cursive;
+}
+.employee-position{
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
+}
+.employee-position>p{
+    text-align: center;
+}
+.employee-name>p{
+    text-align: center;
+}
+.employee-email{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.employee-email>p{
+    text-align: center;
+    margin-left: 5px;
+}

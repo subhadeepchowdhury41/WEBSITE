@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap');
+
+.asmall-Staff-card{
+    height: 700px;
+    width: fit-content;
+    min-width: 200px;
+    border-radius: 2rem;
+    /* margin: 20px 20px 20px 20px; */
+    /* border: 1px solid green; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.small-staff-card{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    min-width: 200px;
+    height: fit-content;
+    box-shadow: 0 0 5px grey;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 2rem;
+    background-color: rgb(255, 255, 255);
+}
+.small-staff-card>.small-top-staff-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    max-width: 40%;
+    min-width: 40%;
+}
+.small-staff-card>.small-top-staff-card>.small-staff-picture img{
+    width: min(calc(40vh), calc(40vw));
+    height: min(calc(40vh), calc(40vw));
+    border: 1px solid yellow;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /* margin-left: 10px; */
+}
+.small-staff-card>.small-top-staff-card>.small-staff-position{
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
+}
+.small-staff-card>.small-top-staff-card>.small-staff-position>p{
+    text-align: center;
+}
+.small-staff-card>.small-top-staff-card>.small-staff-qualification>p{
+    text-align: center;
+}
+.small-staff-card>hr{
+    width: 80vw;
+    height: 1px;
+    background-color: rgb(99, 50, 50);
+    border: none;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.small-staff-card>.small-bottom-staff-card>.small-staff-name{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Lumanosimo', cursive;
+}
+.small-staff-card>.small-bottom-staff-card>.small-staff-name>p{
+    text-align: center;
+}
+.small-staff-card>.small-bottom-staff-card>.small-staff-email{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.small-staff-card>.small-bottom-staff-card>.small-staff-email>p{
+    margin-left: 2px;
+    text-align: center;
+}
+.small-staff-card>.small-bottom-staff-card>.small-staff-subjects{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin-bottom: 10px;
+}
+.small-staff-card>.small-bottom-staff-card>.small-staff-subjects>p{
+    /* background-color: gray; */
+    margin: 4px 4px 4px 4px;
+    /* padding: 3px 3px 3px 3px; */
+    align-items: center;
+    border-radius: 2px;
+    text-align: center;
+}
+.small-staff-card>.small-bottom-staff-card>.small-staff-subjects>p :hover{
+    background-color: gray;
+    margin: 2px 2px 2px 2px;
+    padding: 1px 1px 1px 1px;
+    border-radius: 2px;
+    text-align: center;
+}
+.small-staff-card>.small-top-staff-card>.small-staff-details{
+    height: 12vw;
+    min-height: 180px;
+    width: 44vw;
+    min-width: 340px;
+    /* border: 1px solid blue; */
+    margin: auto;
+    margin-top: 5px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    background-color: rgb(255, 255, 255);
+}
+.small-staff-card>.small-top-staff-card>.small-staff-details>div{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 10px;
+    font-weight: bold;
+    /* font-family: 'Lumanosimo', cursive; */
+}
+.small-staff-card>.small-top-staff-card>.small-staff-details>.small-staff-details-name{
+    font-size: 22px;
+}
+.small-staff-card>.small-bottom-staff-card{
+    margin-top: 15px;
+    margin-left: 15px;
+
+}
+.small-staff-card>.small-bottom-staff-card>.small-bottom-staff-card-title{
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.small-staff-card>.small-bottom-staff-card>p{
+    margin-top: 5px;
+    margin-left: 15px;
+    /* margin-bottom: 15px; */
+}
