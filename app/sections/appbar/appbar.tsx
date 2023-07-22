@@ -154,7 +154,7 @@ export default function AppBar() {
         </div>
         {/* Option for custom color subhadeep*/}
         <div className={`flex text-white font-semibold ${stick ? ' navBar' : ''}
-               ${stick ? 'fixed top-0' : 'justify-center'} w-full`} style={!stick ? { zIndex: '100' } : { zIndex: '100', boxShadow: '0 0 5px black', backgroundColor: "rgb(0,0,0,0.8 )" }}>
+               ${stick ? 'fixed top-0' : 'justify-center'} w-full`} style={!stick ? { zIndex: '100000' } : { zIndex: '100', boxShadow: '0 0 5px black', backgroundColor: "rgb(0,0,0,0.8 )" }}>
           <Image width={53} className={`px-2 py-3 h-[70px]
                  ${stick ? 'opacity-100 transition-opacity ease-in-out duration-500' : 'hidden'}`} src={IIITKalyaniLogo} alt="IIIT Kalynai Logo" />
           {stick ? <MobileNav menu={<MobileMegaMenu menus={mobileMenu} />} /> : <></>}

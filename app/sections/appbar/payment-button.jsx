@@ -30,7 +30,7 @@ export default function PayButton() {
                 Instructions to pay fees online :{" "}
                 <CloseIcon className="closeicon" onClick={handleClick} />
               </h1>
-              <br />
+
               <p>1. Click on payment option given below.</p>
               <p>2. Select West Bengal as State of Corporate/Institution.</p>
               <p>
