@@ -9,6 +9,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InsertLinkIcon from '@mui/icons-material/InsertLink';
 import NavBar from '../../sections/appbar/secondNav';
 import Footer from '../../sections/footer/footer';
+import Link from 'next/link';
 
 const PHDStudents = () => {
     const [hovering, setHovering] = useState(0)
@@ -23,10 +24,13 @@ const PHDStudents = () => {
             {
                 data.map((index) => {
                     return (
-                        <div className='w-full p-8 border flex overflow-hidden gap-8'>
-                            <div className='h-36 w-36 rounded-[50%]' style={{ backgroundImage: `url('https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg')`, backgroundSize: '100% 100%', backgroundPosition: 'center' }}>
+                        <div className='w-full py-8 border flex overflow-hidden gap-8 justify-around px-[10%]'>
+                            <div className='flex-[1] w-full'>
+                                <div className='h-36 w-36 rounded-[50%]' style={{ backgroundImage: `url('https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg')`, backgroundSize: '100% 100%', backgroundPosition: 'center' }}>
+                                </div>
                             </div>
-                            <div className='flex flex-col justify-between'>
+
+                            <div className='flex flex-col justify-between flex-[2] w-full'>
                                 {index.status == 'Ongoing' ? <div className='text-[rgb(134,133,47)] font-bold text-lg'>Ongoing</div> : <div className='text-[rgb(47,165,49)] font-bold text-lg'>Completed</div>}
                                 <div className='flex gap-2'>
                                     <div className='font-bold text-xl'>{index.name}</div>
@@ -44,6 +48,22 @@ const PHDStudents = () => {
                                     <LinkedInIcon />
                                     <InsertLinkIcon />
                                 </div>
+                            </div>
+                            <div className='font-semibold text-lg flex-[1] w-full'>{index.research_area}</div>
+                            <div className='font-semibold text-lg flex-[1] w-full'>
+                                <ul style={{ listStyleType: 'disc' }}>
+                                    {index.pub_details ? <li>
+                                        <ul style={{ listStyleType: 'disc' }}>
+                                            {index.pub_details.map((publication) => {
+                                                return (
+                                                    <li>{publication}</li>
+                                                )
+                                            })}
+                                        </ul>
+                                    </li> : <></>}
+                                    {index.links ? <Link target={"_blank"} href={index.links}><li className='text-[rgb(43,159,159)]'>External link</li></Link> : <></>}
+                                    {index.links || index.pub_details ? <></> : <li className="text-[rgb(239,95,66)]">No data found</li>}
+                                </ul>
                             </div>
                         </div>
                     )

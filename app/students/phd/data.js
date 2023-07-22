@@ -13,7 +13,7 @@ const data = [
         "type": "Regular",
         "fellowship": "Regular (Institute Teaching Assistantship)",
         "links": "https://orcid.org/0000-0003-2825-1234",
-        "img": "https://drive.google.com/open?id=1Y0lfdkwntc44qTT7iEV4QgdS9LAFw2aT"
+        "img": "https://drive.google.com/open?id=1Y0lfdkwntc44qTT7iEV4QgdS9LAFw2aT",
     },
     {
         "index": 2,
@@ -27,10 +27,10 @@ const data = [
         "research_area": "Secure Content-Based Image Retrieval",
         "status": "Ongoing",
         "type": "External",
-        "Mention your Institute (For External students only)": "Indian Institute of Technology (Indian School of Mines) Dhanbad",
+        "institute": "Indian Institute of Technology (Indian School of Mines) Dhanbad",
         "fellowship": "N/A",
         "links": "https://sites.google.com/view/shuklamondal",
-        "img": "https://drive.google.com/open?id=18hfgOgh1ImtRfPBAY3YeRJ___KuNhOIt"
+        "img": "https://drive.google.com/open?id=18hfgOgh1ImtRfPBAY3YeRJ___KuNhOIt",
     },
     {
         "index": 3,
@@ -47,7 +47,7 @@ const data = [
         "Mention your Company/ Office (For working Part time  students only)": "Institute of Engineering & Management, Kolkata",
         "fellowship": "N/A",
         "links": "https://scholar.google.com/citations?hl=en&view_op=list_works&authuser=1&gmla=ABEO0YpoAtcstkCCA63_cAkZwVdpfRq0alRcWLmreb1dWEm5AHZsA9D9hXHzVJBZI7mzgw9KbfzSveTEDOkveA&user=-FAQnC4AAAAJ",
-        "img": "https://drive.google.com/open?id=1FyUH3kZ8QxBSoeixVbdbwqIkzn4y-gfJ"
+        "img": "https://drive.google.com/open?id=1FyUH3kZ8QxBSoeixVbdbwqIkzn4y-gfJ",
     },
     {
         "index": 4,
@@ -62,8 +62,7 @@ const data = [
         "status": "Ongoing",
         "type": "Regular",
         "fellowship": "Regular (Institute Teaching Assistantship)",
-        "links": "NA",
-        "img": "https://drive.google.com/open?id=1QkJb5V2a1EzNfE-Zo2W_xdnnskB3iI1m"
+        "img": "https://drive.google.com/open?id=1QkJb5V2a1EzNfE-Zo2W_xdnnskB3iI1m",
     },
     {
         "index": 5,
@@ -91,11 +90,10 @@ const data = [
         "session": "2022-2023",
         "supervisor": "Dr. Pratik Chakraborty",
         "research_area": "Wireless Communication",
-        "pub_details": "No",
         "status": "Ongoing",
         "type": "Regular",
         "fellowship": "Regular (Institute Teaching Assistantship)",
-        "links": "0000-0001-7975-7310/ https://scholar.google.com/citations?user=SpKQtZsAAAAJ&hl=en",
+        "links": "https://scholar.google.com/citations?user=SpKQtZsAAAAJ&hl=en",
         "img": "https://drive.google.com/open?id=17WxKt3ISO-_v_zc6u1B7NBgurvEE1IEg"
     },
     {
@@ -108,11 +106,9 @@ const data = [
         "session": "2022-2023",
         "supervisor": "Dr. SK Hafizul Islam",
         "research_area": "Cryptography and Information SEcurity",
-        "pub_details": "no",
         "status": "Ongoing",
         "type": "Regular",
         "fellowship": "Regular (Net Fellowship)",
-        "links": "0009-0009-8684-3909",
         "img": "https://drive.google.com/open?id=1qKWR-Ta5zFcfVwL2NrsuXpARmQyFEaMr"
     },
     {
@@ -128,7 +124,6 @@ const data = [
         "status": "Ongoing",
         "type": "Regular",
         "fellowship": "Regular (Institute Teaching Assistantship)",
-        "links": "NA",
         "img": "https://drive.google.com/open?id=1CtXMPh4GxwXYqCutYk3GPEtRNSe9qw9G"
     },
     {
@@ -174,7 +169,7 @@ const data = [
         "session": "Spring Session, 2023",
         "supervisor": "Dr. Imon Mukherjee",
         "research_area": "NLP",
-        "pub_details": "Agricultural Image Augmentation with Generative Adversarial Networks GANs, 2022",
+        "pub_details": ["Agricultural Image Augmentation with Generative Adversarial Networks GANs, 2022"],
         "status": "Ongoing",
         "type": "Regular",
         "fellowship": "Regular (Project Staff)",
@@ -207,7 +202,7 @@ const data = [
         "session": "2019 Spring session (Enrollment)",
         "supervisor": "Dr. Sanjay Chatterji",
         "research_area": "Natural Language Processing",
-        "pub_details": "1. https://doi.org/10.1145/3542696 2. Feature Selection for Nepali Part-Of-Speech Tagging in a Conditional Random Fields based System.",
+        "pub_details": ["Annotation Projection-based Dependency Parser Development for Nepali", "Feature Selection for Nepali Part-Of-Speech Tagging in a Conditional Random Fields based System"],
         "status": "Ongoing",
         "type": "Part time (On Service)",
         "Mention your Institute (For External students only)": "New Alipore College, University of Calcutta",
@@ -228,7 +223,6 @@ const data = [
         "status": "Ongoing",
         "type": "Regular",
         "fellowship": "Regular (Project Staff)",
-        "links": " 0000-0002-2919-1950",
         "img": "https://drive.google.com/open?id=11TTl6_LsRr3lBv0geuGBoWi_WNoEihk4"
     },
     {
@@ -289,7 +283,7 @@ const data = [
         "session": "Spring 2021",
         "supervisor": "Dr. Imon Mukherjee",
         "research_area": "Steganalysis, Steganography, Information Security",
-        "pub_details": "S. Ganguly and I. Mukherjee, \"Image Sterilization through Adaptive Noise Blending in Integer Wavelet Transformation,\" 2022 IEEE 19th India Council International Conference (INDICON), Kochi, India, 2022, pp. 1-6, doi: 10.1109/INDICON56171.2022.10039861.",
+        "pub_details": ["Image Sterilization through Adaptive Noise Blending in Integer Wavelet Transformation"],
         "status": "Ongoing",
         "type": "Regular",
         "fellowship": "Regular (Net Fellowship)",
@@ -310,7 +304,6 @@ const data = [
         "type": "Part time (On Service)",
         "Mention your Company/ Office (For working Part time  students only)": "NSEC",
         "fellowship": "N/A",
-        "links": "NA",
         "img": "https://drive.google.com/open?id=1r75nnfwx7cvPBhV2Br4UG-ySzuDpeeCv"
     },
     {
@@ -323,7 +316,7 @@ const data = [
         "session": "2022- 2023",
         "supervisor": "Dr. Bhaskar Biswas",
         "research_area": "Code based cryptography",
-        "pub_details": "Guha, Dibyasree, Debasish Bera, and Sourabh Biswas. \"Security Analysis of LDPC Code-Based Encryption.\" 2022 IEEE International Conference on Public Key Infrastructure and its Applications (PKIA). IEEE, 2022.",
+        "pub_details": ["Security Analysis of LDPC Code-Based Encryption"],
         "status": "Ongoing",
         "type": "Regular",
         "fellowship": "Regular (Project Staff)",
@@ -373,7 +366,6 @@ const data = [
         "session": "Autumn 2021",
         "supervisor": "Dr. Uma Das",
         "research_area": "Machine Learning, Deep Learning, Climate Data Analysis",
-        "pub_details": "NA",
         "status": "Ongoing",
         "type": "Part time (On Service)",
         "Mention your Company/ Office (For working Part time  students only)": "Brainware University",
@@ -408,7 +400,6 @@ const data = [
         "session": "July, 2018",
         "supervisor": "Dr. Imon Mukherjee, Prof. Pradipta Biswas (IISc, Bangalore)",
         "research_area": "Object Detection, Computer Vision, Man Machine Interaction",
-        "pub_details": "https://scholar.google.com/citations?user=dRjWRJcAAAAJ&hl=en",
         "status": "Ongoing",
         "type": "External",
         "Mention your Institute (For External students only)": "Indian Institute of Science",
@@ -461,7 +452,6 @@ const data = [
         "status": "Ongoing",
         "type": "Regular",
         "fellowship": "Regular (Project Staff)",
-        "links": "0009-0000-9158-0191",
         "img": "https://drive.google.com/open?id=1zL1FEf86FAQSuCtlOyG4kpJOrq2imTgG"
     },
     {
@@ -494,7 +484,6 @@ const data = [
         "type": "Part time (On Service)",
         "Mention your Institute (For External students only)": "Institute of Engineering and Management",
         "fellowship": "N/A",
-        "links": "NA",
         "img": "https://drive.google.com/open?id=1iZ11l36Xbt2dSpF0JCupAYyNQaXzXLae"
     },
     {
@@ -507,7 +496,6 @@ const data = [
         "session": "Spring 2019",
         "supervisor": "Dr. Oishila Bandyopadhyay and Dr. Sanjay Chatterji",
         "research_area": "Computer Vision, Machine Learning",
-        "pub_details": "one Journal published, one Journal Communicated, 2 conference papers",
         "status": "Ongoing",
         "type": "Part time (On Service)",
         "fellowship": "N/A",
@@ -540,7 +528,7 @@ const data = [
         "session": "Autumn 2021",
         "supervisor": "Dr. Sanjay Chatterji",
         "research_area": "NLP, Topic Extraction, Language Generation",
-        "pub_details": "1. Sourav Das, Prasanta Mandal and Sanjay Chatterji, \"Probabilistic Impact Score Generation using Ktrain-BERT to Identify Hate Words from Twitter Discussions\", In the 13th Meeting of Forum for Information Retrieval Evaluation (FIRE 2021). 2. Sourav Das, Sanjay Chatterji, and Imon Mukherjee, “A Comparative Study of Sentiment Analysis and Topic Extraction Approaches during the Covid-19 Pandemic”, in Knowledge and Information Systems, Springer, 2022. (Under Review). Journal Impact Factor: 2.531, SCI, Scopus, WoS, UGC-CARE indexed journal.",
+        "pub_details": ["Probabilistic Impact Score Generation using Ktrain-BERT to Identify Hate Words from Twitter Discussions", "A Comparative Study of Sentiment Analysis and Topic Extraction Approaches during the Covid-19 Pandemic"],
         "status": "Ongoing",
         "type": "Part time (On Service)",
         "Mention your Institute (For External students only)": "NA",
@@ -559,7 +547,7 @@ const data = [
         "session": 2019,
         "supervisor": "Dr. Imon Mukherjee, IIIT Kalyani and Dr. Goutam Paul, ISI Kolkata",
         "research_area": "Data Analytics",
-        "pub_details": "1. N.R. Das, S. Ghosh, I. Mukherjee, and G. Paul, “Adoption of a Ranking Based Indexing Method for the Cricket Teams,” in Expert Systems with Applications, vol. 213, p. 118796, 2023, DOI: 10.1016/j.eswa.2022.118796.                    2. N.R. Das, R. Priya, I. Mukherjee, and G. Paul. “Modified Hedonic Based Price Prediction Model for Players in IPL Auction,” in 12th International Conference on Computing, Communication and Networking Technologies (ICCCNT), pp. 1-7, 2021, IIT Kharagpur, DOI:10.1109/ICCCNT51525.2021.9580108.                       3. R. Mili, N.R. Das, A. Tandon, S. Mokhtar, I. Mukherjee, and G. Paul, “Pose Recognition in Cricket using Keypoints,” in 9th IEEE Uttar Pradesh Section International Conference on Electrical, Electronics and Computer Engineering (UPCON), pp. 1-5, 2022, IIIT Allahabad, DOI: 10.1109/UPCON56432.2022.9986481.",
+        "pub_details": ["Adoption of a Ranking Based Indexing Method for the Cricket Teams", "Modified Hedonic Based Price Prediction Model for Players in IPL Auction", "Pose Recognition in Cricket using Keypoints"],
         "status": "Ongoing",
         "type": "Part time (On Service)",
         "Mention your Company/ Office (For working Part time  students only)": "Academy of Technology",
@@ -594,7 +582,7 @@ const data = [
         "session": "Spring, 2019",
         "supervisor": "Dr. SK Hafizul Islam",
         "research_area": "Cryptography",
-        "pub_details": "Sudeep Ghosh, SK Hafizul Islam, Abhishek Bisht, Ashok Kumar Das \"Provably Secure Public Key Encryption with Keyword Search for Data Outsourcing in Cloud Environments\" Journal of System Architecture, SCI indexed, (Accepted)",
+        "pub_details": ["Provably Secure Public Key Encryption with Keyword Search for Data Outsourcing in Cloud Environments"],
         "status": "Ongoing",
         "type": "Part time (On Service)",
         "Mention your Company/ Office (For working Part time  students only)": "Guru Nanak Institute of Technology",
@@ -612,7 +600,7 @@ const data = [
         "session": "Spring  2019 ( 06th AUGUST , 2019)",
         "supervisor": "Dr. SK Hafizul Islam",
         "research_area": "Design and Analysis of Lattice-Based Cryptographic Protocols for Post-quantum Environments",
-        "pub_details": "SK Hafizul Islam, Swagatam Basu, “PB-3PAKA: Password-Based Three-Party Authenticated Key Agreement Protocol for Mobile Devices In Post-Quantum Environments”, Journal of Information Security and Applications, Volume 63:103026, 2021.",
+        "pub_details": ["PB-3PAKA: Password-Based Three-Party Authenticated Key Agreement Protocol for Mobile Devices In Post-Quantum Environments"],
         "status": "Ongoing",
         "type": "Part time (On Service)",
         "Mention your Institute (For External students only)": "NA",
@@ -631,11 +619,10 @@ const data = [
         "session": "Spring, 2019",
         "supervisor": "Imon Mukherjee (Supervisor), Sambit Bakshi (Co-Supervisor)",
         "research_area": "Person Re-Identification",
-        "pub_details": "Submitted \"Utilizing Attention Mechanism with Exemplar Memory for Improving Domain Adaptive Person Re-identification\", to Multimedia Tools and Applications Journal.",
+        "pub_details": ["Utilizing Attention Mechanism with Exemplar Memory for Improving Domain Adaptive Person Re-identification"],
         "status": "Ongoing",
         "type": "Part time (On Service)",
         "fellowship": "N/A",
-        "links": "0000-0001-6924-1847",
         "img": "https://drive.google.com/open?id=17L1-hyQDWzCwyOlr_qxfdBnoRi-W2R8c"
     },
     {
@@ -648,7 +635,7 @@ const data = [
         "session": "Spring, 2022-23",
         "supervisor": "Dr. Sanjoy Pratihar, Dr. Sanjay Chatterji ",
         "research_area": "Application of computer vision in agriculture",
-        "pub_details": "1)S. Samanta, S. Pratihar, M. Ajij, S. Chatterji, Fast and Robust Monitoring of Broken Rice Kernels in the Course of Milling, (under review), 2022. 2)S. Samanta, S. Pratihar, S. Chatterji, Leaf Spot Disease Severity Measurement in Terminalia Arjuna using Optimized Superpixels, CVIP 2022, VNIT Nagpur (accepted), 2022.",
+        "pub_details": ["Fast and Robust Monitoring of Broken Rice Kernels in the Course of Milling", "Leaf Spot Disease Severity Measurement in Terminalia Arjuna using Optimized Superpixels"],
         "status": "Ongoing",
         "type": "Part time (On Service)",
         "Mention your Company/ Office (For working Part time  students only)": "University Institute of Technology, The University of Burdwan",
@@ -669,7 +656,6 @@ const data = [
         "status": "Ongoing",
         "type": "Part time (On Service)",
         "fellowship": "N/A",
-        "links": "NA",
         "img": "https://drive.google.com/open?id=1FX0F-6BoYVKRzEbqh8lAj7Gs0iJDJKOS"
     },
     {
@@ -682,7 +668,6 @@ const data = [
         "session": "2020-2025",
         "supervisor": "Dr. Anirban Lakshman",
         "research_area": "Solid mechanics, Thermoelasticity",
-        "pub_details": "4 SCIE International Journals",
         "status": "Ongoing",
         "type": "Regular",
         "fellowship": "Regular (Project Staff)",
@@ -733,7 +718,7 @@ const data = [
         "session": "2021-202",
         "supervisor": "Dr. Imon Mukherjee, Dr. Sanjoy Pratihar, Dr. Sanjay Chatterji",
         "research_area": "Image processing, Computer Vison, Deep Learning",
-        "pub_details": "(1) Pal, C., Pratihar, S., Chatterji, S., & Mukherjee, I. (2022, August). Automatic Rice Crop Extraction using Edge based Color Features and Color Indices. In 2022 2nd Asian Conference on Innovation in Technology (ASIANCON) (pp. 1-8). IEEE., (2)  Pal, C., Pratihar, S., & Mukherjee, I. (2022, December). A custom CNN model for detection of rice disease under complex environment. In Proceedings of the First Workshop on NLP in Agriculture and Livestock Management (pp. 5-8). (3)   Soham Biswas, Chiranjit Pal, Imon Mukherjee, \"Comparative Study on Various CNNs for Classification and Identification of Biotic stress of paddy Leaf\", Lecture Notes in Networks and Systems, Data-driven Computing and Intelligent Systems (ADCIS 2022), Springer. (Accepted)",
+        "pub_details": ["Automatic Rice Crop Extraction using Edge based Color Features and Color Indices", "A custom CNN model for detection of rice disease under complex environment", "Comparative Study on Various CNNs for Classification and Identification of Biotic stress of paddy Leaf"],
         "status": "Ongoing",
         "type": "Regular",
         "fellowship": "Regular (Project Staff)",
@@ -750,7 +735,7 @@ const data = [
         "session": "2021-2028, 2nd Year",
         "supervisor": "Dr. Sanjoy Pratihar, Dr. Oishila Bandyopadhyay",
         "research_area": "Medical Image Segmentation",
-        "pub_details": "1) A. Choudhury, S. Samanta, S. Pratihar, O. Bandyopadhyay, Multilevel Image Segmentation using Global Steered Quantum Inspired Firefly Algorithm, Applied Intelligence, 52, 7339–7372 (2022). 2) A. Choudhury, S. Samanta, S. Pratihar, O. Bandyopadhyay, Segmentation of Brain MR Images Using Quantum Inspired Firefly Algorithm with Mutation, IWBBIO 2022 (Organized by University of Granada, Spain), LNCS vol 13346, pp. 364-377, 2022.",
+        "pub_details": ["Multilevel Image Segmentation using Global Steered Quantum Inspired Firefly Algorithm", "Segmentation of Brain MR Images Using Quantum Inspired Firefly Algorithm with Mutation"],
         "status": "Ongoing",
         "type": "Part time (On Service)",
         "Mention your Company/ Office (For working Part time  students only)": "St. Xavier's College, Burdwan",
@@ -768,7 +753,7 @@ const data = [
         "session": "2019-2020 (Even Semestar)",
         "supervisor": "Dr. Dalia Nandi",
         "research_area": "5G, V2X",
-        "pub_details": "1.S.Mondal and D. Nandi “Study of Path Loss Models in V2V mm-Wave Communication” accepted for presentation at 5th Regional Conference on Radio Science(URSI-RCRS 2022)  Indore, India, 1– 4  December 2022.   2.S. Mondal, D. Nandi, and R. Bera, \"Link Level Performance Analysis of NOMA in 5G,\" 2021 8th International Conference on Signal Processing and Integrated Networks (SPIN), 2021, pp. 1104-1107, doi: 10.1109/SPIN52536.2021.9566095. 3.\tS.Mondal et al. “V2X Communication Test Bed for Smart Electrical Vehicle with 5G IOV Technology” at Regional Conference on Radio Science(URSI-RCRS 2020)  Varanasi, India, 12 – 14  February 2020.  ",
+        "pub_details": ["Study of Path Loss Models in V2V mm-Wave Communication", "Link Level Performance Analysis of NOMA in 5G", "V2X Communication Test Bed for Smart Electrical Vehicle with 5G IOV Technology"],
         "status": "Ongoing",
         "type": "Part time (On Service)",
         "Mention your Company/ Office (For working Part time  students only)": "Behala College",
@@ -789,7 +774,6 @@ const data = [
         "status": "Ongoing",
         "type": "Regular",
         "fellowship": "Regular (Project Staff)",
-        "links": "0000-0002-2919-1950",
         "img": "https://drive.google.com/open?id=1aKheI8Lu1ABZfIKjTsv1Fm1DYv0FQdcJ"
     },
     {
@@ -819,12 +803,11 @@ const data = [
         "session": "Spring 2021",
         "supervisor": "Dr Dalia Nandi",
         "research_area": "Internet of things ",
-        "pub_details": "01 . K. Choudhury and D. Nandi, \"Detection and Prioritization of Emergency Vehicles in Intelligent Traffic Management System,\" 2021 IEEE Bombay Section Signature Conference (IBSSC), Gwalior, India, 2021, pp. 1-6, doi: 10.1109/IBSSC53889.2021.9673211.",
+        "pub_details": ["Detection and Prioritization of Emergency Vehicles in Intelligent Traffic Management System"],
         "status": "Ongoing",
         "type": "Part time (On Service)",
         "Mention your Company/ Office (For working Part time  students only)": "Nehru Science center ",
         "fellowship": "N/A",
-        "links": "krishnendu814u",
         "img": "https://drive.google.com/open?id=1BRsWYxaD3-YoKLwgU2w72XD5BlA1wENh"
     },
     {
@@ -837,7 +820,6 @@ const data = [
         "session": "2018-2024",
         "supervisor": "Dr. Oishila Bandyopadhyay &  Dr. Sanjoy Pratihar",
         "research_area": "Medical Image Processing",
-        "pub_details": "Conference -2, Journal -1 (Reviewed)",
         "status": "Ongoing",
         "type": "Part time (On Service)",
         "Mention your Institute (For External students only)": "NA",
@@ -873,7 +855,7 @@ const data = [
         "session": 2018,
         "supervisor": "Dr. Sanjay Chatterji, Dr. Sanjoy Pratihar",
         "research_area": "NLP with deep learning",
-        "pub_details": "Sagarika Ghosh, Sanjoy Pratihar, Sanjay Chatterji, Anupam Basu, \"Matching of hand-drawn flowchart, pseudocode, and english description using transfer learning\", Multimedia Tools and Applications(SCIE, Q1, Impact Factor:2.57, H-index:80), Springer.",
+        "pub_details": ["Matching of hand-drawn flowchart, pseudocode, and english description using transfer learning"],
         "status": "Ongoing",
         "type": "Part time (On Service)",
         "Mention your Institute (For External students only)": "NA",
@@ -892,12 +874,10 @@ const data = [
         "session": "Spring 2021-2022",
         "supervisor": "Dr. Bhaskar Biswas",
         "research_area": "Cryptology",
-        "pub_details": "NA",
         "status": "Ongoing",
         "type": "Part time (On Service)",
         "Mention your Company/ Office (For working Part time  students only)": "ISI Kolkata",
         "fellowship": "N/A",
-        "links": "na",
         "img": "https://drive.google.com/open?id=1dW4ei2DUxRzBuspEtkHvbHaXPFdALEDN"
     },
     {
@@ -910,7 +890,6 @@ const data = [
         "session": "2019-2020 (2020)",
         "supervisor": "Dr. Imon Mukherjee",
         "research_area": "Biomedical Signal Processing",
-        "pub_details": "One Conference paper (Scopus), One SCI(E) Journal Paper",
         "status": "Ongoing",
         "type": "Part time (On Service)",
         "Mention your Company/ Office (For working Part time  students only)": "RCC Institute of Information Technology",
@@ -949,7 +928,6 @@ const data = [
         "type": "Part time (On Service)",
         "Mention your Company/ Office (For working Part time  students only)": "Techno International New Town",
         "fellowship": "N/A",
-        "links": "ORCID ID 0000000302609891",
         "img": "https://drive.google.com/open?id=1oyFL_W4C5y5DcRWrixewRgKv4jlQRStZ"
     },
     {
@@ -962,7 +940,6 @@ const data = [
         "session": "2018-2019",
         "supervisor": "Dr. Dalia Nandi",
         "research_area": "Biomedical Engineering, Prosthetic Technology, Control System",
-        "pub_details": "1Indian Granted Patent, 1SCIE, 1 Book Chapter, 4 International Conferences, 1 Journal Paper communicated",
         "status": "Ongoing",
         "type": "Part time (On Service)",
         "Mention your Company/ Office (For working Part time  students only)": "Narula Institute of Technology(Assistant Professor)",
@@ -982,8 +959,7 @@ const data = [
         "research_area": "Natural language Processing",
         "status": "Ongoing",
         "type": "Regular",
-        "fellowship": "Regular ( Visvesvaraya Fellowship)",
-        "links": "no account",
+        "fellowship": "Regular",
         "img": "https://drive.google.com/open?id=1FgybYpUtR325dEddkrhwk_f3FB_HSbcF"
     },
     {
@@ -995,12 +971,11 @@ const data = [
         "email": "santanu_phd22@iiitkalyani.ac.in",
         "session": "Spring-2023",
         "supervisor": "Dr. Sanjay Chatterji and  Dr.Sajal Sarkar",
-        "research_area": "Cybersecurity  in Power System",
+        "research_area": "Cybersecurity in Power System",
         "status": "Ongoing",
         "type": "Part time (On Service)",
         "Mention your Company/ Office (For working Part time  students only)": "The Durgapur Projects Ltd., Durgapur ",
         "fellowship": "N/A",
-        "links": "N/A",
         "img": "https://drive.google.com/open?id=1WagVOzYReAnXF52nqA2056FXCz34v6un"
     },
 ]
