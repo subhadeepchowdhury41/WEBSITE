@@ -17,63 +17,39 @@ const PHDStudents = () => {
     return (
         <div style={{}}>
             <NavBar />
-            <div style={{ marginTop: '25px' }} className='phd-outbox'>
-                {
-                    data.map((index) => {
-                        return (
-                            <div className='contentbox'>
-                                <div className='color-circle'></div>
-                                <div className='cd-col1' onClick={() => setActive(index.index === active ? -1 : index.index)}>
-                                    <div className='cd-img' style={{ backgroundImage: `url(${index.img})` }}></div>
-                                    <div className='cd-name'>{index.name}</div>
-                                    <div className='cd-mail'>{index.email}</div>
-                                    <div className='cd-link' style={{ marginTop: '2px' }}>
-                                        <span onMouseEnter={() => { setHovering(index.index); setDecider(0) }} onMouseLeave={() => setHovering(0)}><MailIcon />{hovering === index.index && decider === 0 ? <div className='hovertext'>Gmail</div> : <></>}</span>
-
-                                        <span onMouseEnter={() => { setHovering(index.index); setDecider(1) }} onMouseLeave={() => setHovering(0)}><InstagramIcon />{hovering === index.index && decider === 1 ? <div className='hovertext'>Instagram</div> : <></>}</span>
-
-                                        <span onMouseEnter={() => { setHovering(index.index); setDecider(2) }} onMouseLeave={() => setHovering(0)}><LinkedInIcon />{hovering === index.index && decider === 2 ? <div className='hovertext'>LinkedIn</div> : <></>}</span>
-
-                                        <span onMouseEnter={() => { setHovering(index.index); setDecider(3) }} onMouseLeave={() => setHovering(0)}><InsertLinkIcon />{hovering === index.index && decider === 3 ? <div className='hovertext'>External Links</div> : <></>}</span>
-                                    </div>
+            <div className='w-full font-[800] text-4xl pl-8 my-8'>
+                IIIT Kalyani PhD students
+            </div>
+            {
+                data.map((index) => {
+                    return (
+                        <div className='w-full p-8 border flex overflow-hidden gap-8'>
+                            <div className='h-36 w-36 rounded-[50%]' style={{ backgroundImage: `url('https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg')`, backgroundSize: '100% 100%', backgroundPosition: 'center' }}>
+                            </div>
+                            <div className='flex flex-col justify-between'>
+                                {index.status == 'Ongoing' ? <div className='text-[rgb(134,133,47)] font-bold text-lg'>Ongoing</div> : <div className='text-[rgb(47,165,49)] font-bold text-lg'>Completed</div>}
+                                <div className='flex gap-2'>
+                                    <div className='font-bold text-xl'>{index.name}</div>
+                                    <div className='border rounded-xl px-2'>External</div>
                                 </div>
-                                <div className={active === index.index ? 'separator active' : 'separator'}></div>
-                                <div className={active === index.index ? `cd-col2 active` : `cd-col2`}>
-                                    <div className='tuple'>
-                                        <div className='tuple-heading'>Session</div>
-                                        <div className='tuple-data'>{index.session}</div>
-                                    </div>
-                                    <div className='tuple'>
-                                        <div className='tuple-heading'>Supervisor</div>
-                                        <div className='tuple-data'>{index.supervisor}</div>
-                                    </div>
-                                    <div className='tuple'>
-                                        <div className='tuple-heading'>Research Area</div>
-                                        <div className='tuple-data'>{index.research_area}</div>
-                                    </div>
-
-                                    {index.pub_details ? <><div className='tuple'>
-                                        <div className='tuple-heading'>Publication Details</div>
-                                        <div className='tuple-data'>{index.pub_details}</div>
-                                    </div></> : <></>}
-                                    <div className='tuple'>
-                                        <div className='tuple-heading'>Ph.D Status</div>
-                                        <div className='tuple-data'>{index.status}</div>
-                                    </div>
-                                    <div className='tuple'>
-                                        <div className='tuple-heading'>Ph.D Type</div>
-                                        <div className='tuple-data'>{index.type}</div>
-                                    </div>
-                                    <div className='tuple'>
-                                        <div className='tuple-heading'>Fellowship Type</div>
-                                        <div className='tuple-data'>{index.fellowship}</div>
-                                    </div>
+                                <div className='flex gap-2'>
+                                    <div className=''>{index['Student ID ']}</div>
+                                    <div className='border rounded-xl px-2'>{index.session}</div>
+                                </div>
+                                <div className=''>{index.supervisor}</div>
+                                <div className=''>{index.fellowship}</div>
+                                <div className='flex gap-2'>
+                                    <MailIcon />
+                                    <InstagramIcon />
+                                    <LinkedInIcon />
+                                    <InsertLinkIcon />
                                 </div>
                             </div>
-                        );
-                    })
-                }
-            </div>
+                        </div>
+                    )
+                })
+            }
+
             <Footer />
         </div>)
         ;

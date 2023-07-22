@@ -466,60 +466,20 @@
     background: #555;
 }
 
-.event-slides {
-    background: white;
-    height: 275px;
-    width: 300px;
-    /* overflow: hidden; */
-    margin: 20px 20px 10px 5px;
-    display: flex;
-    justify-content: center;
-    border-radius: 15px;
-    box-shadow: 0px 0px 5px gray;
-    cursor: pointer;
-    position: relative;
+.round-top{
+    border-radius: 8px 8px 0 0;
 }
-
-.event-slide-img {
-    border-radius: 15px ;
-    height: 100%;
-    width: 100%;
-    background-size: 100% 100%;
-    background-position: center;
-    box-shadow: 0px 0px 5px black;
-    transition: all 0.5s;
+.round-bottom{
+    border-radius: 0 0 8px 8px;
 }
-
-.event-slide-img:hover {
-    background-size: 105% 105%;
+.hover-effect{
+    transition: 0.5s;
 }
-
-.event-slide-text {
-    width: 98%;
-    position: absolute;
-    margin-bottom: 5px;
-    padding: 7px 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgb(255, 255, 255, 0.5);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    opacity: 0;
-    transition: all 0.4s;
-    box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.089), 0 5px 5px rgba(0, 0, 0, 0.089);
-    bottom: -20px;
-    transform: translate(0,20px);
+.hover-effect:hover{
+    filter: brightness(60%);
 }
-
-.event-slides:hover .event-slide-text {
-    transform: translate(0px);
-    opacity: 1;
-}
-
-.event-heading {
-    font-size: 18px;
-    font-weight: 600;
+.animate{
+    transition: all 0.9s;
 }
 
 @media (max-width:1000px){
