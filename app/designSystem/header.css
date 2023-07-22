@@ -1,4 +1,4 @@
-.achievment-header{
+.achievment-header {
     justify-content: center;
     align-items: center;
     display: flex;
@@ -6,10 +6,24 @@
     font-weight: 500;
     /* font-family: arial; */
 }
-.achievment-header hr{
+
+.achievment-header hr {
     width: 15vw;
     height: 2px;
     background-color: lightblue;
     border: none;
     margin: 5px 10px 0 10px;
+}
+
+@media (max-width:900px) {
+    .achievment-header {
+        font-size: 30px;
+    }
+}
+
+@media (max-width:500px) {
+    .achievment-header {
+        font-size: 20px;
+    }
+
 }

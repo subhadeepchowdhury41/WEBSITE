@@ -109,14 +109,12 @@ const EventSection = () => {
 
                     {event.map((index) => {
                         return (
-                            <div className='border border-gray-200 h-[300px] min-w-[300px] flex flex-col rounded-lg animate'
-                                style={{ transform: `translate(${(-316 * (i - 1))}px,0px)` }}
+                            <div className='event-slides animate'
+                                style={{ transform: `translate(${(-316 * (i - 1))}px,0px)` }} key={index.id}
                             >
-                                <div className='h-[full] w-full flex-[4] round-top hover-effect' style={{ backgroundImage: `url(${index.url})`, backgroundSize: '100% 100%' }}>
-
-                                </div>
-                                <div className='h-full w-full flex-[1] round-bottom bg-white'>
-                                    <div className='h-full w-full font-semibold text-lg flex items-center justify-center'>{index.title}</div>
+                                <div className='event-slide-img' style={{ backgroundImage: `url(${index.url})` }}></div>
+                                <div className='event-slide-text'>
+                                    <span className='event-heading'>{index.title}</span>
                                 </div>
                             </div>
                         )

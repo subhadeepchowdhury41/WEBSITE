@@ -64,7 +64,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 /*######################## Appbar ############################################### */
 
-.navItems{
+.navItems {
   font-size: 22px;
   /* padding-top: 1.8vh; */
   /* padding-right: 1vw; */
@@ -132,6 +132,7 @@ body::-webkit-scrollbar-thumb:hover {
 .Menu-trigger {
   display: none;
 }
+
 .Menu-trigger-nd {
   display: none;
 }
@@ -185,7 +186,8 @@ body::-webkit-scrollbar-thumb:hover {
     padding-top: 15px;
     padding-bottom: 10px;
   }
-  .mobile-head{
+
+  .mobile-head {
     font-size: 12px;
     line-height: 18px;
   }
@@ -197,7 +199,8 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 12px;
     line-height: 18px;
   }
-  .iiitk-name{
+
+  .iiitk-name {
     display: flex;
     padding-left: 1vw;
     flex-direction: row;
@@ -207,8 +210,9 @@ body::-webkit-scrollbar-thumb:hover {
 
   .welcome-text {
     margin-top: 0px;
-   }
-  .carousel{
+  }
+
+  .carousel {
     height: 55vh;
   }
 
@@ -232,6 +236,7 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 10px;
     line-height: 15px;
   }
+
   .hindi-name {
     /* margin-left: 6; */
     /* display: none; */
@@ -239,16 +244,20 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 10px;
     line-height: 15px;
   }
-  .iiitk-name{
+
+  .iiitk-name {
     padding-left: 1.5vw;
   }
+
   .mobile-logo {
     height: 70px;
     width: 58px;
   }
+
   .carousel {
     height: 45vh;
   }
+
   .planned {
     bottom: 57vh;
     /* display: none; */
@@ -269,15 +278,18 @@ body::-webkit-scrollbar-thumb:hover {
   .textSizer {
     font-size: 30px;
   }
+
   .mobile-head {
     font-size: 9.5px;
     line-height: 13px;
     margin: 0 10px;
   }
-  .iiitk-name{
-    margin:0;
+
+  .iiitk-name {
+    margin: 0;
     padding-left: 2vw;
   }
+
   .hindi-name {
     /* margin-left: 6; */
     /* display: none; */
@@ -285,9 +297,11 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 9.5px;
     line-height: 13px;
   }
+
   .carousel {
     height: 40vh;
   }
+
   .planned {
     bottom: 61vh;
     /* display: none; */
@@ -300,10 +314,12 @@ body::-webkit-scrollbar-thumb:hover {
     line-height: 10px;
     margin: 0 10px;
   }
+
   .mobile-logo {
     height: 45px;
     width: 37px;
   }
+
   .hindi-name {
     /* margin-left: 6; */
     /* display: none; */
@@ -311,15 +327,19 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 8px;
     line-height: 10px;
   }
+
   .carousel {
     height: 33vh;
   }
-  .welcome-text{
+
+  .welcome-text {
     font-size: 20px;
   }
-  .iiitk-name{
+
+  .iiitk-name {
     padding-left: 3vw;
   }
+
   .planned {
     bottom: 62vh;
     /* display: none; */
@@ -332,6 +352,7 @@ body::-webkit-scrollbar-thumb:hover {
     line-height: 9px;
     margin: 0 8px;
   }
+
   .hindi-name {
     /* margin-left: 6; */
     /* display: none; */
@@ -339,24 +360,29 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 7px;
     line-height: 9px;
   }
-  .mobile-logo{
+
+  .mobile-logo {
     height: 30px;
-    width:25px;
+    width: 25px;
   }
+
   .carousel {
     height: 30vh;
   }
+
   .planned {
     bottom: 65vh;
     /* display: none; */
   }
-} 
-@media (max-width:357px){
-  .mobile-head{
+}
+
+@media (max-width:357px) {
+  .mobile-head {
     font-size: 6px;
     letter-spacing: 0px;
     line-height: 8px;
   }
+
   .hindi-name {
     /* margin-left: 6; */
     /* display: none; */
@@ -364,33 +390,41 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 6px;
     line-height: 8px;
   }
-  .mobile-logo{
+
+  .mobile-logo {
     height: 24px;
     width: 20px;
   }
-  .textSizer{
+
+  .textSizer {
     font-size: 20px;
   }
+
   .carousel {
     height: 28vh;
   }
-  .iiitk-name{
+
+  .iiitk-name {
     padding-left: 4vw;
   }
+
   .planned {
     /* bottom: 61vh; */
     display: none;
   }
 }
+
 @media (max-width:310px) {
-  .hindi-name{
+  .hindi-name {
     display: none;
-  } 
+  }
+
   .carousel {
     height: 25vh;
   }
 
 }
+
 @media (max-width:900px) {
   .navItems {
     display: none;
@@ -404,7 +438,8 @@ body::-webkit-scrollbar-thumb:hover {
     align-items: center;
     justify-content: flex-end;
   }
-  .Menu-trigger-nd{
+
+  .Menu-trigger-nd {
     display: flex;
     position: relative;
     width: 100%;
@@ -417,7 +452,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 /*######################## Payment Portal ############################################### */
 
-.ppayment{
+.ppayment {
   z-index: 10000;
   position: fixed;
   height: 100vh;
@@ -427,7 +462,8 @@ body::-webkit-scrollbar-thumb:hover {
   padding: 30px 30px;
   transition-duration: 2s;
 }
-.payment-button{
+
+.payment-button {
   z-index: 100000;
   position: fixed;
   /* width: fit-content; */
@@ -448,29 +484,33 @@ body::-webkit-scrollbar-thumb:hover {
   width: 100%;
   /* display: none; */
 }
-.details-fees{
-  background-color: rgb(250, 230, 196,0.9);
+
+.details-fees {
+  background-color: rgb(250, 230, 196, 0.9);
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0px 0px 5px black;
 }
-.details-fees h1{
+
+.details-fees h1 {
   font-size: 25px;
   font-weight: 500;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.closeicon{
+
+.closeicon {
   cursor: pointer;
 }
 
-.details-fees p{
+.details-fees p {
   background-color: rgb(255, 255, 255, 0.4);
   border-radius: 5px;
   padding: 10px;
   margin: 5px 0;
 }
+
 .payment-button {
   position: absolute;
   bottom: 30px;
@@ -485,13 +525,14 @@ body::-webkit-scrollbar-thumb:hover {
   justify-content: center;
 }
 
-.payment-button:hover{
+.payment-button:hover {
   transform: scale(1.05);
 }
-.sbi-portal{
+
+.sbi-portal {
   display: flex;
   padding: 10px;
-  background-color: rgb(21,21,21);
+  background-color: rgb(21, 21, 21);
   width: 50%;
   margin: 30px auto 0 auto;
   border-radius: 10px;
@@ -502,14 +543,17 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 @media (max-width:500px) {
-  .details-fees h1{
+  .details-fees h1 {
     font-size: 15px;
   }
-  .details-fees p{
+
+  .details-fees p {
     font-size: 10px;
   }
-  .sbi-portal{
+
+  .sbi-portal {
     font-size: 12px;
   }
 }
+
 /*######################## Payment Portal ############################################### */
