@@ -7,6 +7,8 @@ import { keyframes } from "@emotion/react";
 import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
 import EventNoteOutlinedIcon from '@mui/icons-material/EventNoteOutlined';
 import PaymentsIcon from '@mui/icons-material/Payments';
+import { useState, useEffect } from 'react';
+import events from './events';
 
 const EventSection = () => {
     const customAnimation = keyframes`
@@ -20,9 +22,50 @@ const EventSection = () => {
         transform: translate3d(0, 0, 0);
     }
 `;
+    const [i, setI] = useState(1);
 
+    let l = events.length;
+    const ReduceOne = () => {
+        if (i === 1)
+            setI(l - 2);
+        else
+            setI(i - 1);
+    }
+    const AddOne = () => {
+        const screenWidth = globalThis.window?.innerWidth;
 
+        if (screenWidth > 1500) {
+            if (i === l - 1 && scrolling === 1) {
+                setI(1);
+            } else if (scrolling === 1) {
+                setI(i + 1);
+            }
+        } else if (screenWidth >= 800 && screenWidth <= 1500) {
+            if (i === l - 2 && scrolling === 1) {
+                setI(1);
+            } else if (scrolling === 1) {
+                setI(i + 1);
+            }
+        } else {
+            // For screens less than 800px, keep the existing behavior
+            if (i === l && scrolling === 1) {
+                setI(1);
+            } else if (scrolling === 1) {
+                setI(i + 1);
+            }
+        }
+    }
 
+    const [seconds, setSeconds] = useState(0);
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setSeconds(seconds => seconds + 1);
+            AddOne();
+        }, 3000);
+        return () => { clearInterval(interval) };
+    }, [seconds]);
+
+    const [scrolling, setScrolling] = useState(1);
     return (
         <div className="card-row3">
             <div className='row3-card1' style={globalThis.window?.innerWidth > 1500 ? { width: '600px' } : { width: '100%' }}>
@@ -60,24 +103,19 @@ const EventSection = () => {
                         <div className='view-more'>View More</div>
                     </a>
                 </div>
-                <div className='event-carousel' style={globalThis.window?.innerWidth > 1500 ? { maxWidth: `${globalThis.window?.innerWidth - 700}px` } : { minWidth: '100%' }}>
+                <div className='event-carousel flex gap-4 mt-2 overflow-hidden' style={globalThis.window?.innerWidth > 1500 ? { maxWidth: `${globalThis.window?.innerWidth - 700}px` } : { minWidth: '100%' }}
+                    onMouseEnter={() => { setScrolling(0) }} onMouseLeave={() => { setScrolling(1) }}
+                >
 
                     {event.map((index) => {
                         return (
-                            <div key={index.id}>
-                                <div className='event-slides' key={index.id}>
-                                    <div className='event-slide-img' style={{ backgroundImage: `url(${index.url})` }}></div>
-                                    <div className='event-slide-text'>
-                                        <span className='event-heading'>{index.title}</span>
-                                    </div>
+                            <div className='event-slides animate'
+                                style={{ transform: `translate(${(-316 * (i - 1))}px,0px)` }} key={index.id}
+                            >
+                                <div className='event-slide-img' style={{ backgroundImage: `url(${index.url})` }}></div>
+                                <div className='event-slide-text'>
+                                    <span className='event-heading'>{index.title}</span>
                                 </div>
-                                {/* <div className="card">
-                                    <div className="profile-image">
-                                        <div className="inner-area" style={{ backgroundImage: `url(${index.url})` }}></div>
-                                    </div>
-                                    <div className="title">{index.title}</div>
-                                    
-                                    </div> */}
                             </div>
                         )
                     })}
