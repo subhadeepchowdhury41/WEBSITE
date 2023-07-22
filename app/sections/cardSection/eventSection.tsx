@@ -86,7 +86,7 @@ const EventSection = () => {
                         <div className='view-more'>View More</div>
                     </a>
                 </div>
-                <div className='event-carousel flex gap-4 w-fit content mt-2' style={globalThis.window?.innerWidth > 1500 ? { maxWidth: `${globalThis.window?.innerWidth - 700}px` } : { minWidth: '100%' }}
+                <div className='event-carousel flex gap-4 w-fit content mt-2 overflow-hidden' style={globalThis.window?.innerWidth > 1500 ? { maxWidth: `${globalThis.window?.innerWidth - 700}px` } : { minWidth: '100%' }}
                     onMouseEnter={() => { setScrolling(0) }} onMouseLeave={() => { setScrolling(1) }}
                 >
 
