@@ -26,20 +26,14 @@ const events = [
   },
   {
     id: "1",
-    title: "7th International Yoga Day (21st June, 2021)",
+    title: "7th International Yoga Day",
     url: "https://i.ibb.co/8PyRmSX/yoga-iiitkalyani.png",
   },
   {
     id: "2",
     title:
-      "National Webinar on “NEP - 2020: VISION TO ACTION” on Thursday, May 13, 2021, at 10:30 am",
+      "National Webinar on “NEP - 2020: VISION TO ACTION”",
     url: "https://iiitkalyani.ac.in/images/notification2021/IIIT%20Kalyani%20-%20NEP%202020%20-%20May%2013,%202021%20-1.png",
-  },
-  {
-    id: "3",
-    title:
-      'National Webinar on NEP – 2020: VISION TO ACTION" on April 29, 2021, at 10:00 am',
-    url: "https://iiitkalyani.ac.in/images/notification2021/IIIT%20Kalyani%20-%20NEP%202020%20-%20April%2029,%202021%20-%202.png",
   },
   {
     id: "5",
