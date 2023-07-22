@@ -160,12 +160,7 @@ const NavBar = () => {
         {stick ? <MobileNav menu={<MobileNavMenu menus={mobileMenu} />} /> : <></>}
 
         <ul className={`flex second-nav navItems animate-randimation right-0 opacity-100 `} style={{ listStyle: 'none', zIndex: '1000', }}>
-          <NavItem
-            title="Home"
-            menu={
-              <MegaMenu menus={home} />
-            }
-          />
+          <li ><a style={{ fontSize: '22px', paddingRight: '10px', paddingLeft: '10px' }} href="/">Home</a></li>
           <NavItem
             title="About"
             menu={
@@ -242,7 +237,7 @@ const NavItem: React.FC<NavItemProps> = ({ title, menu }) => {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <a href="#" className="nav-link" style={{ display: 'inline-block', padding: '0 10px' }}>
+      <a href="#" className="nav-link" style={{ fontSize: "22px", padding: '0 10px' }}>
         {title}
       </a>
       {menu && showMenu && (
