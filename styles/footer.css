@@ -66,6 +66,7 @@
 
 .btn-btn:hover {
     border-bottom: 2px solid skyblue;
+    padding-bottom: 2px;
 }
 
 .fb:hover {
