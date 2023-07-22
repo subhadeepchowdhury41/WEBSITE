@@ -1,4 +1,7 @@
+'use client';
 import React, { useEffect } from 'react';
+import NavBar from '../../sections/appbar/secondNav';
+import Footer from '../../sections/footer/footer';
 import './page.css';
 
 const App: React.FC = () => {
@@ -24,7 +27,7 @@ const App: React.FC = () => {
     <>
     <div className="page-container">
         <nav className="page-navbar">
-            Navbar
+            <NavBar />
         </nav>
         <div className="page-body">
             <div className="sidebar1">
@@ -151,7 +154,7 @@ const App: React.FC = () => {
             </p>
         </div>
         <div className="page-footer">
-            Footer
+            <Footer />
         </div>
     </div>
     </>
