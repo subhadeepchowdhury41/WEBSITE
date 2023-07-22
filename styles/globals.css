@@ -71,6 +71,10 @@ body::-webkit-scrollbar-thumb:hover {
   font-weight: 400;
 }
 
+.second-nav {
+  margin-right: 32px;
+}
+
 .navItems li {
   padding: 2.4vh 0.5vh 2.4vh 0.5vh;
   border-radius: 10px;

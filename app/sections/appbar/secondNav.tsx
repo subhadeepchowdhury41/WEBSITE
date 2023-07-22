@@ -138,8 +138,8 @@ const NavBar = () => {
   }, []);
   return (
     <div className={`grid content-center z-50 w-full top-0`} style={{
-         backgroundColor: "rgb(0,0,0,0.85)",
-      }}>
+      backgroundColor: "rgb(0,0,0,0.85)",
+    }}>
       <div className={`flex mx-auto iiitk-name m-6 items-center `}>
         <div className="flex flex-col hindi-name mobile-head text-2xl ml-[45] text-white mx-6 py-3 border-t-2 border-b-2 tracking-wide
                  animate-left-college-name-swipe-animation " style={{ alignItems: 'center', textAlign: 'center', marginLeft: "4.5vw" }}>
@@ -154,19 +154,19 @@ const NavBar = () => {
       {/* Option for custom color subhadeep*/}
       <div className={`flex text-white font-semibold ${stick ? ' navBar' : ''}
                ${stick ? 'fixed top-0 justify-between' : 'justify-center'} w-full`} style={!stick ? { zIndex: '100' } : { zIndex: '100', boxShadow: '0 0 5px black', backgroundColor: "rgb(0,0,0,0.8 )" }}>
-      <Image width={53} className={`px-2 py-3 h-[70px]
+        <Image width={53} className={`px-2 py-3 h-[70px]
                  ${stick ? 'opacity-100 transition-opacity ease-in-out duration-500' : 'hidden'}`} src={IIITKalyaniLogo} alt="IIIT Kalynai Logo" />
         {/* { <MobileNav menu={<MobileNavMenu menus={mobileMenu} />} />} */}
         {stick ? <MobileNav menu={<MobileNavMenu menus={mobileMenu} />} /> : <></>}
 
-        <ul className={`flex navItems animate-randimation right-0 opacity-100 `} style={{ listStyle: 'none',zIndex: '1000', }}>
-           <NavItem
+        <ul className={`flex second-nav navItems animate-randimation right-0 opacity-100 `} style={{ listStyle: 'none', zIndex: '1000', }}>
+          <NavItem
             title="Home"
             menu={
               <MegaMenu menus={home} />
             }
           />
-        <NavItem
+          <NavItem
             title="About"
             menu={
               <MegaMenu menus={about} />
