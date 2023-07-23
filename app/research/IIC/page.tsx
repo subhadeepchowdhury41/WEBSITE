@@ -1,8 +1,6 @@
 'use client'
 import '../../../styles/IIC/iic.css'
 import React from 'react';
-import { useState } from 'react';
-// import data from './data'
 import MailIcon from '@mui/icons-material/Mail';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
