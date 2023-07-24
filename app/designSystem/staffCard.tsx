@@ -15,6 +15,8 @@ interface StaffProps {
 const StaffCard: React.FC<StaffProps> = ({ name, position, qualification, email, subjects, site, dp }) => {
   let className = "staff-card";
 
+//   subjects.sort((a,b) => a.length - b.length);
+
   return (
     <a href={site} target="_blank" rel="noreferrer" className="aStaff-card">
         <div className="staff-card">
@@ -32,23 +34,6 @@ const StaffCard: React.FC<StaffProps> = ({ name, position, qualification, email,
                         {qualification}
                     </p>
                 </div>
-                {/* <div className="staff-details">
-                    <div className="staff-details-name">
-                        {name}
-                        <br />
-                    </div>
-                    <div>
-                        {position}
-                        <br />
-                    </div>
-                    <div>
-                        {qualification}
-                        <br />
-                    </div>
-                    <div>
-                        Email: {email}
-                    </div>
-                </div> */}
             </div>
             <hr />
             <div className="right-staff-card">

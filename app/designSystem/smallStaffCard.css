@@ -3,7 +3,7 @@
 .asmall-Staff-card{
     height: 700px;
     width: fit-content;
-    min-width: 200px;
+    min-width: 210px;
     border-radius: 2rem;
     /* margin: 20px 20px 20px 20px; */
     /* border: 1px solid green; */
@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: column;
     width: 90vw;
-    min-width: 200px;
+    min-width: 210px;
     height: fit-content;
     box-shadow: 0 0 5px grey;
     align-items: center;
@@ -22,6 +22,7 @@
     margin-top: 20px;
     border-radius: 2rem;
     background-color: rgb(255, 255, 255);
+    padding: 5px;
 }
 .small-staff-card>.small-top-staff-card{
     display: flex;
@@ -80,18 +81,25 @@
     text-align: center;
 }
 .small-staff-card>.small-bottom-staff-card>.small-staff-subjects{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     margin-bottom: 10px;
 }
 .small-staff-card>.small-bottom-staff-card>.small-staff-subjects>p{
-    /* background-color: gray; */
-    margin: 4px 4px 4px 4px;
-    /* padding: 3px 3px 3px 3px; */
+    margin: 2.5px 10px;
+    box-shadow: 0 0 3px;
+    margin: 2px 2px 2px 2px;
+    padding: 3px 7px;
+    border-radius: 20px;
+    margin: 5px;
     align-items: center;
-    border-radius: 2px;
     text-align: center;
+    background-color: rgb(249, 232, 202);
+    backdrop-filter: blur(10px);
+    font-size: 10px;
 }
 .small-staff-card>.small-bottom-staff-card>.small-staff-subjects>p :hover{
     background-color: gray;

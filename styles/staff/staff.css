@@ -14,7 +14,7 @@
     margin-right: 20px;
 } 
 .staff-sidebar-location{
-    font-size: 18;
+    font-size: 18px;
     font-weight: bold;
     font-family: 'Quicksand', cursive;
     margin-left: 20px;
@@ -38,12 +38,15 @@
     margin-right: 20px;
 }
 .staff-sidebar p {
-    margin-left: 20px;
+    margin-left: 40px;
     margin-right: 20px;
 }
 .staff-container{
     max-width: 92vw;
     margin: auto;
+}
+.staff-main-heading{
+    margin-top: 20px;
 }
 .staff-sub-header{
     justify-content:flex-start;
@@ -54,15 +57,17 @@
     font-weight: 400;
     /* margin-left: 4vw; */
     margin-top: 50px;
+    margin-left: 20px;
 }
 
 .staff-cards{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(max(35vw, 465px), 1fr));
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin: auto;
-    gap:30px;
+    gap: 30px;
 }
 .small-staff-cards{
     align-items: center;
@@ -76,5 +81,6 @@
     align-items: center;
     justify-content: center;
     margin: auto;
-    gap: 50px;
+    margin-bottom: 40px;
+    gap: 30px;
 }

@@ -3,7 +3,7 @@
 
 .employee-card{
     width: 16vw;
-    min-width: 240px;
+    min-width: 220px;
     height: fit-content;
     box-shadow: 0 0 5px grey;
     align-items: center;
@@ -11,6 +11,7 @@
     /* margin-bottom: 20px; */
     margin-top: 20px;
     margin-left: 5px;
+    /* margin-bottom: 20px; */
     margin-right: 5px;
     border-radius: 1rem;
     background-color: rgb(255, 255, 255);
@@ -35,12 +36,12 @@ hr{
     margin-right: 5px;
 }
 .employee-name{
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
     font-family: 'Lumanosimo', cursive;
 }
 .employee-position{
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     justify-content: center;
 }
@@ -54,7 +55,7 @@ hr{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .employee-email>p{
     text-align: center;

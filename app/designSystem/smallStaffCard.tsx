@@ -15,6 +15,8 @@ interface SmallStaffProps {
 const SmallStaffCard: React.FC<SmallStaffProps> = ({ name, position, qualification, email, subjects, site, dp }) => {
   let className = "asmall-staff-card";
 
+  subjects.sort((a,b) => b.length - a.length);
+
   return (
     <a href={site} target="_blank" rel="noreferrer" className="asmall-Staff-card">
         <div className="small-staff-card">
@@ -32,23 +34,6 @@ const SmallStaffCard: React.FC<SmallStaffProps> = ({ name, position, qualificati
                         {qualification}
                     </p>
                 </div>
-                {/* <div className="small-staff-details">
-                    <div className="small-staff-details-name">
-                        {name}
-                        <br />
-                    </div>
-                    <div>
-                        {position}
-                        <br />
-                    </div>
-                    <div>
-                        {qualification}
-                        <br />
-                    </div>
-                    <div>
-                        Email: {email}
-                    </div>
-                </div> */}
             </div>
             <hr />
             <div className="small-bottom-staff-card">
