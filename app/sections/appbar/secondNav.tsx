@@ -39,7 +39,7 @@ const about = [
       { label: 'About Us', link: '/about/aboutus' },
       { label: 'NIRF', link: 'https://iiitkalyani.ac.in/images/notifications/INDIAN%20INSTITUTE%20OF%20INFORMATION%20TECHNOLOGY,%20KALYANI20220228-.pdf' },
       { label: 'Why IIIT Kalyani', link: '/about/whyiiitkalyani' },
-      { label: 'Staff', link: 'https://iiitkalyani.ac.in/php/staff.php' },
+      { label: 'Staff', link: '/about/staff' },
       { label: 'Gallery', link: '/about/gallery' },
       { label: 'All Facilities', link: '/about/facilities' },
       { label: 'Gymkhana', link: '/about/gymkhana' },

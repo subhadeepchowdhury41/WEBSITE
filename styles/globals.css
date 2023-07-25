@@ -19,19 +19,19 @@
 
 /*######################## Scrollbar ############################################### */
 body::-webkit-scrollbar {
-  width: 2px;
+  width: 1px;
   z-index: -1;
 }
 
 /* Track */
 body::-webkit-scrollbar-track {
   /* display: none; */
-  background: black;
+  background: aliceblue;
 }
 
 /* Handle */
 body::-webkit-scrollbar-thumb {
-  background: aliceblue;
+  background: black;
   border-radius: 50px;
 }
 
