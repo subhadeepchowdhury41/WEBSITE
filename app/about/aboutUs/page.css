@@ -1,0 +1,124 @@
+.page-container {
+    display: flex;
+    flex-direction: column;
+}
+.page-navbar {
+    background-color: #0d2436;
+    font-family: "Roboto";
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+}
+.page-body {
+    flex-grow: 1;
+    overflow-y: auto;
+    display: flex;
+}
+.sidebar1 {
+    text-align: center;
+    max-width: 35vw;
+    padding: 20px;
+    font-family: "Roboto";
+    flex-grow: 1;
+    flex-shrink: 0;
+    background-color: rgb(232, 237, 249);
+    position: relative;
+}
+.sidebar2 {
+    margin-bottom: 10px;
+    position: sticky;
+}
+.image {
+    width: 90%;
+    max-width: 300px;
+    background-size: cover;
+    border-radius: 10px;
+}
+.mottoSection {
+    text-align: center;
+}
+.complete {
+    margin-left: 0;
+    margin-top: 0;
+    border: 1px solid grey;
+    width: 100%;
+}
+.mottoSlogan {
+    font-size: 30px;
+    font-size: 600;
+}
+.mottoSloganMeaning {
+    font-family: 'Roboto';
+    font-size: 18px;
+}
+.highlight {
+    font-weight: 700;
+}
+.reach {
+    font-family: "Roboto";
+    font-size: 18px;
+}
+.content {
+    padding: 40px;
+    padding-top: 0;
+    background-color: #f6f8fa;
+    font-size: 18px;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+.aboutheading {
+    font-family: "";
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 0;
+    font-size: 40px;
+    margin-top: 20px;
+}
+hr {
+    margin-left: 0;
+    margin-top: 0;
+    border: 1px solid grey;
+    width: 90%;
+}
+.aboutparagraph {
+    font-family: 'Roboto';
+    text-align: left;
+    font-size: 18px;
+}
+.travel {
+    background-color: pink;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.page-footer {
+    background-color: #0d2436;
+    font-family: "Roboto";
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+}
+.historyBody {
+    margin: 10px;
+    padding: 20px;
+    color: #ffffff;
+    background-color: #191919;
+    border-radius: 12px;
+}
+@media screen and (max-width:767px) {
+    .mottoSlogan {
+        font-weight: 500;
+        font-size: 26px;
+    }
+    .mottoSloganMeaning {
+        font-size: 16px;
+    }
+    .aboutheading {
+        font-size: 28px;
+        font-weight: 600;
+    }
+    .aboutparagraph {
+        font-size: 16px;
+    }
+}
