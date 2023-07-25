@@ -1,0 +1,12 @@
+@media (max-width:1350px) {
+    .responsive{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:600px) {
+    .center500{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
