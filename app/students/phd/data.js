@@ -199,7 +199,7 @@ const data = [
         "name": "Pooja Rai",
         "Student ID ": "PhD/R/CSE/18020/424",
         "email": "pooja_phd@iiitkalyani.ac.in",
-        "session": "2019 Spring session (Enrollment)",
+        "session": "2019 Spring",
         "supervisor": "Dr. Sanjay Chatterji",
         "research_area": "Natural Language Processing",
         "pub_details": ["Annotation Projection-based Dependency Parser Development for Nepali", "Feature Selection for Nepali Part-Of-Speech Tagging in a Conditional Random Fields based System"],
