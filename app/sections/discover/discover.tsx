@@ -14,6 +14,9 @@ import ITKButton from "../../designSystem/ITKButton";
 import ContactlessOutlinedIcon from "@mui/icons-material/ContactlessOutlined";
 
 const Discover = () => {
+    useEffect(() => {
+        document.title = 'Home | Indian Institute of Information Technology, Kalyani';
+    }, []);
 
     const customAnimation = keyframes`
     from {
