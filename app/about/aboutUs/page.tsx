@@ -24,6 +24,9 @@ const App: React.FC = () => {
       window.removeEventListener('scroll', updateViewLength);
     };
   }, []);
+  useEffect(() => {
+    document.title = 'About Us | Indian Institute of Information Technology, Kalyani';
+  }, []);
 
   return (
     <>

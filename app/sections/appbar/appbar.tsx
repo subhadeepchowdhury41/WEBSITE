@@ -31,17 +31,16 @@ const acadamics = [
 const about = [
   {
     items: [
-      { label: 'About Us', link: 'about/aboutUs' },
+      { label: 'About Us', link: '/about/aboutus' },
       { label: 'NIRF', link: 'https://iiitkalyani.ac.in/images/notifications/INDIAN%20INSTITUTE%20OF%20INFORMATION%20TECHNOLOGY,%20KALYANI20220228-.pdf' },
-      { label: 'Why IIIT Kalyani', link: 'about/whyIIITKalyani' },
-      { label: 'Staff', link: 'about/staff' },
-      { label: 'Gallery', link: 'https://iiitkalyani.ac.in/php/gallery/gallery.php' },
-      { label: 'All Facilities', link: 'https://iiitkalyani.ac.in/php/Facilities_landing_page-v6.php' },
-      { label: 'Gymkhana', link: '#' },
+      { label: 'Why IIIT Kalyani', link: '/about/whyiiitkalyani' },
+      { label: 'Staff', link: '/about/staff' },
+      { label: 'Gallery', link: '/about/gallery' },
+      { label: 'All Facilities', link: '/about/facilities' },
+      { label: 'Gymkhana', link: '/about/gymkhana' },
     ],
   },
 ];
-
 const administration = [
   {
     items: [

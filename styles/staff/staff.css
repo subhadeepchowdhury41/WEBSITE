@@ -1,66 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
-.staff-outer-container{
+.staff-outer-container {
     /* height: 100vh; */
     display: flex;
     flex-direction: row;
 }
-.staff-sidebar{
-    position: sticky;
-    top: 70px;
-    height: 100vh;
-    width: 250px;
-    box-shadow: 0 0 5px grey;; 
-    margin-right: 20px;
-} 
-.staff-sidebar-location{
-    font-size: 18px;
-    font-weight: bold;
-    font-family: 'Quicksand', cursive;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 20px;
-}
-.staff-sidebar-heading{
-    font-size: 26px;
-    font-weight: bolder;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-.staff-sidebar-subheading{
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-.staff-sidebar p {
-    margin-left: 40px;
-    margin-right: 20px;
-}
-.staff-container{
-    max-width: 92vw;
+
+.staff-container {
+    max-width: 78vw;
     margin: auto;
+    margin: 0 20px;
 }
-.staff-main-heading{
+
+.staff-main-heading {
     margin-top: 20px;
 }
-.staff-sub-header{
-    justify-content:flex-start;
-    align-items:center;
+
+.staff-sub-header {
+    justify-content: flex-start;
+    align-items: center;
     text-align: center;
     display: flex;
     font-size: 30px;
-    font-weight: 400;
+    font-weight: 600;
     /* margin-left: 4vw; */
     margin-top: 50px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
 
-.staff-cards{
+.staff-cards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -69,12 +37,14 @@
     margin: auto;
     gap: 30px;
 }
-.small-staff-cards{
+
+.small-staff-cards {
     align-items: center;
     justify-content: center;
     margin: auto;
 }
-.employee-cards{
+
+.employee-cards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
