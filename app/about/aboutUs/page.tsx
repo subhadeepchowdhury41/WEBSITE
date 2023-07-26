@@ -5,6 +5,8 @@ import React, { useEffect } from 'react';
 import NavBar from '../../sections/appbar/secondNav';
 import Footer from '../../sections/footer/footer';
 import './page.css';
+import map from '../../../assets/map/map.png';
+import Image from 'next/image';
 
 const App: React.FC = () => {
   useEffect(() => {
@@ -31,30 +33,31 @@ const App: React.FC = () => {
   return (
     <>
       <div className="page-container">
-        <nav className="page-navbar">
-          <NavBar />
-        </nav>
+        <NavBar />
         <div className="page-body">
           <div className="sidebar1">
             <div className="sidebar2" id="sidebar">
-              <img className="image" src="https://iiitkalyani.ac.in/images/facilities/Facilities_Images/Webel-IT-Park/webel.jpg" alt="IIIT Kalyani" />
               <div className="mottoSection">
+                <h2>Our Motto</h2>
                 <hr className="complete" />
                 <h1 className="mottoSlogan">विद्याधनं सर्वधनप्रधानम्</h1>
                 <p className="mottoSloganMeaning">It means <span className="highlight">Knowledge is Supreme of all Wealth</span></p>
               </div>
               <hr className="complete" />
-              <div style={{ height: "200px", backgroundColor: "brown" }}></div>
-              <p className="reach">Indian Institute of Information Technology Kalyani,<br /> Webel IT Park,<br />
-                (Near Buddha Park), Kalyani – 741235. Nadia, WB.
-              </p>
-              <hr className="complete" />
+              <div style={{ height: "200px", marginBottom: '20px', cursor: 'pointer' }}>
+                <a href='https://goo.gl/maps/ZsFRFctaRJsphZwi7' target="_blank">
+                  <Image src={map} alt="map" ></Image>
+                </a>
+              </div>
+              <p className="reach">Indian Institute of Information Technology Kalyani, Kalyani, India-741235</p>
               <p className="reach">Email: <a href="mailto:office@iiitkalyani.ac.in" target="_blank" rel="noreferrer">office@iiitkalyani.ac.in</a></p>
             </div>
           </div>
           <div className="content" id="content">
             <h1 className="aboutheading">About IIIT Kalyani</h1>
-            <hr />
+            {/* <hr /> */}
+            <img className="image" src="https://iiitkalyani.ac.in/images/facilities/Facilities_Images/Webel-IT-Park/webel.jpg" alt="IIIT Kalyani" />
+
             <div>
               <p className="aboutparagraph">IIIT Kalyani strives to evolve into a world-class academic institution with the highest quality
                 of education and research facilities and produce industry ready IT graduates to meet the industry demands.
@@ -85,13 +88,13 @@ const App: React.FC = () => {
               <div className="travel">
                 <h4>From Howrah Railway Station</h4>
                 <ul>
-                  <li>HOWRAH TO SEALDAH<br />
+                  <li><h5>HOWRAH TO SEALDAH</h5>
                     <p>From Howrah get a prepaid taxi from the taxi stand to Sealdah railway station (you may book an ola or uber cab). Buses can also be preferred.</p>
                   </li>
-                  <li>SEALDAH TO KALYANI<br />
+                  <li><h5>SEALDAH TO KALYANI</h5>
                     <p>From Sealdah Railway station you will get many local trains towards Kalyani.</p>
                   </li>
-                  <li>KALYANI TO IIIT KALYANI<br />
+                  <li><h5>KALYANI TO IIIT KALYANI</h5>
                     <p>As you will leave the premise of Kalyani Railway Station, you should be able to find public transports (mostly TATA Magic, beware usually e-rickshaws would not take you to Webel IT Park), towards your right. They will drop you right in front of the gate of Webel IT Park.</p>
                   </li>
                 </ul>
@@ -99,16 +102,16 @@ const App: React.FC = () => {
               <div className="travel">
                 <h4>From Howrah Railway Station</h4>
                 <ul>
-                  <li>HOWRAH TO BANDEL<br />
+                  <li><h5>HOWRAH TO BANDEL</h5>
                     <p>You will get a lot of locals and trains available towards Bandel from the Howrah Junction. </p>
                   </li>
-                  <li>BANDEL TO NAIHATI<br />
+                  <li><h5>BANDEL TO NAIHATI</h5>
                     <p>After reaching Bandel Jn. You have to get a train to Naihati Jn. There are a lot of trains to Naihati.</p>
                   </li>
-                  <li>NAIHATI TO KALYANI<br />
+                  <li><h5>NAIHATI TO KALYANI</h5>
                     <p>Naihati is just 3 stops away from Kalyani. This is an intermediate stop for local trains which run between Sealdah and Kalyani mention in the Sealdah To Kalyani route above.</p>
                   </li>
-                  <li>KALYANI TO IIIT KALYANI<br />
+                  <li><h5>KALYANI TO IIIT KALYANI</h5>
                     <p>As you will leave the premise of Kalyani Railway Station, you should be able to find public transports (mostly TATA Magic, beware usually e-rickshaws would not take you to Webel IT Park), towards your right. They will drop you right in front of the gate of Webel IT Park.</p>
                   </li>
                 </ul>
@@ -116,13 +119,13 @@ const App: React.FC = () => {
               <div className="travel">
                 <h4>From Shalimar Railway Station</h4>
                 <ul>
-                  <li>SHALIMAR TO SEALDAH<br />
+                  <li><h5>SHALIMAR TO SEALDAH</h5>
                     <p>From Shalimar get a prepaid taxi from the taxi stand to Sealdah railway station (you may book an ola or uber cab). Buses can also be preferred.</p>
                   </li>
-                  <li>SEALDAH TO KALYANI<br />
+                  <li><h5>SEALDAH TO KALYANI</h5>
                     <p>From Sealdah Railway station you will get many local trains towards Kalyani.</p>
                   </li>
-                  <li>KALYANI TO IIIT KALYANI<br />
+                  <li><h5>KALYANI TO IIIT KALYANI</h5>
                     <p>As you will leave the premise of Kalyani Railway Station, you should be able to find public transports (mostly TATA Magic, beware usually e-rickshaws would not take you to Webel IT Park), towards your right. They will drop you right in front of the gate of Webel IT Park.</p>
                   </li>
                 </ul>
@@ -130,11 +133,15 @@ const App: React.FC = () => {
               <div className="travel">
                 <h4>From Dum Dum Airport(Netaji Subhash Chandra Bose Airport)</h4>
                 <ul>
-                  <li>If you opt for the bus route: You can get a lot of buses to Dum Dum junction from the Airport Gate No. 1 Bus Stop, Jessore Rd.</li>
-                  <li>If you opt for the rail route: The nearest station at the airport is the Biman Bandar(550m) and the next nearest station to it is Durganagar(2.7km)</li>
+                  <li><h5>Bus Route:</h5>
+                    <p>You can get a lot of buses to Dum Dum junction from the Airport Gate No. 1 Bus Stop, Jessore Rd.</p>
+                  </li>
+                  <li><h5>Rail Route:</h5>
+                    <p>The nearest station at the airport is the Biman Bandar(550m) and the next nearest station to it is Durganagar(2.7km)</p>
+                  </li>
                   <li>From Durganagar there are 72 locals running towards Dum Dum. All the locals to Sealdah pass through Dum Dum.</li>
                   <li>After coming to Dum Dum Jn you will get many locals running towards Kalyani.</li>
-                  <li>KALYANI TO IIIT KALYANI<br />
+                  <li><h5>KALYANI TO IIIT KALYANI</h5>
                     <p>As you will leave the premise of Kalyani Railway Station, you should be able to find public transports (mostly TATA Magic, beware usually e-rickshaws would not take you to Webel IT Park), towards your right. They will drop you right in front of the gate of Webel IT Park.</p>
                   </li>
                 </ul>
@@ -154,13 +161,11 @@ const App: React.FC = () => {
           <h1 className="aboutheading">About Campus</h1>
           <hr className="complete" />
           <p className="aboutparagraph">
-            On Jun 30, 2015 Hon\'ble Chief Minister, Mamata Banerjee laid the foundation stone of the Indian Institute of Information Technology (IIIT)
-            campus in Kalyani.The campus will be built on 50 acres on Kalyani Expressway on the outskirts of Kalyani town.
+            On Jun 30, 2015 Hon'ble Chief Minister, Mamata Banerjee laid the foundation stone of the Indian Institute of Information Technology (IIIT)
+            campus in Kalyani. The campus will be built on 50 acres on Kalyani Expressway on the outskirts of Kalyani town.
           </p>
         </div>
-        <div className="page-footer">
-          <Footer />
-        </div>
+        <Footer />
       </div>
     </>
   );
