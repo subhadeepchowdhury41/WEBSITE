@@ -5,6 +5,10 @@
     height: 400px;
     transition: all 1s;
 }
+.card{
+    /* padding: 20px; */
+}
+
 
 @media (max-width: 1300px){
     .pad-adjust{
@@ -37,6 +41,9 @@
     }
     .justify-800{
         justify-content: center;
+    }
+    .text-style{
+        align-items: center;
     }
 }
 @media (max-width: 650px){

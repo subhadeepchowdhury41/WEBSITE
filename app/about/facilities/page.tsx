@@ -31,7 +31,11 @@ const App: React.FC = () => {
             <div className='w-full h-auto flex flex-col pad-adjust items-center justify-center'>
                 {Data.map((index) => {
                     return (
-                        <Card cellData={index} />
+                        <>
+                            <div className='bg-gray-200 h-[2px] max-w-[1250px] w-full my-8'></div>
+                            <Card cellData={index} />
+                        </>
+
                     )
 
                 })}
