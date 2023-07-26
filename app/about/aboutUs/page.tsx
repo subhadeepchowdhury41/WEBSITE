@@ -44,7 +44,7 @@ const App: React.FC = () => {
                 <p className="mottoSloganMeaning">It means <span className="highlight">Knowledge is Supreme of all Wealth</span></p>
               </div>
               <hr className="complete" />
-              <div style={{ height: "200px", marginBottom: '20px', cursor: 'pointer' }}>
+              <div className='side-img' style={{ maxHeight: "200px", marginBottom: '20px', cursor: 'pointer' }}>
                 <a href='https://goo.gl/maps/ZsFRFctaRJsphZwi7' target="_blank">
                   <Image src={map} alt="map" ></Image>
                 </a>
@@ -53,7 +53,7 @@ const App: React.FC = () => {
               <p className="reach">Email: <a href="mailto:office@iiitkalyani.ac.in" target="_blank" rel="noreferrer">office@iiitkalyani.ac.in</a></p>
             </div>
           </div>
-          <div className="content" id="content">
+          <div className="content">
             <h1 className="aboutheading">About IIIT Kalyani</h1>
             {/* <hr /> */}
             <img className="image" src="https://iiitkalyani.ac.in/images/facilities/Facilities_Images/Webel-IT-Park/webel.jpg" alt="IIIT Kalyani" />
