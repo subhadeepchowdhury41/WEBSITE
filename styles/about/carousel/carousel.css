@@ -1,0 +1,46 @@
+.pad-adjust{
+    padding: 40px;
+}
+.h-adjust{
+    height: 400px;
+}
+@media (max-width: 1300px){
+    .pad-adjust{
+        padding: 40px;
+    }
+    .h-adjust{
+        height: 380px;
+    }
+}
+@media (max-width: 1000px){
+    .pad-adjust{
+        padding: 30px;
+    }
+    .h-adjust{
+        height: 340px;
+    }
+}
+@media (max-width: 800px){
+    .pad-adjust{
+        padding: 25px;
+    }
+    .h-adjust{
+        height: 300px;
+    }
+}
+@media (max-width: 650px){
+    .pad-adjust{
+        padding: 15px;
+    }
+    .h-adjust{
+        height: 250px;
+    }
+}
+@media (max-width: 500px){
+    .pad-adjust{
+        padding: 10px;
+    }
+    .h-adjust{
+        height: 220px;
+    }
+}
