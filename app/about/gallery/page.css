@@ -1,0 +1,15 @@
+.gallery {
+    display: flex;
+    flex-direction: row;
+}
+
+.main {
+    width: 75vw;
+}
+
+.gallery-side {
+    min-height: 70vh;
+    position: sticky;
+    background-color: wheat;
+    width: 25vw;
+}

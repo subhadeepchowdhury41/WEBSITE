@@ -15,7 +15,7 @@ import { useEffect } from 'react';
 
 const PHDStudents = () => {
     useEffect(() => {
-        document.title = 'About Us | Indian Institute of Information Technology, Kalyani';
+        document.title = 'Why IIIT Kalyani | Indian Institute of Information Technology, Kalyani';
     }, []);
 
     return (
