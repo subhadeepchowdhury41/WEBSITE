@@ -3,7 +3,9 @@
 }
 .h-adjust{
     height: 400px;
+    transition: all 1s;
 }
+
 @media (max-width: 1300px){
     .pad-adjust{
         padding: 40px;
@@ -26,6 +28,15 @@
     }
     .h-adjust{
         height: 300px;
+    }
+    .row-switch{
+        flex-direction: column;
+    }
+    .disappear{
+        display: none;
+    }
+    .justify-800{
+        justify-content: center;
     }
 }
 @media (max-width: 650px){

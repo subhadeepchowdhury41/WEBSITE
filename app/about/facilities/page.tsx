@@ -1,4 +1,5 @@
 'use client';
+import '../../../styles/about/carousel/carousel.css'
 import NavBar from '../../sections/appbar/secondNav';
 import Footer from '../../sections/footer/footer';
 import Carousel from './carousel';
@@ -27,7 +28,14 @@ const App: React.FC = () => {
         <>
             <NavBar />
             <Carousel carouselData={carouselData} />
-            <Card heading='Campus' desc='This' />
+            <div className='w-full h-auto flex flex-col pad-adjust items-center justify-center'>
+                {Data.map((index) => {
+                    return (
+                        <Card cellData={index} />
+                    )
+
+                })}
+            </div>
             <Footer />
         </>
     );
