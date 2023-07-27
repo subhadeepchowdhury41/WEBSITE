@@ -32,10 +32,10 @@ const App: React.FC = () => {
     ]
     const arr = [{
         index: 0,
-        url: { logo }
+        active: true
     }, {
         index: 1,
-        url: { logo }
+        active: false
     }]
     return (
         <>

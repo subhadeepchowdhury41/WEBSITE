@@ -6,27 +6,38 @@ import logo from "../../../assets/gallery/republic/1.jpg";
 // type Props = {}
 const arr = [
   {
-    index: 0,
-    url: "../../../assets/gallery/republic/1.jpg",
-  },
-  {
-    index: 1,
-    url: { logo },
+    images: [
+      {
+        url: "ppc/1",
+        id: 0,
+        link: "/about/gallery/iiitkalyanionlineevents",
+      },
+      {
+        url: "republic/1",
+        id: 1,
+        link: "/about/gallery/parikshapecharcha2022",
+      },
+    ],
   },
 ];
 
 export default function Sidebar({ array }) {
   return (
     <div className="gallery-side">
-      {arr.map((index) => {
+      {arr[0].images.map((index) => {
         return (
           <>
             <div className="gallery-side-card">
-              <div className="active"></div>
-              <div
-                className="gallery-side-card-box"
-                style={{ backgroundImage: `url(${index.url})` }}
-              ></div>
+              <div className={array[index.id].active ? "active" : ""}></div>
+              <div className="gallery-side-card-box">
+                <a href={index.link}>
+                  <Image
+                    className="gallery-side-image"
+                    src={require(`../../../assets/gallery/${index.url}.jpg`)}
+                    alt=""
+                  />
+                </a>
+              </div>
             </div>
           </>
         );
