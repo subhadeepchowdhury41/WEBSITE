@@ -48,3 +48,17 @@
     height: 100%;
     object-fit: cover;
 }
+
+@media (max-width:900px) {
+    .gallery {
+        flex-direction: column;
+    }
+
+    .gallery-side {
+        width: 100vw;
+    }
+
+    .main {
+        width: 100vw;
+    }
+}
