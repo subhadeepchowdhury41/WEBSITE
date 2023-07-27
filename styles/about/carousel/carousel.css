@@ -5,10 +5,12 @@
     height: 400px;
     transition: all 1s;
 }
-.card{
-    /* padding: 20px; */
+.jump{
+    transition: all 0.5s;
 }
-
+.jump:hover{
+    transform: translateY(-10px);
+}
 
 @media (max-width: 1300px){
     .pad-adjust{
