@@ -8,6 +8,7 @@
   padding: 0;
 }
 
+
 .bodyOfGallery {
   display: block;
   justify-content: center;
@@ -26,7 +27,7 @@ body::-webkit-scrollbar {
 /* Track */
 body::-webkit-scrollbar-track {
   /* display: none; */
-  background: aliceblue;
+  background: transparent;
 }
 
 /* Handle */
