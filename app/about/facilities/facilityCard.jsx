@@ -19,7 +19,7 @@ function Card(props) {
                             return (
                                 <>
                                     {
-                                        index.index < 4 ? <div className='h-full jump cursor-pointer aspect-[1] rounded-[50%]' style={{ backgroundImage: `url(${index.url})`, backgroundSize: '100% 100%' }}>
+                                        index.index < 3 ? <div className='h-full jump cursor-pointer aspect-[1] rounded-[50%]' style={{ backgroundImage: `url(${index.url})`, backgroundSize: '100% 100%' }}>
                                         </div> : <></>
                                     }
                                 </>
