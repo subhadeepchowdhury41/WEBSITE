@@ -1,0 +1,71 @@
+.pad-adjust{
+    padding: 40px;
+}
+.h-adjust{
+    height: 400px;
+    transition: all 1s;
+}
+.card{
+    /* padding: 20px; */
+}
+
+
+@media (max-width: 1300px){
+    .pad-adjust{
+        padding: 40px;
+    }
+    .h-adjust{
+        height: 380px;
+    }
+}
+@media (max-width: 1000px){
+    .pad-adjust{
+        padding: 30px;
+    }
+    .h-adjust{
+        height: 340px;
+    }
+    .resize{
+        max-height: 60px;
+    }
+}
+@media (max-width: 800px){
+    .pad-adjust{
+        padding: 25px;
+    }
+    .h-adjust{
+        height: 300px;
+    }
+    .row-switch{
+        flex-direction: column;
+    }
+    .disappear{
+        display: none;
+    }
+    .justify-800{
+        justify-content: center;
+    }
+    .text-style{
+        align-items: center;
+    }
+    .resize{
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (max-width: 650px){
+    .pad-adjust{
+        padding: 15px;
+    }
+    .h-adjust{
+        height: 250px;
+    }
+}
+@media (max-width: 500px){
+    .pad-adjust{
+        padding: 10px;
+    }
+    .h-adjust{
+        height: 220px;
+    }
+}
