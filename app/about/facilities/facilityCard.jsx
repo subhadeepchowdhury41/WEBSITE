@@ -11,7 +11,7 @@ function Card(props) {
             <div className='w-full h-[250px] min-h-[250px] flex-[8] flex flex-col text-style justify-between'>
                 <div className='font-bold text-3xl'>{props.cellData?.index}. {props.cellData?.heading}</div>
                 <div className='text-[19px] italic'>{props.cellData?.shorttext}</div>
-                <div className='h-[80px] flex gap-4'>
+                <div className='h-[80px] w-full flex gap-4 resize'>
                     {props.cellData.tags?.map((index) => {
                         return (
                             <>
@@ -23,7 +23,7 @@ function Card(props) {
 
                         )
                     })}
-                    {props.cellData.tags.length > 4 ? <div className='h-full aspect-[1] rounded-[50%] bg-gray-300 flex items-center justify-center'>+{props.cellData.tags.length - 3} More</div> : <></>}
+                    {props.cellData.tags.length > 4 ? <div className='h-full aspect-[1] rounded-[50%] bg-gray-300 text-sm flex items-center justify-center'>+{props.cellData.tags.length - 3} More</div> : <></>}
                 </div>
             </div>
             <div className='w-full h-[250px] flex-[1] disappear relative flex items-center'>
