@@ -14,7 +14,7 @@ const acadamics = [
   {
     items: [
       { label: 'Programmes', link: 'https://iiitkalyani.ac.in/php/programmes.php' },
-      { label: 'Faculty', link: '/faculty/[id]' },
+      { label: 'Faculty', link: 'faculties' },
       //{ label: 'Faculty', link: 'https://iiitkalyani.ac.in/newfacultypages/faculty1.php' },
       { label: 'Admissions', link: 'https://iiitkalyani.ac.in/php/admissionall.php' },
       { label: 'Academic Calendar', link: 'https://iiitkalyani.ac.in/php/Academic_cal.php' },
