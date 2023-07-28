@@ -11,8 +11,12 @@ import NavBar from '../../sections/appbar/secondNav';
 import Footer from '../../sections/footer/footer';
 import HEADER from '../../designSystem/header';
 import logo from "../../../assets/logos/iiit_kalyani_logo.png"
+import { useEffect } from 'react';
 
 const PHDStudents = () => {
+    useEffect(() => {
+        document.title = 'Why IIIT Kalyani | Indian Institute of Information Technology, Kalyani';
+    }, []);
 
     return (
         <>
