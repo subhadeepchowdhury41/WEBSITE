@@ -17,7 +17,7 @@ function Sidebar(props) {
                                 {
                                     index.children.map((i) => {
                                         return (
-                                            <div className='font-[400] text-[16px] text-gray-700 pl-4 cursor-pointer'
+                                            <div className={props.ActiveIndex === index.index && i.id === props.ActiveId ? 'font-[400] text-[16px] text-[rgb(73,89,231)] pl-4 cursor-pointer' : 'font-[400] text-[16px] text-gray-700 pl-4 cursor-pointer'}
                                                 onClick={() => {
                                                     props.setActiveIndex(index.index);
                                                     props.setActiveId(i.id);

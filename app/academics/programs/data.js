@@ -83,7 +83,7 @@ const SidebarData = [
                     },
                     {
                         heading: 'See PhD admissions (Old data)',
-                        url: 'https://iiitkalyani.ac.in/php/admissionpg.php'
+                        url: '/students/phd'
                     }
                 ]
             },

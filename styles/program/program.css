@@ -1,106 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,300&family=Itim&family=PT+Serif:wght@700&family=Permanent+Marker&family=Play&family=REM:wght@600&family=Sofia+Sans:wght@700&family=Source+Code+Pro:wght@900&display=swap');
-
-
-.program-container{
-    display: flex;
-    flex-direction: row;
-    position: relative;
-}
-
-.main-container{
-    display: flex;
-    flex-direction: row;
-}
-.con{
-    display: flex;
-    /* width: 75px; */
-    flex-direction: column;
-    padding-left: 5%;
-    padding-right:5%;
-
-    /* flex: 7; */
-}
-.branchname{
-    font-size: 25px;
-    font-weight: 500;
-    width: 100%;
-    margin: 15px ;
-    /* padding:1% 1% 1% 10%; */
-}
-.image{
-    height: 100%;
-    width: 100%; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* padding-left: 10%;
-    padding-right: 10%; */
-}
-.text{
-    margin-top: 4%;
-    margin-bottom: 4%;
-    width: 100%;
-    font-weight: 400;
-}
-.resources{
-    width: 100vw;
-    display: flex;
-    height: 100vh;
-    flex-direction: column;
-    background-color: rgba(245, 235, 209, 0.953);
-    position: sticky;
-    top: 70px;
-    padding: 20px;
-}
-.pdfs li{
-    margin: 15px auto;
-    line-height: 17px;
-    background-color: wheat;
-    box-shadow: 0 0 5px grey;
-    color: blue;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    /* text-align: justify; */
-}
-.headingtop{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    margin: 5px 0;
-    /* justify-content: center; */
-    /* align-items: center; */
-    text-align: left;
-    /* padding-left: 25%; */
-    /* padding-right: 20%; */
-
-}
-#a{
-    text-decoration: underline;
-}
-#ul{
-    display: flex;
-    flex-direction: column;
-}
-
-#li{
-    padding-left: 10px;
-    margin: 50px;
-}
-@media screen and (max-width: 400px){
-    .main-container{
-        display: flex;
+@media (max-width: 1200px){
+    .resp-program{
         flex-direction: column;
     }
-    .resources{
-        height: fit-content;
+    .pd-adjst{
+        padding: 16px;
     }
-    
-
-}
-@media (max-width:570px) {
-    .pdfs li{
-        font-size: 13px;
-        margin: 10px auto;
+    .ht-adj{
+        aspect-ratio: 2;
+        min-height: none;
+    }
+    .pos-adj{
+        position: relative;
+        top: 0;
     }
 }
