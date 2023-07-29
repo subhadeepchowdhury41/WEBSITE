@@ -19,8 +19,7 @@ const acadamics = [
     items: [
       { label: "Programmes", link: "/academics/programs" },
       {
-        label: "Faculty",
-        link: "https://iiitkalyani.ac.in/newfacultypages/faculty1.php",
+        label: "Faculty", link: "/faculty/[id]",
       },
       {
         label: "Admissions",
@@ -120,7 +119,7 @@ const research = [
       },
       {
         label: "Sponsored Projects",
-        link: "https://iiitkalyani.ac.in/php/proj_spons.php",
+        link: "/research/sponsored_projects",
       },
       { label: "Sponsored Consultancy", link: "https://iiitkalyani.ac.in/#" },
       { label: "IPR", link: "https://iiitkalyani.ac.in/#" },
@@ -143,7 +142,7 @@ const students = [
       },
       {
         label: "Anti Ragging",
-        link: "https://iiitkalyani.ac.in/php/Anti_ragging.php",
+        link: "/students/anti_ragging",
       },
       {
         label: "Students' Achievements",
