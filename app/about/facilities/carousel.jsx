@@ -39,8 +39,8 @@ function Carousel(props) {
       >
         <div className="absollute w-full h-adjust flex items-center">
           <div className="absolute flex z-[20] w-full items-center justify-between px-4">
-            <div className="h-8 w-8 rounded-[50%] flex items-center justify-center pr-1 cursor-pointer" onClick={ReduceOne} ><ArrowCircleLeftIcon sx={{ color: 'rgb(255, 255, 255)', height: '50px', width: '50px' }} /></div>
-            <div className="h-8 w-8 rounded-[50%] flex items-center justify-center pl-1 cursor-pointer" onClick={AddOne}><ArrowCircleRightIcon sx={{ color: 'rgb(255, 255, 255)', height: '50px', width: '50px' }} /></div>
+            <div className="h-8 w-8 rounded-[50%] flex items-center justify-center pr-1 cursor-pointer" onClick={ReduceOne} ><ArrowCircleLeftIcon sx={{ color: 'rgb(255, 255, 255)', height: `${globalThis.window.innerWidth > 1000 ? 50 : 30}px`, width: `${globalThis.window.innerWidth > 1000 ? 50 : 30}px` }} /></div>
+            <div className="h-8 w-8 rounded-[50%] flex items-center justify-center pl-1 cursor-pointer" onClick={AddOne}><ArrowCircleRightIcon sx={{ color: 'rgb(255, 255, 255)', height: `${globalThis.window.innerWidth > 1000 ? 50 : 30}px`, width: `${globalThis.window.innerWidth > 1000 ? 50 : 30}px` }} /></div>
           </div>
         </div>
         <div className="absolute flex z-10 h-auto mb-8 gap-1 w-full bottom-0 items-center justify-center overflow-hidden">
@@ -53,6 +53,7 @@ function Carousel(props) {
                     : "bg-[rgba(110,110,110,0.67)] h-[5px] w-[20px] cursor-pointer"
                 }
                 onClick={() => setI(index.index)}
+                style={{ maxWidth: `${globalThis.window.innerWidth > 500 ? 20 : 15}px` }}
               ></div>
             );
           })}
