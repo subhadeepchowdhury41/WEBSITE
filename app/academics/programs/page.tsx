@@ -37,7 +37,6 @@ function ProgramPage() {
                             <Link href={index.url}>
                                 <div className='border border-black p-[4px] rounded-[5px]'>{index.heading}</div>
                             </Link>
-
                         )
                     })}
                 </div>
