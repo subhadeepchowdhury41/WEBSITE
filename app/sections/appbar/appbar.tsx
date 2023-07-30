@@ -13,7 +13,7 @@ import Link from "next/link";
 const acadamics = [
   {
     items: [
-      { label: "Programmes", link: "program/pages/btechcse" },
+      { label: "Programmes", link: "/academics/programs" },
       // { label: 'Programmes', link: 'https://iiitkalyani.ac.in/php/programmes.php' },
       { label: "Faculty", link: "/faculty/[id]" },
       // { label: 'Faculty', link: 'https://iiitkalyani.ac.in/newfacultypages/faculty1.php' },
@@ -93,7 +93,7 @@ const research = [
       },
       {
         label: "Sponsored Projects",
-        link: "https://iiitkalyani.ac.in/php/proj_spons.php",
+        link: "/research/sponsored_projects",
       },
       { label: "Sponsored Consultancy", link: "https://iiitkalyani.ac.in/#" },
       { label: "IPR", link: "https://iiitkalyani.ac.in/#" },
@@ -119,7 +119,7 @@ const students = [
       },
       {
         label: "Anti Ragging",
-        link: "https://iiitkalyani.ac.in/php/Anti_ragging.php",
+        link: "/students/anti_ragging",
       },
       {
         label: "Students' Achievements",
@@ -190,11 +190,10 @@ export default function AppBar() {
       {isClient ? (
         <div
           className={`grid content-center bg-transparent z-50
-         w-full ${
-           !stick
-             ? "animate-randimation-reverse opacity-100 absolute top-0"
-             : ""
-         }
+         w-full ${!stick
+              ? "animate-randimation-reverse opacity-100 absolute top-0"
+              : ""
+            }
      bg-blue-900`}
           style={{
             backgroundImage:
@@ -203,9 +202,8 @@ export default function AppBar() {
           }}
         >
           <div
-            className={`flex mx-auto iiitk-name m-6 items-center ${
-              stick ? "hidden" : ""
-            }`}
+            className={`flex mx-auto iiitk-name m-6 items-center ${stick ? "hidden" : ""
+              }`}
           >
             <div
               className="flex flex-col hindi-name mobile-head text-2xl ml-[45] text-white mx-6 py-3 border-t-2 border-b-2 tracking-wide
@@ -251,20 +249,19 @@ export default function AppBar() {
               !stick
                 ? { zIndex: "100000" }
                 : {
-                    zIndex: "100",
-                    boxShadow: "0 0 5px black",
-                    backgroundColor: "rgb(0,0,0,0.8 )",
-                  }
+                  zIndex: "100",
+                  boxShadow: "0 0 5px black",
+                  backgroundColor: "rgb(0,0,0,0.8 )",
+                }
             }
           >
             <Image
               width={53}
               className={`px-2 py-3 h-[70px]
-                 ${
-                   stick
-                     ? "opacity-100 transition-opacity ease-in-out duration-500"
-                     : "hidden"
-                 }`}
+                 ${stick
+                  ? "opacity-100 transition-opacity ease-in-out duration-500"
+                  : "hidden"
+                }`}
               src={IIITKalyaniLogo}
               alt="IIIT Kalynai Logo"
             />
@@ -274,11 +271,10 @@ export default function AppBar() {
               <></>
             )}
             <ul
-              className={`flex navItems ${
-                stick
+              className={`flex navItems ${stick
                   ? "animate-randimation absolute top-0 right-0 opacity-100"
                   : "animate-randimation-reverse opacity-100"
-              }`}
+                }`}
               style={{ listStyle: "none" }}
             >
               <NavItem title="About" menu={<MegaMenu menus={about} />} />
