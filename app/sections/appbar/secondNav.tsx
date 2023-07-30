@@ -17,10 +17,9 @@ const home = [
 const acadamics = [
   {
     items: [
-      { label: "Programmes", link: "/program/pages/btechcse" },
+      { label: "Programmes", link: "/academics/programs" },
       {
-        label: "Faculty",
-        link: "https://iiitkalyani.ac.in/newfacultypages/faculty1.php",
+        label: "Faculty", link: "/faculty/[id]",
       },
       {
         label: "Admissions",
@@ -120,7 +119,7 @@ const research = [
       },
       {
         label: "Sponsored Projects",
-        link: "https://iiitkalyani.ac.in/php/proj_spons.php",
+        link: "/research/sponsored_projects",
       },
       { label: "Sponsored Consultancy", link: "https://iiitkalyani.ac.in/#" },
       { label: "IPR", link: "https://iiitkalyani.ac.in/#" },
@@ -143,7 +142,7 @@ const students = [
       },
       {
         label: "Anti Ragging",
-        link: "https://iiitkalyani.ac.in/php/Anti_ragging.php",
+        link: "/students/anti_ragging",
       },
       {
         label: "Students' Achievements",
@@ -253,27 +252,25 @@ const NavBar = () => {
       {/* Option for custom color subhadeep*/}
       <div
         className={`flex text-white font-semibold ${stick ? " navBar" : ""}
-               ${
-                 stick ? "fixed top-0 justify-between" : "justify-center"
-               } w-full`}
+               ${stick ? "fixed top-0 justify-between" : "justify-center"
+          } w-full`}
         style={
           !stick
             ? { zIndex: "100" }
             : {
-                zIndex: "100",
-                boxShadow: "0 0 5px black",
-                backgroundColor: "rgb(0,0,0,0.8 )",
-              }
+              zIndex: "100",
+              boxShadow: "0 0 5px black",
+              backgroundColor: "rgb(0,0,0,0.8 )",
+            }
         }
       >
         <Image
           width={53}
           className={`px-2 py-3 h-[70px]
-                 ${
-                   stick
-                     ? "opacity-100 transition-opacity ease-in-out duration-500"
-                     : "hidden"
-                 }`}
+                 ${stick
+              ? "opacity-100 transition-opacity ease-in-out duration-500"
+              : "hidden"
+            }`}
           src={IIITKalyaniLogo}
           alt="IIIT Kalynai Logo"
         />
