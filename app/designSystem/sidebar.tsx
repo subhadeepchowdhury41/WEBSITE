@@ -3,11 +3,24 @@ import React from "react";
 import "./sidebar.css";
 import { useMediaQuery } from "react-responsive";
 
+interface HeadingInterface {
+  label: string;
+  id: number;
+}
+interface SubHeadingInterface {
+  label: string;
+  link: string;
+}
+interface ArrayInterface {
+  headings?: Array<HeadingInterface>;
+  subheadings?: Array<SubHeadingInterface>;
+}
 interface SidebarProps {
   location: string;
   page: string;
-  array: Array<{}>;
+  array: Array<ArrayInterface>;
 }
+
 
 const Sidebar: React.FC<SidebarProps> = ({ page, array, location }) => {
   const isSidebar = useMediaQuery({ minWidth: 700 });
@@ -20,12 +33,12 @@ const Sidebar: React.FC<SidebarProps> = ({ page, array, location }) => {
           <br></br>
           <span className="sidebar-heading">{page}</span>
           <br></br>
-          {array[0].headings.map((index) => {
+          {array[0].headings?.map((index) => {
             return (
-              <>
+              <React.Fragment key={index.id}>
                 <span className="sidebar-subheading">{index.label}</span>
                 <ul>
-                  {array[index.id].subheadings.map((i) => {
+                  {array[index.id].subheadings?.map((i) => {
                     return (
                       <>
                         <a href={i.link}>
@@ -35,7 +48,7 @@ const Sidebar: React.FC<SidebarProps> = ({ page, array, location }) => {
                     );
                   })}
                 </ul>
-              </>
+              </React.Fragment>
             );
           })}
         </div>

@@ -23,7 +23,7 @@ const acadamics = [
       { label: 'New National Education Policy-2020', link: 'https://iiitkalyani.ac.in/php/nep.php' },
       { label: 'Fee Structure', link: 'https://iiitkalyani.ac.in/php/fee_structure.php' },
       { label: 'Regulations', link: 'https://iiitkalyani.ac.in/php/ugregulations.php' },
-      { label: 'NPTEL Collaboration', link: 'https://iiitkalyani.ac.in/php/nptel.php' },
+      { label: 'NPTEL Collaboration', link: '/academics/nptel' },
     ],
   },
 ];
@@ -31,7 +31,7 @@ const acadamics = [
 const about = [
   {
     items: [
-      { label: "About Us", link: "/about/aboutus" },
+      { label: "About Us", link: "/about/aboutUs" },
       {
         label: "NIRF",
         link: "https://iiitkalyani.ac.in/images/notifications/INDIAN%20INSTITUTE%20OF%20INFORMATION%20TECHNOLOGY,%20KALYANI20220228-.pdf",
