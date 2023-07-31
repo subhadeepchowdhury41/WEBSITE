@@ -47,7 +47,7 @@ const acadamics = [
       },
       {
         label: "NPTEL Collaboration",
-        link: "https://iiitkalyani.ac.in/php/nptel.php",
+        link: "/academics/nptel",
       },
     ],
   },
