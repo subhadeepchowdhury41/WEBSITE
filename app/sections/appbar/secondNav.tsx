@@ -23,7 +23,7 @@ const acadamics = [
       },
       {
         label: "Admissions",
-        link: "https://iiitkalyani.ac.in/php/admissionall.php",
+        link: "academics/admissions",
       },
       {
         label: "Academic Calendar",
@@ -56,7 +56,7 @@ const acadamics = [
 const about = [
   {
     items: [
-      { label: "About Us", link: "/about/aboutus" },
+      { label: "About Us", link: "/about/aboutUs" },
       {
         label: "NIRF",
         link: "https://iiitkalyani.ac.in/images/notifications/INDIAN%20INSTITUTE%20OF%20INFORMATION%20TECHNOLOGY,%20KALYANI20220228-.pdf",

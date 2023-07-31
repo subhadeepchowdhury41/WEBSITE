@@ -34,9 +34,9 @@ function ProgramPage() {
                     <div className='font-semibold text-[26px] '>Resources</div>
                     {matchingItem?.resources?.map((index) => {
                         return (
-                            <Link href={index.url}>
+                            <a href={index.url} target="_blank" rel="noopener noreferrer">
                                 <div className='border border-black p-[4px] rounded-[5px]'>{index.heading}</div>
-                            </Link>
+                            </a>
                         )
                     })}
                 </div>
