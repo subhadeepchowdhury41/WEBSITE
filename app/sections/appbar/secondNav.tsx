@@ -112,19 +112,13 @@ const administration = [
 const research = [
   {
     items: [
-      { label: "SRIC Cell", link: "https://iiitkalyani.ac.in/php/sric.php" },
-      {
-        label: "Publications",
-        link: "https://iiitkalyani.ac.in/php/publication.php",
-      },
-      {
-        label: "Sponsored Projects",
-        link: "/research/sponsored_projects",
-      },
+      { label: "SRIC Cell", link: "/research/SRIC" },
+      { label: "Publications", link: "/research/Publications" },
+      { label: "Sponsored Projects", link: "/research/sponsored_projects" },
       { label: "Sponsored Consultancy", link: "https://iiitkalyani.ac.in/#" },
       { label: "IPR", link: "https://iiitkalyani.ac.in/#" },
-      { label: "Institution's Innovation Council", link: "/research/IIC" },
-      { label: "NISP", link: "https://iiitkalyani.ac.in/php/nisp.php" },
+      { label: "IIC", link: "/research/IIC" },
+      { label: "NISP", link: "/research/NISP" },
     ],
   },
 ];
