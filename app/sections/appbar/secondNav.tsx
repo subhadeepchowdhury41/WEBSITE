@@ -27,7 +27,7 @@ const acadamics = [
       },
       {
         label: "Academic Calendar",
-        link: "https://iiitkalyani.ac.in/php/Academic_cal.php",
+        link: "/academics/academic-calendar",
       },
       {
         label: "Course Structure",
@@ -123,7 +123,7 @@ const research = [
       },
       { label: "Sponsored Consultancy", link: "https://iiitkalyani.ac.in/#" },
       { label: "IPR", link: "https://iiitkalyani.ac.in/#" },
-      { label: "IIC", link: "https://iiitkalyani.ac.in/php/iic.php" },
+      { label: "Institution's Innovation Council", link: "/research/IIC" },
       { label: "NISP", link: "https://iiitkalyani.ac.in/php/nisp.php" },
     ],
   },

@@ -16,35 +16,14 @@ const acadamics = [
       { label: "Programmes", link: "/academics/programs" },
       // { label: 'Programmes', link: 'https://iiitkalyani.ac.in/php/programmes.php' },
       { label: "Faculty", link: "/faculty/[id]" },
-      //{ label: 'Faculty', link: 'https://iiitkalyani.ac.in/newfacultypages/faculty1.php' },
-      {
-        label: "Admissions",
-        link: "https://iiitkalyani.ac.in/php/admissionall.php",
-      },
-      {
-        label: "Academic Calendar",
-        link: "https://iiitkalyani.ac.in/php/Academic_cal.php",
-      },
-      {
-        label: "Course Structure",
-        link: "https://iiitkalyani.ac.in/php/Course_stru.php",
-      },
-      {
-        label: "New National Education Policy-2020",
-        link: "https://iiitkalyani.ac.in/php/nep.php",
-      },
-      {
-        label: "Fee Structure",
-        link: "https://iiitkalyani.ac.in/php/fee_structure.php",
-      },
-      {
-        label: "Regulations",
-        link: "https://iiitkalyani.ac.in/php/ugregulations.php",
-      },
-      {
-        label: "NPTEL Collaboration",
-        link: "https://iiitkalyani.ac.in/php/nptel.php",
-      },
+      // { label: 'Faculty', link: 'https://iiitkalyani.ac.in/newfacultypages/faculty1.php' },
+      { label: 'Admissions', link: 'academics/admissions' },
+      { label: 'Academic Calendar', link: '/academics/academic-calendar' },
+      { label: 'Course Structure', link: 'https://iiitkalyani.ac.in/php/Course_stru.php' },
+      { label: 'New National Education Policy-2020', link: 'https://iiitkalyani.ac.in/php/nep.php' },
+      { label: 'Fee Structure', link: 'https://iiitkalyani.ac.in/php/fee_structure.php' },
+      { label: 'Regulations', link: 'https://iiitkalyani.ac.in/php/ugregulations.php' },
+      { label: 'NPTEL Collaboration', link: 'https://iiitkalyani.ac.in/php/nptel.php' },
     ],
   },
 ];
@@ -293,8 +272,8 @@ export default function AppBar() {
             )}
             <ul
               className={`flex navItems ${stick
-                  ? "animate-randimation absolute top-0 right-0 opacity-100"
-                  : "animate-randimation-reverse opacity-100"
+                ? "animate-randimation absolute top-0 right-0 opacity-100"
+                : "animate-randimation-reverse opacity-100"
                 }`}
               style={{ listStyle: "none" }}
             >
