@@ -12,13 +12,13 @@ function Nptel() {
 
             {Data.map((index) => {
                 return (
-                    <div className='w-full flex flex-col items-center justify-center mt-8'>
-                        <div className='w-full max-w-[1250px] text-3xl font-bold '>{index.heading}</div>
+                    <div className='w-full flex flex-col items-center justify-center mt-8 px-1'>
+                        <div className='w-full max-w-[1258px] text-3xl font-bold'>{index.heading}</div>
 
                         <Carousel carouselData={index.images} />
                         {index.paragraphs.map((i) => {
                             return (
-                                <div className='w-full max-w-[1250px] mb-8'>{i.text}</div>
+                                <div className='w-full max-w-[1258px] mb-8 px-1'>{i.text}</div>
                             )
                         })}
                     </div>
