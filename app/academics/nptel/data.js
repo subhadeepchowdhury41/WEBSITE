@@ -4,7 +4,7 @@ import Cert from './images/cert.jpg'
 
 const data = [
     {
-        heading: 'NPTEL',
+        heading: 'National Programme on Technology Enhanced Learning (NPTEL)',
         paragraphs: [{
             text: 'The National Programme on Technology Enhanced Learning (NPTEL) was initiated by seven Indian Institutes of Technology (Bombay, Delhi, Kanpur, Kharagpur, Madras, Guwahati and Roorkee) along with the Indian Institute of Science, Bangalore in 2003. NPTEL offers open online courses along with certificates from the IITs/IISc for those who complete the courses successfully.',
         }, {
