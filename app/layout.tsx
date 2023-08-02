@@ -17,14 +17,14 @@ const RootLayout = ({
 }) => {
     return (
         <html className='bg-[#00000]'>
-            <head>  
+            <head>
                 <title>Indian Institute of Information Technology, Kalyani</title>
                 <meta name="Indian Institute of Information Technology, Kalyani" content="Official Website of IIIT Kalynai" />
                 <meta name="keywords" content="IIIT Kalyani, Indian Institute of Information Technology,Kalyani, Computer Science, Electronics, Telecommunication" />
-                <link href="https://iiitkalyani.ac.in/images/front-page/iiitlogo.png" rel="shortcut icon" type="image/x-icon" />
+                <link href="http://beta.iiitkalyani.ac.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fiiit_kalyani_logo.9853c213.png&w=256&q=75" rel="shortcut icon" type="image/x-icon" />
             </head>
             <body >
-                { children }
+                {children}
             </body>
         </html>
     );

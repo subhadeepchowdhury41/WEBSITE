@@ -67,7 +67,7 @@ const PHDStudents = () => {
                 <NavBar />
             </div>
             <div className="staff-outer-container">
-                <Sidebar page='Staff' array={array} />
+                <Sidebar page='Staff' array={array} location={''} />
                 <div className='staff-container'>
 
                     <span className='staff-sub-header'>
