@@ -7,8 +7,13 @@ import data from './data'
 import { match } from 'assert'
 import '../../../styles/program/program.css'
 import Link from 'next/link'
+import { useEffect } from 'react'
 
 function ProgramPage() {
+    useEffect(() => {
+        document.title =
+            "Programmes | Indian Institute of Information Technology, Kalyani";
+    }, []);
     const handleButtonClick = (pdfFileName: string) => {
         // Set the PDF file path based on the file name and the "public" folder location
         const pdfUrl = `/academicsResources/${pdfFileName}`;
