@@ -8,15 +8,15 @@ interface HeadingInterface {
 }
 interface SubHeadingInterface {
   label: string;
-  link: string;
+  link?: string;
 }
 interface ArrayInterface {
   headings?: Array<HeadingInterface>;
   subheadings?: Array<SubHeadingInterface>;
 }
 interface SidebarProps {
-  location: string;
-  page: string;
+  location: string | null;
+  page: string | null;
   array: Array<ArrayInterface>;
 }
 
