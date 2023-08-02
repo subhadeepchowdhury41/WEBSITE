@@ -42,7 +42,7 @@ function ProgramPage() {
                     {matchingItem?.resources?.map((index) => {
                         return (
                             // <a href={index.url} target="_blank" rel="noopener noreferrer">
-                            <div onClick={() => handleButtonClick("AnnexureE.pdf")} className='border border-black p-[4px] rounded-[5px]'>{index.heading}</div>
+                            <div style={{ cursor: "pointer" }} onClick={() => handleButtonClick("AnnexureE.pdf")} className='border border-black p-[4px] rounded-[5px]'>{index.heading}</div>
                             // </a>
                         )
                     })}
