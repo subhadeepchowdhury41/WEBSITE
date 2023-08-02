@@ -16,7 +16,7 @@ const acadamics = [
       { label: "Programmes", link: "/academics/programs" },
       // { label: 'Programmes', link: 'https://iiitkalyani.ac.in/php/programmes.php' },
       { label: "Faculty", link: "/academics/faculty" },
-      { label: 'Admissions', link: 'academics/admissions' },
+      { label: 'Admissions', link: '/academics/admissions' },
       { label: 'Academic Calendar', link: '/academics/academic-calendar' },
       { label: 'Course Structure', link: 'https://iiitkalyani.ac.in/php/Course_stru.php' },
       { label: 'New National Education Policy-2020', link: 'https://iiitkalyani.ac.in/php/nep.php' },

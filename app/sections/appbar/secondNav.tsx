@@ -23,7 +23,7 @@ const acadamics = [
       },
       {
         label: "Admissions",
-        link: "academics/admissions",
+        link: "/academics/admissions",
       },
       {
         label: "Academic Calendar",
