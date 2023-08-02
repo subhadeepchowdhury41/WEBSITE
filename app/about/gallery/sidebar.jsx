@@ -53,41 +53,49 @@ const arr = [
         url: "ppc/1",
         id: 0,
         link: "/about/gallery/parikshapecharcha2022",
+        name: "Pariksha Pe Charcha 2022",
       },
       {
         url: "republic/1",
         id: 1,
         link: "/about/gallery/republicday2022",
+        name: "Republic Day 2022",
       },
       {
-        url: "ppc/1",
+        url: "sp/1",
         id: 2,
-        link: "/about/gallery/iiitkalyanionlineevents",
+        link: "/about/gallery/swachhtapakhwada2021",
+        name: "Swachhta Pakhwada 2021",
       },
       {
-        url: "republic/1",
+        url: "online/1",
         id: 3,
-        link: "/about/gallery/parikshapecharcha2022",
+        link: "/about/gallery/iiitkalyanionlineevents",
+        name: "Online Events",
       },
       {
-        url: "ppc/1",
+        url: "winners/1",
         id: 4,
-        link: "/about/gallery/iiitkalyanionlineevents",
+        link: "/about/gallery/winners",
+        name: "Winner",
       },
       {
-        url: "republic/1",
+        url: "rp/1",
         id: 5,
-        link: "/about/gallery/parikshapecharcha2022",
+        link: "/about/gallery/republicday2021",
+        name: "Republic Day 2021",
       },
       {
-        url: "ppc/1",
+        url: "convocation/1",
         id: 6,
-        link: "/about/gallery/iiitkalyanionlineevents",
+        link: "/about/gallery/firstconvocation",
+        name: "First Convocation",
       },
       {
-        url: "republic/1",
+        url: "induction/1",
         id: 7,
-        link: "/about/gallery/parikshapecharcha2022",
+        link: "/about/gallery/firstinduction",
+        name: "First Induction",
       },
     ],
   },
@@ -120,6 +128,9 @@ export default function Sidebar({ array, scroll }) {
                 alt=""
               />
             </a>
+            <div className="gallery-slide-text">
+              <span className="gallery-heading">{index.name}</span>
+            </div>
           </div>
         </div>
       ))}

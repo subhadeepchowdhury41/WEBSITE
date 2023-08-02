@@ -10,12 +10,19 @@ import InsertLinkIcon from '@mui/icons-material/InsertLink';
 import NavBar from '../../sections/appbar/secondNav';
 import Footer from '../../sections/footer/footer';
 import Link from 'next/link';
+import { useEffect } from "react";
+
 
 const PHDStudents = () => {
     const [hovering, setHovering] = useState(0)
     const [decider, setDecider] = useState(-1)
     const [active, setActive] = useState(-1)
+    useEffect(() => {
+        document.title =
+            "PhD | Indian Institute of Information Technology, Kalyani";
+    }, []);
     return (
+
         <div style={{}}>
             <NavBar />
             <div className='w-full font-[800] text-4xl pl-8 my-8'>

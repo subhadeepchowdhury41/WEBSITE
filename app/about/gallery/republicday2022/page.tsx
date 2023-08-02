@@ -114,7 +114,7 @@ const App: React.FC = () => {
             <NavBar />
             <div className="gallery">
                 <div className="main">
-                    <h1>Republic Day 2022</h1>
+                    <h1>REPUBLIC DAY 2022</h1>
                     <Carousel carouselData={carouselData} />
                 </div>
                 <Sidebar array={arr} scroll={scroll} />
