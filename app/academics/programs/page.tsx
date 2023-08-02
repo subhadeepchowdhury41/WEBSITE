@@ -16,7 +16,7 @@ function ProgramPage() {
     }, []);
     const handleButtonClick = (pdfFileName: string) => {
         // Set the PDF file path based on the file name and the "public" folder location
-        const pdfUrl = `/academicsResources/${pdfFileName}`;
+        const pdfUrl = `/programresources/${pdfFileName}`;
 
         // Open the PDF URL in a new tab/window
         window.open(pdfUrl, "_blank");
@@ -47,7 +47,7 @@ function ProgramPage() {
                     {matchingItem?.resources?.map((index) => {
                         return (
                             // <a href={index.url} target="_blank" rel="noopener noreferrer">
-                            <div style={{ cursor: "pointer" }} onClick={() => handleButtonClick("AnnexureE.pdf")} className='border border-black p-[4px] rounded-[5px]'>{index.heading}</div>
+                            <div style={{ cursor: "pointer" }} onClick={() => handleButtonClick(index.url)} className='border border-black p-[4px] rounded-[5px]'>{index.heading}</div>
                             // </a>
                         )
                     })}
