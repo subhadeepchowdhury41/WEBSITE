@@ -112,7 +112,7 @@ const Discover = () => {
 
                 <div className='discover-navigation'>
                     {/* <ITKButton text="View More" /> */}
-                    <div className='view-more'>View More</div>
+                    <div className='view-more'><a href="/about/gallery/parikshapecharcha2022">View More</a></div>
                     <div className='discover-buttons'>
                         <button className='button-prev' onClick={() => { ReduceOne() }}><ArrowLeftIcon className="hover:bg-purple-100" style={{ fontSize: "30px", borderRadius: "50%", boxShadow: "1px 1px 2px rgb(0,0,0,0.3)", marginRight: "10px" }} /></button>
                         <button className='button-next' onClick={() => { AddOne() }}><ArrowRightIcon className="hover:bg-purple-100" style={{ fontSize: "30px", borderRadius: "50%", boxShadow: "1px 1px 2px rgb(0,0,0,0.3)" }} /></button>

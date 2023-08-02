@@ -35,18 +35,14 @@ const array = [
         ],
     }
 ];
-// console.log(window.innerWidth)
-// console.log(window.outerWidth)
-// var deviceWidth = window.innerWidth;
-
 const Staff = () => {
     useEffect(() => {
         document.title = 'Staffs | Indian Institute of Information Technology, Kalyani';
     }, []);
 
-    const isDesktop = useMediaQuery({ minWidth: 501 });
-    const isSidebar = useMediaQuery({ minWidth: 700 });
-    // const dps = [, , , , , , , , ];
+    // const isDesktop = useMediaQuery({ minWidth: 501 });
+    let isDesktop = ({ minWidth: 501 })
+
     const MapDP = new Map();
 
     MapDP.set("Samim", "https://iiitkalyani.ac.in/images/staff/samim.jpg");
@@ -59,7 +55,7 @@ const Staff = () => {
     MapDP.set("Sourav", "https://iiitkalyani.ac.in/images/sourav%20gope%20iiit%20kalyani.jpg");
     MapDP.set("Debottam", "https://iiitkalyani.ac.in/images/20220211_120900.jpg");
 
-    console.log(MapDP.get("Samim"));
+    // console.log(MapDP.get("Samim"));
 
     return (
         <>
@@ -67,7 +63,7 @@ const Staff = () => {
                 <NavBar />
             </div>
             <div className="staff-outer-container">
-                <Sidebar page='Staff' array={array} />
+                <Sidebar page='Staff' array={array} location={''} />
                 <div className='staff-container'>
 
                     <span className='staff-sub-header'>

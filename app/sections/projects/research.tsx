@@ -29,7 +29,7 @@ const Research = () => {
                         <TravelExploreOutlinedIcon style={{ marginLeft: "3px", marginBottom: "5px", fontSize: "32px" }} />
                     </span>
                 </Reveal>
-                <a href='https://iiitkalyani.ac.in/php/proj_spons.php' target='_blank' >
+                <a href='/research/sponsored_projects' >
                     <div className='MoreProjects ReadMore'>
                         {/* <ITKButton text="Read More" />  */}
                         <div className='view-more'>View More</div>

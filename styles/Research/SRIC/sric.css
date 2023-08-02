@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+.fluid-center{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+.sric-main-page{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+.sric-main-page h1{
+    margin: 2%;
+    font-size: max(2vw,3vh);
+    width: 60%;
+    text-align: center ;
+    padding-bottom: 1%;
+    border-bottom: 2px solid #82cff5;
+}
+.sric-main-page p{
+    font-size: max(1vw,2vh);
+    width: 70%;
+    margin: 1%;
+}
+.nisp-buttons{
+    margin: 1% 2% 3% 2%;
+    width: 55%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+ .nisp-btn{
+    width: 90%;
+    min-width: 200px;
+    aspect-ratio: 12/1;
+    font-size: max(2vh,1.25vw);
+    text-align: center;
+    margin-bottom: min(5%,10px);
+    margin-top: min(5%,10px);
+    border: 2px solid #82cff5;
+    border-radius: 10px;
+    transition: all .2s;  
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;  
+}
+.nisp-btn:hover{
+    transform: scale(1.1);
+    background-color: rgb(172, 227, 255);
+    box-shadow:  9px 9px 18px #93c2d9, -9px -9px 18px #c7ffff;
+}

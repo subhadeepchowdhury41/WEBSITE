@@ -5,10 +5,22 @@ import React, { useState } from 'react'
 import Sidebar from './Sidebar'
 import data from './data'
 import { match } from 'assert'
-import '../../../styles/program/program.css'
+import '../../../styles/academics/program/program.css'
 import Link from 'next/link'
+import { useEffect } from 'react'
 
 function ProgramPage() {
+    useEffect(() => {
+        document.title =
+            "Programmes | Indian Institute of Information Technology, Kalyani";
+    }, []);
+    const handleButtonClick = (pdfFileName: string) => {
+        // Set the PDF file path based on the file name and the "public" folder location
+        const pdfUrl = `/programresources/${pdfFileName}`;
+
+        // Open the PDF URL in a new tab/window
+        window.open(pdfUrl, "_blank");
+    };
     const [activeIndex, setActiveIndex] = useState(1);
     const [activeId, setActiveId] = useState(1);
     const [matchingItem, setMatchingItem] = useState(
@@ -34,9 +46,9 @@ function ProgramPage() {
                     <div className='font-semibold text-[26px] '>Resources</div>
                     {matchingItem?.resources?.map((index) => {
                         return (
-                            <Link href={index.url}>
-                                <div className='border border-black p-[4px] rounded-[5px]'>{index.heading}</div>
-                            </Link>
+                            // <a href={index.url} target="_blank" rel="noopener noreferrer">
+                            <div style={{ cursor: "pointer" }} onClick={() => handleButtonClick(index.url)} className='border border-black p-[4px] rounded-[5px]'>{index.heading}</div>
+                            // </a>
                         )
                     })}
                 </div>
