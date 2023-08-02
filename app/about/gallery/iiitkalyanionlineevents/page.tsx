@@ -16,47 +16,63 @@ const App: React.FC = () => {
   const carouselData = [
     {
       index: 0,
-      url: "ppc/1",
+      url: "online/2",
     },
     {
       index: 1,
-      url: "ppc/2",
+      url: "online/3",
     },
     {
       index: 2,
-      url: "ppc/3",
+      url: "online/4",
     },
     {
       index: 3,
-      url: "ppc/4",
-    },
-    {
-      index: 4,
-      url: "ppc/5",
-    },
-    {
-      index: 5,
-      url: "ppc/6",
+      url: "online/5",
     },
   ];
   const arr = [
     {
       index: 0,
-      active: true,
+      active: false,
     },
     {
       index: 1,
       active: false,
     },
+    {
+      index: 2,
+      active: false,
+    },
+    {
+      index: 3,
+      active: true,
+    },
+    {
+      index: 4,
+      active: false,
+    },
+    {
+      index: 5,
+      active: false,
+    },
+    {
+      index: 6,
+      active: false,
+    },
+    {
+      index: 7,
+      active: false,
+    },
   ];
 
-  const scroll = 0;
+  const scroll = 37.5;
   return (
     <>
       <NavBar />
       <div className="gallery">
         <div className="main">
-          <h1>Pariksha Pe Charcha 2022</h1>
+          <h1>ONLINE EVENTS</h1>
           <Carousel carouselData={carouselData} />
         </div>
         <Sidebar array={arr} scroll={scroll} />

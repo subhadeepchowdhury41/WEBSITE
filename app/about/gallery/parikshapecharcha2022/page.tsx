@@ -48,6 +48,30 @@ const App: React.FC = () => {
             index: 1,
             active: false,
         },
+        {
+            index: 2,
+            active: false,
+        },
+        {
+            index: 3,
+            active: false,
+        },
+        {
+            index: 4,
+            active: false,
+        },
+        {
+            index: 5,
+            active: false,
+        },
+        {
+            index: 6,
+            active: false,
+        },
+        {
+            index: 7,
+            active: false,
+        },
     ];
 
     const scroll = 0;
@@ -56,7 +80,7 @@ const App: React.FC = () => {
             <NavBar />
             <div className="gallery">
                 <div className="main">
-                    <h1>Pariksha Pe Charcha 2022</h1>
+                    <h1>PARIKSHA PE CHARCHA 2022</h1>
                     <Carousel carouselData={carouselData} />
                 </div>
                 <Sidebar array={arr} scroll={scroll} />
