@@ -19,11 +19,11 @@ const acadamics = [
     items: [
       { label: "Programmes", link: "/academics/programs" },
       {
-        label: "Faculty", link: "/faculty/[id]",
+        label: "Faculty", link: "/academics/faculty",
       },
       {
         label: "Admissions",
-        link: "https://iiitkalyani.ac.in/php/admissionall.php",
+        link: "/academics/admissions",
       },
       {
         label: "Academic Calendar",
@@ -47,7 +47,7 @@ const acadamics = [
       },
       {
         label: "NPTEL Collaboration",
-        link: "https://iiitkalyani.ac.in/php/nptel.php",
+        link: "/academics/nptel",
       },
     ],
   },
@@ -63,7 +63,7 @@ const about = [
       },
       { label: "Why IIIT Kalyani", link: "/about/whyiiitkalyani" },
       { label: "Staff", link: "/about/staff" },
-      { label: "Gallery", link: "/about/gallery" },
+      { label: "Gallery", link: "/about/gallery/parikshapecharcha2022" },
       { label: "All Facilities", link: "/about/facilities" },
       { label: "Gymkhana", link: "/about/gymkhana" },
     ],
@@ -112,19 +112,11 @@ const administration = [
 const research = [
   {
     items: [
-      { label: "SRIC Cell", link: "https://iiitkalyani.ac.in/php/sric.php" },
-      {
-        label: "Publications",
-        link: "https://iiitkalyani.ac.in/php/publication.php",
-      },
-      {
-        label: "Sponsored Projects",
-        link: "/research/sponsored_projects",
-      },
-      { label: "Sponsored Consultancy", link: "https://iiitkalyani.ac.in/#" },
-      { label: "IPR", link: "https://iiitkalyani.ac.in/#" },
+      { label: "SRIC Cell", link: "/research/SRIC" },
+      { label: "Publications", link: "/research/Publications" },
+      { label: "Sponsored Projects", link: "/research/sponsored_projects" },
       { label: "Institution's Innovation Council", link: "/research/IIC" },
-      { label: "NISP", link: "https://iiitkalyani.ac.in/php/nisp.php" },
+      { label: "National Innovation and Startup Policy", link: "/research/NISP" }
     ],
   },
 ];
@@ -138,17 +130,16 @@ const students = [
       },
       {
         label: "Regulatory Rules",
-        link: "https://iiitkalyani.ac.in/php/regul_rules.php",
+        link: "/students/Regulatory_Rules",
       },
       {
         label: "Anti Ragging",
-        link: "/students/anti_ragging",
+        link: "/students/Anti_Ragging",
       },
       {
         label: "Students' Achievements",
         link: "https://iiitkalyani.ac.in/php/studentachievement.php",
       },
-      { label: "Students' Corner", link: "https://cache9.in/gallery/" },
       {
         label: "GDSC",
         link: "https://gdsc.community.dev/indian-institute-of-information-technology-kalyani/",
@@ -209,7 +200,7 @@ const NavBar = () => {
     <div
       className={`grid content-center z-50 w-full top-0`}
       style={{
-        backgroundColor: "rgb(0,0,0,0.85)",
+        backgroundColor: "rgb(0,0,0 ,0.85)",
       }}
     >
       <div className={`flex mx-auto iiitk-name m-6 items-center `}>

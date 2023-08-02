@@ -67,4 +67,5 @@
 .menu-sub-box.active {
     padding: 10px 15px 10px 15px;
     /* height: 500px; */
+    max-height: 400px;
 }

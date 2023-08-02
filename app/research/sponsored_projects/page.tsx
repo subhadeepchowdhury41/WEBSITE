@@ -1,7 +1,7 @@
 "use client";
 import NavBar from "../../sections/appbar/secondNav";
 import Footer from '../../sections/footer/footer';
-import "../../../styles/sponsoredProjects/sponsoredProjects.css";
+import "../../../styles/Research/sponsoredProjects/sponsoredProjects.css";
 import projectsData from './sponsoredProjectsData';
 
 const SponsoredProjects = () => {

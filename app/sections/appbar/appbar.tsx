@@ -15,15 +15,14 @@ const acadamics = [
     items: [
       { label: "Programmes", link: "/academics/programs" },
       // { label: 'Programmes', link: 'https://iiitkalyani.ac.in/php/programmes.php' },
-      { label: "Faculty", link: "/faculty/[id]" },
-      // { label: 'Faculty', link: 'https://iiitkalyani.ac.in/newfacultypages/faculty1.php' },
-      { label: 'Admissions', link: 'academics/admissions' },
+      { label: "Faculty", link: "/academics/faculty" },
+      { label: 'Admissions', link: '/academics/admissions' },
       { label: 'Academic Calendar', link: '/academics/academic-calendar' },
       { label: 'Course Structure', link: 'https://iiitkalyani.ac.in/php/Course_stru.php' },
       { label: 'New National Education Policy-2020', link: 'https://iiitkalyani.ac.in/php/nep.php' },
       { label: 'Fee Structure', link: 'https://iiitkalyani.ac.in/php/fee_structure.php' },
       { label: 'Regulations', link: 'https://iiitkalyani.ac.in/php/ugregulations.php' },
-      { label: 'NPTEL Collaboration', link: 'https://iiitkalyani.ac.in/php/nptel.php' },
+      { label: 'NPTEL Collaboration', link: '/academics/nptel' },
     ],
   },
 ];
@@ -38,7 +37,7 @@ const about = [
       },
       { label: "Why IIIT Kalyani", link: "/about/whyiiitkalyani" },
       { label: "Staff", link: "/about/staff" },
-      { label: "Gallery", link: "/about/gallery" },
+      { label: "Gallery", link: "/about/gallery/parikshapecharcha2022" },
       { label: "All Facilities", link: "/about/facilities" },
       { label: "Gymkhana", link: "/about/gymkhana" },
     ],
@@ -86,22 +85,11 @@ const administration = [
 const research = [
   {
     items: [
-      { label: "SRIC Cell", link: "https://iiitkalyani.ac.in/php/sric.php" },
-      {
-        label: "Publications",
-        link: "https://iiitkalyani.ac.in/php/publication.php",
-      },
-      {
-        label: "Sponsored Projects",
-        link: "/research/sponsored_projects",
-      },
-      { label: "Sponsored Consultancy", link: "https://iiitkalyani.ac.in/#" },
-      { label: "IPR", link: "https://iiitkalyani.ac.in/#" },
+      { label: "SRIC Cell", link: "/research/SRIC" },
+      { label: "Publications", link: "/research/Publications" },
+      { label: "Sponsored Projects", link: "/research/sponsored_projects" },
       { label: "Institution's Innovation Council", link: "/research/IIC" },
-      {
-        label: "National Innovation and Startup Policy",
-        link: "https://iiitkalyani.ac.in/php/nisp.php",
-      },
+      { label: "National Innovation and Startup Policy", link: "/research/NISP" }
     ],
   },
 ];
@@ -115,17 +103,16 @@ const students = [
       },
       {
         label: "Regulatory Rules",
-        link: "https://iiitkalyani.ac.in/php/regul_rules.php",
+        link: "/students/Regulatory_Rules",
       },
       {
         label: "Anti Ragging",
-        link: "/students/anti_ragging",
+        link: "/students/Anti_Ragging",
       },
       {
         label: "Students' Achievements",
         link: "https://iiitkalyani.ac.in/php/studentachievement.php",
       },
-      { label: "Students' Corner", link: "https://cache9.in/gallery/" },
       {
         label: "GDSC",
         link: "https://gdsc.community.dev/indian-institute-of-information-technology-kalyani/",

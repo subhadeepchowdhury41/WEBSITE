@@ -1,7 +1,6 @@
 import React from 'react'
 import Link from 'next/link';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import { stringify } from 'querystring';
 
 function Card(props) {
     return (
