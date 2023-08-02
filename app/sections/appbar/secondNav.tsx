@@ -56,14 +56,14 @@ const acadamics = [
 const about = [
   {
     items: [
-      { label: "About Us", link: "/about/aboutUs" },
+      { label: "About Us", link: "/about/aboutus" },
       {
         label: "NIRF",
         link: "https://iiitkalyani.ac.in/images/notifications/INDIAN%20INSTITUTE%20OF%20INFORMATION%20TECHNOLOGY,%20KALYANI20220228-.pdf",
       },
       { label: "Why IIIT Kalyani", link: "/about/whyiiitkalyani" },
       { label: "Staff", link: "/about/staff" },
-      { label: "Gallery", link: "/about/gallery" },
+      { label: "Gallery", link: "/about/gallery/parikshapecharcha2022" },
       { label: "All Facilities", link: "/about/facilities" },
       { label: "Gymkhana", link: "/about/gymkhana" },
     ],
@@ -115,10 +115,8 @@ const research = [
       { label: "SRIC Cell", link: "/research/SRIC" },
       { label: "Publications", link: "/research/Publications" },
       { label: "Sponsored Projects", link: "/research/sponsored_projects" },
-      { label: "Sponsored Consultancy", link: "https://iiitkalyani.ac.in/#" },
-      { label: "IPR", link: "https://iiitkalyani.ac.in/#" },
-      { label: "IIC", link: "/research/IIC" },
-      { label: "NISP", link: "/research/NISP" },
+      { label: "Institution's Innovation Council", link: "/research/IIC" },
+      { label: "National Innovation and Startup Policy", link: "/research/NISP" }
     ],
   },
 ];
@@ -142,7 +140,6 @@ const students = [
         label: "Students' Achievements",
         link: "https://iiitkalyani.ac.in/php/studentachievement.php",
       },
-      { label: "Students' Corner", link: "https://cache9.in/gallery/" },
       {
         label: "GDSC",
         link: "https://gdsc.community.dev/indian-institute-of-information-technology-kalyani/",
@@ -203,7 +200,7 @@ const NavBar = () => {
     <div
       className={`grid content-center z-50 w-full top-0`}
       style={{
-        backgroundColor: "rgb(0,0,0,0.85)",
+        backgroundColor: "rgb(0,0,0 ,0.85)",
       }}
     >
       <div className={`flex mx-auto iiitk-name m-6 items-center `}>
