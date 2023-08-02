@@ -1,7 +1,7 @@
 "use client";
 import NavBar from "../../sections/appbar/secondNav";
 import Footer from '../../sections/footer/footer';
-import "../../../styles/SRIC/sric.css";
+import "../../../styles/Research/SRIC/sric.css";
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 
 const SIRC = () => {

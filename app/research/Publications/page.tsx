@@ -1,7 +1,7 @@
 "use client";
 import NavBar from "../../sections/appbar/secondNav";
 import Footer from '../../sections/footer/footer';
-import "../../../styles/Publications/publications.css";
+import "../../../styles/Research/Publications/publications.css";
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 
 const Publications = () => {
