@@ -72,7 +72,11 @@ const Admissions = () => {
       "Addmissions | Indian Institute of Information Technology, Kalyani";
   }, []);
 
+<<<<<<< HEAD
+  function AdmissionCard(props: { data: any[]; heading: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | React.ReactPortal | null | undefined; }) {
+=======
   function AdmissionCard(props) {
+>>>>>>> 74698cc855e800c4a7010b48d6feea118f5d1c21
     return (
       <>
         <div className="card-container">
