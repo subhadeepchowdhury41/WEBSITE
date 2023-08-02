@@ -129,88 +129,56 @@ export default function Footer() {
                 <div className="">
                   <ul className="list-unstyled ">
                     <li>
-<<<<<<< HEAD
-                      <a href="https://iiitkalyani.ac.in/newfacultypages/faculty1.php" target="blank" className="text-white-footer">
-=======
                       <a href="/academics/faculty" className="text-white-footer">
->>>>>>> 74698cc855e800c4a7010b48d6feea118f5d1c21
                         Faculty
                       </a>
                       <hr />
                     </li>
 
                     <li>
-<<<<<<< HEAD
-                      <a href="http://iiitkalyani.ac.in/php/sric.php" className="text-white-footer" target="blank">
-=======
                       <a href="research/SRIC" className="text-white-footer"  >
->>>>>>> 74698cc855e800c4a7010b48d6feea118f5d1c21
                         SRIC Cell
                       </a>
                       <hr />
                     </li>
 
                     <li>
-<<<<<<< HEAD
-                      <a href="http://iiitkalyani.ac.in/php/downloads.php" className="text-white-footer" target="blank">
-=======
                       <a href="http://iiitkalyani.ac.in/php/downloads.php" className="text-white-footer"  >
->>>>>>> 74698cc855e800c4a7010b48d6feea118f5d1c21
                         Downloads
                       </a>
                       <hr />
                     </li>
 
                     <li>
-<<<<<<< HEAD
-                      <a href="http://iiitkalyani.ac.in/php/about_us.php" className="text-white-footer" target="blank">
-=======
                       <a href="/about/aboutus" className="text-white-footer"  >
->>>>>>> 74698cc855e800c4a7010b48d6feea118f5d1c21
                         About Us
                       </a>
                       <hr />
                     </li>
 
                     <li>
-<<<<<<< HEAD
-                      <a href="http://iiitkalyani.ac.in/php/administration.php" className="text-white-footer" target="blank">
-=======
                       <a href="http://iiitkalyani.ac.in/php/administration.php" className="text-white-footer"  >
->>>>>>> 74698cc855e800c4a7010b48d6feea118f5d1c21
                         Adminstartive Body
                       </a>
                       <hr />
                     </li>
 
                     <li>
-<<<<<<< HEAD
-                      <a href="http://iiitkalyani.ac.in/php/studentachievement.php" className="text-white-footer" target="blank">
-=======
                       <a href="/students/students-achievements" className="text-white-footer"  >
->>>>>>> 74698cc855e800c4a7010b48d6feea118f5d1c21
                         Students' Achievment
                       </a>
                       <hr />
                     </li>
 
                     <li>
-<<<<<<< HEAD
-                      <a href="http://iiitkalyani.ac.in/php/gallery/gallery.php" className="text-white-footer" target="blank">
-=======
                       <a href="/about/gallery/parikshapecharcha2022" className="text-white-footer"  >
->>>>>>> 74698cc855e800c4a7010b48d6feea118f5d1c21
                         Gallery
                       </a>
                       <hr />
                     </li>
 
                     <li>
-<<<<<<< HEAD
                       <a href="http://iiitkalyani.ac.in/placement/" className="text-white-footer" target="blank">
-=======
-                      <a href="http://iiitkalyani.ac.in/placement/" className="text-white-footer"  >
->>>>>>> 74698cc855e800c4a7010b48d6feea118f5d1c21
                         Placement Portal
                       </a>
                       <hr className="hiddenLine" />
@@ -237,99 +205,63 @@ export default function Footer() {
                 <div className="">
                   <ul className="list-unstyled ">
                     <li>
-<<<<<<< HEAD
-                      <a href="/e-notice-board" className="text-white-footer">
-=======
-                      <a href="http://iiitkalyani.ac.in/php/notifications.php" className="text-white-footer"  >
->>>>>>> 74698cc855e800c4a7010b48d6feea118f5d1c21
+                      <a href="/e-notice-board" className="text-white-footer"  >
                         e-Notice Board
                       </a>
                       <hr />
                     </li>
 
                     <li>
-<<<<<<< HEAD
-                      <a href="http://iiitkalyani.ac.in/php/rti.php" className="text-white-footer" target="blank">
-=======
                       <a href="/pdf/RTI/Office Order-96_RTI.pdf" className="text-white-footer"  >
->>>>>>> 74698cc855e800c4a7010b48d6feea118f5d1c21
                         Right To Information
                       </a>
                       <hr />
                     </li>
 
                     <li>
-<<<<<<< HEAD
-                      <a href="http://iiitkalyani.ac.in/images/The%20Constitution%20of%20India.pdf" className="text-white-footer" target="blank">
-=======
                       <a href="/pdf/preamble/The Constitution of India.pdf" className="text-white-footer"  >
->>>>>>> 74698cc855e800c4a7010b48d6feea118f5d1c21
                         Preamble of the Constitution of India
                       </a>
                       <hr />
                     </li>
 
                     <li>
-<<<<<<< HEAD
-                      <a href="http://iiitkalyani.ac.in/php/fee_structure.php" className="text-white-footer" target="blank">
-=======
                       <a href="http://iiitkalyani.ac.in/php/fee_structure.php" className="text-white-footer"  >
->>>>>>> 74698cc855e800c4a7010b48d6feea118f5d1c21
                         Fee Structure
                       </a>
                       <hr />
                     </li>
 
                     <li>
-<<<<<<< HEAD
-                      <a href="http://iiitkalyani.ac.in/php/ugregulations.php" className="text-white-footer" target="blank">
-=======
                       <a href="http://iiitkalyani.ac.in/php/ugregulations.php" className="text-white-footer"  >
->>>>>>> 74698cc855e800c4a7010b48d6feea118f5d1c21
                         UG Regulations
                       </a>
                       <hr />
                     </li>
 
                     <li>
-<<<<<<< HEAD
-                      <a href="http://iiitkalyani.ac.in/php/nptel.php" className="text-white-footer" target="blank">
-=======
                       <a href="/academics/nptel" className="text-white-footer"  >
->>>>>>> 74698cc855e800c4a7010b48d6feea118f5d1c21
                         NPTEL Collaboration
                       </a>
                       <hr />
                     </li>
 
                     <li>
-<<<<<<< HEAD
-                      <a href="http://iiitkalyani.ac.in/php/Academic_cal.php" className="text-white-footer" target="blank">
-=======
                       <a href="/academics/academic-calendar" className="text-white-footer"  >
->>>>>>> 74698cc855e800c4a7010b48d6feea118f5d1c21
                         Academic Calender
                       </a>
                       <hr />
                     </li>
 
                     <li>
-<<<<<<< HEAD
-                      <a href="http://iiitkalyani.ac.in/php/nep.php" className="text-white-footer" target="blank">
-=======
                       <a href="http://iiitkalyani.ac.in/php/nep.php" className="text-white-footer"  >
->>>>>>> 74698cc855e800c4a7010b48d6feea118f5d1c21
                         New National Education Policy-2020
                       </a>
                       <hr />
                     </li>
 
                     <li>
-<<<<<<< HEAD
-                      <a href="http://iiitkalyani.ac.in/php/iic.php" className="text-white-footer" target="blank">
-=======
                       <a href="/research/IIC" className="text-white-footer"  >
->>>>>>> 74698cc855e800c4a7010b48d6feea118f5d1c21
                         Institution's Innovation Council (IIC)
                       </a>
                       <hr className="hiddenLine" />
@@ -433,12 +365,7 @@ export default function Footer() {
           {/* <hr /> */}
           <p style={{ position: "absolute", backgroundColor: "rgb(25,25,25)", padding: "0 10px 0 10px", zIndex: "22", fontSize: "17px", display: "flex", flexDirection: "row" }}>Portals
             <a
-<<<<<<< HEAD
-              href="http://iiitkalyani.ac.in/images/ARIIA%20_%200796_2022.pdf"
-              download
-=======
               href="/pdf/ARIIA/ARIIA _ 0796_2022.pdf"
->>>>>>> 74698cc855e800c4a7010b48d6feea118f5d1c21
               target="blank"
 
             >
@@ -448,11 +375,7 @@ export default function Footer() {
           <Marquee speed={80} className="marquee" gradient={false}>
 
             <a
-<<<<<<< HEAD
-              href="https://main.trai.gov.in/"
-=======
               href="https://trai.gov.in/"
->>>>>>> 74698cc855e800c4a7010b48d6feea118f5d1c21
               className="text-white-footer-portal"
               target="blank"
             >
@@ -480,11 +403,7 @@ export default function Footer() {
               Vidya Lakshmi &emsp;
             </a>
             <a
-<<<<<<< HEAD
-              href="http://scholarship.up.nic.in/"
-=======
               href="https://scholarship.up.gov.in/"
->>>>>>> 74698cc855e800c4a7010b48d6feea118f5d1c21
               className="text-white-footer-portal"
               target="blank"
             >
