@@ -3,7 +3,7 @@ import Image from 'next/image'
 import NavBar from "../../sections/appbar/secondNav";
 import Footer from '../../sections/footer/footer';
 import FileOpenIcon from '@mui/icons-material/FileOpen';
-import "../../../styles/antiRagging/anti_ragging.css";
+import "../../../styles/Students/antiRagging/anti_ragging.css";
 import Data from "./data";
 
 const Anti_Ragging = () => {

@@ -1,7 +1,7 @@
 "use client";
 import NavBar from "../../sections/appbar/secondNav";
 import Footer from '../../sections/footer/footer';
-import "../../../styles/NISP/nisp.css";
+import "../../../styles/Research/NISP/nisp.css";
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 
 const NISP = () => {

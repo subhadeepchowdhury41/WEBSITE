@@ -19,7 +19,7 @@ const acadamics = [
     items: [
       { label: "Programmes", link: "/academics/programs" },
       {
-        label: "Faculty", link: "/faculty/[id]",
+        label: "Faculty", link: "/academics/faculty",
       },
       {
         label: "Admissions",
@@ -132,11 +132,11 @@ const students = [
       },
       {
         label: "Regulatory Rules",
-        link: "https://iiitkalyani.ac.in/php/regul_rules.php",
+        link: "/students/Regulatory_Rules",
       },
       {
         label: "Anti Ragging",
-        link: "/students/anti_ragging",
+        link: "/students/Anti_Ragging",
       },
       {
         label: "Students' Achievements",

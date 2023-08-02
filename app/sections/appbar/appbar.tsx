@@ -15,8 +15,7 @@ const acadamics = [
     items: [
       { label: "Programmes", link: "/academics/programs" },
       // { label: 'Programmes', link: 'https://iiitkalyani.ac.in/php/programmes.php' },
-      { label: "Faculty", link: "/faculty/[id]" },
-      // { label: 'Faculty', link: 'https://iiitkalyani.ac.in/newfacultypages/faculty1.php' },
+      { label: "Faculty", link: "/academics/faculty" },
       { label: 'Admissions', link: 'academics/admissions' },
       { label: 'Academic Calendar', link: '/academics/academic-calendar' },
       { label: 'Course Structure', link: 'https://iiitkalyani.ac.in/php/Course_stru.php' },
@@ -106,11 +105,11 @@ const students = [
       },
       {
         label: "Regulatory Rules",
-        link: "https://iiitkalyani.ac.in/php/regul_rules.php",
+        link: "/students/Regulatory_Rules",
       },
       {
         label: "Anti Ragging",
-        link: "/students/anti_ragging",
+        link: "/students/Anti_Ragging",
       },
       {
         label: "Students' Achievements",
