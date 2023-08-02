@@ -98,7 +98,7 @@ const EventSection = () => {
                             <EventNoteOutlinedIcon style={{ marginLeft: "5px", fontSize: "32px", marginBottom: "5px" }} />
                         </span>
                     </Reveal>
-                    <a href='https://iiitkalyani.ac.in/php/gallery/gallery.php' target="_blank" rel="noreferrer">
+                    <a href='/about/gallery/parikshapecharcha2022' rel="noreferrer">
                         {/* <ITKButton text="View All Events" />  */}
                         <div className='view-more'>View More</div>
                     </a>
