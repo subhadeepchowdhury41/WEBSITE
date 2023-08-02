@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import "./sidebar.css";
-import { useMediaQuery } from "react-responsive";
 
 interface HeadingInterface {
   label: string;
@@ -23,39 +22,31 @@ interface SidebarProps {
 
 
 const Sidebar: React.FC<SidebarProps> = ({ page, array, location }) => {
-  const isSidebar = useMediaQuery({ minWidth: 700 });
 
   return (
-    <>
-      {isSidebar ? (
-        <div className="sidebar">
-          <span className="sidebar-location">{location}</span>
-          <br></br>
-          <span className="sidebar-heading">{page}</span>
-          <br></br>
-          {array[0].headings?.map((index) => {
-            return (
-              <React.Fragment key={index.id}>
-                <span className="sidebar-subheading">{index.label}</span>
-                <ul>
-                  {array[index.id].subheadings?.map((i) => {
-                    return (
-                      <>
-                        <a href={i.link}>
-                          <li>{i.label}</li>
-                        </a>
-                      </>
-                    );
-                  })}
-                </ul>
-              </React.Fragment>
-            );
-          })}
-        </div>
-      ) : (
-        ""
-      )}
-    </>
+    <div className="sidebar">
+      <div className="sidebar-location">{location}</div>
+      <div className="sidebar-heading">{page}</div>
+      {array[0].headings?.map((index) => {
+        return (
+          <div key={index.id}>
+            <div className="sidebar-subheading">{index.label}</div>
+            <div className="ul">
+              {array[index.id].subheadings?.map((i) => {
+                return (
+                  <>
+                    <a href={i.link}>
+                      <span >{i.label}</span>
+                    </a>
+                    <br />
+                  </>
+                );
+              })}
+            </div>
+          </div>
+        );
+      })}
+    </div>
   );
 };
 

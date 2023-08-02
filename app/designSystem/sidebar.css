@@ -26,11 +26,11 @@
     margin: 15px 0;
 }
 
-.sidebar ul {
+.ul {
     padding-left: 20px;
 }
 
-.sidebar ul li {
+.sidebar span {
     margin: 7px;
     font-size: 15px;
     color: rgb(20, 20, 20);
