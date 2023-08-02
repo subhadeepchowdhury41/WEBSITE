@@ -17,7 +17,7 @@ const acadamics = [
       // { label: 'Programmes', link: 'https://iiitkalyani.ac.in/php/programmes.php' },
       { label: "Faculty", link: "/faculty/[id]" },
       // { label: 'Faculty', link: 'https://iiitkalyani.ac.in/newfacultypages/faculty1.php' },
-      { label: 'Admissions', link: 'academics/admissions' },
+      { label: 'Admissions', link: '/academics/admissions' },
       { label: 'Academic Calendar', link: 'https://iiitkalyani.ac.in/php/Academic_cal.php' },
       { label: 'Course Structure', link: 'https://iiitkalyani.ac.in/php/Course_stru.php' },
       { label: 'New National Education Policy-2020', link: 'https://iiitkalyani.ac.in/php/nep.php' },
@@ -49,7 +49,7 @@ const administration = [
     items: [
       {
         label: "Administrative Body",
-        link: "https://iiitkalyani.ac.in/php/administration.php",
+        link: "/administration/administrativeBody",
       },
       {
         label: "Board of Governers",
@@ -73,7 +73,7 @@ const administration = [
       },
       {
         label: "Internal Complaint Committee",
-        link: "https://iiitkalyani.ac.in/php/icc.php",
+        link: "/administration/icc",
       },
       {
         label: "Right to Information",

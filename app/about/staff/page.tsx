@@ -39,7 +39,7 @@ const array = [
 // console.log(window.outerWidth)
 // var deviceWidth = window.innerWidth;
 
-const PHDStudents = () => {
+const Staff = () => {
     useEffect(() => {
         document.title = 'Staffs | Indian Institute of Information Technology, Kalyani';
     }, []);
@@ -99,4 +99,4 @@ const PHDStudents = () => {
     );
 }
 
-export default PHDStudents;
+export default Staff;
