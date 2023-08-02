@@ -140,6 +140,14 @@ const career = [
     ],
   },
 ];
+const notifications = [
+  {
+    items: [
+      { label: "E-Notice Board", link: "/e-notice-board" },
+      { label: "Archive: Notice Board", link: "https://iiitkalyani.ac.in/php/archive.php" },
+    ],
+  }
+]
 const mobileMenu = [
   {
     items: [
@@ -150,6 +158,7 @@ const mobileMenu = [
       { label: "Students", index: 5, submenu: students },
       { label: "Career", index: 6, submenu: career },
       { label: "Placements", index: 7, submenu: placements },
+      { label: "Notifications", index: 8, submenu: notifications },
     ],
   },
 ];
@@ -284,6 +293,10 @@ export default function AppBar() {
               <NavItem
                 title="Placements"
                 menu={<MegaMenu menus={placements} />}
+              />
+              <NavItem
+                title="Notifications"
+                menu={<MegaMenu menus={notifications} />}
               />
             </ul>
           </div>
