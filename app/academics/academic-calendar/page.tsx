@@ -2,22 +2,12 @@
 import NavBar from '../../sections/appbar/secondNav'
 import Footer from '../../sections/footer/footer'
 import Comingsoon from '../../designSystem/comingsoon'
-<<<<<<< HEAD
-=======
-import { useEffect } from "react";
-
-
->>>>>>> 74698cc855e800c4a7010b48d6feea118f5d1c21
 import React from 'react'
 import '../../../styles/academiccalender/academiccalender.css'
 import data1 from './data1'
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import { alignProperty } from '@mui/material/styles/cssUtils'
 function AcademicCalendar() {
-    useEffect(() => {
-        document.title =
-            "Academic Calendar | Indian Institute of Information Technology, Kalyani";
-    }, []);
     return (
         <React.Fragment>
             <NavBar />
