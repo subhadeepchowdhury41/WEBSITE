@@ -5,7 +5,7 @@ import React, { useState } from 'react'
 import Sidebar from './Sidebar'
 import data from './data'
 import { match } from 'assert'
-import '../../../styles/program/program.css'
+import '../../../styles/academics/program/program.css'
 import Link from 'next/link'
 import { useEffect } from 'react'
 
