@@ -178,7 +178,7 @@ export default function Footer() {
                     </li>
 
                     <li>
-                      <a href="http://iiitkalyani.ac.in/placement/" className="text-white-footer"  >
+                      <a href="http://iiitkalyani.ac.in/placement/" className="text-white-footer" target="blank">
                         Placement Portal
                       </a>
                       <hr className="hiddenLine" />
@@ -205,7 +205,7 @@ export default function Footer() {
                 <div className="">
                   <ul className="list-unstyled ">
                     <li>
-                      <a href="http://iiitkalyani.ac.in/php/notifications.php" className="text-white-footer"  >
+                      <a href="/e-notice-board" className="text-white-footer"  >
                         e-Notice Board
                       </a>
                       <hr />
