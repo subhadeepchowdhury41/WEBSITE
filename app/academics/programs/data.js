@@ -17,7 +17,7 @@ const SidebarData = [
                 resources: [
                     {
                         heading: 'New Curriculum from July 2021 onwards',
-                        url: 'https://iiitkalyani.ac.in/images/notification2021/Annexure%20E.pdf'
+                        url: 'AnnexureCSE.pdf'
                     },
                     {
                         heading: 'Old Curriculum',
@@ -34,6 +34,12 @@ const SidebarData = [
                 label: 'Electronics and Communication Engineering',
                 img: BtechECE.src,
                 text: 'Electronics and Communication Engineering [ECE] is a field of engineering that revolves around the study, design, and application of electronic devices, systems, and communication technologies. It encompasses a wide range of areas, including analog and digital electronics, microelectronics, telecommunications, signal processing, and wireless communication. In this rapidly evolving digital era, ECE has a significant impact on almost every aspect of our lives, enabling seamless communication through mobile phones, high-speed internet, and satellite systems, as well as powering various electronic devices we rely on daily. With a strong emphasis on innovation and problem-solving, ECE offers exciting opportunities for individuals passionate about technology and eager to contribute to the ongoing advancements in the field. Whether it is working on developing new electronic devices, improving communication networks, or exploring emerging technologies like the Internet of Things (IoT) and 5G, Electronics and Communication Engineering continues to be a vital and sought-after discipline in the current interconnected world.',
+                resources: [
+                    {
+                        heading: 'Electronics and Communication Engineering Course Structure',
+                        url: '../../../public/programresources/AnnexureECE.pdf'
+                    }    
+                ]
             }
         ],
     },
