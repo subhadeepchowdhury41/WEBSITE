@@ -159,6 +159,14 @@ const mobileMenu = [
     ],
   },
 ];
+const notifications = [
+  {
+    items: [
+      { label: "E-Notice Board", link: "/e-notice-board" },
+      { label: "Archive: Notice Board", link: "https://iiitkalyani.ac.in/php/archive.php" },
+    ],
+  }
+]
 const NavBar = () => {
   const [stick, setStick] = useState<Boolean>(false);
   const handleScroll = () => {
@@ -281,6 +289,7 @@ const NavBar = () => {
           <NavItem title="Career" menu={<MegaMenu menus={career} />} />
 
           <NavItem title="Placements" menu={<MegaMenu menus={placements} />} />
+          <NavItem title="Notifications" menu={<MegaMenu menus={notifications} />} />
         </ul>
       </div>
     </div>
