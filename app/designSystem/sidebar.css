@@ -1,8 +1,8 @@
 .sidebar {
     position: sticky;
     top: 70px;
-    height: 100vh;
-    width: calc(min(22vw, 250px));
+    height: 72vh;
+    width: calc(min(25vw, 250px));
     padding: 20px;
     /* margin-right: 20px; */
     background-color: rgba(245, 235, 209, 0.953);
@@ -31,7 +31,30 @@
 }
 
 .sidebar span {
-    margin: 7px;
+    margin: 2px;
+    line-height: 15px;
+    margin-left: 0;
     font-size: 15px;
     color: rgb(20, 20, 20);
+}
+
+@media (max-width: 900px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .sidebar-heading {
+        font-size: 20px;
+    }
+
+    .sidebar-subheading {
+        font-size: 15px;
+    }
+
+    .sidebar span {
+        font-size: 12px;
+        margin-left: 0;
+    }
 }

@@ -1,10 +1,6 @@
 'use client'
 import '../../../styles/admissions/admissions.css'
 import React from 'react';
-import MailIcon from '@mui/icons-material/Mail';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import InsertLinkIcon from '@mui/icons-material/InsertLink';
 import NavBar from '../../sections/appbar/secondNav';
 import Footer from '../../sections/footer/footer';
 import Sidebar from '../../designSystem/sidebar';
@@ -96,7 +92,7 @@ const Admissions = () => {
           </div>
           <div className="card-header">
             <div>
-              {props.heading} Admissions {" >"}
+              {props.heading} Admissions
             </div>
           </div>
         </div>
@@ -108,7 +104,7 @@ const Admissions = () => {
     <>
       <NavBar />
       <div className="admissions-container">
-        <Sidebar location='Academics > Admissions' page="Admissions" array={array} />
+        <Sidebar location="" page="Admissions" array={array} />
         <div className="admission-channels">
 
           <div className="admission-card">

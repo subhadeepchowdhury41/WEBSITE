@@ -37,6 +37,10 @@ function ENoticeBoard() {
             }
         });
     }, [activeArr]);
+    useEffect(() => {
+        document.title =
+            "e-Notice Board | Indian Institute of Information Technology, Kalyani";
+    }, []);
     return (
         <div className='w-full h-fit'>
             <NavBar />

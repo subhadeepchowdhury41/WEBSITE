@@ -31,30 +31,30 @@ function ProgramPage() {
         <div>
             <NavBar />
             <div className='flex w-full h-fit relative resp-program'>
-                <div className='flex-[3] w-full h-[100vh] bg-[rgb(245,235,209)] pos-adj sticky top-[70px]'>
+                <div className={`flex-[3] w-full h-[100vh] bg-[rgb(245,235,209)] pos-adj ${globalThis.window.innerWidth < 1200 ? 'relative top-0' : 'sticky top-[70px]'} `}>
                     <Sidebar data={data} setActiveIndex={setActiveIndex} setActiveId={setActiveId} setMatchingItem={setMatchingItem}
                         ActiveIndex={activeIndex} ActiveId={activeId} />
                 </div>
                 <div className='flex-[8] w-full h-auto py-[16px] px-[64px] flex flex-col gap-4 pd-adjst'>
                     <div className='text-[28px] font-semibold'>{matchingItem?.label}</div>
-                    <div className='w-full aspect-[2] ht-adj' style={{ backgroundImage: `url(${matchingItem?.img})`, backgroundSize: '100% 100%' }}></div>
-                    <div className='w-full text-[18px]'>
+                    <div className='w-full aspect-[2] ht-adj' style={{ backgroundImage: `url(${matchingItem?.img})`, backgroundSize: '100% 100%', borderRadius: "10px", boxShadow: "0 0 5px grey" }}></div>
+                    <div className='w-full text-[18px]' style={{ fontSize: "16px", textAlign: "justify" }}>
                         {matchingItem?.text}
                     </div>
                 </div>
-                <div className='flex-[2] w-full h-[100vh] bg-[rgb(245,235,209)] flex flex-col gap-1 p-[16px] sticky top-[70px]'>
+                <div className={`flex-[2] w-full h-[100vh] bg-[rgb(245,235,209)] flex flex-col gap-1 p-[16px] ${globalThis.window.innerWidth < 1200 ? 'relative top-0' : 'sticky top-[70px]'}`}>
                     <div className='font-semibold text-[26px] '>Resources</div>
                     {matchingItem?.resources?.map((index) => {
                         return (
                             // <a href={index.url} target="_blank" rel="noopener noreferrer">
-                            <div style={{ cursor: "pointer" }} onClick={() => handleButtonClick(index.url)} className='border border-black p-[4px] rounded-[5px]'>{index.heading}</div>
+                            <div style={{ cursor: "pointer" }} onClick={() => handleButtonClick(index.url)} className='border border-black p-[4px] my-1 rounded-[5px]'>{index.heading}</div>
                             // </a>
                         )
                     })}
                 </div>
             </div>
             <Footer />
-        </div>
+        </div >
     )
 }
 

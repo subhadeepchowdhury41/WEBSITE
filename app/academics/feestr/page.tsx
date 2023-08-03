@@ -7,8 +7,13 @@ import FileCopyIcon from '@mui/icons-material/FileCopy';
 import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 import data from './data'
 import '../../../styles/feestr/feestr.css'
+import { useEffect } from 'react'
 
 const page = () => {
+    useEffect(() => {
+        document.title =
+            "Fee Structure | Indian Institute of Information Technology, Kalyani";
+    }, []);
     return (
         <React.Fragment>
             <NavBar />

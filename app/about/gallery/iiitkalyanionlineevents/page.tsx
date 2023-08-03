@@ -77,8 +77,6 @@ const App: React.FC = () => {
         </div>
         <Sidebar array={arr} scroll={scroll} />
       </div>
-      {/* <Image src={require(`../../../../assets/gallery/${carouselData[0].url}.jpg`)} alt="logo" /> */}
-
       <Footer />
     </>
   );

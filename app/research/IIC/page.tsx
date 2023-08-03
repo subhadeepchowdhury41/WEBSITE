@@ -18,7 +18,7 @@ const PHDStudents = () => {
         <h1>Institution&apos;s Innovation Council</h1>
         <div className='fluid-center iic-certificate'>
           <h2>Certificate-IIC</h2>
-          <img src='https://i.ibb.co/X5H8FXS/IIC-certificate.png' className="iic-certificate-img" />
+          <img src='https://i.ibb.co/X5H8FXS/IIC-certificate.png' className="iic-certificate-img" alt="certificate" />
         </div>
         <div className="fluid-center iic-buttons">
           <a href='https://iiitkalyani.ac.in/images/downloads/272.2.5%20Letterof%20Reco%20IIIT%20Kalyani.PDF' target="_blank" rel="noreferrer" className="fluid-center iic-btn">
