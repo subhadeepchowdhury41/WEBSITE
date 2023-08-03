@@ -18,10 +18,23 @@ const RootLayout = ({
     return (
         <html className='bg-[#00000]' lang="en">
             <head>
-                <title>Indian Institute of Information Technology, Kalyani</title>
+                <meta charSet='UTF-8' />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <meta name="description" content="Empowering Innovators: IIIT Kalyani - Shaping Futures in Tech Education & Research." />
                 <meta name="Indian Institute of Information Technology, Kalyani" content="Official Website of IIIT Kalynai" />
-                <meta name="keywords" content="IIIT Kalyani, Indian Institute of Information Technology,Kalyani, Computer Science, Electronics, Telecommunication" />
+                <meta name="keywords" content="IIIT Kalyani, Indian Institute of Information Technology,Kalyani, Computer Science, Electronics, Electronics and Communication, Engineering, Telecommunication, Education, Research" />
+                <meta name="author" content="IIIT Kalyani" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+                {/*Meta tags for Open Graph*/}
+                <meta property="og:title" content="IIIT Kalyani" />
+                <meta property="og:description" content="Empowering Innovators: IIIT Kalyani - Shaping Futures in Tech Education & Research." />
+                <meta property="og:image" content="https://iiitkalyani.ac.in/images/front-page/iiitlogo.png" />
+                {/* <meta property="og:url" content="https://example.com/page-url" /> */}
+                <meta property="og:type" content="website" />
+                {/**=Open graph meta tags close*/}
                 <link href="https://iiitkalyani.ac.in/images/front-page/iiitlogo.png" rel="shortcut icon" type="image/x-icon" />
+                <title>Indian Institute of Information Technology, Kalyani</title>
             </head>
             <body >
                 {children}
