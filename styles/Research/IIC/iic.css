@@ -35,6 +35,9 @@
     border: 1px solid rgb(85, 173, 241);
 }
 .iic-certificate-img{
+    width: 640px;
+    min-width: 400px;
+    height: fit-content;
     border-radius: 5px;
     padding: 30px;
     border: 1px solid rgb(85, 173, 241);

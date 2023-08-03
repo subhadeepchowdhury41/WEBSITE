@@ -29,11 +29,11 @@ const RootLayout = ({
                 {/*Meta tags for Open Graph*/}
                 <meta property="og:title" content="IIIT Kalyani" />
                 <meta property="og:description" content="Empowering Innovators: IIIT Kalyani - Shaping Futures in Tech Education & Research." />
-                <meta property="og:image" content="https://iiitkalyani.ac.in/images/front-page/iiitlogo.png" />
+                <meta property="og:image" content="/iiit_kalyani_logo.png" />
                 {/* <meta property="og:url" content="https://example.com/page-url" /> */}
                 <meta property="og:type" content="website" />
                 {/**=Open graph meta tags close*/}
-                <link href="https://iiitkalyani.ac.in/images/front-page/iiitlogo.png" rel="shortcut icon" type="image/x-icon" />
+                <link href="/iiit_kalyani_logo.png" rel="shortcut icon" type="image/x-icon" />
                 <title>Indian Institute of Information Technology, Kalyani</title>
             </head>
             <body >

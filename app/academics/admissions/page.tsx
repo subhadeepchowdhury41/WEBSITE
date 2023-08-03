@@ -108,11 +108,11 @@ const Admissions = () => {
         <div className="admission-channels">
 
           <div className="admission-card">
-            <AdmissionCard heading="B.Tech" data={[["Admission details", "https://iiitkalyani.ac.in/php/images/admission_brochure_2023.pdf", true], ["Admission Form", "https://iiitkalyani.ac.in/php/images/Admission%20Form%202023.pdf", true], ["Annexure 7", "https://iiitkalyani.ac.in/php/images/Annexure7.pdf", true]]} />
+            <AdmissionCard heading="B.Tech" data={[["Admission details", "/admissions/pdfs/btech/admission_brochure_2023.pdf", true], ["Admission Form", "/admissions/pdfs/btech/Admission%20Form%202023.pdf", true], ["Annexure 7", "/admissions/pdfs/btech/Annexure7.pdf", true]]} />
           </div>
 
           <div className="admission-card">
-            <AdmissionCard heading="M.Tech" data={[["Executive M.Tech Admission - 2023", "admissions/pages/mtech", false], ["CEP Admission 2023 - List of Eligible and Not Eligible Candidates", "http://iiitkalyani.ac.in/images/CEP%20Admission%202023%20-%20List%20of%20Eligible%20and%20Not%20Eligible%20Candidates.pdf", true], ["Admission to Executive M.Tech (Artificial Intelligence and Data Science) Program - July 2023 Session", "http://iiitkalyani.ac.in/php/images/Advertisement-MTech-2023-IIITKalyani.pdf", true], ["Executive M.Tech Program - 2023: Application Form (PDF)", "http://iiitkalyani.ac.in/php/images/Advertisement-MTech-2023-IIITKalyani.pdf", true], ["Executive M.Tech Program - 2023: Application Form (DOCX)", "http://iiitkalyani.ac.in/php/images/Advertisement-MTech-2023-IIITKalyani.pdf", true]]} />
+            <AdmissionCard heading="M.Tech" data={[["Executive M.Tech Admission - 2023", "admissions/pages/mtech", false], ["CEP Admission 2023 - List of Eligible and Not Eligible Candidates", "/admissions/pdfs/mtech/CEP%20Admission%202023%20-%20List%20of%20Eligible%20and%20Not%20Eligible%20Candidates.pdf", true], ["Admission to Executive M.Tech (Artificial Intelligence and Data Science) Program - July 2023 Session", "/admissions/pdfs/mtech/Advertisement-MTech-2023-IIITKalyani.pdf", true], ["Executive M.Tech Program - 2023: Application Form (PDF)", "/admissions/pdfs/mtech/Advertisement-MTech-2023-IIITKalyani.pdf", true], ["Executive M.Tech Program - 2023: Application Form (DOCX)", "/admissions/pdfs/mtech/Advertisement-MTech-2023-IIITKalyani.pdf", true]]} />
           </div>
 
           <div className="admission-card">

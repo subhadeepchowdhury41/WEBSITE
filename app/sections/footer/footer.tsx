@@ -157,7 +157,7 @@ export default function Footer() {
                     </li>
 
                     <li>
-                      <a href="http://iiitkalyani.ac.in/php/administration.php" className="text-white-footer"  >
+                      <a href="/administration/administrativeBody" className="text-white-footer"  >
                         Adminstartive Body
                       </a>
                       <hr />
@@ -226,7 +226,7 @@ export default function Footer() {
                     </li>
 
                     <li>
-                      <a href="http://iiitkalyani.ac.in/php/fee_structure.php" className="text-white-footer"  >
+                      <a href="/academics/feestr" className="text-white-footer"  >
                         Fee Structure
                       </a>
                       <hr />
@@ -254,7 +254,7 @@ export default function Footer() {
                     </li>
 
                     <li>
-                      <a href="http://iiitkalyani.ac.in/php/nep.php" className="text-white-footer"  >
+                      <a href="/academics/newedupolicy" className="text-white-footer"  >
                         New National Education Policy-2020
                       </a>
                       <hr />

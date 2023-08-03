@@ -1,100 +1,40 @@
 'use client'
-import '../../../styles/administration/icc/icc.css'
-import React from 'react';
+
+import React from 'react'
+import FileCopyIcon from '@mui/icons-material/FileCopy';
 import NavBar from '../../sections/appbar/secondNav';
 import Footer from '../../sections/footer/footer';
-import HEADER from '../../designSystem/header';
-import { useEffect } from "react"
+import data from './data';
+import '../../../styles/coursestr/coursestr.css';
+import { useEffect } from 'react';
 
-const array = [
-  {
-    headings: [
-      { label: "IIIT Kalyani Internal Complaint Committee", id: 1 },
-      { label: "Office Memorandum", id: 2 },
-      { label: "Notification and Act", id: 3 },
-      { label: "Rules", id: 4 },
-      { label: "Handbook On Sexual Harassment of Women at Workplace", id: 5 },
-    ],
-  },
-  {
-    subheadings: [
-      {
-        label: "",
-        link: "",
-      },
-    ],
-  },
-  {
-    subheadings: [
-      {
-        label: "",
-        link: "",
-      },
-    ],
-  },
-  {
-    subheadings: [
-      {
-        label: "",
-        link: "",
-      },
-    ],
-  },
-  {
-    subheadings: [
-      {
-        label: "",
-        link: "",
-      },
-    ],
-  },
-  {
-    subheadings: [
-      {
-        label: "",
-        link: "",
-      },
-    ],
-  },
-
-];
-
-const ICC = () => {
-
+const page = () => {
   useEffect(() => {
     document.title =
       "ICC | Indian Institute of Information Technology, Kalyani";
   }, []);
   return (
-    <>
+    <React.Fragment>
       <NavBar />
-      <div className="icc-container">
-        <div className="icc-body">
-          <div className="icc-header">
-            <HEADER text='Internal Complaint Committee' />
-          </div>
-          <div className="icc-links">
-            <a href='http://iiitkalyani.ac.in/images/icc/IIIT%20Kalyani%20Internal%20Complaints%20Committee.pdf' target='_blank' rel='noreferrer' className="link">
-              IIIT Kalyani Internal Complaint Committee
-            </a>
-            <a href='http://iiitkalyani.ac.in/images/icc/Office%20Memorandum.pdf' target='_blank' rel='noreferrer' className="link">
-              Office Memorandum
-            </a>
-            <a href='' target='_blank' rel='noreferrer' className="link">
-              Notification and Act
-            </a>
-            <a href='' target='_blank' rel='noreferrer' className="link">
-              Rules
-            </a>
-            <a href='' target='_blank' rel='noreferrer' className="link">
-              Handbook On Sexual Harassment of Women at Workplace
-            </a>
-          </div>
+      <div className='flexCon main-container'>
+        <h1>Internal Complaint Committee</h1>
+        <div className='flexCon main-calender'>
+          <h2>Handbooks</h2>
+          {data.btechcse.map((e) => {
+            return (
+              <div className='flexCon card' key={e.id}>
+                <FileCopyIcon style={{ color: 'black', fontSize: '30px' }} />
+                {e.name}
+                <a href={e.link} className='card-btn' target='_blank'>PDF</a>
+              </div>
+            );
+          })}
         </div>
+
       </div>
       <Footer />
-    </>
-  );
+    </React.Fragment>
+  )
 }
 
-export default ICC;
+export default page

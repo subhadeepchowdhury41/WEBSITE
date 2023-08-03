@@ -10,34 +10,34 @@ import p1 from '../../../assets/carousel/Picture1.png'
 
 const carouselData = [
     {
-        url: 'https://i.postimg.cc/3rcBvYq5/Picture1.png',
+        url: '/images/carousel/Picture1.webp',
         title: 'Welcome to IIIT Kalyani',
         subtitle: 'Planned IIIT Kalyani'
     },
 
     {
-        url: 'http://iiitkalyani.ac.in/images/Precaution_Dose_Eng.jpg',
+        url: '/images/carousel/Precaution_Dose_Eng.webp',
         title: '',
         subtitle: ''
     },
     {
-        url: 'https://i.postimg.cc/rmTGqpzx/p4.jpg',
+        url: '/images/carousel/p4.webp',
         title: '',
         subtitle: ''
     },
     {
-        url: 'https://i.postimg.cc/6qgfJfZ5/p5.jpg',
+        url: '/images/carousel/p5.webp',
         title: '',
         subtitle: ''
     },
     {
-        url: 'https://i.postimg.cc/qvfx1Q01/Picture2.png',
+        url: '/images/carousel/Picture2.webp',
         title: '',
         subtitle: "Planned Boy's Hostel"
     },
 
     {
-        url: 'https://i.postimg.cc/3J0ZjzMy/Picture3.png',
+        url: '/images/carousel/Picture3.webp',
         title: '',
         subtitle: "Planned Girl's Hostel"
     },
