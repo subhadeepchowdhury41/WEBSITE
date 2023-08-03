@@ -21,7 +21,7 @@ const Anti_Ragging = () => {
                       <h3 className='anti_ragging-title'>{item.name}</h3>
                       <button className="anti_ragging-download">
                         <FileOpenIcon style={{'color':'rgb(6, 50, 74)','zIndex':'-1'}} />
-                        <a href={item.pdf} target="_blank" rel="noreferrer" download></a>
+                        <a href={item.pdf} target="_blank" rel="noreferrer"></a>
                       </button>
                     </div>
                 );
