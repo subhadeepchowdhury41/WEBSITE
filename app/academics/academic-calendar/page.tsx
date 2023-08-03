@@ -19,19 +19,19 @@ function AcademicCalendar() {
                     {data1.calenderdata.map((e)=>{
                         return (
                             <div className='flexCon card' key={e.id}>
-                                <CalendarMonthIcon style={{color:'rgb(5,170,240)',fontSize:'30px'}}/>
+                                <CalendarMonthIcon style={{color:'black',fontSize:'30px'}}/>
                                 {e.name}
                                 <a href={e.link} className='card-btn' target='_blank'>PDF</a>
                             </div>
                         );
                     })}
                 </div>
-                <div className=' flexCon main-calender'>
+                <div className='flexCon main-calender'>
                 <h2>Holiday List</h2>
                 {data1.holidaydata.map((e)=>{
                          return (
                             <div className='flexCon card' key={e.id}>
-                                <CalendarMonthIcon style={{color:'rgb(5,170,240)',fontSize:'30px'}}/>
+                                <CalendarMonthIcon style={{color:'black',fontSize:'30px'}}/>
                                 {e.name}
                                 <a href={e.link} className='card-btn' target='_blank'>PDF</a>
                             </div>
