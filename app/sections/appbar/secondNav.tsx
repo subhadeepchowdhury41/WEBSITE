@@ -140,7 +140,7 @@ const placements = [
 const career = [
   {
     items: [
-      { label: "Career", link: "https://iiitkalyani.ac.in/php/career.php" },
+      { label: "Career", link: "/career" },
     ],
   },
 ];

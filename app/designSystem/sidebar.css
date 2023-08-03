@@ -3,6 +3,7 @@
     top: 70px;
     height: inherit;
     max-height: 100vh;
+    min-height: 72vh;
     width: calc(min(25vw, 250px));
     padding: 20px;
     /* margin-right: 20px; */
