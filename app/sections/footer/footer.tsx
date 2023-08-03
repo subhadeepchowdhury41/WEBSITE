@@ -89,27 +89,27 @@ export default function Footer() {
 
               <div className="footer-social">
                 {/* <!-- Facebook --> */}
-                <a className="btn " href="https://www.facebook.com/iiitkalyani/" role="button" target="blank">
+                <a className="btn " href="https://www.facebook.com/iiitkalyani/" aria-label="Visit facebook of IIITKalyani" role="button" target="blank" rel="noopener noreferrer">
                   <FacebookIcon sx={{ color: grey[50] }} className="btn-btn fb" />
                 </a>
 
                 {/* <!-- Twitter --> */}
-                <a className="btn" href="https://twitter.com/iiit_kalyani?lang=en" role="button" target="blank">
+                <a className="btn" href="https://twitter.com/iiit_kalyani?lang=en" aria-label="Visit twitter of IIITKalyani" role="button" target="blank" rel="noopener noreferrer">
                   <TwitterIcon sx={{ color: grey[50] }} className="btn-btn tt" />
                 </a>
 
                 {/* <!-- Google --> */}
-                <a className="btn" href="https://www.youtube.com/channel/UCdnaperuWO_6YfXzEov6-QA/videos" role="button" target="blank">
+                <a className="btn" href="https://www.youtube.com/channel/UCdnaperuWO_6YfXzEov6-QA/videos" aria-label="Visit YouTube of IIITKalyani" role="button" target="blank" rel="noopener noreferrer">
                   <YouTubeIcon sx={{ color: grey[50] }} className="btn-btn yt" />
                 </a>
 
                 {/* <!-- Instagram --> */}
-                <a className="btn" href="https://www.instagram.com/iiitkalyaniofficial/" role="button" target="blank">
+                <a className="btn" href="https://www.instagram.com/iiitkalyaniofficial/" aria-label="Visit Instagram of IIITKalyani" role="button" target="blank" rel="noopener noreferrer">
                   <InstagramIcon sx={{ color: grey[50] }} className="btn-btn ig" />
                 </a>
 
                 {/* <!-- Linkedin --> */}
-                <a className="btn " href="https://www.linkedin.com/in/tnpiniiitkalyani/" role="button" target="blank">
+                <a className="btn " href="https://www.linkedin.com/in/tnpiniiitkalyani/" aria-label="Visit LinkedIn of IIITKalyani" role="button" target="blank" rel="noopener noreferrer">
                   <LinkedInIcon sx={{ color: grey[50] }} className="btn-btn ld" />
                 </a>
 
@@ -272,95 +272,11 @@ export default function Footer() {
               {/* <!--Grid row--> */}
             </Reveal>
           </section>
-          {/* <Reveal keyframes={customAnimation3}>
-          <div className="footer-portal">
-            <div className="footer-portal-head">Portals</div>
-            <div className="footer-portal-body">
-              <a
-                href="http://iiitkalyani.ac.in/images/ARIIA%20_%200796_2022.pdf"
-                download
-                target="blank"
-              >
-                <Image className="ariia_logo" src={ariia_logo} alt="ariia_logo" />
-              </a>
-              <ul className="list-unstyled-portal">
-                <li>
-                  <a
-                    href="https://main.trai.gov.in/"
-                    className="text-white-footer-portal"
-                    target="blank"
-                  >
-                    TRAI
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://pmrf.in/"
-                    className="text-white-footer-portal"
-                    target="blank"
-                  >
-                    Prime Minister Research Fellowship
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="http://unnatbharatabhiyan.gov.in/"
-                    className="text-white-footer-portal"
-                    target="blank"
-                  >
-                    Unnat Bharat Abhiyan
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.vidyalakshmi.co.in/Students/"
-                    className="text-white-footer-portal"
-                    target="blank"
-                  >
-                    Vidya Lakshmi
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="http://scholarship.up.nic.in/"
-                    className="text-white-footer-portal"
-                    target="blank"
-                  >
-                    UP Scholarship
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.narendramodi.in/pm-modi-launches-fit-india-movement-546213"
-                    className="text-white-footer-portal"
-                    target="blank"
-                  >
-                    Fit India Movement
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="http://nwm.gov.in/?q=catchtherain!"
-                    className="text-white-footer-portal"
-                    target="blank"
-                  >
-                    Jal Shakti Abhiyan: Catch The Rain
-                  </a>
-                </li>
-              </ul>
-            </div>
-            </div>
-            </Reveal> */}
-          {/* <!-- Section: Links --> */}
         </div>
-        {/* <!-- Grid container --> */}
 
-        {/* <!-- Copyright --> */}
-
-        {/* <!-- Copyright --> */}
 
         <div
-          className="footer-copyright"
+          className="footer-copyright" aria-hidden='false'
         >
           {/* <hr /> */}
           <p style={{ position: "absolute", backgroundColor: "rgb(25,25,25)", padding: "0 10px 0 10px", zIndex: "22", fontSize: "17px", display: "flex", flexDirection: "row" }}>Portals
@@ -369,15 +285,16 @@ export default function Footer() {
               target="blank"
 
             >
-              <Image style={{ height: "30px", width: "150px", paddingLeft: "10px" }} src={ariia_logo} alt="ariia_logo" />
+              <Image style={{ height: "30px", width: "150px", paddingLeft: "10px" }} src={ariia_logo} alt="aria_logo" />
 
             </a></p>
-          <Marquee speed={80} className="marquee" gradient={false}>
+          <Marquee speed={80} className="marquee" gradient={false} aria-hidden='false'>
 
             <a
               href="https://trai.gov.in/"
               className="text-white-footer-portal"
               target="blank"
+              aria-hidden='false'
             >
               TRAI &emsp;
             </a>
@@ -385,6 +302,7 @@ export default function Footer() {
               href="https://pmrf.in/"
               className="text-white-footer-portal"
               target="blank"
+              aria-hidden='false'
             >
               Prime Minister Research Fellowship &emsp;
             </a>
@@ -392,6 +310,7 @@ export default function Footer() {
               href="http://unnatbharatabhiyan.gov.in/"
               className="text-white-footer-portal"
               target="blank"
+              aria-hidden='false'
             >
               Unnat Bharat Abhiyan &emsp;
             </a>
@@ -399,6 +318,7 @@ export default function Footer() {
               href="https://www.vidyalakshmi.co.in/Students/"
               className="text-white-footer-portal"
               target="blank"
+              aria-hidden='false'
             >
               Vidya Lakshmi &emsp;
             </a>
@@ -406,6 +326,7 @@ export default function Footer() {
               href="https://scholarship.up.gov.in/"
               className="text-white-footer-portal"
               target="blank"
+              aria-hidden='false'
             >
               UP Scholarship &emsp;
             </a>
@@ -413,6 +334,7 @@ export default function Footer() {
               href="https://www.narendramodi.in/pm-modi-launches-fit-india-movement-546213"
               className="text-white-footer-portal"
               target="blank"
+              aria-hidden='false'
             >
               Fit India Movement &emsp;
             </a>
@@ -420,12 +342,13 @@ export default function Footer() {
               href="http://nwm.gov.in/?q=catchtherain!"
               className="text-white-footer-portal"
               target="blank"
+              aria-hidden='false'
             >
               Jal Shakti Abhiyan: Catch The Rain  &emsp;
             </a>
           </Marquee>
           <hr style={{ marginTop: "2.5vh" }} />
-          <p>© 2019 Indian Institute of Information Technology Kalyani</p>
+          <p aria-hidden='false'>© 2019 Indian Institute of Information Technology Kalyani</p>
         </div>
       </footer>
 

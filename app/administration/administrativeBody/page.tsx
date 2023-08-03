@@ -30,7 +30,7 @@ const AcadBody = () => {
             <div key={item.email[0]} className="fluid-center main-bar-body">
               <div className="fluid-center administrativeBody-main-bar" style={{ justifyContent: 'space-between' }}>
                 <div style={{ display: 'flex', flexDirection: isDesktop ? 'row' : 'column', alignItems: 'center' }}>
-                  <img className="administrativeBody-profile-pic" src={item.imgUrl} alt="" />
+                  <img className="administrativeBody-profile-pic" src={item.imgUrl} alt="profile" />
                   <div style={{ display: 'flex', flexDirection: 'column', marginLeft: '10px' }}>
                     <h2 style={{ fontWeight: "700", fontSize: "2.5vh" }}>{item.name}</h2>
                     <h2 style={{ fontWeight: "300" }}>{item.designation}</h2>
