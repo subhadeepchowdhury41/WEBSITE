@@ -17,11 +17,11 @@ const SidebarData = [
                 resources: [
                     {
                         heading: 'New Curriculum from July 2021 onwards',
-                        url: 'https://iiitkalyani.ac.in/images/notification2021/Annexure%20E.pdf'
+                        url: 'AnnexureCSE.pdf'
                     },
                     {
                         heading: 'Old Curriculum',
-                        url: 'https://iiitkalyani.ac.in/images/notification2021/B.Tech._CSE_Course%20Structure[IIIT%20Kalyani]2021.03.15.pdf'
+                        url: 'Btechcoursestructureold.pdf'
                     },
                     {
                         heading: 'UG Admissions',
@@ -34,6 +34,12 @@ const SidebarData = [
                 label: 'Electronics and Communication Engineering',
                 img: BtechECE.src,
                 text: 'Electronics and Communication Engineering [ECE] is a field of engineering that revolves around the study, design, and application of electronic devices, systems, and communication technologies. It encompasses a wide range of areas, including analog and digital electronics, microelectronics, telecommunications, signal processing, and wireless communication. In this rapidly evolving digital era, ECE has a significant impact on almost every aspect of our lives, enabling seamless communication through mobile phones, high-speed internet, and satellite systems, as well as powering various electronic devices we rely on daily. With a strong emphasis on innovation and problem-solving, ECE offers exciting opportunities for individuals passionate about technology and eager to contribute to the ongoing advancements in the field. Whether it is working on developing new electronic devices, improving communication networks, or exploring emerging technologies like the Internet of Things (IoT) and 5G, Electronics and Communication Engineering continues to be a vital and sought-after discipline in the current interconnected world.',
+                resources: [
+                    {
+                        heading: 'Electronics and Communication Engineering Course Structure',
+                        url: 'AnnexureECE.pdf'
+                    }    
+                ]
             }
         ],
     },
@@ -47,7 +53,7 @@ const SidebarData = [
                 img: Mtech1.src,
                 text: 'Artificial Intelligence (AI) and Data Science are two rapidly evolving fields at the forefront of modern technology. Both AI and Data Science are highly interrelated. Data serves as the foundation for training AI models, and AI algorithms are used to enhance the efficiency and effectiveness of data analysis. The synergy between these fields has led to remarkable advancements in various domains, including healthcare, finance, marketing, and more. AI and Data Science have revolutionized industries, enabling companies to make data-driven decisions, automate processes, and provide personalized services to customers. As technology continues to advance, these fields will play an increasingly critical role in shaping the future, paving the way for smarter and more efficient systems that will have a profound impact on society.',
                 resources: [{
-                    url: "https://iiitkalyani.ac.in/images/MTech-Course-Structure-AI-and-Data%20Science.pdf",
+                    url: "MTechAIandDS.pdf",
                     heading: 'M.Tech Course Structure AI and Data Science'
                 }]
             },
@@ -58,7 +64,7 @@ const SidebarData = [
                 text: 'Advanced Communication Systems and Signal Processing are two interconnected fields that play a crucial role in modern telecommunications and information exchange. The synergy between Advanced Communication Systems and Signal Processing has led to significant technological advancements. These fields are instrumental in developing cutting-edge technologies like 5G wireless networks, digital audio and video compression, image recognition algorithms, and speech processing systems. As the world becomes increasingly interconnected and reliant on efficient communication, the demand for professionals in Advanced Communication Systems and Signal Processing continues to grow. Experts in these fields work on developing innovative solutions to improve communication systems, leading to more efficient data exchange, better multimedia experiences, and enhanced connectivity across the globe.',
                 resources: [{
                     heading: 'Course Structure-Advanced Communication Systems and Signal Processing',
-                    url: "https://iiitkalyani.ac.in/images/M.Tech_updated_Course_structure_for_Adv_Comm_Sys_and_Sig_Proc_IIIT%20Kalyani.pdf"
+                    url: "MtechComAndSignals.pdf"
                 }]
             }
         ]
@@ -75,15 +81,15 @@ const SidebarData = [
                 resources: [
                     {
                         heading: 'Ph.D Regulations',
-                        url: 'https://iiitkalyani.ac.in/images/notification2021/B.Tech._CSE_Course%20Structure[IIIT%20Kalyani]2021.03.15.pdf'
+                        url: 'PhdRegulation2021.pdf'
                     },
                     {
                         heading: 'Ph.D Regulations (November 2017)',
-                        url: 'https://iiitkalyani.ac.in/images/iiitppp/Ph.dreg.pdf'
+                        url: 'Phdreg.pdf'
                     },
                     {
                         heading: 'See PhD admissions (Old data)',
-                        url: '/students/phd'
+                        url: 'https://iiitkalyani.ac.in/php/admissionpg.php'
                     }
                 ]
             },

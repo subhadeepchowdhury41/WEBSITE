@@ -24,7 +24,7 @@ const customAnimation = keyframes`
 
 
 const DirectorsMessage = () => {
-    let card1ImageLink = 'http://iiitkalyani.ac.in/images/IMG-20200221-WA0011.jpg'
+    let card1ImageLink = '/images/director.webp'
     const [seconds, setSeconds] = useState(1);
     const [i, setI] = useState(1);
     useEffect(() => {
@@ -79,21 +79,12 @@ const DirectorsMessage = () => {
                                 <div key={index.id}>
                                     <div className='announcement-tab' style={{ transform: `translate(0px,${-100 * i}px)` }}>
                                         <div className='announcement-heading card-heading-medium'><a target='_blank' href={index.description} >{index.title}</a></div>
-                                        {/* <div className='announcement-description card-heading-small'>{index.description}</div> */}
                                     </div>
                                 </div>
                             )
                         })}
 
                     </div>
-                    {/* <div className='discover-navigation' style={{ padding: '0 5px 0 10px', marginTop: '10px' }}>
-                            <button className='view-more'>View More</button>
-                            <div className='discover-buttons'>
-                                <button className='button-prev'><ArrowBackIosNewIcon /></button>
-                                <button className='button-next'><ArrowForwardIosIcon /></button>
-                            </div>
-                        </div> */}
-
                 </div>
             </div>
         </div>

@@ -35,7 +35,7 @@ const array = [
         ],
     }
 ];
-const PHDStudents = () => {
+const Staff = () => {
     useEffect(() => {
         document.title = 'Staffs | Indian Institute of Information Technology, Kalyani';
     }, []);
@@ -55,7 +55,7 @@ const PHDStudents = () => {
     MapDP.set("Sourav", "https://iiitkalyani.ac.in/images/sourav%20gope%20iiit%20kalyani.jpg");
     MapDP.set("Debottam", "https://iiitkalyani.ac.in/images/20220211_120900.jpg");
 
-    console.log(MapDP.get("Samim"));
+    // console.log(MapDP.get("Samim"));
 
     return (
         <>
@@ -95,4 +95,4 @@ const PHDStudents = () => {
     );
 }
 
-export default PHDStudents;
+export default Staff;

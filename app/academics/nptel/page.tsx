@@ -4,8 +4,14 @@ import Footer from '../../sections/footer/footer'
 import React from 'react'
 import Carousel from './carousel'
 import Data from './data'
+import { useEffect } from "react";
+
 
 function Nptel() {
+    useEffect(() => {
+        document.title =
+            "NPTEL | Indian Institute of Information Technology, Kalyani";
+    }, []);
     return (
         <React.Fragment>
             <NavBar />

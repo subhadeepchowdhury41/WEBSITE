@@ -426,7 +426,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 }
 
-@media (max-width:900px) {
+@media (max-width:1150px) {
   .navItems {
     display: none;
   }

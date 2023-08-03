@@ -1,10 +1,15 @@
 "use client";
+import { useEffect } from "react";
 import NavBar from "../../sections/appbar/secondNav";
 import Footer from '../../sections/footer/footer';
 import "../../../styles/Research/Publications/publications.css";
 import publicationData from './data'
 
 const Publications = () => {
+  useEffect(() => {
+    document.title =
+      "Publications | Indian Institute of Information Technology, Kalyani";
+  }, []);
   return (
     <>
       <NavBar />
@@ -36,7 +41,7 @@ const Publications = () => {
             </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };

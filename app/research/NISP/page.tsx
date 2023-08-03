@@ -1,4 +1,5 @@
 "use client";
+import { useEffect } from "react";
 import NavBar from "../../sections/appbar/secondNav";
 import Footer from '../../sections/footer/footer';
 import "../../../styles/Research/NISP/nisp.css";
@@ -6,6 +7,10 @@ import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 import nispData from './data'
 
 const NISP = () => {
+  useEffect(() => {
+    document.title =
+      "NISP | Indian Institute of Information Technology, Kalyani";
+  }, []);
   return (
     <>
       <NavBar />
@@ -21,7 +26,7 @@ const NISP = () => {
         })}
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };
