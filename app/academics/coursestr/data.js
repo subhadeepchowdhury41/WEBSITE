@@ -19,7 +19,7 @@ const data={
     btechece:[
         {
             id:1,
-            name:'B.Tech ECE course structure',
+            name:'B.Tech ECE Course Structure',
             link:'/coursestrpdf/AnnexureECE.pdf'
         },
         {
