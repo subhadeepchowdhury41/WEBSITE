@@ -47,7 +47,7 @@ const administration = [
     items: [
       {
         label: "Administrative Body",
-        link: "https://iiitkalyani.ac.in/php/administration.php",
+        link: "/administration/administrativeBody",
       },
       {
         label: "Board of Governers",
@@ -71,7 +71,7 @@ const administration = [
       },
       {
         label: "Internal Complaint Committee",
-        link: "https://iiitkalyani.ac.in/php/icc.php",
+        link: "/administration/icc",
       },
       {
         label: "Right to Information",
