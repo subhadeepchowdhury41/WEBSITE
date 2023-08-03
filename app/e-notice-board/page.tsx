@@ -4,6 +4,7 @@ import Footer from '../sections/footer/footer'
 import React, { useState, useRef, useEffect } from 'react'
 import data from './data'
 import styled from 'styled-components';
+import "../../styles/admissions/admissions.css"
 interface ChildInterface {
     title: string;
     url: string;
@@ -29,7 +30,7 @@ function ENoticeBoard() {
         transitioningRefs.current.forEach((ref, index) => {
             if (ref) {
                 if (activeArr.includes(index)) {
-                    ref.style.maxHeight = `${ref.scrollHeight}px`;
+                    ref.style.maxHeight = `${ref.scrollHeight + 30}px`;
                 } else {
                     ref.style.maxHeight = '0px';
                 }
@@ -57,8 +58,8 @@ function ENoticeBoard() {
                                                 return (
                                                     <li className='' style={{ display: 'list-item' }}>
                                                         {i.isNew ?
-                                                            <div className='hover:text-[rgb(82,219,216)]'><span className='border py-1 px-2 rounded-3xl text-[12px] text-black mr-2'>New</span>{i.title}
-                                                            </div> : <div className='hover:text-[rgb(82,219,216)]'>{i.title}</div>}
+                                                            <div className='hover:text-[rgb(82,219,216)] py-[5px]'><span className='new-announcement ml-0 mr-2'>New</span><a href={i.url} target="blank">{i.title}</a>
+                                                            </div> : <div className='hover:text-[rgb(82,219,216)] py-[5px]'><a href={i.url} target="blank">{i.title}</a></div>}
                                                     </li>
                                                 )
                                             })}
@@ -79,7 +80,7 @@ function ENoticeBoard() {
 export default ENoticeBoard
 
 const StyledDiv = styled.div`
-  border: 2px solid rgb(141, 221, 255);
+//   border: 2px solid rgb(141, 221, 255);
 
   &:hover {
     border: 2px solid white;
@@ -91,3 +92,4 @@ const StyledDivTwo = styled.div`
     border: 2px solid rgb(141, 221, 255);
     // box-shadow: 9px 9px 18px #93c2d9, -9px -9px 18px #c7ffff;
 `;
+
