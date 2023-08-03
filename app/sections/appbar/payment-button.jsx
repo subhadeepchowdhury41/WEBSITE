@@ -31,23 +31,17 @@ export default function PayButton() {
                 <CloseIcon className="closeicon" onClick={handleClick} />
               </h1>
 
-              <p>1. Click on payment option given below.</p>
-              <p>2. Select West Bengal as State of Corporate/Institution.</p>
+              <p>1.Click on payment option given below.</p>
+              <p>2.Select Educational Institution as type of Corporate/Institution.</p>
               <p>
-                3. Select Educational Institution as type of
-                Corporate/Institution.
+                3.Select West Bengal as State of Corporate/Institution.
               </p>
-              <p>4. Click on GO.</p>
+              <p>4.Select INDIAN INSTITUTE OF INFORMATION TECHNOLOGY,KALYANI as Educational Institute Name.</p>
               <p>
-                5. Select INDIAN INSTITUTE OF INFORMATION TECHNOLOGY,KALYANI as
-                Educational Institute Name.
+                5.Select the payment category as per requirement.(For e.g. Select 'FEES PAYMENT FOR NEW STUDENTS' for payment of PART A.)
               </p>
-              <p>6. Click on Submit.</p>
-              <p>
-                7. Select the payment category as per requirement (Select FEES
-                PAYMENT FOR NEW STUDENTS for payment of PART A).
-              </p>
-              <p>8. Fill all the details and then click on Submit.</p>
+              <p>6.Fill in all the details and then click on "Next".
+</p>
               <a
                 className="sbi-portal"
                 href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm"
