@@ -11,7 +11,7 @@ const page = () => {
     <React.Fragment>
             <NavBar />
             <div className='flexCon main-container'>
-                <h1>Academic Calendar and Holiday List</h1>
+                <h1>Course Structure</h1>
                 <div className='flexCon main-calender'>
                     <h2>B.Tech. CSE</h2>
                     {data.btechcse.map((e)=>{
