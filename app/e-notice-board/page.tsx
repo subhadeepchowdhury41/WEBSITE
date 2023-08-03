@@ -3,7 +3,7 @@ import NavBar from '../sections/appbar/secondNav'
 import Footer from '../sections/footer/footer'
 import React, { useState, useRef, useEffect } from 'react'
 import data from './data'
-
+import styled from 'styled-components';
 interface ChildInterface {
     title: string;
     url: string;
@@ -47,11 +47,11 @@ function ENoticeBoard() {
                         data.map((index: DataType) => {
                             return (
                                 <div className='min-w-[250px] w-[30%] max-w-[350px] flex flex-col cursor-pointer'>
-                                    <div className='w-full h-[32px] max-h-[32px] text-center border' onClick={() => toggleActive(index.id)}>
+                                    <StyledDiv className='w-full h-[32px] max-h-[32px] text-center' onClick={() => toggleActive(index.id)}>
                                         {index.title}
-                                    </div>
+                                    </StyledDiv>
 
-                                    <div className={`w-full border overflow-hidden transition-all duration-500 ${activeArr.includes(index.id) ? `` : 'h-[0px]'}`} ref={el => (transitioningRefs.current[index.id] = el)}>
+                                    <StyledDivTwo className={`w-full border overflow-hidden transition-all duration-500 ${activeArr.includes(index.id) ? `` : 'h-[0px]'}`} ref={el => (transitioningRefs.current[index.id] = el)}>
                                         <ul className='py-2 px-4 mx-[12px]' style={{ listStyleType: 'disc' }}>
                                             {index.children.map((i) => {
                                                 return (
@@ -63,7 +63,7 @@ function ENoticeBoard() {
                                                 )
                                             })}
                                         </ul>
-                                    </div>
+                                    </StyledDivTwo>
 
                                 </div>
                             )
@@ -77,3 +77,17 @@ function ENoticeBoard() {
 }
 
 export default ENoticeBoard
+
+const StyledDiv = styled.div`
+  border: 2px solid rgb(141, 221, 255);
+
+  &:hover {
+    border: 2px solid white;
+    box-shadow: 9px 9px 18px #93c2d9, -9px -9px 18px #c7ffff;
+  }
+`;
+
+const StyledDivTwo = styled.div`
+    border: 2px solid rgb(141, 221, 255);
+    // box-shadow: 9px 9px 18px #93c2d9, -9px -9px 18px #c7ffff;
+`;
