@@ -4,7 +4,6 @@ import NavBar from '../../sections/appbar/secondNav'
 import Footer from '../../sections/footer/footer'
 import '../../../styles/newedupolicy/newedupolicy.css'
 import TextSnippetIcon from '@mui/icons-material/TextSnippet';
-import data from './data'
 import { useEffect } from 'react'
 const page = () => {
     useEffect(() => {
