@@ -13,7 +13,7 @@ const career = () => {
     }
     useEffect(() => {
         document.title =
-            "Carreer | Indian Institute of Information Technology, Kalyani";
+            "Career | Indian Institute of Information Technology, Kalyani";
     }, []);
     return (
         <>
