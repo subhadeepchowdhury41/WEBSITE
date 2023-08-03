@@ -1,0 +1,113 @@
+.flexCon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.flexCon1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main-container {
+    /* border:  2px solid red; */
+    width: 100vw;
+    height: 100%;
+    justify-content: space-between;
+    padding: 1%;
+    padding-bottom: 50px;
+}
+
+.main-container h1 {
+    /* border: 2px solid blue; */
+    text-align: center;
+    font-size: max(2.5vh, 2.5vw);
+    margin-top: 0.2%;
+    font-weight: 500;
+    margin-bottom: 1%;
+}
+
+.main-container h2 {
+    /* border: 2px solid blue; */
+    text-align: center;
+    font-size: max(2vh, 2vw);
+    margin: 1%;
+    font-weight: 400;
+    width: 100%;
+}
+.main-course{
+     /* border: 2px solid blue; */
+     height: fit-content;
+     width: 75%;
+     flex-direction: row;
+     flex-wrap: wrap;
+}
+
+.flexCon2{
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* text-align: center; */
+}
+
+.card{
+    width: 45%;
+    background-color: whitesmoke;
+    border: 2px solid #82cff5;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin: 2%;
+    cursor: pointer;
+}
+.card-btn{
+    width: 100%;
+    height: 100%;
+    font-size: max(2vh,1.2vw);
+    margin: 0.5%;
+}
+.card:hover {
+    transform: scale(1.02);
+    /* border: 2px solid ; */
+    box-shadow: 9px 9px 18px #93c2d9, -9px -9px 18px #c7ffff;
+    background-color: rgb(135, 219, 255);
+}
+
+@media (max-width: 900px) {
+    .main-courses {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 100%;
+        flex-direction: column;
+    }
+    .card{
+        height: 60px;
+    }
+    .card-btn{
+        width: 100%;
+        height: 100%;
+        font-size: max(1.7vh,1.2vw);
+        margin: 5%;
+    }
+    .flexCon2{
+        width: 80vw;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    .card{
+        width: 100%;
+    }
+}
+@media (max-width:1150px) {
+    .main-course{
+        width: 100%;
+    }
+}
