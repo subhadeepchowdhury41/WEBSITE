@@ -9,19 +9,19 @@ const educationProgram = [
     id: 2,
     title:
       'AICTE Sponsored ATAL-FDP on "Application of Cryptographic Tools for Data and Image Securities", 06th December - 10th December, 2021 ',
-    url: "https://iiitkalyani.ac.in/images/notification2021/ATAL_FDP_Brochure_IIIT%20Kalyani%5bHafizul%5dV3.pdf",
+    url: "/home/pdf/ep/ATAL_FDP_Brochure_IIIT%20Kalyani%5bHafizul%5dV3.pdf",
   },
   {
     id: 3,
     title:
       'FDP on "IoT for Emerging Technical Applications" Sponsored by AICTE-ATAL (13th -17th December, 2021)',
-    url: "https://iiitkalyani.ac.in/images/notification2021/1614758009_brochure_file.pdf",
+    url: "/home/pdf/ep/1614758009_brochure_file.pdf",
   },
   {
     id: 4,
     title:
       'FDP on "Signal Processing for 5G and IoT" sponsored by AICTE (ATAL) ',
-    url: "https://iiitkalyani.ac.in/data1/images/pic/ATAL_FDP_Brochure_IIIT%20Kalyani_6Sept%20(2).pdf",
+    url: "/home/pdf/ep/ATAL_FDP_Brochure_IIIT%20Kalyani_6Sept%20(2).pdf",
   },
 ];
 

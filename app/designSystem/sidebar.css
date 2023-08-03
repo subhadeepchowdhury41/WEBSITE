@@ -1,7 +1,8 @@
 .sidebar {
     position: sticky;
     top: 70px;
-    height: 72vh;
+    height: inherit;
+    max-height: 100vh;
     width: calc(min(25vw, 250px));
     padding: 20px;
     /* margin-right: 20px; */

@@ -24,7 +24,7 @@ const customAnimation = keyframes`
 
 
 const DirectorsMessage = () => {
-    let card1ImageLink = 'http://iiitkalyani.ac.in/images/IMG-20200221-WA0011.jpg'
+    let card1ImageLink = '/images/director.webp'
     const [seconds, setSeconds] = useState(1);
     const [i, setI] = useState(1);
     useEffect(() => {
