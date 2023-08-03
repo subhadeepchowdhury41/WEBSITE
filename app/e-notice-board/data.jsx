@@ -108,41 +108,41 @@ const noticeBoardData = [
     children: [
       {
         title: "Admission 2023",
-        url: "",
+        url: "/e-noticeboard/admission-notice/admission_brochure_2023-1.pdf",
         isNew: true,
       },
       {
         title:
           "List of Selected Candidates for Admission to Executive M.Tech. Program 2023 (Advt. No. IIITK/M.Tech/23-24/33)",
-        url: "",
+        url: "/e-noticeboard/admission-notice/CEP Admission 2023 - List of Selected Candidates.pdf",
         isNew: false,
       },
       {
         title:
           "CEP Admission 2023 - List of Eligible and Not Eligible Candidates",
-        url: "",
+        url: "/e-noticeboard/admission-notice/CEP Admission 2023 - List of Eligible and Not Eligible Candidates.pdf",
         isNew: false,
       },
       {
         title:
           "List of Candidates for Test/Interview: Executive M.Tech Program 2023 (Advt. No. IIITK/M.Tech/23-24/33)Interview date and time will be notified over email very soon. Admission 2023",
-        url: "",
+        url: "/e-noticeboard/admission-notice/Executive MTech Admission 2023 - List of Eligible and Not Eligible Candidates.pdf",
         isNew: false,
       },
       {
         title:
           "Admission to Executive M.Tech (Artificial Intelligence and Data Science) Program - July 2023 Session",
-        url: "",
+        url: "/e-noticeboard/admission-notice/Advertisement-MTech-2023-IIITKalyani.pdf",
         isNew: false,
       },
       {
         title: "Executive M. Tech Program - 2023: Application Form (PDF)",
-        url: "",
+        url: "/e-noticeboard/admission-notice/Executive-MTech-Application-Form-2023.pdf",
         isNew: false,
       },
       {
         title: "Executive M. Tech Program - 2023: Application Form (DOCX)",
-        url: "",
+        url: "/e-noticeboard/admission-notice/Executive-MTech-Application-Form-2023.docx",
         isNew: false,
       },
     ],
@@ -153,7 +153,7 @@ const noticeBoardData = [
     children: [
       {
         title: "Download Fee Notification (PDF)",
-        url: "",
+        url: "/e-noticeboard/student-notification/Fee_Notification_Autumn_Semester_2023-24.pdf",
         isNew: false,
       },
     ],
@@ -164,42 +164,42 @@ const noticeBoardData = [
     children: [
       {
         title: "Corrigendum for Supply of Answer Scripts",
-        url: "",
+        url: "/e-noticeboard/tender/Corrigendum_Answer Scripts.pdf",
         isNew: false,
       },
       {
         title: "Tender for Procurement of Answer Scripts",
-        url: "",
+        url: "/e-noticeboard/tender/Tender_for_procurement_of_Answer_Scripts.pdf",
         isNew: false,
       },
       {
         title: "Tender for Internal Auditor",
-        url: "",
+        url: "/e-noticeboard/tender/Tender_for_Internal_Auditor.pdf",
         isNew: false,
       },
       {
         title: "Tender for USB Adapter",
-        url: "",
+        url: "/e-noticeboard/tender/Tender_for_USB_Adapter.pdf",
         isNew: false,
       },
       {
         title: "Corrigendum Supply of USB Adapter",
-        url: "",
+        url: "/e-noticeboard/tender/Corrigendum_Supply_of_USB_Adapter.pdf",
         isNew: false,
       },
       {
         title: "Corrigendum Supply of Sports Items",
-        url: "",
+        url: "/e-noticeboard/tender/Corrigendum_Supply_of_Sports_Items.pdf",
         isNew: false,
       },
       {
         title: "Tender for Supply of USB Adapter",
-        url: "",
+        url: "/e-noticeboard/tender/Tender_for_Supply_of_USB_Adapter.pdf",
         isNew: false,
       },
       {
         title: "Tender for Supply of Sports Items",
-        url: "",
+        url: "/e-noticeboard/tender/Tender_for_Supply_of_Sports_Items.pdf",
         isNew: false,
       },
     ],

@@ -13,7 +13,8 @@
 
 .card-header {
     height: fit-content;
-    background-color: #765A5A;
+    background-color: white;
+    border: 2px solid #82cff5;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
     padding: 10px;
@@ -21,7 +22,7 @@
 }
 
 .card-header div {
-    color: white;
+    color: black;
 }
 
 .admission-channels {
@@ -45,7 +46,11 @@
 
     display: flex;
     flex-direction: column;
-    background-color: #CFB2B2;
+    background-color: whitesmoke;
+    border-top: 2px solid #82cff5;
+    border-right: 2px solid #82cff5;
+    border-left: 2px solid #82cff5;
+
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
@@ -68,8 +73,8 @@
 }
 
 .data-item a:hover {
-    background-color: #765A5A;
-    border-radius: 3px;
+    background-color: #93c2d9;
+    border-radius: 4px;
     padding: 2px;
     padding-left: 4px;
     padding-right: 4px;

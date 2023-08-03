@@ -7,7 +7,13 @@ import '../../../styles/academiccalender/academiccalender.css'
 import data1 from './data1'
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import { alignProperty } from '@mui/material/styles/cssUtils'
+import { useEffect } from 'react'
+
 function AcademicCalendar() {
+    useEffect(() => {
+        document.title =
+            "Academic Calendar | Indian Institute of Information Technology, Kalyani";
+    }, []);
     return (
         <React.Fragment>
             <NavBar />
@@ -16,10 +22,10 @@ function AcademicCalendar() {
                 <h1>Academic Calendar and Holiday List</h1>
                 <div className='flexCon main-calender'>
                     <h2>Academic Calendar</h2>
-                    {data1.calenderdata.map((e)=>{
+                    {data1.calenderdata.map((e) => {
                         return (
                             <div className='flexCon card' key={e.id}>
-                                <CalendarMonthIcon style={{color:'black',fontSize:'30px'}}/>
+                                <CalendarMonthIcon style={{ color: 'black', fontSize: '30px' }} />
                                 {e.name}
                                 <a href={e.link} className='card-btn' target='_blank'>PDF</a>
                             </div>
@@ -27,11 +33,11 @@ function AcademicCalendar() {
                     })}
                 </div>
                 <div className='flexCon main-calender'>
-                <h2>Holiday List</h2>
-                {data1.holidaydata.map((e)=>{
-                         return (
+                    <h2>Holiday List</h2>
+                    {data1.holidaydata.map((e) => {
+                        return (
                             <div className='flexCon card' key={e.id}>
-                                <CalendarMonthIcon style={{color:'black',fontSize:'30px'}}/>
+                                <CalendarMonthIcon style={{ color: 'black', fontSize: '30px' }} />
                                 {e.name}
                                 <a href={e.link} className='card-btn' target='_blank'>PDF</a>
                             </div>
