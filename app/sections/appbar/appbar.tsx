@@ -20,7 +20,7 @@ const acadamics = [
       { label: 'Course Structure', link: '/academics/coursestr' },
       { label: 'New National Education Policy-2020', link: '/academics/newedupolicy' },
       { label: 'Fee Structure', link: '/academics/feestr' },
-      { label: 'Regulations', link: 'https://iiitkalyani.ac.in/php/ugregulations.php' },
+      { label: 'Regulations', link: '/academics/regulations' },
       { label: 'NPTEL Collaboration', link: '/academics/nptel' },
     ],
   },
