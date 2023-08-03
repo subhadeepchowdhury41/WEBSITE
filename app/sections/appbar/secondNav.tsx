@@ -24,7 +24,7 @@ const acadamics = [
       { label: 'Academic Calendar', link: '/academics/academic-calendar' },
       { label: 'Course Structure', link: 'https://iiitkalyani.ac.in/php/Course_stru.php' },
       { label: 'New National Education Policy-2020', link: '/academics/newedupolicy' },
-      { label: 'Fee Structure', link: 'https://iiitkalyani.ac.in/php/fee_structure.php' },
+      { label: 'Fee Structure', link: '/academics/feestr' },
       { label: 'Regulations', link: 'https://iiitkalyani.ac.in/php/ugregulations.php' },
       { label: 'NPTEL Collaboration', link: '/academics/nptel' },
     ],
