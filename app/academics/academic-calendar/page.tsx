@@ -1,17 +1,14 @@
 'use client'
 import NavBar from '../../sections/appbar/secondNav'
 import Footer from '../../sections/footer/footer'
-import Comingsoon from '../../designSystem/comingsoon'
 import React from 'react'
 import '../../../styles/academiccalender/academiccalender.css'
 import data1 from './data1'
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
-import { alignProperty } from '@mui/material/styles/cssUtils'
 function AcademicCalendar() {
     return (
         <React.Fragment>
             <NavBar />
-            {/* <Comingsoon/> */}
             <div className='flexCon main-container'>
                 <h1>Academic Calendar and Holiday List</h1>
                 <div className='flexCon main-calender'>

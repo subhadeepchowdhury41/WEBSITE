@@ -70,7 +70,7 @@ const page = () => {
 
                     <div className='flexCon card'>
                         <CurrencyRupeeIcon style={{ color: 'black', fontSize: '30px' }} />
-                        <p>SBI Collect Payement Portal</p>
+                        <p>SBI Collect Payment Portal</p>
                         <a href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm" className='card-btn' target='_blank'>PAY</a>
                     </div>
                 </div>
