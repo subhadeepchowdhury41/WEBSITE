@@ -114,8 +114,8 @@ const Discover = () => {
                     {/* <ITKButton text="View More" /> */}
                     <div className='view-more'><a href="/about/gallery/parikshapecharcha2022">View More</a></div>
                     <div className='discover-buttons'>
-                        <button className='button-prev' id="alb" aria-labelledby="labeldiv" onClick={() => { ReduceOne() }}><ArrowLeftIcon className="hover:bg-purple-100" style={{ fontSize: "30px", borderRadius: "50%", boxShadow: "1px 1px 2px rgb(0,0,0,0.3)", marginRight: "10px" }} /></button>
-                        <button className='button-next' id="alb" aria-labelledby="labeldiv" onClick={() => { AddOne() }}><ArrowRightIcon className="hover:bg-purple-100" style={{ fontSize: "30px", borderRadius: "50%", boxShadow: "1px 1px 2px rgb(0,0,0,0.3)" }} /></button>
+                        <button className='button-prev' id="alb-prev" aria-label="Previous" onClick={() => { ReduceOne() }}><ArrowLeftIcon className="hover:bg-purple-100" style={{ fontSize: "30px", borderRadius: "50%", boxShadow: "1px 1px 2px rgb(0,0,0,0.3)", marginRight: "10px" }} /></button>
+                        <button className='button-next' id="alb-next" aria-label="Next" onClick={() => { AddOne() }}><ArrowRightIcon className="hover:bg-purple-100" style={{ fontSize: "30px", borderRadius: "50%", boxShadow: "1px 1px 2px rgb(0,0,0,0.3)" }} /></button>
                     </div>
 
                 </div>
