@@ -25,7 +25,7 @@ const Anti_Ragging = () => {
               <div key={item.id} className="fluid-center anti_ragging-card">
                 <Image src={item.imgUrl} width={300} height={300} alt="thumbnail" className="anti_ragging-thumbnail" />
                 <h3 className='anti_ragging-title'>{item.name}</h3>
-                <button className="anti_ragging-download">
+                <button className="anti_ragging-download" id="alb" aria-labelledby="labeldiv">
                   <FileOpenIcon style={{ 'color': 'rgb(6, 50, 74)', 'zIndex': '-1' }} />
                   <a href={item.pdf} target="_blank" rel="noreferrer" download></a>
                 </button>

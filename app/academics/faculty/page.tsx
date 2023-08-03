@@ -25,7 +25,7 @@ const Faculty = () => {
           return (
             <div key={item.email[0]} className="fluid-center main-bar-body">
               <div className="fluid-center faculty-main-bar">
-                <img className="faculty-profile-pic" src={item.imgUrl} alt="" />
+                <img className="faculty-profile-pic" src={item.imgUrl} alt="profile" />
                 <div className="fluid-center faculty-profile">
                   <h2 style={{ fontWeight: "700", fontSize: "2.5vh" }}>{item.name}</h2>
                   <h2 style={{ fontWeight: "300" }}>{item.designation}</h2>
@@ -46,7 +46,7 @@ const Faculty = () => {
                 </div>
               </div>
               <form className="faculty-more" action={item.more} >
-                <button className="faculty-more-button" type="submit"></button>
+                <button className="faculty-more-button" type="submit" id="buttonTitle" title="Title"></button>
               </form>
             </div>
           );

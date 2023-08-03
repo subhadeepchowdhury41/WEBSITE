@@ -16,15 +16,15 @@ const RootLayout = ({
     children: React.ReactNode
 }) => {
     return (
-        <html className='bg-[#00000]'>
-            <head>  
+        <html className='bg-[#00000]' lang="en">
+            <head>
                 <title>Indian Institute of Information Technology, Kalyani</title>
                 <meta name="Indian Institute of Information Technology, Kalyani" content="Official Website of IIIT Kalynai" />
                 <meta name="keywords" content="IIIT Kalyani, Indian Institute of Information Technology,Kalyani, Computer Science, Electronics, Telecommunication" />
                 <link href="https://iiitkalyani.ac.in/images/front-page/iiitlogo.png" rel="shortcut icon" type="image/x-icon" />
             </head>
             <body >
-                { children }
+                {children}
             </body>
         </html>
     );
