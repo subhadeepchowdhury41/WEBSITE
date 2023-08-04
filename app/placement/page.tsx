@@ -1,7 +1,7 @@
 'use client';
 import NavBar from '../sections/appbar/secondNav';
 import Footer from '../sections/footer/footer';
-import Comingsoon from '../designSystem/comingsoon';
+import Header from './components/Header'
 import { useEffect } from 'react';
 
 const App: React.FC = () => {
@@ -11,8 +11,8 @@ const App: React.FC = () => {
     return (
         <>
 
-            <NavBar />
-            <Comingsoon />
+            {/* <NavBar /> */}
+            <Header />
             <Footer />
 
         </>
