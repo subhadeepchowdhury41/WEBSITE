@@ -201,8 +201,7 @@ export default function AppBar() {
               }`}
           >
             <div
-              className="flex flex-col hindi-name mobile-head text-2xl ml-[45] text-white mx-6 py-3 border-t-2 border-b-2 tracking-wide
-                 animate-left-college-name-swipe-animation "
+              className="flex flex-col hindi-name mobile-head text-2xl ml-[45] text-white mx-6 py-3 border-t-2 border-b-2 tracking-wide animate-left-college-name-swipe-animation "
               style={{
                 alignItems: "center",
                 textAlign: "center",
