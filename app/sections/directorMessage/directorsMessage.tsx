@@ -59,7 +59,7 @@ const DirectorsMessage = () => {
                         </div>
                         <div className='card1-inner-col2'>
                             <div className='card1-scroll'><span className='card1-message'>{message}</span></div>
-                            <a href="/director_desk" target="_blank" >
+                            <a href="/director_desk">
                                 {/* <ITKButton text="Read More" /> */}
                                 <div className='view-more' style={{ marginTop: '10px' }}>View More</div>
                             </a>
@@ -87,7 +87,7 @@ const DirectorsMessage = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 
