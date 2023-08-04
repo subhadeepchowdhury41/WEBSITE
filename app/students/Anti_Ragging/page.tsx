@@ -34,7 +34,7 @@ const Anti_Ragging = () => {
             })}
         </div>
         <p> National Anti Ragging Help Line (UGC Crisis Hotline)24×7 Toll Free Number* 1800-180-5522(helpline@antiragging.in).</p>
-        <a className='anti-ragging_home' href="https://www.antiragging.in/">Anti-ragging Home</a>
+        <a className='anti-ragging_home' href="https://www.antiragging.in/" target="_blank" rel="noreferrer">Anti-ragging Home</a>
       </div>
       <Footer />
     </>

@@ -130,7 +130,7 @@ const placements = [
     items: [
       {
         label: "Placement Portal",
-        link: "https://iiitkalyani.ac.in/placement",
+        link: "/placement",
       },
     ],
   },
@@ -139,7 +139,7 @@ const placements = [
 const career = [
   {
     items: [
-      { label: "Career", link: "/career" },
+      { label: "Career", link: "/career" }
     ],
   },
 ];
@@ -162,7 +162,7 @@ const notifications = [
   {
     items: [
       { label: "E-Notice Board", link: "/e-notice-board" },
-      { label: "Archive: Notice Board", link: "https://iiitkalyani.ac.in/php/archive.php" },
+      { label: "Archive", link: "https://iiitkalyani.ac.in/php/archive.php" },
     ],
   }
 ]

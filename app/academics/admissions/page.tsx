@@ -104,7 +104,7 @@ const Admissions = () => {
     <>
       <NavBar />
       <div className="admissions-container">
-        <Sidebar location="" page="Admissions" array={array} />
+        {/* <Sidebar location="" page="Admissions" array={array} /> */}
         <div className="admission-channels">
 
           <div className="admission-card">

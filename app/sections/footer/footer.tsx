@@ -233,7 +233,7 @@ export default function Footer() {
                     </li>
 
                     <li>
-                      <a href="http://iiitkalyani.ac.in/php/ugregulations.php" className="text-white-footer"  >
+                      <a href="/academics/regulations" className="text-white-footer"  >
                         UG Regulations
                       </a>
                       <hr />
