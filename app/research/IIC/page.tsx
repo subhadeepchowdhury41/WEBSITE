@@ -6,7 +6,7 @@ import NavBar from '../../sections/appbar/secondNav';
 import Footer from '../../sections/footer/footer';
 import iicData from './data'
 
-const PHDStudents = () => {
+const IIC = () => {
   useEffect(() => {
     document.title =
       "IIC | Indian Institute of Information Technology, Kalyani";
@@ -18,7 +18,7 @@ const PHDStudents = () => {
         <h1>Institution&apos;s Innovation Council</h1>
         <div className='fluid-center iic-certificate'>
         <h2>Certificate-IIC</h2>
-        <Image src={iicData.certificate} width={300} height={200} className="iic-certificate-img" alt=''/>
+        <Image src={iicData.certificate} width={1000} height={600} className="iic-certificate-img" alt=''/>
         </div>
         <div className="fluid-center iic-buttons">
         {iicData.iicData.map((e)=>{
@@ -35,4 +35,4 @@ const PHDStudents = () => {
   );
 }
 
-export default PHDStudents;
+export default IIC;
