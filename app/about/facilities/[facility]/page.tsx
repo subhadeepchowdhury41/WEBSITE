@@ -21,10 +21,10 @@ function Facility() {
             </div>
             <Carousel carouselData={filterData[0].tags} />
             <div className='w-full h-fit flex items-center justify-center'>
-                <div className='m-[40px] max-w-[1250px]'>
+                <div style={{ backgroundColor: "whitesmoke", border: "2px solid #82cff5", padding: "2%", boxShadow: "9px 9px 18px #93c2d9, -9px -9px 18px #c7ffff", borderRadius: "10px" }} className='m-[40px] max-w-[1250px]'>
                     {filterData[0].paragraph?.map((item, index) => !item.text.startsWith('@$') ? (
-                        <div className={item.style} key={index}>
-                            {item.text}<br /><br />
+                        <div style={{ marginBottom: "10px" }} className={item.style} key={index}>
+                            {item.text}<br />
                         </div>
                     )
                         :
