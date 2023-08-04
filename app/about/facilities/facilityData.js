@@ -113,12 +113,12 @@ let Data = [
     ],
         tags: [{
             index: 0,
-            url: '/facility/labs/lab2.png'
+            url: '/facility/labs/labs1.png'
         
         },
         {
             index: 1,
-            url: '/facility/labs/lab1.png'
+            url: '/facility/labs/labs2.png'
         
         },
         ]
