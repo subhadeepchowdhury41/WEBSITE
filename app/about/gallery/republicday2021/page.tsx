@@ -50,18 +50,6 @@ const App: React.FC = () => {
             index: 8,
             url: "rp/9",
         },
-        {
-            index: 9,
-            url: "rp/10",
-        },
-        {
-            index: 10,
-            url: "rp/11",
-        },
-        {
-            index: 11,
-            url: "rp/12",
-        },
     ];
     const arr = [
         {

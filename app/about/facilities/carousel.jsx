@@ -54,6 +54,7 @@ function Carousel(props) {
                 }
                 onClick={() => setI(index.index)}
                 style={{ maxWidth: `${globalThis.window.innerWidth > 500 ? 20 : 15}px` }}
+                key={index.index}
               ></div>
             );
           })}

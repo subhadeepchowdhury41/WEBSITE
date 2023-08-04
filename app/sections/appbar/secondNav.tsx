@@ -192,7 +192,6 @@ const NavBar = () => {
     };
   }, []);
 
-  console.log(stick);
   return (
     <div
       className={`grid content-center z-50 w-full top-0`}
