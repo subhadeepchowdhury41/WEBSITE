@@ -27,7 +27,7 @@ function Sidebar(props) {
                                             props.setActiveId(i.id);
                                             props.setMatchingItem(
                                                 props.data
-                                                    .find((item) => item.index === index.index)
+                                                    .find((item) => item.id === index.id)
                                                     ?.children.find((child) => child.id === i.id)
                                             );
                                         }}

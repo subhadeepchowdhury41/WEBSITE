@@ -10,15 +10,27 @@ import Card from './facilityCard'
 const App: React.FC = () => {
     const carouselData = [{
         index: 0,
-        url: 'https://3.img-dpreview.com/files/p/E~TS590x0~articles/8692662059/8283897908.jpeg'
+        url: '/facility/campus/campus-cover.jpg'
     },
     {
         index: 1,
-        url: 'https://i.pinimg.com/originals/8b/8d/de/8b8dde74631a704a0420ede695fde00d.png'
+        url: '/facility/labs/labs-cover.jpg'
     },
     {
         index: 2,
-        url: 'https://fujifilm-x.com/products-cameras-static/gfx100s/assets/images/image-setting/banner_wapk.png'
+        url: '/facility/library/library-cover.jpg'
+    },
+    {
+        index: 3,
+        url: '/facility/hostel/hostel-cover.jpg'
+    },
+    {
+        index: 4,
+        url: '/facility/medical_services/medical-services-cover.jpg'
+    },
+    {
+        index: 5,
+        url: '/facility/other_amenities/other-amenities-cover.jpg'
     }
     ]
     useEffect(() => {

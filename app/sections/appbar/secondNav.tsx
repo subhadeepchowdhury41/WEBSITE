@@ -167,20 +167,32 @@ const notifications = [
   }
 ]
 const NavBar = () => {
-  const [stick, setStick] = useState<Boolean>(false);
+  // const [stick, setStick] = useState<Boolean>(false);
+  // const handleScroll = () => {
+  //   if (globalThis.window?.scrollY > 1118) {
+  //     setStick(true);
+  //   } else {
+  //     setStick(false);
+  //   }
+  // };
+  const [stick, setStick] = useState(false);
+
   const handleScroll = () => {
-    if (globalThis.window?.scrollY > 10) {
+
+    if (window.scrollY > 120) {
       setStick(true);
     } else {
       setStick(false);
     }
   };
   useEffect(() => {
-    globalThis.window?.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      globalThis.window?.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  console.log(stick);
   return (
     <div
       className={`grid content-center z-50 w-full top-0`}
@@ -190,8 +202,7 @@ const NavBar = () => {
     >
       <div className={`flex mx-auto iiitk-name m-6 items-center `}>
         <div
-          className="flex flex-col hindi-name mobile-head text-2xl ml-[45] text-white mx-6 py-3 border-t-2 border-b-2 tracking-wide
-                 animate-left-college-name-swipe-animation "
+          className="flex flex-col hindi-name mobile-head text-2xl ml-[45] text-white mx-6 py-3 border-t-2 border-b-2 tracking-wide animate-left-college-name-swipe-animation "
           style={{
             alignItems: "center",
             textAlign: "center",
@@ -227,7 +238,7 @@ const NavBar = () => {
       </div>
       {/* Option for custom color subhadeep*/}
       <div
-        className={`flex text-white font-semibold ${stick ? " navBar" : ""}
+        className={`flex text-white animate-left-college-name-swipe-animation transition duration-500 font-semibold ${stick ? " navBar" : ""}
                ${stick ? "fixed top-0 justify-between" : "justify-center"
           } w-full`}
         style={
@@ -242,7 +253,7 @@ const NavBar = () => {
       >
         <Image
           width={53}
-          className={`px-2 py-3 h-[70px]
+          className={`px-2 py-3 h-[70px] animate-left-college-name-swipe-animation
                  ${stick
               ? "opacity-100 transition-opacity ease-in-out duration-500"
               : "hidden"
@@ -258,7 +269,7 @@ const NavBar = () => {
         )}
 
         <ul
-          className={`flex second-nav navItems animate-randimation right-0 opacity-100 `}
+          className={`flex second-nav navItems animate-left-college-name-swipe-animation transition-[1] right-0 opacity-100 `}
           style={{ listStyle: "none", zIndex: "1000" }}
         >
           <li>
