@@ -2,74 +2,62 @@ const ProjectData = [
   {
     id: 1,
     title:
-      "Short-term Variability in Sun-Synchronous and Non-Sun Synchronous Tides in the Middle Atmosphere from Investigations of Contemporaneous Satellite, Model and Reanalysis Data",
+      "Ms. Amrita Mukherjee, Ph.D. student of Dr. Pratik Chakraborty has published two research papers in IEEE Transactions. Such works have applications in improving spectral efficiency and data rates in cooperative wireless networks",
     sponsors: [
-      {
-        id: 1,
-        name: "Science and Engineering Research Board",
-        shortForm: "SERB",
-        img: "https://pbs.twimg.com/profile_images/718036806529232896/RXtKhizK_400x400.jpg",
-      },
-      {
-        id: 2,
-        name: "Department of Science and Technology",
-        shortForm: "DST",
-        img: "https://dst.gov.in/sites/default/files/50-yrs-logo.jpg",
-      },
-      {
-        id: 3,
-        name: "Govt. of India",
-        shortForm: "",
-        img: "https://cracku.in/latest-govt-jobs/wp-content/uploads/2019/07/Government-of-India.jpg",
-      },
     ],
-    pi: "Dr. Uma Das",
-    value: "20.30 L",
+    paperlinks: [{
+      id: 1,
+      url: 'https://ieeexplore.ieee.org/abstract/document/9932279'
+    },
+    {
+      id: 2,
+      url: 'https://ieeexplore.ieee.org/abstract/document/9956915'
+    }],
+    pi: "Dr. Pratik Chakraborty",
+    // value: "20.30 L",
   },
   {
     id: 2,
     title:
-      " Design and Implementation of 2PAKA (two party authenticated key agreement) protocol for devices using Post -Quantum Cryptography",
+      "Mr. Sourav Karmakar, Ph.D. student of Dr. Rinky Sha has published his work on fabrication of highly selective room-temperature formaldehyde gas sensor based on vertically aligned 1D NiCo2O4 nanoneedles",
     sponsors: [
-      {
-        id: 1,
-        name: "Data Security Council of India",
-        shortForm: "DSCI",
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHMe4t0P46iJXBX5xoN9BfEjHZMscmDnphrBy6RrWVbDNIpLcMpdASHgG-KqiVf-3Z9Jw&usqp=CAU",
-      },
     ],
-    pi: "Dr. SK Hafizul Islam",
-    value: "4.9 L",
+    paperlinks: [{
+      id: 1,
+      url: 'https://doi.org/10.1016/j.matlet.2023.134927',
+    },
+    ],
+    pi: "Dr. Rinky Sha",
+    // value: "4.9 L",
   },
   {
     id: 3,
     title:
-      "Investigation on the propagation characteristic of thermo-elastic wave in piezothermoelastic media",
+      "Received a project from the Ministry of Earth Sciences on \"Winter time Fog Prediction using Machine Learning\". Subhajit Debnath, student of Dr. Uma Das, published a paper on 'Short term Variability in Tides in the Middle Atmosphere' in Atmosphere.",
     sponsors: [
+    ],
+    paperlinks: [
       {
         id: 1,
-        name: "Science and Engineering Research Board",
-        shortForm: "SERB",
-        img: "https://pbs.twimg.com/profile_images/718036806529232896/RXtKhizK_400x400.jpg",
-      },
+        url: 'https://www.mdpi.com/2073-4433/14/2/265'
+      }
     ],
-    pi: "Dr. Anirban Lakshman",
-    value: "15.86 L",
+    pi: "Dr. Uma Das",
   },
   {
     id: 4,
     title:
-      "Development of Cryptanalysis Tools for Hamming Metric Post Quantum Code Based Cryptosystems",
+      "She has recently published a book chapter in the book titled “Encyclopedia of Materials: Electronics”, Elsevier titled Graphene-Based Electrochemical Sensors for Environmental Monitoring Applications",
     sponsors: [
+    ],
+    paperlinks: [
       {
         id: 1,
-        name: "Defence Research and Development Organization",
-        shortForm: "DRDO",
-        img: "https://upload.wikimedia.org/wikipedia/en/6/68/Defence_Research_and_Development_Organisation_Logo.png",
-      },
+        url: 'https://doi.org/10.1016/B978-0-12-819728-8.00130-3 '
+      }
     ],
-    pi: "Dr. Bhaskar Biswas, Dr. Debasish Bera",
-    value: "54.83 L",
+    pi: "Dr. Rinky Sha",
+    // value: "54.83 L",
   },
 ];
 
