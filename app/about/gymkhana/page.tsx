@@ -17,11 +17,11 @@ const App: React.FC = () => {
     const [matchingItem, setMatchingItem] = useState(
         data.find((item) => item.id === activeIndex)?.children.find((child) => child.id === activeId)
     );
-    const [windowWidth, setWindowWidth] = useState(globalThis.window.innerWidth);
+    const [windowWidth, setWindowWidth] = useState(1250);
 
     useEffect(() => {
         const handleResize = () => {
-            setWindowWidth(globalThis.window.innerWidth);
+            setWindowWidth(window.innerWidth);
         };
         window.addEventListener('resize', handleResize);
         return () => {

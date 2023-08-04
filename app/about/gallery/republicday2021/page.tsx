@@ -1,12 +1,9 @@
 "use client";
 import NavBar from "../../../sections/appbar/secondNav";
 import Footer from "../../../sections/footer/footer";
-import Comingsoon from "../../../designSystem/comingsoon";
 import { useEffect } from "react";
 import Carousel from "../carousel";
 import Sidebar from "../sidebar";
-import logo from "../../../../assets/gallery/ppc/1.jpg";
-import Image from "next/image";
 
 const App: React.FC = () => {
     useEffect(() => {

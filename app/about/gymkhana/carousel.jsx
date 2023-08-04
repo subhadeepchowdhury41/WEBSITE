@@ -3,6 +3,17 @@ import "../../../styles/about/carousel/carousel.css";
 
 function Carousel(props) {
     const [i, setI] = useState(0);
+    const [windowWidth, setWindowWidth] = useState(1200);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+        };
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
     const AddOne = () => {
         let len = props.carouselData.length;
         if (i < len - 1) {
@@ -50,7 +61,7 @@ function Carousel(props) {
                                         : "bg-[rgba(110,110,110,0.67)] h-[5px] w-[20px] cursor-pointer"
                                 }
                                 onClick={() => setI(index.index)}
-                                style={{ maxWidth: `${globalThis.window.innerWidth > 500 ? 20 : 15}px` }}
+                                style={{ maxWidth: `${windowWidth > 500 ? 20 : 15}px` }}
                             ></div>
                         );
                     })}
