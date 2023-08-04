@@ -51,7 +51,9 @@ const App: React.FC = () => {
                     <Carousel carouselData={matchingItem?.mainCarousel} />
                     {matchingItem?.description.map((index) => {
                         return (
-                            <div className='font-[400] text-[18px]'>{ }</div>
+                            <>
+                                {index.type === 'text' && <div className='font-[400] text-[16px]'>{index.title}</div>}
+                            </>
                         )
                     })}
                 </div>
