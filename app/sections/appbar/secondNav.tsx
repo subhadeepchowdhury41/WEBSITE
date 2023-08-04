@@ -130,7 +130,7 @@ const placements = [
     items: [
       {
         label: "Placement Portal",
-        link: "https://iiitkalyani.ac.in/placement",
+        link: "/placement",
       },
     ],
   },
