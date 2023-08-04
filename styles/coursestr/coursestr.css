@@ -75,6 +75,7 @@
 .card:hover {
     transform: scale(1.02);
     box-shadow: 9px 9px 18px #93c2d9, -9px -9px 18px #c7ffff;
+    
 }
 
 @media (max-width: 1200px) {

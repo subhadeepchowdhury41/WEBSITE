@@ -8,7 +8,7 @@ interface HeadingInterface {
 }
 interface SubHeadingInterface {
   label: string;
-  link?: string;
+  scroll?: number;
 }
 interface ArrayInterface {
   headings?: Array<HeadingInterface>;
@@ -22,7 +22,9 @@ interface SidebarProps {
 
 
 const Sidebar: React.FC<SidebarProps> = ({ page, array, location }) => {
-
+  const handleScroll = (top: number) => {
+    window.scroll({ top: top, left: 0, behavior: 'smooth' });
+  };
   return (
     <div className="sidebar">
       <div className="sidebar-location">{location}</div>
@@ -35,9 +37,7 @@ const Sidebar: React.FC<SidebarProps> = ({ page, array, location }) => {
               {array[index.id].subheadings?.map((i) => {
                 return (
                   <>
-                    <a href={i.link}>
-                      <span >{i.label}</span>
-                    </a>
+                    <span style={{ cursor: "pointer" }} onClick={() => handleScroll(i.scroll || 0)} >{i.label}</span>
                     <br />
                   </>
                 );

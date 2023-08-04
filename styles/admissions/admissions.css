@@ -1,12 +1,7 @@
-.admissions-container {
-    display: flex;
-    flex-direction: row;
-}
-
 .card-container {
     height: fit-content;
     /* width: 55vw; */
-    box-shadow: 0 0 5px #CFB2B2;
+    /* box-shadow: 0 0 5px #CFB2B2; */
     border-radius: 5px;
     margin: 15px;
 }
@@ -18,6 +13,8 @@
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
     padding: 10px;
+    width: 90%;
+    margin: auto;
     /* margin: 5px; */
 }
 
@@ -28,31 +25,40 @@
 .admission-channels {
     display: flex;
     flex-direction: column;
-    /* align-items: top; */
-    /* justify-content: center; */
-    width: 100%;
-    margin-left: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 95vw;
+    /* margin-left: 50px; */
 }
 
 .admission-card {
     /* align-items: center; */
-    width: 80%;
-    margin: auto;
+    width: 100%;
+    margin-left: 0;
+    /* margin: auto; */
+    padding: 0;
     top: 20px;
 }
 
 .card-body {
     height: fit-content;
-
+    width: 90%;
     display: flex;
     flex-direction: column;
     background-color: whitesmoke;
     border-top: 2px solid #82cff5;
     border-right: 2px solid #82cff5;
     border-left: 2px solid #82cff5;
-
+    margin: auto;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+}
+
+.card-container {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
 }
 
 .card-body li {
@@ -70,6 +76,7 @@
 
 .data-item a {
     margin-top: 3px;
+    transition: 0.5s;
 }
 
 .data-item a:hover {
@@ -218,8 +225,8 @@
 
 @media(min-width: 900px) {
     .card-container {
-        width: 24vw;
-        /* width: 100%; */
+        /* width: 24vw; */
+        width: 100%;
     }
 
     .admission-card {
@@ -229,6 +236,7 @@
 
     .card-body {
         min-height: 40vh;
+        /* width: 90%; */
     }
 
     .admission-channels {

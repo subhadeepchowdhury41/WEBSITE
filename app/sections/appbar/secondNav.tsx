@@ -18,14 +18,13 @@ const acadamics = [
   {
     items: [
       { label: "Programmes", link: "/academics/programs" },
-      // { label: 'Programmes', link: 'https://iiitkalyani.ac.in/php/programmes.php' },
       { label: "Faculty", link: "/academics/faculty" },
       { label: 'Admissions', link: '/academics/admissions' },
       { label: 'Academic Calendar', link: '/academics/academic-calendar' },
       { label: 'Course Structure', link: '/academics/coursestr' },
       { label: 'New National Education Policy-2020', link: '/academics/newedupolicy' },
       { label: 'Fee Structure', link: '/academics/feestr' },
-      { label: 'Regulations', link: 'https://iiitkalyani.ac.in/php/ugregulations.php' },
+      { label: 'Regulations', link: '/academics/regulations' },
       { label: 'NPTEL Collaboration', link: '/academics/nptel' },
     ],
   },
@@ -163,7 +162,7 @@ const notifications = [
   {
     items: [
       { label: "E-Notice Board", link: "/e-notice-board" },
-      { label: "Archive: Notice Board", link: "https://iiitkalyani.ac.in/php/archive.php" },
+      { label: "Archive", link: "https://iiitkalyani.ac.in/php/archive.php" },
     ],
   }
 ]

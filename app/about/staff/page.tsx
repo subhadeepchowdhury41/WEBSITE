@@ -19,19 +19,19 @@ const array = [
     },
     {
         subheadings: [
-            { label: 'Md. Samim Rahaman' },
-            { label: 'Amit Kumar Sadhukhan' },
-            { label: 'Sreejoyee Das' },
+            { label: 'Md. Samim Rahaman', scroll: 0 },
+            { label: 'Amit Kumar Sadhukhan', scroll: 0 },
+            { label: 'Sreejoyee Das', scroll: 550 },
         ],
     },
     {
         subheadings: [
-            { label: 'Moupriya Das' },
-            { label: 'Rathin Pailan' },
-            { label: 'Sanju Biswas' },
-            { label: 'Twinkle Jena' },
-            { label: 'Sourav Gope' },
-            { label: 'Debottam Biswas' },
+            { label: 'Moupriya Das', scroll: 1000 },
+            { label: 'Rathin Pailan', scroll: 70 },
+            { label: 'Sanju Biswas', scroll: 70 },
+            { label: 'Twinkle Jena', scroll: 70 },
+            { label: 'Sourav Gope', scroll: 1400 },
+            { label: 'Debottam Biswas', scroll: 1400 },
         ],
     }
 ];

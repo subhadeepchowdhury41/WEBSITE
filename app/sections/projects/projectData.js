@@ -59,7 +59,7 @@ const ProjectData = [
   {
     id: 4,
     title:
-      "Development of Cryptanalysis Tools for HAmming Metric Post Quantum Code Based Cryptosystems",
+      "Development of Cryptanalysis Tools for Hamming Metric Post Quantum Code Based Cryptosystems",
     sponsors: [
       {
         id: 1,

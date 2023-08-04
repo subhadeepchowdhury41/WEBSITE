@@ -26,7 +26,6 @@ function ProgramPage() {
     const [matchingItem, setMatchingItem] = useState(
         data.find((item) => item.index === activeIndex)?.children.find((child) => child.id === activeId)
     );
-    console.log(matchingItem?.img)
     return (
         <div>
             <NavBar />
