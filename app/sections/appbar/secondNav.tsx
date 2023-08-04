@@ -140,7 +140,7 @@ const placements = [
 const career = [
   {
     items: [
-      { label: "Career", link: "/career" },
+      { label: "Career", link: "/career" }
     ],
   },
 ];
