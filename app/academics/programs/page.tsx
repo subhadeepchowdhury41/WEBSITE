@@ -16,7 +16,7 @@ function ProgramPage() {
     }, []);
     const handleButtonClick = (pdfFileName: string) => {
         // Set the PDF file path based on the file name and the "public" folder location
-        const pdfUrl = `/programresources/${pdfFileName}`;
+        const pdfUrl = `/${pdfFileName}`;
 
         // Open the PDF URL in a new tab/window
         window.open(pdfUrl, "_blank");

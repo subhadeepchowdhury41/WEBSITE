@@ -1,0 +1,49 @@
+.flex-set{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-container{
+    border: 3px solid red;
+    height: 100vh;
+    width: 100vw;
+}
+
+.main-container h1{
+    /* border: 2px solid yellow; */
+    text-align: center;
+    width: 80%;
+    height: 100%px;
+    font-size: max(2.5vh,2.5vw);
+    margin: 1%;
+}
+.main-container .heading1{
+    border: 2px solid rgb(4, 207, 214);
+    text-align: center;
+    background-color: azure;
+    width: 80%;
+    height: 100%px;
+    padding: 1%;
+    border-radius: 10px;
+    margin: 1%;
+    font-size: max(1.5vh,1.5vw);
+}
+.main-container .heading2{
+    border: 2px solid rgb(4, 207, 214);
+    text-align: center;
+    background-color: azure;
+    width: 80%;
+    height: 100%px;
+    padding: 1%;
+    border-radius: 10px;
+    text-align: justify;
+    font-size: max(1.35vh,1.2vw);
+}
+
+@media (max-width:700px) {
+    .main-container{
+        width: 95%;
+    }
+}

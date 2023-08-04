@@ -17,11 +17,11 @@ const SidebarData = [
                 resources: [
                     {
                         heading: 'New Curriculum from July 2021 onwards',
-                        url: 'AnnexureCSE.pdf'
+                        url: '/programresources/AnnexureCSE.pdf'
                     },
                     {
                         heading: 'Old Curriculum',
-                        url: 'Btechcoursestructureold.pdf'
+                        url: '/programresources/Btechcoursestructureold.pdf'
                     },
                     {
                         heading: 'UG Admissions',
@@ -37,7 +37,7 @@ const SidebarData = [
                 resources: [
                     {
                         heading: 'Electronics and Communication Engineering Course Structure',
-                        url: 'AnnexureECE.pdf'
+                        url: '/programresources/AnnexureECE.pdf'
                     }    
                 ]
             }
@@ -53,7 +53,7 @@ const SidebarData = [
                 img: Mtech1.src,
                 text: 'Artificial Intelligence (AI) and Data Science are two rapidly evolving fields at the forefront of modern technology. Both AI and Data Science are highly interrelated. Data serves as the foundation for training AI models, and AI algorithms are used to enhance the efficiency and effectiveness of data analysis. The synergy between these fields has led to remarkable advancements in various domains, including healthcare, finance, marketing, and more. AI and Data Science have revolutionized industries, enabling companies to make data-driven decisions, automate processes, and provide personalized services to customers. As technology continues to advance, these fields will play an increasingly critical role in shaping the future, paving the way for smarter and more efficient systems that will have a profound impact on society.',
                 resources: [{
-                    url: "MTechAIandDS.pdf",
+                    url: "/programresources/MTechAIandDS.pdf",
                     heading: 'M.Tech Course Structure AI and Data Science'
                 }]
             },
@@ -64,7 +64,7 @@ const SidebarData = [
                 text: 'Advanced Communication Systems and Signal Processing are two interconnected fields that play a crucial role in modern telecommunications and information exchange. The synergy between Advanced Communication Systems and Signal Processing has led to significant technological advancements. These fields are instrumental in developing cutting-edge technologies like 5G wireless networks, digital audio and video compression, image recognition algorithms, and speech processing systems. As the world becomes increasingly interconnected and reliant on efficient communication, the demand for professionals in Advanced Communication Systems and Signal Processing continues to grow. Experts in these fields work on developing innovative solutions to improve communication systems, leading to more efficient data exchange, better multimedia experiences, and enhanced connectivity across the globe.',
                 resources: [{
                     heading: 'Course Structure-Advanced Communication Systems and Signal Processing',
-                    url: "MtechComAndSignals.pdf"
+                    url: "/programresources/MtechComAndSignals.pdf"
                 }]
             }
         ]
@@ -81,15 +81,15 @@ const SidebarData = [
                 resources: [
                     {
                         heading: 'Ph.D Regulations',
-                        url: 'PhdRegulation2021.pdf'
+                        url: '/programresources/PhdRegulation2021.pdf'
                     },
                     {
                         heading: 'Ph.D Regulations (November 2017)',
-                        url: 'Phdreg.pdf'
+                        url: '/programresources/Phdreg.pdf'
                     },
                     {
                         heading: 'See PhD admissions (Old data)',
-                        url: 'https://iiitkalyani.ac.in/php/admissionpg.php'
+                        url: './academics/admissions/pages/phd'
                     }
                 ]
             },

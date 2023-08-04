@@ -4,7 +4,6 @@ import NavBar from '../../sections/appbar/secondNav'
 import Footer from '../../sections/footer/footer'
 import '../../../styles/regulations/regulations.css';
 import data  from './data';
-import AssignmentIcon from '@mui/icons-material/Assignment';
 const page = () => {
   return (
     <React.Fragment>
