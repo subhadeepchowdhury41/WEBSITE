@@ -44,34 +44,3 @@
     background-color: rgb(172, 227, 255);
     box-shadow:  9px 9px 18px #93c2d9, -9px -9px 18px #c7ffff;
 }
-/*
-.projects-card:hover{
-    transform: scale(1.05);
-    border-radius: 10px;
-    box-shadow:  9px 9px 18px #93c2d9, -9px -9px 18px #c7ffff;
-}
-.projects-card h2{
-    font-weight:400;
-    text-align: left;
-    font-size: large;
-    padding-bottom: 5px;
-    border-bottom:2px solid #82cff5 ;
-    
-}
-.projects-card h3{
-    font-weight:800;
-    margin-bottom: 2%;
-    width: fit-content;
-    text-align: left;
-}
-.projects-card h4{
-    font-weight:200;
-    text-align: left;
-} */
-
-@media screen and (max-width:1024px){
-
-}
-@media screen and (max-width:768px){
-
-}

@@ -14,14 +14,13 @@ const acadamics = [
   {
     items: [
       { label: "Programmes", link: "/academics/programs" },
-      // { label: 'Programmes', link: 'https://iiitkalyani.ac.in/php/programmes.php' },
       { label: "Faculty", link: "/academics/faculty" },
       { label: 'Admissions', link: '/academics/admissions' },
       { label: 'Academic Calendar', link: '/academics/academic-calendar' },
-      { label: 'Course Structure', link: 'https://iiitkalyani.ac.in/php/Course_stru.php' },
-      { label: 'New National Education Policy-2020', link: 'https://iiitkalyani.ac.in/php/nep.php' },
-      { label: 'Fee Structure', link: 'https://iiitkalyani.ac.in/php/fee_structure.php' },
-      { label: 'Regulations', link: 'https://iiitkalyani.ac.in/php/ugregulations.php' },
+      { label: 'Course Structure', link: '/academics/coursestr' },
+      { label: 'New National Education Policy-2020', link: '/academics/newedupolicy' },
+      { label: 'Fee Structure', link: '/academics/feestr' },
+      { label: 'Regulations', link: '/academics/regulations' },
       { label: 'NPTEL Collaboration', link: '/academics/nptel' },
     ],
   },
@@ -33,7 +32,7 @@ const about = [
       { label: "About Us", link: "/about/aboutus" },
       {
         label: "NIRF",
-        link: "https://iiitkalyani.ac.in/images/notifications/INDIAN%20INSTITUTE%20OF%20INFORMATION%20TECHNOLOGY,%20KALYANI20220228-.pdf",
+        link: "/pdf/NIRF/INDIAN INSTITUTE OF INFORMATION TECHNOLOGY, KALYANI20220228-.pdf",
       },
       { label: "Why IIIT Kalyani", link: "/about/whyiiitkalyani" },
       { label: "Staff", link: "/about/staff" },
@@ -48,35 +47,35 @@ const administration = [
     items: [
       {
         label: "Administrative Body",
-        link: "https://iiitkalyani.ac.in/php/administration.php",
+        link: "/administration/administrativeBody",
       },
       {
         label: "Board of Governers",
-        link: "https://iiitkalyani.ac.in/images/notification2021/IIIT%20Kalyani_full_BoG%20(1).pdf",
+        link: "/pdf/BOG/IIIT Kalyani_full_BoG.pdf",
       },
       {
         label: "Finance Committee",
-        link: "https://iiitkalyani.ac.in/images/notification2021/IIIT%20Kalyani_Fincance%20Committee.pdf",
+        link: "/pdf/financecommittee/IIIT Kalyani_Fincance Committee.pdf",
       },
       {
         label: "Senate",
-        link: "https://iiitkalyani.ac.in/images/Reconstituion%20of%20Senate%20IIIT%20Kalyani%20(1).pdf",
+        link: "/pdf/senate/Reconstituion of Senate IIIT Kalyani.pdf",
       },
       {
         label: "IIIT Act",
-        link: "https://iiitkalyani.ac.in/images/iiitppp/pdf1.pdf",
+        link: "/pdf/iiitact/IIIT Act.pdf",
       },
       {
         label: "Statues",
-        link: "https://iiitkalyani.ac.in/images/iiitppp/191586_IIIT%20Kalyani.pdf",
+        link: "/pdf/statues/Statues.pdf",
       },
       {
         label: "Internal Complaint Committee",
-        link: "https://iiitkalyani.ac.in/php/icc.php",
+        link: "/administration/icc",
       },
       {
         label: "Right to Information",
-        link: "https://iiitkalyani.ac.in//images/Office%20Order-96_RTI%20(1).pdf",
+        link: "/pdf/RTI/Office Order-96_RTI.pdf",
       },
     ],
   },
@@ -99,7 +98,7 @@ const students = [
     items: [
       {
         label: "Currrent Students",
-        link: "https://iiitkalyani.ac.in/images/StudentList_2021.pdf",
+        link: "/pdf/current-students/StudentList_2021.pdf",
       },
       {
         label: "Regulatory Rules",
@@ -111,7 +110,7 @@ const students = [
       },
       {
         label: "Students' Achievements",
-        link: "https://iiitkalyani.ac.in/php/studentachievement.php",
+        link: "/students/students-achievements",
       },
       {
         label: "GDSC",
@@ -127,7 +126,7 @@ const placements = [
     items: [
       {
         label: "Placement Portal",
-        link: "https://iiitkalyani.ac.in/placement",
+        link: "/placement",
       },
     ],
   },
@@ -136,10 +135,18 @@ const placements = [
 const career = [
   {
     items: [
-      { label: "Career", link: "https://iiitkalyani.ac.in/php/career.php" },
+      { label: "Career", link: "/career" },
     ],
   },
 ];
+const notifications = [
+  {
+    items: [
+      { label: "E-Notice Board", link: "/e-notice-board" },
+      { label: "Archive", link: "https://iiitkalyani.ac.in/php/archive.php" },
+    ],
+  }
+]
 const mobileMenu = [
   {
     items: [
@@ -150,11 +157,13 @@ const mobileMenu = [
       { label: "Students", index: 5, submenu: students },
       { label: "Career", index: 6, submenu: career },
       { label: "Placements", index: 7, submenu: placements },
+      { label: "Notifications", index: 8, submenu: notifications },
     ],
   },
 ];
 export default function AppBar() {
   const [isClient, setIsClient] = useState(false);
+
   useEffect(() => {
     setIsClient(true);
   }, []);
@@ -193,8 +202,7 @@ export default function AppBar() {
               }`}
           >
             <div
-              className="flex flex-col hindi-name mobile-head text-2xl ml-[45] text-white mx-6 py-3 border-t-2 border-b-2 tracking-wide
-                 animate-left-college-name-swipe-animation "
+              className="flex flex-col hindi-name mobile-head text-2xl ml-[45] text-white mx-6 py-3 border-t-2 border-b-2 tracking-wide animate-left-college-name-swipe-animation "
               style={{
                 alignItems: "center",
                 textAlign: "center",
@@ -284,6 +292,10 @@ export default function AppBar() {
               <NavItem
                 title="Placements"
                 menu={<MegaMenu menus={placements} />}
+              />
+              <NavItem
+                title="Notifications"
+                menu={<MegaMenu menus={notifications} />}
               />
             </ul>
           </div>

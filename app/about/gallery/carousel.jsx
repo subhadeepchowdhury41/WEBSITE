@@ -7,6 +7,17 @@ import "./page.css";
 
 function Carousel(props) {
   const [i, setI] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(1200);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   const AddOne = () => {
     let len = props.carouselData.length;
     if (i < len - 1) {
@@ -44,37 +55,6 @@ function Carousel(props) {
           src={require(`../../../assets/gallery/${props.carouselData[i].url}.jpg`)}
           alt="image"
         />
-        {/* <div
-          className="absolute w-full h-adjust flex items-center"
-          style={{ top: "10vh" }}
-        >
-          <div className="absolute flex z-[20] w-full items-center justify-between px-4">
-            <div
-              className="h-8 w-8 rounded-[50%] flex items-center justify-center pr-1 cursor-pointer"
-              onClick={ReduceOne}
-            >
-              <KeyboardDoubleArrowLeftIcon
-                sx={{
-                  color: "rgb(255, 255, 255)",
-                  height: `${globalThis.window.innerWidth > 1000 ? 50 : 30}px`,
-                  width: `${globalThis.window.innerWidth > 1000 ? 50 : 30}px`,
-                }}
-              />
-            </div>
-            <div
-              className="h-8 w-8 rounded-[50%] flex items-center justify-center pl-1 cursor-pointer"
-              onClick={AddOne}
-            >
-              <KeyboardDoubleArrowRightIcon
-                sx={{
-                  color: "rgb(255, 255, 255)",
-                  height: `${globalThis.window.innerWidth > 1000 ? 50 : 30}px`,
-                  width: `${globalThis.window.innerWidth > 1000 ? 50 : 30}px`,
-                }}
-              />
-            </div>
-          </div>
-        </div> */}
         <div className="absolute flex z-10 h-auto mb-8 gap-1 w-full bottom-0 items-center justify-center overflow-hidden">
           {props.carouselData.map((index) => {
             return (
@@ -86,7 +66,7 @@ function Carousel(props) {
                 }
                 onClick={() => setI(index.index)}
                 style={{
-                  maxWidth: `${globalThis.window.innerWidth > 500 ? 20 : 15}px`,
+                  maxWidth: `${windowWidth > 500 ? 20 : 15}px`,
                 }}
               ></div>
             );

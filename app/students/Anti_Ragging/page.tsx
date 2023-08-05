@@ -5,8 +5,14 @@ import Footer from '../../sections/footer/footer';
 import FileOpenIcon from '@mui/icons-material/FileOpen';
 import "../../../styles/Students/antiRagging/anti_ragging.css";
 import Data from "./data";
+import { useEffect } from "react";
+
 
 const Anti_Ragging = () => {
+  useEffect(() => {
+    document.title =
+      "Anti Ragging | Indian Institute of Information Technology, Kalyani";
+  }, []);
   return (
     <>
       <NavBar />
@@ -21,16 +27,16 @@ const Anti_Ragging = () => {
                       <h3 className='anti_ragging-title'>{item.name}</h3>
                       <button className="anti_ragging-download">
                         <FileOpenIcon style={{'color':'rgb(6, 50, 74)','zIndex':'-1'}} />
-                        <a href={item.pdf} target="_blank" rel="noreferrer" download></a>
+                        <a href={item.pdf} target="_blank" rel="noreferrer"></a>
                       </button>
                     </div>
                 );
             })}
         </div>
         <p> National Anti Ragging Help Line (UGC Crisis Hotline)24×7 Toll Free Number* 1800-180-5522(helpline@antiragging.in).</p>
-        <a className='anti-ragging_home' href="https://www.antiragging.in/">Anti-ragging Home</a>
+        <a className='anti-ragging_home' href="https://www.antiragging.in/" target="_blank" rel="noreferrer">Anti-ragging Home</a>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };

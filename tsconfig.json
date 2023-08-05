@@ -31,8 +31,11 @@
     ".next/types/**/*.ts",
     "app/sections/gallery",
     "app/sections/cardSection/events.js",
-    "app/students/phd/[name].js"
-, "app/about/gallery/sidebar.jsx", "app/about/gallery/iiitkalyanionlineevents/page.tsx"  ],
+    "app/students/phd/[name].js",
+    "app/about/gallery/sidebar.jsx",
+    "app/about/gallery/iiitkalyanionlineevents/page.tsx",
+    "app/about/gymkhana/carousel.jsx"
+, "app/placement/components/ImageCarousel.jsx"  ],
   "exclude": [
     "node_modules"
   ]

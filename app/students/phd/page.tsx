@@ -10,12 +10,19 @@ import InsertLinkIcon from '@mui/icons-material/InsertLink';
 import NavBar from '../../sections/appbar/secondNav';
 import Footer from '../../sections/footer/footer';
 import Link from 'next/link';
+import { useEffect } from "react";
+
 
 const PHDStudents = () => {
     const [hovering, setHovering] = useState(0)
     const [decider, setDecider] = useState(-1)
     const [active, setActive] = useState(-1)
+    useEffect(() => {
+        document.title =
+            "PhD | Indian Institute of Information Technology, Kalyani";
+    }, []);
     return (
+
         <div style={{}}>
             <NavBar />
             <div className='w-full font-[800] text-4xl pl-8 my-8'>
@@ -34,7 +41,7 @@ const PHDStudents = () => {
                                 {index.status == 'Ongoing' ? <div className='text-[rgb(134,133,47)] font-bold text-lg'>Ongoing</div> : <div className='text-[rgb(47,165,49)] font-bold text-lg'>Completed</div>}
                                 <div className='flex gap-2'>
                                     <div className='font-bold text-xl'>{index.name}</div>
-                                    <div className='border rounded-xl px-2 max-h-[24px] flex items-center justify-center text-base text-white bg-[rgb(137,139,137)]'>External</div>
+                                    <div className='border rounded-xl px-2 max-h-[24px] flex items-center justify-center text-base text-white bg-[rgb(137,139,137)]'>{index.type === 'Regular' ? 'Regular' : 'External'}</div>
                                 </div>
                                 <div className='flex gap-2'>
                                     <div className=''>{index['Student ID ']}</div>
@@ -62,7 +69,7 @@ const PHDStudents = () => {
                                         </ul>
                                     </li> : <></>}
                                     {index.links ? <Link target={"_blank"} href={index.links}><li className='text-[rgb(43,159,159)]'>External link</li></Link> : <></>}
-                                    {index.links || index.pub_details ? <></> : <li className="text-[rgb(239,95,66)]">No data found</li>}
+                                    {index.links || index.pub_details ? <></> : <></>}
                                 </ul>
                             </div>
                         </div>

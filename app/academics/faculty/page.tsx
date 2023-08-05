@@ -3,16 +3,21 @@
 import NavBar from "../../sections/appbar/secondNav";
 import Footer from '../../sections/footer/footer';
 import facultyData from "./facultyData";
-import "../../../styles/Academics/faculty/faculty.css";
+import "../../../styles/academics/faculty/faculty.css";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
+import { useEffect } from "react";
 
 const Faculty = () => {
+  useEffect(() => {
+    document.title =
+      "Faculty | Indian Institute of Information Technology, Kalyani";
+  }, []);
   return (
     <>
       <NavBar />
       <div className="fluid-center faculty-main-page">
-        <h1>IIIT kalyani Faculties</h1>
+        <h1>IIIT Kalyani Faculties</h1>
         <div className="fluid-center faculty-line">
           <span>Profile</span>
           <span>Topic of Expertise</span>
@@ -21,16 +26,16 @@ const Faculty = () => {
           return (
             <div key={item.email[0]} className="fluid-center main-bar-body">
               <div className="fluid-center faculty-main-bar">
-                <img className="faculty-profile-pic" src={item.imgUrl} alt="" />
+                <img className="faculty-profile-pic" src={item.imgUrl} alt="profile" />
                 <div className="fluid-center faculty-profile">
                   <h2 style={{ fontWeight: "700", fontSize: "2.5vh" }}>{item.name}</h2>
                   <h2 style={{ fontWeight: "300" }}>{item.designation}</h2>
-                  <h2 style={{ backgroundColor: "lightgray",padding: "3px 15px 3px 15px",borderRadius: "20px",fontSize: "15px"}}>
+                  <h2 style={{ backgroundColor: "lightgray", padding: "3px 15px 3px 15px", borderRadius: "20px", fontSize: "15px" }}>
                     {item.eduaction}
                   </h2>
                   <div>
-                    <EmailIcon className="faculty-profile-icon" color="primary" style={{'color':'black'}} onClick={()=>{navigator.clipboard.writeText(item.email[0])}} />
-                    <LinkedInIcon className="faculty-profile-icon" color="primary" onClick={()=>{window.location.href = item.linkedIn}} />
+                    <EmailIcon className="faculty-profile-icon" color="primary" style={{ 'color': 'black' }} onClick={() => { navigator.clipboard.writeText(item.email[0]) }} />
+                    <LinkedInIcon className="faculty-profile-icon" color="primary" onClick={() => { window.location.href = item.linkedIn }} />
                   </div>
                 </div>
                 <div className="fluid-center faculty-topic">
@@ -42,13 +47,13 @@ const Faculty = () => {
                 </div>
               </div>
               <form className="faculty-more" action={item.more} >
-                <button className="faculty-more-button" type="submit"></button>
+                <button className="faculty-more-button" type="submit" id="buttonTitle" title="Title"></button>
               </form>
             </div>
           );
         })}
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };

@@ -1,0 +1,143 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+.home-background {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    height: 120%;
+}
+
+#home {
+    display: flex;
+    flex-direction: row;
+}
+
+.home-text {
+    width: 50%;
+    margin-left: 7%;
+    margin-top: 20%;
+    font-weight: 600;
+    font-size: 35px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", Times, serif;
+}
+
+.employees-image {
+    /* width: 50%; */
+    height: 78vh;
+    object-fit: cover;
+}
+
+.brochure-link {
+    background-color: #142D54;
+    width: fit-content;
+    color: aliceblue;
+    margin-top: 2%;
+    padding: 12px 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.brochure-link:hover {
+    background-color: #0F1F3D;
+    box-shadow: 0 0 10px #0F1F3D;
+    transform: scale(1.05);
+}
+
+.hidden-header {
+    display: none;
+    font-weight: 600;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: "Roboto", Times, serif;
+}
+
+@media (max-width:1100px) {
+    .home-text {
+        width: 60%;
+        font-size: 22px;
+        margin-top: 18%;
+    }
+
+    .employees-image {
+        height: 50vh;
+    }
+
+    .home-background {
+        top: -70px;
+        right: 0;
+        height: 120%;
+    }
+
+    .brochure-link {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:800px) {
+    .home-text {
+        font-size: 19px;
+        margin-top: 18%;
+    }
+
+    .employees-image {
+        height: 40vh;
+    }
+
+    .brochure-link {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:700px) {
+    #home {
+        flex-direction: column-reverse;
+    }
+
+    .hidden-header {
+        display: block;
+        margin: 5% auto;
+        font-size: 4.8vw;
+    }
+
+    .employees-image {
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    /* .heading {
+        display: none;
+    } */
+
+    .home-text {
+        margin: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-size: 4.8vw;
+    }
+
+    .hide-br {
+        display: none;
+    }
+
+    .brochure-link {
+        margin-top: 5%;
+        font-size: 3.5vw;
+    }
+
+}

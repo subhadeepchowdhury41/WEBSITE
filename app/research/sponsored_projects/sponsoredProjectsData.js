@@ -30,7 +30,7 @@ const data=[
     },
     {
         id:5,
-        title:'Development of Cryptanalysis Tools for HAmming Metric Post Quantum Code Based Cryptosystems',
+        title:'Development of Cryptanalysis Tools for Hamming Metric Post Quantum Code Based Cryptosystems',
         PI:'Dr. Bhaskar Biswas and Co-PI: Dr. Debasish Bera',
         value:'54.83696 Lakhs',
         desc:'DRDO (System Analysis Group) sponsored project SAG/4600/TCID/CARS/52'
