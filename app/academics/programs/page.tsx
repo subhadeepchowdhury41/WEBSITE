@@ -57,7 +57,7 @@ function ProgramPage() {
                     {matchingItem?.resources?.map((index, i) => {
                         return (
                             // <a href={index.url} target="_blank" rel="noopener noreferrer">
-                            <div style={{ cursor: "pointer" }} onClick={() => handleButtonClick(index.url)} className='border border-black p-[4px] my-1 rounded-[5px]'>{index.heading}</div>
+                            <div key={i} style={{ cursor: "pointer" }} onClick={() => handleButtonClick(index.url)} className='border border-black p-[4px] my-1 rounded-[5px]'>{index.heading}</div>
                             // </a>
                         )
                     })}
