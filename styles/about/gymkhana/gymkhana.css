@@ -18,3 +18,9 @@
         top: 0;
     }
 }
+
+@media (max-width: 900px){
+    .col900{
+        flex-direction: column;
+    }
+}
