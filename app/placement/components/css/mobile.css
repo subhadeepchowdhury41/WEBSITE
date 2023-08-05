@@ -1,0 +1,49 @@
+/* Inside header.css or create a separate CSS file for mobile menu */
+
+/* Mobile Navigation */
+.mobile-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.hamburger img {
+    width: 30px;
+    /* Adjust the size of the hamburger icon */
+    cursor: pointer;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu.open {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    /* Background color of the menu */
+    position: absolute;
+    top: 60px;
+    /* Adjust the distance from the top */
+    right: 10px;
+    /* Adjust the distance from the right */
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    /* Add a subtle shadow */
+}
+
+.mobile-menu span {
+    padding: 8px 12px;
+    color: #333;
+    /* Link color */
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+    /* Add a smooth hover effect */
+}
+
+.mobile-menu span:hover {
+    background-color: #ddd;
+    /* Hover background color */
+}

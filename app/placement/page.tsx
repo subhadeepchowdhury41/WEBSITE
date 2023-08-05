@@ -1,20 +1,32 @@
 'use client';
-import NavBar from '../sections/appbar/secondNav';
 import Footer from '../sections/footer/footer';
 import Header from './components/Header'
-import { useEffect } from 'react';
+import Home from './components/LandingPage'
+import About from './components/About'
+import { useState, useEffect } from 'react';
 
 const App: React.FC = () => {
     useEffect(() => {
-        document.title = 'Placement | Indian Institute of Information Technology, Kalyani';
+        document.title = 'Placement Portal | Indian Institute of Information Technology, Kalyani';
     }, []);
+    const [scrollToSectionId, setScrollToSectionId] = useState<string | null>(null);
+
+    useEffect(() => {
+        if (scrollToSectionId) {
+            scrollToSection(scrollToSectionId);
+        }
+    }, [scrollToSectionId]);
+
+    const scrollToSection = (sectionId: string) => {
+        document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+        setScrollToSectionId(null);
+    };
     return (
         <>
-
-            {/* <NavBar /> */}
-            <Header />
+            <Header setScrollToSectionId={setScrollToSectionId} />
+            <Home />
+            <About />
             <Footer />
-
         </>
     );
 };
