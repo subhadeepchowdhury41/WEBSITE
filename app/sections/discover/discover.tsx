@@ -6,16 +6,22 @@ import { Reveal, Fade } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
-import PhotoFilterIcon from '@mui/icons-material/PhotoFilter';
-// import ArrowBackwardIosIcon from '@mui/icons-material/ArrowBackwardIos';
-// import ArrowBackwardIosIcon from '@mui/icons-material/ArrowBackwardIos';
-// import gsap from 'gsap';
-import ITKButton from "../../designSystem/ITKButton";
 import ContactlessOutlinedIcon from "@mui/icons-material/ContactlessOutlined";
 
 const Discover = () => {
     useEffect(() => {
         document.title = 'Home | Indian Institute of Information Technology, Kalyani';
+    }, []);
+    const [windowWidth, setWindowWidth] = useState(0);
+    const updateWindowWidth = () => {
+        setWindowWidth(window.innerWidth);
+    };
+    useEffect(() => {
+        updateWindowWidth();
+        window.addEventListener('resize', updateWindowWidth);
+        return () => {
+            window.removeEventListener('resize', updateWindowWidth);
+        };
     }, []);
 
     const customAnimation = keyframes`
@@ -41,17 +47,6 @@ const Discover = () => {
     }
 `;
     const [i, setI] = useState(1);
-    const [windowWidth, setWindowWidth] = useState(1200);
-
-    useEffect(() => {
-        const handleResize = () => {
-            setWindowWidth(window.innerWidth);
-        };
-        window.addEventListener('resize', handleResize);
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
     let l = ImageData.length;
     const ReduceOne = () => {
         if (i === 1)
