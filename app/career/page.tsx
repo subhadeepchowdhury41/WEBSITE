@@ -3,7 +3,7 @@ import Image from 'next/image';
 import React from 'react'
 import NavBar from '../sections/appbar/secondNav';
 import Footer from '../sections/footer/footer';
-import '../../styles/Career/career.css'
+import '../../styles/career/career.css'
 import careerData from './data'
 import { useEffect } from 'react';
 

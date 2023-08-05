@@ -16,12 +16,12 @@ function Card(props) {
                     <div className='h-[80px] w-full flex gap-4 resize'>
                         {props.cellData.tags?.map((index) => {
                             return (
-                                <>
+                                <React.Fragment key={index.index}>
                                     {
                                         index.index < 3 ? <div className='h-full jump cursor-pointer aspect-[1] rounded-[50%]' style={{ backgroundImage: `url(${index.url})`, backgroundSize: '100% 100%' }}>
                                         </div> : <></>
                                     }
-                                </>
+                                </React.Fragment>
 
                             )
                         })}

@@ -17,11 +17,11 @@ const App: React.FC = () => {
     const [matchingItem, setMatchingItem] = useState(
         data.find((item) => item.id === activeIndex)?.children.find((child) => child.id === activeId)
     );
-    const [windowWidth, setWindowWidth] = useState(globalThis.window.innerWidth);
+    const [windowWidth, setWindowWidth] = useState(1250);
 
     useEffect(() => {
         const handleResize = () => {
-            setWindowWidth(globalThis.window.innerWidth);
+            setWindowWidth(window.innerWidth);
         };
         window.addEventListener('resize', handleResize);
         return () => {
@@ -51,7 +51,9 @@ const App: React.FC = () => {
                     <Carousel carouselData={matchingItem?.mainCarousel} />
                     {matchingItem?.description.map((index) => {
                         return (
-                            <div className='font-[400] text-[18px]'>{ }</div>
+                            <>
+                                {index.type === 'text' && <div className='font-[400] text-[16px]'>{index.title}</div>}
+                            </>
                         )
                     })}
                 </div>

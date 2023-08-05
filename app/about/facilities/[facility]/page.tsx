@@ -12,7 +12,6 @@ function Facility() {
     const searchParams = useSearchParams();
     let slug = searchParams.get('slug')
     const filterData = Data.filter(item => item.slug === slug)
-    console.log();
     return (
         <>
             <NavBar />

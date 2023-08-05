@@ -6,6 +6,7 @@ import Carousel from './carousel';
 import { useEffect } from 'react';
 import Data from './facilityData'
 import Card from './facilityCard'
+import React from 'react';
 
 const App: React.FC = () => {
     const carouselData = [{
@@ -43,10 +44,10 @@ const App: React.FC = () => {
             <div className='w-full h-auto flex flex-col pad-adjust items-center justify-center'>
                 {Data.map((index) => {
                     return (
-                        <>
+                        <React.Fragment key={index.slug}>
                             <div className='bg-gray-200 h-[2px] max-w-[1250px] text-justify w-full my-8'></div>
                             <Card cellData={index} />
-                        </>
+                        </React.Fragment>
 
                     )
 
