@@ -55,7 +55,7 @@ const array = [
       },
       {
         label: "Admission details",
-        link: "",
+        link: "/academics/admissions/pages/phd",
       },
     ],
   },
