@@ -4,7 +4,6 @@ import Carousel from './sections/carousel/carousel';
 import Discover from './sections/discover/discover';
 import Events from './sections/cardSection/events';
 import Footer from './sections/footer/footer';
-import Gallery from './sections/gallery/gallery';
 import DirectorsMessage from './sections/directorMessage/directorsMessage';
 import Research from './sections/projects/research';
 import EventSection from './sections/cardSection/eventSection';
