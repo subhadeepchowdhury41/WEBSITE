@@ -144,6 +144,15 @@ const career = [
   },
 ];
 
+const notifications = [
+  {
+    items: [
+      { label: "E-Notice Board", link: "/e-notice-board" },
+      { label: "Archive", link: "https://iiitkalyani.ac.in/php/archive.php" },
+    ],
+  }
+]
+
 const mobileMenu = [
   {
     items: [
@@ -159,14 +168,7 @@ const mobileMenu = [
     ],
   },
 ];
-const notifications = [
-  {
-    items: [
-      { label: "E-Notice Board", link: "/e-notice-board" },
-      { label: "Archive", link: "https://iiitkalyani.ac.in/php/archive.php" },
-    ],
-  }
-]
+
 const NavBar = () => {
   // const [stick, setStick] = useState<Boolean>(false);
   // const handleScroll = () => {
