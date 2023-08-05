@@ -3,10 +3,14 @@ import React from 'react'
 import NavBar from '../../sections/appbar/secondNav'
 import Footer from '../../sections/footer/footer'
 import '../../../styles/regulations/regulations.css';
+<<<<<<< HEAD
+import data  from './data';
+=======
 import data from './data';
 import AssignmentIcon from '@mui/icons-material/Assignment';
 import { useEffect } from 'react';
 
+>>>>>>> fa20caf197969256f64cef7df31506a327e5f4c5
 const page = () => {
     useEffect(() => {
         document.title =
