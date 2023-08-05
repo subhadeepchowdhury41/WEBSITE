@@ -6,10 +6,10 @@ const data = [
         "name": "Sourav Karmakar",
         "Student ID ": "PhD/21015/821",
         "email": "sourav_phd22@iiitkalyani.ac.in",
-        "session": 2022,
+        "session": '2022',
         "supervisor": "Dr. Rinky Sha",
         "research_area": "Bio and Chemical Sensors",
-        "status": "Completed",
+        "status": "Ongoing",
         "type": "Regular",
         "fellowship": "Regular (Institute Teaching Assistantship)",
         "links": "https://orcid.org/0000-0003-2825-1234",
@@ -22,13 +22,12 @@ const data = [
         "name": "Shukla Mondal",
         "Student ID ": "PhD/21007/655",
         "email": "shukla_phd21@iiitkalyani.ac.in",
-        "session": "Autumn 2021",
+        "session": "2021",
         "supervisor": "Dr. SK Hafizul Islam, Dr. Arup Kumar Pal",
         "research_area": "Secure Content-Based Image Retrieval",
         "status": "Ongoing",
         "type": "External",
-
-        "fellowship": "Not Available",
+        "fellowship": "",
         "institute": "Indian Institute of Technology (Indian School of Mines) Dhanbad",
         "links": "https://sites.google.com/view/shuklamondal",
         "img": "https://drive.google.com/open?id=18hfgOgh1ImtRfPBAY3YeRJ___KuNhOIt",
@@ -40,13 +39,13 @@ const data = [
         "name": "Nirban Kumar Saha",
         "Student ID ": "PhD/22003/850",
         "email": "nirban_phd22@iiitkalyani.ac.in",
-        "session": "2022-23",
+        "session": "2022",
         "supervisor": "Dr. Dalia Nandi",
         "research_area": "Internet of Things",
         "status": "Ongoing",
         "type": "Part time (On Service)",
         "Mention your Company/ Office (For working Part time  students only)": "Institute of Engineering & Management, Kolkata",
-        "fellowship": "Not Available",
+        "fellowship": "",
         "links": "https://scholar.google.com/citations?hl=en&view_op=list_works&authuser=1&gmla=ABEO0YpoAtcstkCCA63_cAkZwVdpfRq0alRcWLmreb1dWEm5AHZsA9D9hXHzVJBZI7mzgw9KbfzSveTEDOkveA&user=-FAQnC4AAAAJ",
         "img": "https://drive.google.com/open?id=1FyUH3kZ8QxBSoeixVbdbwqIkzn4y-gfJ",
     },
@@ -156,7 +155,7 @@ const data = [
         "status": "Ongoing",
         "type": "Part time (On Service)",
         "Mention your Company/ Office (For working Part time  students only)": "IEM",
-        "fellowship": "Not Available",
+        "fellowship": "",
         "links": "https://orcid.org/0000-0003-2569-2886?lang=en",
         "img": "https://drive.google.com/open?id=1KLaTo5sBXz2ee--POeVE4P8jxub6oU_T"
     },
@@ -207,7 +206,7 @@ const data = [
         "status": "Ongoing",
         "type": "Part time (On Service)",
         "Mention your Institute (For External students only)": "New Alipore College, University of Calcutta",
-        "fellowship": "Not Available",
+        "fellowship": "",
         "links": "https://www.researchgate.net/profile/Pooja-Rai-8",
         "img": "https://drive.google.com/open?id=1reUR5aIor8Ihkhl1UXw5cQwSR07KBnGl"
     },
@@ -271,7 +270,7 @@ const data = [
         "status": "Ongoing",
         "type": "Regular",
         "fellowship": "Regular (Institute Teaching Assistantship)",
-        "links": "https://www.linkedin.com/iNot Availabletashi-saha-52237a216/",
+        "links": "https://www.linkedin.com/itashi-saha-52237a216/",
         "img": "https://drive.google.com/open?id=1yLngTj01pLmuQcEtHOV7RWaipz9sy4XI"
     },
     {
@@ -304,8 +303,8 @@ const data = [
         "status": "Ongoing",
         "type": "Part time (On Service)",
         "Mention your Company/ Office (For working Part time  students only)": "NSEC",
-        "fellowship": "Not Available",
-        "links": "Not Available",
+        "fellowship": "",
+        "links": "",
         "img": "https://drive.google.com/open?id=1r75nnfwx7cvPBhV2Br4UG-ySzuDpeeCv"
     },
     {
@@ -338,7 +337,7 @@ const data = [
         "status": "Ongoing",
         "type": "Part time (On Service)",
         "Mention your Company/ Office (For working Part time  students only)": "IBM India Pvt Ltd",
-        "fellowship": "Not Available",
+        "fellowship": "",
         "links": "https://orcid.org/0000-0003-0247-7200",
         "img": "https://drive.google.com/open?id=1DvQuVLm3uQgD5nfCbZSUfRWY3Bmz5LJQ"
     },
@@ -371,7 +370,7 @@ const data = [
         "status": "Ongoing",
         "type": "Part time (On Service)",
         "Mention your Company/ Office (For working Part time  students only)": "Brainware University",
-        "fellowship": "Not Available",
+        "fellowship": "",
         "links": "https://orcid.org/0009-0003-0522-2016",
         "img": "https://drive.google.com/open?id=1t_6Mj9caPGoSiCQt5I58v6GLlf7MEk3V"
     },
@@ -388,7 +387,7 @@ const data = [
         "status": "Ongoing",
         "type": "Part time (On Service)",
         "Mention your Company/ Office (For working Part time  students only)": "St. Xavier's College (Autonomous), Kolkata",
-        "fellowship": "Not Available",
+        "fellowship": "",
         "links": "https://scholar.google.com/citations?hl=en&authuser=1&user=GF-2Z18AAAAJ",
         "img": "https://drive.google.com/open?id=1c1N5Wao69zLDKHRscbTXm5u77HobpQ6F"
     },
@@ -405,7 +404,7 @@ const data = [
         "status": "Ongoing",
         "type": "External",
         "Mention your Institute (For External students only)": "Indian Institute of Science",
-        "fellowship": "Not Available",
+        "fellowship": "",
         "links": "https://sites.google.com/view/amukhopadhyay/home",
         "img": "https://drive.google.com/open?id=1MWhy7McsTWz19JH8sRPCHwaOInQH6dMk"
     },
@@ -485,8 +484,8 @@ const data = [
         "status": "Ongoing",
         "type": "Part time (On Service)",
         "Mention your Institute (For External students only)": "Institute of Engineering and Management",
-        "fellowship": "Not Available",
-        "links": "Not Available",
+        "fellowship": "",
+        "links": "",
         "img": "https://drive.google.com/open?id=1iZ11l36Xbt2dSpF0JCupAYyNQaXzXLae"
     },
     {
@@ -501,7 +500,7 @@ const data = [
         "research_area": "Computer Vision, Machine Learning",
         "status": "Ongoing",
         "type": "Part time (On Service)",
-        "fellowship": "Not Available",
+        "fellowship": "",
         "links": "https://scholar.google.com/citations?user=DpzqC8UAAAAJ",
         "img": "https://drive.google.com/open?id=1u13VpavITTMAkki7FPan7s_ZU2n8CjPO"
     },
@@ -536,7 +535,7 @@ const data = [
         "type": "Part time (On Service)",
         "Mention your Institute (For External students only)": "NA",
         "Mention your Company/ Office (For working Part time  students only)": "Future Institute of Technology, Kolkata",
-        "fellowship": "Not Available",
+        "fellowship": "",
         "links": "https://sites.google.com/view/souravd-me/home?authuser=1",
         "img": "https://drive.google.com/open?id=1BeILGy174kYlfZaZjKfj9SFwL4y9C8rD"
     },
@@ -554,7 +553,7 @@ const data = [
         "status": "Ongoing",
         "type": "Part time (On Service)",
         "Mention your Company/ Office (For working Part time  students only)": "Academy of Technology",
-        "fellowship": "Not Available",
+        "fellowship": "",
         "links": "https://scholar.google.com/citations?user=FBp2IVcAAAAJ&hl=en&oi=ao",
         "img": "https://drive.google.com/open?id=1ACTJeZENk3yB5hGNT-Ib4VYapk_vrSzq"
     },
@@ -571,7 +570,7 @@ const data = [
         "status": "Ongoing",
         "type": "Part time (On Service)",
         "Mention your Company/ Office (For working Part time  students only)": "Institute of Engineering & Management",
-        "fellowship": "Not Available",
+        "fellowship": "",
         "links": "https://scholar.google.com/citations?user=O572VK8AAAAJ&hl=en&oi=ao",
         "img": "https://drive.google.com/open?id=1anzsEHqjd1b4kwGKdBi1xDIdz8PpHU2m"
     },
@@ -589,7 +588,7 @@ const data = [
         "status": "Ongoing",
         "type": "Part time (On Service)",
         "Mention your Company/ Office (For working Part time  students only)": "Guru Nanak Institute of Technology",
-        "fellowship": "Not Available",
+        "fellowship": "",
         "links": "https://orcid.org/0000-0003-1699-1390",
         "img": "https://drive.google.com/open?id=1-pKzEXawHE-eMJ46z7POH1UlyyDSJ2O7"
     },
@@ -608,7 +607,7 @@ const data = [
         "type": "Part time (On Service)",
         "Mention your Institute (For External students only)": "NA",
         "Mention your Company/ Office (For working Part time  students only)": "Institute of Engineering and Management, Kolkata",
-        "fellowship": "Not Available",
+        "fellowship": "",
         "links": "https://scholar.google.com/citations?user=ryUB9fMAAAAJ&hl=en&oi=ao",
         "img": "https://drive.google.com/open?id=1CqKFLJ6xiPeJlj2wv7cAz2fs_GsvLOOf"
     },
@@ -625,7 +624,7 @@ const data = [
         "pub_details": ["Utilizing Attention Mechanism with Exemplar Memory for Improving Domain Adaptive Person Re-identification"],
         "status": "Ongoing",
         "type": "Part time (On Service)",
-        "fellowship": "Not Available",
+        "fellowship": "",
         "links": "0000-0001-6924-1847",
         "img": "https://drive.google.com/open?id=17L1-hyQDWzCwyOlr_qxfdBnoRi-W2R8c"
     },
@@ -643,7 +642,7 @@ const data = [
         "status": "Ongoing",
         "type": "Part time (On Service)",
         "Mention your Company/ Office (For working Part time  students only)": "University Institute of Technology, The University of Burdwan",
-        "fellowship": "Not Available",
+        "fellowship": "",
         "links": "https://orcid.org/0000-0003-0813-3919",
         "img": "https://drive.google.com/open?id=1KUMMoXxZUf409cup9Ie9KZyCXRqNjU_k"
     },
@@ -659,7 +658,7 @@ const data = [
         "research_area": "Computer Vision and Deep Learning",
         "status": "Ongoing",
         "type": "Part time (On Service)",
-        "fellowship": "Not Available",
+        "fellowship": "",
         "links": "NA",
         "img": "https://drive.google.com/open?id=1FX0F-6BoYVKRzEbqh8lAj7Gs0iJDJKOS"
     },
@@ -692,7 +691,7 @@ const data = [
         "status": "Ongoing",
         "type": "External",
         "Mention your Institute (For External students only)": "MallaReddy Engineering College for Women",
-        "fellowship": "Not Available",
+        "fellowship": "",
         "links": "https://scholar.google.com/citations?user=J1-evCMAAAAJ&hl=en",
         "img": "https://drive.google.com/open?id=1csuUqvfucgBqWhRsDSmGQ8CRSldu5vdN"
     },
@@ -709,7 +708,7 @@ const data = [
         "status": "Ongoing",
         "type": "Part time (On Service)",
         "Mention your Company/ Office (For working Part time  students only)": "GURU NANAK INSTITUTE OF TECHNOLOGY, KOLKATA",
-        "fellowship": "Not Available",
+        "fellowship": "",
         "links": "https://orcid.org/0000-0001-5755-6753",
         "img": "https://drive.google.com/open?id=1OvPdo601_h2QmXwEXLl8Tbr-NB0GpMq3"
     },
@@ -744,7 +743,7 @@ const data = [
         "status": "Ongoing",
         "type": "Part time (On Service)",
         "Mention your Company/ Office (For working Part time  students only)": "St. Xavier's College, Burdwan",
-        "fellowship": "Not Available",
+        "fellowship": "",
         "links": "https://orcid.org/0000-0001-5998-8621",
         "img": "https://drive.google.com/open?id=1ntAM8Nt22Pig6uu8gBQcnuuUKvHobict"
     },
@@ -762,7 +761,7 @@ const data = [
         "status": "Ongoing",
         "type": "Part time (On Service)",
         "Mention your Company/ Office (For working Part time  students only)": "Behala College",
-        "fellowship": "Not Available",
+        "fellowship": "",
         "links": "https://scholar.google.com/citations?user=KdTebhoAAAAJ&hl=en&oi=sra",
         "img": "https://drive.google.com/open?id=1ZVq_PFuH7gMEqYOGsAnHIfOipziQ3oJK"
     },
@@ -794,7 +793,7 @@ const data = [
         "status": "Ongoing",
         "type": "Part time (On Service)",
         "Mention your Company/ Office (For working Part time  students only)": "Assistant Prfessor,CSBS, Netaji Subhash Engineering College",
-        "fellowship": "Not Available",
+        "fellowship": "",
         "links": "https://orcid.org/0000-0002-0452-4472",
         "img": "https://drive.google.com/open?id=1vgtZv68ykATcw_CEZXSSEueBaLVFq_jA"
     },
@@ -812,7 +811,7 @@ const data = [
         "status": "Ongoing",
         "type": "Part time (On Service)",
         "Mention your Company/ Office (For working Part time  students only)": "Nehru Science center ",
-        "fellowship": "Not Available",
+        "fellowship": "",
         "links": "krishnendu814u",
         "img": "https://drive.google.com/open?id=1BRsWYxaD3-YoKLwgU2w72XD5BlA1wENh"
     },
@@ -830,7 +829,7 @@ const data = [
         "type": "Part time (On Service)",
         "Mention your Institute (For External students only)": "NA",
         "Mention your Company/ Office (For working Part time  students only)": "S.N. Bose Govt. Polytechnic, Malda",
-        "fellowship": "Not Available",
+        "fellowship": "",
         "links": "https://scholar.google.com/citations?hl=en&user=hR31ytkAAAAJ",
         "img": "https://drive.google.com/open?id=1j_r8BTM-TQuOLzvvI-TssXUXwJ06WdyA"
     },
@@ -847,7 +846,7 @@ const data = [
         "status": "Ongoing",
         "type": "External",
         "Mention your Institute (For External students only)": "INDIAN INSTITUTE OF TECHNOLOGY (INDIAN SCHOOL OF MINES) DHANBAD.",
-        "fellowship": "Not Available",
+        "fellowship": "",
         "links": "https://scholar.google.com/citations?hl=en&user=GYjJZe9MvpUC",
         "img": "https://drive.google.com/open?id=1NaH1LBbSG8083Dmavp3tA3Sh1Gn0qd5s"
     },
@@ -866,7 +865,7 @@ const data = [
         "type": "Part time (On Service)",
         "Mention your Institute (For External students only)": "NA",
         "Mention your Company/ Office (For working Part time  students only)": "University of Engineering and Management Jaipur",
-        "fellowship": "Not Available",
+        "fellowship": "",
         "links": "https://scholar.google.com/citations?user=xyIo4dkAAAAJ&hl=en",
         "img": "https://drive.google.com/open?id=1HzsLVqurjJyZK_RwfDFWrAs6-2IRxSdQ"
     },
@@ -883,8 +882,8 @@ const data = [
         "status": "Ongoing",
         "type": "Part time (On Service)",
         "Mention your Company/ Office (For working Part time  students only)": "ISI Kolkata",
-        "fellowship": "Not Available",
-        "links": "Not Available",
+        "fellowship": "",
+        "links": "",
         "img": "https://drive.google.com/open?id=1dW4ei2DUxRzBuspEtkHvbHaXPFdALEDN"
     },
     {
@@ -900,7 +899,7 @@ const data = [
         "status": "Ongoing",
         "type": "Part time (On Service)",
         "Mention your Company/ Office (For working Part time  students only)": "RCC Institute of Information Technology",
-        "fellowship": "Not Available",
+        "fellowship": "",
         "links": "https://orcid.org/0000-0002-1369-1264",
         "img": "https://drive.google.com/open?id=13uLqzKPoQVn1Yn-OeeGUMDfG2bALSwd0"
     },
@@ -917,7 +916,7 @@ const data = [
         "status": "Ongoing",
         "type": "Part time (On Service)",
         "Mention your Company/ Office (For working Part time  students only)": "Jadavpur University ",
-        "fellowship": "Not Available",
+        "fellowship": "",
         "links": "https://scholar.google.com/citations?user=Af_IYesAAAAJ&hl=en",
         "img": "https://drive.google.com/open?id=1Zre0LLF0KL3eELTfEv6n_hEWyS24R2eY"
     },
@@ -934,7 +933,7 @@ const data = [
         "status": "Ongoing",
         "type": "Part time (On Service)",
         "Mention your Company/ Office (For working Part time  students only)": "Techno International New Town",
-        "fellowship": "Not Available",
+        "fellowship": "",
         "links": "ORCID ID 0000000302609891",
         "img": "https://drive.google.com/open?id=1oyFL_W4C5y5DcRWrixewRgKv4jlQRStZ"
     },
@@ -951,7 +950,7 @@ const data = [
         "status": "Ongoing",
         "type": "Part time (On Service)",
         "Mention your Company/ Office (For working Part time  students only)": "Narula Institute of Technology(Assistant Professor)",
-        "fellowship": "Not Available",
+        "fellowship": "",
         "links": "https://scholar.google.co.in/citations?user=zZrjwKgAAAAJ&hl=en",
         "img": "https://drive.google.com/open?id=170KZwzOxuJv97lf8lEnUz6TVlnbftKNe"
     },
@@ -983,8 +982,8 @@ const data = [
         "status": "Ongoing",
         "type": "Part time (On Service)",
         "Mention your Company/ Office (For working Part time  students only)": "The Durgapur Projects Ltd., Durgapur ",
-        "fellowship": "Not Available",
-        "links": "Not Available",
+        "fellowship": "",
+        "links": "",
         "img": "https://drive.google.com/open?id=1WagVOzYReAnXF52nqA2056FXCz34v6un"
     },
 ]

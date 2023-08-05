@@ -163,6 +163,7 @@ const mobileMenu = [
 ];
 export default function AppBar() {
   const [isClient, setIsClient] = useState(false);
+
   useEffect(() => {
     setIsClient(true);
   }, []);

@@ -21,7 +21,7 @@ const GymkhanaData = [
                 description: [
                     {
                         type: 'text',
-                        title: ''
+                        title: 'The IIIT Kalyani Sports Club stands as a vibrant testament to the institute\'s commitment to holistic education. It serves as a platform where students from diverse backgrounds come together to engage in sports and fitness activities that go beyond the classroom. Driven by the belief that a healthy body nurtures a healthy mind, the club offers a variety of sports and recreational opportunities, catering to different interests and skill levels. From regular practice sessions to competitive tournaments, the club provides an avenue for students to showcase their talents and develop essential qualities such as discipline, teamwork, and leadership.'
                     }
                 ],
             },

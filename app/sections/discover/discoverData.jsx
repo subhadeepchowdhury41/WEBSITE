@@ -22,7 +22,7 @@ const ImageData = [
   },
   {
     id: 4,
-    url: "/images/discover/image-e642bab1-31ee-4174-a208-6fefd16ef4d720230401-174027.webp",
+    url: "/images/discover/imagez.webp",
     heading: "Smart India Hackathon 2022 Winners",
     description:
       'Team "Samurai" consisting Shubham Kumar, Prayag Biswas, Akshit Choudhari, Hamdaan Ali, Aayush Gupta and Oindrila Das won the SIH-2022',

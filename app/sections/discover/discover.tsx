@@ -41,7 +41,17 @@ const Discover = () => {
     }
 `;
     const [i, setI] = useState(1);
+    const [windowWidth, setWindowWidth] = useState(1200);
 
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+        };
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
     let l = ImageData.length;
     const ReduceOne = () => {
         if (i === 1)
@@ -50,15 +60,13 @@ const Discover = () => {
             setI(i - 1);
     }
     const AddOne = () => {
-        const screenWidth = globalThis.window?.innerWidth;
-
-        if (screenWidth > 1450) {
+        if (windowWidth > 1450) {
             if (i === l - 2 && scrolling === 1) {
                 setI(1);
             } else if (scrolling === 1) {
                 setI(i + 1);
             }
-        } else if (screenWidth >= 975 && screenWidth <= 1500) {
+        } else if (windowWidth >= 975 && windowWidth <= 1500) {
             if (i === l - 1 && scrolling === 1) {
                 setI(1);
             } else if (scrolling === 1) {
@@ -93,7 +101,7 @@ const Discover = () => {
             </Reveal>
             <Reveal keyframes={customAnimation2} triggerOnce>
                 <div className='discover-slider' onMouseEnter={() => { setScrolling(0) }} onMouseLeave={() => { setScrolling(1) }}>
-                    <div className='discover-slide-track' style={globalThis.window?.innerWidth > 550 ? { transform: `translate(${(-480 * (i - 1))}px,0px)` } : globalThis.window?.innerWidth > 350 ? { transform: `translate(${(-330 * (i - 1))}px,0px)` } : { transform: `translate(${(-270 * (i - 1))}px,0px)` }}>
+                    <div className='discover-slide-track' style={windowWidth > 550 ? { transform: `translate(${(-480 * (i - 1))}px,0px)` } : windowWidth > 350 ? { transform: `translate(${(-330 * (i - 1))}px,0px)` } : { transform: `translate(${(-270 * (i - 1))}px,0px)` }}>
                         {ImageData.map((index) => {
                             return (<div key={index.id}>
                                 <div className='discover-slides' key={index.id}>
