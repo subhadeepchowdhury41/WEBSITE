@@ -1,0 +1,134 @@
+.why-head {
+    background-color: #0F1F3D;
+    width: 100%;
+    border-radius: 7px;
+    padding: 12px 20px;
+    color: aliceblue;
+    font-size: 2vw;
+    font-weight: 600;
+    margin: auto;
+}
+
+#whyus {
+    width: 92%;
+    margin: 20vh auto;
+}
+
+.why-container {
+    width: 100%;
+    margin: 0;
+}
+
+.row {
+    width: 85%;
+    margin: auto;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 33%;
+}
+
+.why-card {
+    width: 30%;
+    margin: 2vh 1.66%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    box-shadow: 0 0 5px whitesmoke;
+    text-align: justify;
+    border: 5px solid #eaeaea83;
+    border-radius: 20px;
+    padding: 3% 2%;
+    transition: all 0.5s ease-in-out;
+}
+
+.icon {
+    color: #204584;
+    /* background-color: aquamarine; */
+    border-radius: 50%;
+    padding: 8%;
+    width: fit-content;
+    margin: 0px auto;
+    margin-top: 2%;
+    transition: all 0.5s ease-in-out;
+}
+
+.why-card:hover .icon {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.why-card:hover {
+    background-color: #204584;
+    color: white;
+}
+
+.why-card h6 {
+    margin-top: 8%;
+    font-weight: 500;
+}
+
+.why-card p {
+    margin-top: 8%;
+}
+
+.feature_box_col_one {
+    background-color: #fdf4cd;
+}
+
+.feature_box_col_two {
+    background-color: #ffe4dd;
+}
+
+.feature_box_col_three {
+    background-color: #d9efdf;
+}
+
+.feature_box_col_four {
+    background-color: #d9efdf;
+}
+
+.feature_box_col_five {
+    background-color: #efdfff;
+}
+
+.feature_box_col_six {
+    background-color: #dcdffe;
+}
+
+@media (max-width:1000px) {
+    .why-card {
+        width: 45%;
+        margin: 2vh 2.5%;
+        line-height: 25px;
+        padding: 3% 2%;
+    }
+
+    .why-card h6 {
+        margin-top: 4%;
+    }
+
+    .why-card p {
+        margin-top: 4%;
+    }
+}
+
+@media (max-width:700px) {
+    .row {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .why-card {
+        width: 100%;
+        margin: auto;
+        margin-top: 5%;
+        padding: 5% 5%;
+    }
+
+    .why-head {
+        font-size: 3vw;
+    }
+}

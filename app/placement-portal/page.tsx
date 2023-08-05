@@ -3,6 +3,7 @@ import Footer from '../sections/footer/footer';
 import Header from './components/Header'
 import Home from './components/LandingPage'
 import About from './components/About'
+import WhyUs from './components/WhyUs'
 import { useState, useEffect } from 'react';
 
 const App: React.FC = () => {
@@ -26,6 +27,7 @@ const App: React.FC = () => {
             <Header setScrollToSectionId={setScrollToSectionId} />
             <Home />
             <About />
+            <WhyUs />
             <Footer />
         </>
     );

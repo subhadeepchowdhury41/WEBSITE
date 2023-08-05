@@ -23,7 +23,7 @@ const MobileNav = ({ setScrollToSectionId }) => {
           <Link href="/">Home</Link>
         </span>
         <span onClick={() => setScrollToSectionId("about")}>About Us</span>
-        <span onClick={() => setScrollToSectionId("#whyus")}>Why Us</span>
+        <span onClick={() => setScrollToSectionId("whyus")}>Why Us</span>
         <span onClick={() => setScrollToSectionId("recruiters")}>
           Past Recruiters
         </span>

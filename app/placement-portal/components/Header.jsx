@@ -20,7 +20,7 @@ const Header = ({ setScrollToSectionId }) => {
             <span>Home</span>
           </Link>
           <span onClick={() => setScrollToSectionId("about")}>About Us</span>
-          <span onClick={() => setScrollToSectionId("#whyus")}>Why Us</span>
+          <span onClick={() => setScrollToSectionId("whyus")}>Why Us</span>
           <span onClick={() => setScrollToSectionId("recruiters")}>
             Past Recruiters
           </span>
