@@ -55,8 +55,6 @@ const Staff = () => {
     MapDP.set("Sourav", "https://iiitkalyani.ac.in/images/sourav%20gope%20iiit%20kalyani.jpg");
     MapDP.set("Debottam", "https://iiitkalyani.ac.in/images/20220211_120900.jpg");
 
-    // console.log(MapDP.get("Samim"));
-
     return (
         <>
             <div className="navbar">

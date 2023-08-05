@@ -26,11 +26,22 @@ function ProgramPage() {
     const [matchingItem, setMatchingItem] = useState(
         data.find((item) => item.index === activeIndex)?.children.find((child) => child.id === activeId)
     );
+    const [windowWidth, setWindowWidth] = useState(1200);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+        };
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
     return (
         <div>
             <NavBar />
             <div className='flex w-full h-fit relative resp-program'>
-                <div className={`flex-[3] w-full h-[100vh] bg-[rgb(245,235,209)] pos-adj ${globalThis.window.innerWidth < 1200 ? 'relative top-0' : 'sticky top-[70px]'} `}>
+                <div className={`flex-[3] w-full h-[100vh] bg-[rgb(245,235,209)] pos-adj ${windowWidth < 1200 ? 'relative top-0' : 'sticky top-[70px]'} `}>
                     <Sidebar data={data} setActiveIndex={setActiveIndex} setActiveId={setActiveId} setMatchingItem={setMatchingItem}
                         ActiveIndex={activeIndex} ActiveId={activeId} />
                 </div>
@@ -41,7 +52,7 @@ function ProgramPage() {
                         {matchingItem?.text}
                     </div>
                 </div>
-                <div className={`flex-[2] w-full h-[100vh] bg-[rgb(245,235,209)] flex flex-col gap-1 p-[16px] ${globalThis.window.innerWidth < 1200 ? 'relative top-0' : 'sticky top-[70px]'}`}>
+                <div className={`flex-[2] w-full h-[100vh] bg-[rgb(245,235,209)] flex flex-col gap-1 p-[16px] ${windowWidth < 1200 ? 'relative top-0' : 'sticky top-[70px]'}`}>
                     <div className='font-semibold text-[26px] '>Resources</div>
                     {matchingItem?.resources?.map((index) => {
                         return (

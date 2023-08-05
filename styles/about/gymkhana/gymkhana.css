@@ -1,3 +1,7 @@
+.pd-adjst{
+    padding: 20px 40px;
+}
+
 @media (max-width: 1200px){
     .resp-program{
         flex-direction: column;

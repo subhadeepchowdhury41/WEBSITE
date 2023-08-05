@@ -7,6 +7,17 @@ import "./page.css";
 
 function Carousel(props) {
   const [i, setI] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(1200);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   const AddOne = () => {
     let len = props.carouselData.length;
     if (i < len - 1) {
@@ -55,7 +66,7 @@ function Carousel(props) {
                 }
                 onClick={() => setI(index.index)}
                 style={{
-                  maxWidth: `${globalThis.window.innerWidth > 500 ? 20 : 15}px`,
+                  maxWidth: `${windowWidth > 500 ? 20 : 15}px`,
                 }}
               ></div>
             );

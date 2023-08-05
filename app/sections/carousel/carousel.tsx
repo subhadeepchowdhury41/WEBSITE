@@ -1,12 +1,6 @@
 'use client';
 import '../../../styles/globals.css'
-import CurrencyRupeeOutlinedIcon from '@mui/icons-material/CurrencyRupeeOutlined';
-import PaymentIcon from '@mui/icons-material/Payment';
-import { blueGrey } from "@mui/material/colors";
-import InfoIcon from '@mui/icons-material/Info';
 import { useEffect, useState } from "react";
-import xyz from '../../../assets/carousel/p4.jpg'
-import p1 from '../../../assets/carousel/Picture1.png'
 
 const carouselData = [
     {
@@ -65,30 +59,7 @@ const Carousel = () => {
     }, []);
     return (
         <div className="">
-            {/* <div className="absolute z-[100] opacity-0 hover:opacity-100 text-white h-screen hover:bg-gradient-to-r
-          flex items-center justify-center p-5 hover:cursor-pointer 
-         from-[#ffffff65] to-transparent left-0 transition-all duration-300">
-                <svg width={50} fill="white" viewBox="0 0 24 24">
-                    <path d="M17.77 3.77 16 2 6 12l10 10 1.77-1.77L9.54 12z" />
-                </svg>
-            </div> */}
-            {/* <div className="absolute opacity-0 hover:opacity-100 text-white h-screen right-0
-        hover:bg-gradient-to-l flex items-center justify-center p-5 transition-all duration-300
-          from-[#ffffff65] to-transparent z-[100] hover:cursor-pointer">
-                <svg width={50} fill="white" viewBox="0 0 24 24">
-                    <path d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z" />
-                </svg>
-
-            </div> */}
-
-
             <CarouselPoster key={poster} poster={carouselData[poster]} />
-            {/* <div key={`title-${poster}`} className=" overflow-hidden absolute top-[50%] left-[20%] flex justify-center z-[60] items-center">
-                <div className="animate-carousel-title-change text-6xl drop-shadow-lg text-white font-bold">
-                    {carouselData[poster].title}
-                </div>
-            </div> */}
-
         </div>
     );
 }

@@ -23,7 +23,17 @@ const EventSection = () => {
     }
 `;
     const [i, setI] = useState(1);
+    const [windowWidth, setWindowWidth] = useState(1200);
 
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+        };
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
     let l = events.length;
     const ReduceOne = () => {
         if (i === 1)
@@ -32,15 +42,13 @@ const EventSection = () => {
             setI(i - 1);
     }
     const AddOne = () => {
-        const screenWidth = globalThis.window?.innerWidth;
-
-        if (screenWidth > 1500) {
+        if (windowWidth > 1500) {
             if (i === l - 1 && scrolling === 1) {
                 setI(1);
             } else if (scrolling === 1) {
                 setI(i + 1);
             }
-        } else if (screenWidth >= 800 && screenWidth <= 1500) {
+        } else if (windowWidth >= 800 && windowWidth <= 1500) {
             if (i === l - 2 && scrolling === 1) {
                 setI(1);
             } else if (scrolling === 1) {
@@ -68,7 +76,7 @@ const EventSection = () => {
     const [scrolling, setScrolling] = useState(1);
     return (
         <div className="card-row3">
-            <div className='row3-card1' style={globalThis.window?.innerWidth > 1500 ? { width: '600px' } : { width: '100%' }}>
+            <div className='row3-card1' style={windowWidth > 1500 ? { width: '600px' } : { width: '100%' }}>
                 <Reveal keyframes={customAnimation} triggerOnce>
                     <div className='card-heading '>
                         Continuing Education Program
@@ -103,7 +111,7 @@ const EventSection = () => {
                         <div className='view-more'>View More</div>
                     </a>
                 </div>
-                <div className='event-carousel flex gap-4 mt-2 overflow-hidden' style={globalThis.window?.innerWidth > 1500 ? { maxWidth: `${globalThis.window?.innerWidth - 700}px` } : { minWidth: '100%' }}
+                <div className='event-carousel flex gap-4 mt-2 overflow-hidden' style={windowWidth > 1500 ? { maxWidth: `${windowWidth - 700}px` } : { minWidth: '100%' }}
                     onMouseEnter={() => { setScrolling(0) }} onMouseLeave={() => { setScrolling(1) }}
                 >
 

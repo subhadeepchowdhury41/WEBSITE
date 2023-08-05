@@ -35,12 +35,14 @@
 }
 
 .administrativeBody-main-bar {
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     border-bottom: 1px solid #82cff5;
-    width: 60%;
-    height: fit-content;
+    width: 82vw;
+    max-width: 1000px;
+    /* height: fit-content; */
+    display: flex;
+    flex-direction: row;
     padding: 1%;
     margin-bottom: 1%;
 }
@@ -109,11 +111,13 @@
     .administrativeBody-main-bar {
         display: flex;
         width: 82vw;
+        max-width: 1000px;
         flex-direction: row;
     }
 
     .administrativeBody-line {
         width: 80vw;
+        max-width: 1000px;
     }
 }
 
