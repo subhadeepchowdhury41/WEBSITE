@@ -1,0 +1,65 @@
+.carouselContainer {
+    width: 37%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.carouselImage {
+    width: 100%;
+    height: 50%;
+    /* height: auto; */
+    transition: opacity 5s ease;
+}
+
+.buttonsContainer {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.previousButton,
+.nextButton {
+    padding: 8px 16px;
+    color: #ffffff83;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: absolute;
+    /* Position the buttons absolutely within the buttons container */
+    top: 50%;
+    /* Vertically center the buttons within the buttons container */
+    transform: translateY(-50%);
+    /* Vertically center the buttons within the buttons container */
+}
+
+.previousButton {
+    left: 0;
+    /* Position the previous button at the left edge of the buttons container */
+}
+
+.nextButton {
+    right: 0;
+    /* Position the next button at the right edge of the buttons container */
+}
+
+.previousButton:hover,
+.nextButton:hover {
+    color: #ffffff;
+}
+
+@media (max-width:1000px) {
+    .carouselContainer {
+        width: 100%;
+        margin-bottom: 5vh;
+    }
+
+}

@@ -51,7 +51,7 @@ const administration = [
     items: [
       {
         label: "Administrative Body",
-        link: "/administration/administrativeBody",
+        link: "/administration/administrative-body",
       },
       {
         label: "Board of Governers",
@@ -89,7 +89,7 @@ const research = [
   {
     items: [
       { label: "SRIC Cell", link: "/research/SRIC" },
-      { label: "Publications", link: "/research/Publications" },
+      { label: "Publications", link: "/research/publications" },
       { label: "Sponsored Projects", link: "/research/sponsored_projects" },
       { label: "Institution's Innovation Council", link: "/research/IIC" },
       { label: "National Innovation and Startup Policy", link: "/research/NISP" }
@@ -106,11 +106,11 @@ const students = [
       },
       {
         label: "Regulatory Rules",
-        link: "/students/Regulatory_Rules",
+        link: "/students/regulatory-rules",
       },
       {
         label: "Anti Ragging",
-        link: "/students/Anti_Ragging",
+        link: "/students/anti-ragging",
       },
       {
         label: "Students' Achievements",
@@ -130,7 +130,7 @@ const placements = [
     items: [
       {
         label: "Placement Portal",
-        link: "/placement",
+        link: "/placement-portal",
       },
     ],
   },
@@ -144,6 +144,15 @@ const career = [
   },
 ];
 
+const notifications = [
+  {
+    items: [
+      { label: "E-Notice Board", link: "/e-notice-board" },
+      { label: "Archive", link: "https://iiitkalyani.ac.in/php/archive.php" },
+    ],
+  }
+]
+
 const mobileMenu = [
   {
     items: [
@@ -155,17 +164,11 @@ const mobileMenu = [
       { label: "Students", index: 6, submenu: students },
       { label: "Career", index: 7, submenu: career },
       { label: "Placements", index: 8, submenu: placements },
+      { label: "Notifications", index: 8, submenu: notifications },
     ],
   },
 ];
-const notifications = [
-  {
-    items: [
-      { label: "E-Notice Board", link: "/e-notice-board" },
-      { label: "Archive", link: "https://iiitkalyani.ac.in/php/archive.php" },
-    ],
-  }
-]
+
 const NavBar = () => {
   // const [stick, setStick] = useState<Boolean>(false);
   // const handleScroll = () => {

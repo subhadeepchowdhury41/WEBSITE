@@ -37,15 +37,15 @@ function Carousel(props) {
         return () => clearInterval(id)
     }, [AddOne]);
     return (
-        <div className="w-full py-4 flex items-center justify-center">
+        <div className="w-full flex items-center justify-center">
             <div
-                className="relative w-full bg-gray-400 h-adjust rounded-2xl"
+                className={`relative w-full bg-gray-400 ${props.height === 'small' ? `h-[300px]` : 'h-adjust'} ${props.border === 'none' ? '' : 'rounded-2xl'}`}
                 style={{
                     backgroundImage: `url(${props.carouselData[i].url})`,
                     backgroundSize: "100% 100%",
                 }}
             >
-                <div className="absollute w-full h-adjust flex items-center">
+                <div className={`absollute w-full ${props.height === 'small' ? 'min-h-[250px]' : 'h-adjust'} flex items-center`}>
                     <div className="absolute flex z-[20] w-full items-center justify-between px-4">
                         <div className="h-8 w-8 rounded-[50%] flex items-center justify-center pr-1 cursor-pointer" onClick={ReduceOne} ></div>
                         <div className="h-8 w-8 rounded-[50%] flex items-center justify-center pl-1 cursor-pointer" onClick={AddOne}></div>
@@ -61,7 +61,7 @@ function Carousel(props) {
                                         : "bg-[rgba(110,110,110,0.67)] h-[5px] w-[20px] cursor-pointer"
                                 }
                                 onClick={() => setI(index.index)}
-                                style={{ maxWidth: `${windowWidth > 500 ? 20 : 15}px` }}
+                                style={{ maxWidth: `${windowWidth > 500 ? 15 : 10}px` }}
                             ></div>
                         );
                     })}

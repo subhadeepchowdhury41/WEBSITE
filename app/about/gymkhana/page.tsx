@@ -6,6 +6,7 @@ import '../../../styles/about/gymkhana/gymkhana.css'
 import Sidebar from './Sidebar'
 import { useEffect, useState } from 'react';
 import Carousel from './carousel'
+import Link from 'next/link';
 
 const App: React.FC = () => {
     useEffect(() => {
@@ -43,7 +44,7 @@ const App: React.FC = () => {
                             ActiveIndex={activeIndex} ActiveId={activeId} />
                     </div>
                 }
-                <div className='flex-[10] w-full h-[200vh] py-[20px] flex flex-col pd-adjst'>
+                <div className='flex-[10] w-full h-[200vh] py-[20px] flex flex-col pd-adjst gap-8'>
                     <div className='w-full flex h-fit items-center gap-4'>
                         <div className='w-16 h-16 min-w-[64px] min-h-[64px] border rounded-[50%]' style={{ backgroundImage: `url(${matchingItem?.icon_url})`, backgroundSize: '100% 100%' }}></div>
                         <div className={`font-bold ${windowWidth > 1200 ? 'text-4xl' : 'text-3xl'}`}>{matchingItem?.title}{matchingItem?.subtitle ? `${' - ' + matchingItem.subtitle}` : ''}</div>
@@ -51,9 +52,36 @@ const App: React.FC = () => {
                     <Carousel carouselData={matchingItem?.mainCarousel} />
                     {matchingItem?.description.map((index) => {
                         return (
-                            <>
+                            <div className='w-full h-fit'>
                                 {index.type === 'text' && <div className='font-[400] text-[16px]'>{index.title}</div>}
-                            </>
+                                {index.type === 'heading' && <div className='font-semibold text-[28px]'>{index.title}</div>}
+                                {index.type === 'carousel' &&
+                                    <div className='w-full h-auto flex border rounded-2xl overflow-hidden col900'>
+                                        <div className='w-full h-[300px] flex-[4]'>
+                                            <Carousel carouselData={index.data} border={'none'} height={'small'} />
+                                        </div>
+                                        <div className='w-full h-[300px] flex-[6] flex flex-col px-4 justify-between'>
+                                            <div className='flex flex-col'>
+                                                <div className='my-2 font-semibold text-[24px]'>{index.title}</div>
+                                                <div className='mb-2 font-[400] text-gray-700'>{index.description}</div>
+                                            </div>
+                                            <div className='flex w-full h-auto mb-4 flex-wrap gap-2'>
+                                                {index.tags?.map((tag) => {
+                                                    return (
+                                                        <Link href={tag.link} target={'_blank'} aria-label={tag.text}>
+                                                            <div className='flex items-center gap-1 py-1 px-2 rounded-3xl bg-[rgb(122,215,246)]'>
+                                                                <div className='w-[20px] h-[20px] rounded-[50%] bg-transparent' style={{ backgroundImage: `url(${tag.icon})`, backgroundSize: '100% 100%' }}></div>
+                                                                <div className='text-[12px] flex items-center min-h-[24px]'>{tag.text}</div>
+                                                            </div>
+                                                        </Link>
+                                                    )
+                                                })}
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+
+                            </div>
                         )
                     })}
                 </div>

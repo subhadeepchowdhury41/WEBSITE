@@ -121,7 +121,7 @@ body {
         flex-wrap: nowrap;
         height: fit-content;
         width: 100vw;
-        overflow-x: hidden;
+        overflow-x: scroll;
     }
 
     .gallery-side-card {

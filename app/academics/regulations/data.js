@@ -17,7 +17,7 @@ const data={
         },
         {
             id:4,
-            name:'Supplementary Exams',
+            name:'Supplementary Exams Rule',
             link:'/regulationspdf/Rules for Students with Supplementary Exams - IIIT Kalyani.pdf',
         }
     ],
