@@ -1,6 +1,9 @@
 import React from "react";
 import "./css/contact.css";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import MailIcon from "@mui/icons-material/Mail";
+import PhoneIcon from "@mui/icons-material/Phone";
+import GoogleIcon from "@mui/icons-material/Google";
 
 const TeamMember = ({
   name,
@@ -11,7 +14,7 @@ const TeamMember = ({
   googlePlus,
   imgSrc,
 }) => (
-  <div className="col-lg-4 col-md-6">
+  <div className="contact-card">
     <div className="our-team">
       <div className="picture">
         <img className="img-fluid" src={imgSrc} alt={name} />
@@ -21,28 +24,34 @@ const TeamMember = ({
         <h4 className="title">{title}</h4>
         <h6 style={{ marginTop: "5px" }}>
           <a href={`mailto:${email}`}>
-            <li className="fas fa-envelope">{email}</li>
+            <MailIcon />
+            {email}
           </a>
         </h6>
         <h6>
-          <li className="fas fa-phone"> {phone}</li>
+          <PhoneIcon />
+          {phone}
         </h6>
       </div>
-      <ul className="social" style={{ textAlign: "center" }}>
+      <ul className="social">
         <li>
           <a
             href={linkedin}
             className="fa fa-linkedin"
             aria-hidden="true"
             target="_blank"
-          ></a>
+          >
+            <LinkedInIcon />
+          </a>
         </li>
         <li>
           <a
             href={`mailto:${googlePlus}`}
             className="fa fa-google-plus"
             aria-hidden="true"
-          ></a>
+          >
+            <GoogleIcon />
+          </a>
         </li>
       </ul>
     </div>
@@ -139,7 +148,7 @@ const Contact = () => {
         <div className="contact-us">
           <TeamMember
             name="Pratik Chakraborty"
-            title="Faculty In-Charge Training And Placement Cell, IIIT Kalyani"
+            title="Faculty In-Charge, Training And Placement Cell, IIIT Kalyani"
             email="pratik@iiitkalyani.ac.in"
             phone="+91 8168824544"
             linkedin="https://www.linkedin.com/in/pratik-chakraborty-6a0a0773/"
@@ -156,15 +165,56 @@ const Contact = () => {
             googlePlus="sanjayc@iiitkalyani.ac.in"
             imgSrc="./img/SANJAY.jpg"
           />
-          <TeamMember
-            name="Training and Placement"
-            title="Training & Placement Cell, IIIT Kalyani"
-            email="tnp@iiitkalyani.ac.in"
-            phone=" "
-            linkedin="https://www.linkedin.com/in/tnpiniiitkalyani/"
-            googlePlus="tnp@iiitkalyani.ac.in"
-            imgSrc="./img/contactus_tnp.png"
-          />
+          <div className="contact-card">
+            <div className="our-team">
+              <div className="picture">
+                <img
+                  className="img-fluid"
+                  src="./img/contactus_tnp.png"
+                  alt="Training and Placement"
+                />
+              </div>
+              <div className="team-content">
+                <h3 className="name">Training and Placement</h3>
+                <h4 className="title">
+                  Training & Placement Cell, IIIT Kalyani
+                </h4>
+                <h6 style={{ marginTop: "5px" }}>
+                  <a href="mailto:tnp@iiitkalyani.ac.in">
+                    <MailIcon />
+                    <span> TnP</span>
+                  </a>
+                </h6>
+                <h6 style={{ marginTop: "5px" }}>
+                  <a href="mailto:studentcoordinator_placement@iiitkalyani.ac.in">
+                    <MailIcon />
+                    <span> Student Coordinator</span>
+                  </a>
+                </h6>
+              </div>
+              <ul className="social">
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/tnpiniiitkalyani/"
+                    className="fa fa-linkedin"
+                    aria-hidden="true"
+                    target="_blank"
+                  >
+                    <LinkedInIcon />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="tnp@iiitkalyani.ac.in"
+                    className="fa fa-google-plus"
+                    aria-hidden="true"
+                  >
+                    <GoogleIcon />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>

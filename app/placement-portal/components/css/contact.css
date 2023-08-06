@@ -32,7 +32,7 @@
 }
 
 .title {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: .5vh;
     color: grey;
 }
@@ -40,6 +40,13 @@
 .iiit {
     margin-top: .5vh;
     font-size: 1rem;
+}
+
+.team-content h6 {
+    font-size: .8rem;
+    margin-top: .5vh;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .cord-card:hover {
@@ -52,10 +59,81 @@
     /* color: grey; */
     background-blend-mode: multiply;
     right: 6%;
+    /* opacity: 0; */
 }
 
 .cord-link:hover {
     color: #0e76a8;
+}
+
+.contact-us {
+    width: 90%;
+    margin: 5vh auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+}
+
+.contact-card {
+    width: 30%;
+    margin: 1.6%;
+    padding: 3%;
+    background-color: #fef2ef;
+    box-shadow: 0 0 5px grey;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    padding-bottom: 5%;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    background-color: #0e76a8;
+    width: 100%;
+    box-shadow: 0 0 5px grey;
+    margin: 0;
+    left: 0;
+    border-radius: 0 0 5px 5px;
+    transform: translate(0, 25px);
+    transition: all 0.4s ease-in-out;
+    padding: 2%;
+    opacity: 0;
+}
+
+.contact-card:hover .social {
+    transform: translate(0px);
+    opacity: 1;
+}
+
+.social li {
+    list-style: none;
+    color: grey;
+    margin: 0 2%;
+}
+
+.social li:hover {
+    color: white;
+}
+
+.img-fluid {
+    margin: auto;
+    width: 60%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    margin-top: 2vh;
+}
+
+.contact-card:hover {
+    transform: scale(1.05);
+}
+
+.name {
+    margin-top: 2vh;
+    font-size: 1.5rem;
 }
 
 
@@ -70,6 +148,17 @@
         right: 8%;
         font-size: 25px;
     }
+
+    .contact-us {
+        justify-content: center;
+    }
+
+    .contact-card {
+        width: 45%;
+        padding: 5%;
+        padding-bottom: 7vh;
+        margin: 2.5%;
+    }
 }
 
 @media (max-width:550px) {
@@ -77,5 +166,23 @@
         width: 90%;
         margin: 5%;
         padding: 5%;
+    }
+}
+
+@media (max-width:700px) {
+    .contact-card {
+        width: 90%;
+        margin: 5%;
+        padding: 7%;
+        text-align: center;
+        padding-bottom: 7vh;
+
+    }
+
+    .team-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
