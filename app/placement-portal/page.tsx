@@ -7,6 +7,7 @@ import WhyUs from './components/WhyUs'
 import Recruiters from './components/Recruiters'
 import Placement from './components/Placement'
 import Message from './components/Message'
+import Infrastructure from './components/Infrastructure'
 import { useState, useEffect } from 'react';
 
 const App: React.FC = () => {
@@ -34,6 +35,7 @@ const App: React.FC = () => {
             <Recruiters />
             <Placement />
             <Message />
+            <Infrastructure />
             <Footer />
         </>
     );
