@@ -57,36 +57,57 @@ const Contact = () => {
       </div>
       <div className="students-cord">
         <div className="cord-card">
-          <img src="img/coord/anuj.jpg" alt="John" style={{ width: "100%" }} />
+          <img
+            src="img/coord/anuj.jpg"
+            alt="Anuj Kirodia"
+            style={{ width: "100%" }}
+          />
           <h2> Anuj Kirodia </h2>
           <p className="title">Student Coordinator</p>
           <p className="iiit">IIIT Kalyani</p>
           <div>
-            <a href="https://www.linkedin.com/in/anuj-kirodia-4a28921b9/">
+            <a
+              href="https://www.linkedin.com/in/anuj-kirodia-4a28921b9/"
+              target="_blank"
+            >
               <LinkedInIcon className="cord-link" />
             </a>
           </div>
         </div>
 
         <div className="cord-card">
-          <img src="img/coord/ali.jpeg" alt="John" style={{ width: "100%" }} />
+          <img
+            src="img/coord/ali.jpeg"
+            alt="Ali Asad Quasim"
+            style={{ width: "100%" }}
+          />
           <h2>Ali Asad Quasim</h2>
           <p className="title">Student Coordinator</p>
           <p className="iiit">IIIT Kalyani</p>
           <div>
-            <a href="https://www.linkedin.com/in/ali-asad-quasim/">
+            <a
+              href="https://www.linkedin.com/in/ali-asad-quasim/"
+              target="_blank"
+            >
               <LinkedInIcon className="cord-link" />
             </a>
           </div>
         </div>
 
         <div className="cord-card">
-          <img src="img/coord/aman.png" alt="John" style={{ width: "100%" }} />
+          <img
+            src="img/coord/aman.png"
+            alt="Aman Yadav"
+            style={{ width: "100%" }}
+          />
           <h2>Aman Yadav</h2>
           <p className="title">Student Coordinator</p>
           <p className="iiit">IIIT Kalyani</p>
           <div>
-            <a href="https://www.linkedin.com/in/amanyadav13apr/">
+            <a
+              href="https://www.linkedin.com/in/amanyadav13apr/"
+              target="_blank"
+            >
               <LinkedInIcon className="cord-link" />
             </a>
           </div>
@@ -95,14 +116,17 @@ const Contact = () => {
         <div className="cord-card">
           <img
             src="img/coord/yash (2).jpg"
-            alt="John"
+            alt="Yashraj Singh"
             style={{ width: "100%" }}
           />
           <h2>Yashraj Singh</h2>
           <p className="title">Student Coordinator</p>
           <p className="iiit">IIIT Kalyani</p>
           <div>
-            <a href="https://www.linkedin.com/in/yashraj-singh-02/">
+            <a
+              href="https://www.linkedin.com/in/yashraj-singh-02/"
+              target="_blank"
+            >
               <LinkedInIcon className="cord-link" />
             </a>
           </div>
