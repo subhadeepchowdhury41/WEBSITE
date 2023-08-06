@@ -74,7 +74,7 @@ const Placement = () => {
   return (
     <div id="placement-record" className="placement-record">
       <div className="why-head">
-        <h2 style={{ textAlign: "center" }}>Placement Statistics - 2023</h2>
+        <h2 style={{ textAlign: "center" }}>Placement Statistics</h2>
       </div>
       <div className="placement-box">
         <div className="placement-stats">
@@ -129,7 +129,7 @@ const Placement = () => {
         </div>
       </div>
       <div className="record-buttons">
-        <a className="records" href="/placement_stats/placement19-20.pdf">
+        <a className="records" href="#">
           <div >Batch 2019-2023</div>
         </a>
         <a className="records" href="/placement_stats/Batch2018-2022.pdf">
