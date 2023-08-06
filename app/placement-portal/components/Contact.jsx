@@ -205,7 +205,7 @@ const Contact = () => {
                 </li>
                 <li>
                   <a
-                    href="tnp@iiitkalyani.ac.in"
+                    href="mailto:tnp@iiitkalyani.ac.in"
                     className="fa fa-google-plus"
                     aria-hidden="true"
                   >
