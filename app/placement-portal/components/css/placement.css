@@ -81,10 +81,14 @@
     text-align: center;
     background-color: #142E57;
     color: white;
-    padding: 2%;
+    padding: 1.5%;
     font-size: 1.2rem;
     border-radius: 10px;
     font-weight: 300;
+}
+
+.records:hover {
+    background-color: #204584;
 }
 
 @media (max-width:900px) {
@@ -114,6 +118,9 @@
         font-size: 0.8rem;
     }
 
+    .stats-header {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width:500px) {

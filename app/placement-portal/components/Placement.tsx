@@ -79,7 +79,7 @@ const Placement = () => {
       <div className="placement-box">
         <div className="placement-stats">
           <div className="placement-stats-card">
-            <div className="stats-header">Placement Statistics</div>
+            <div className="stats-header">Placement Statistics - 2023</div>
             <div className="stats-item" style={{ backgroundColor: "#14AAA3" }}>
               <div>
                 <span>No. of Students Registered</span>
