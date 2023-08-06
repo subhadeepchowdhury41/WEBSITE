@@ -8,6 +8,7 @@
     justify-content: space-between;
     padding: 10px 20px;
     background-color: white;
+    z-index: 99;
 }
 
 .placement-nav span {

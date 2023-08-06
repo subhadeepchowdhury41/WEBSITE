@@ -69,6 +69,7 @@ const Recruiters = () => {
     "./img/brigosha.jpeg",
     "./img/Affine_Analytics.png",
     "./img/addverb.jpeg",
+    "./img/mindfire.png",
   ];
 
   const autoScrollInterval = 1500; // Set the auto-scrolling interval in milliseconds
@@ -79,7 +80,7 @@ const Recruiters = () => {
         <h2 style={{ textAlign: "center" }}>Past Recruiters</h2>
       </div>
       <Carousel images={images} autoScrollInterval={autoScrollInterval} />
-      <Carousel images={image} autoScrollInterval={autoScrollInterval} />
+      <Carousel images={image} autoScrollInterval={1800} />
     </div>
   );
 };
