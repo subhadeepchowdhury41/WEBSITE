@@ -21,34 +21,41 @@ const sricData = {
         },
         {
             id:2,
+            title:'VLSI Implementation of Crypto-Hardware targeting Classical and Post-Quantum Cryptography',
+            PI:'Chief Investigator: Dr. Santanu Chattopadhyay (Professor & Director, IIIT Kalyani), Co-Chief Investigator : Dr. Rinky Sha, Other-Investigators: Dr. SK Hafizul Islam, Dr. Dalia Nandi, Dr. Pratik Chakraborty, Dr. Amit Ranjan Azad and Dr. Bapi Kar, Indian Institute of Information Technology Kalyani',
+            value:'84.4 Lakhs',
+            desc:'sponsored by MeitY, Chips to Startup (C2S) Programme'
+        },
+        {
+            id:3,
             title:'Extraction, Organization and Query of Scholarly Information',
             PI:'Dr. Imon Mukherjee (IIIT Kalyani) with Dr.Debarshi Kumar Sanyal (Indian Association for the Cultivation of Science)',
             value:'45.61 Lakhs',
             desc:'Sponsored by SERB (CRG)'
         },
         {
-            id:3,
+            id:4,
             title:'Smart Assistive System for Visually Impaired',
             PI:'Dr. Oishila Bandyopadhyay and Dr. Dalia Nandi',
             value:'14.4 Lakhs',
             desc:'Sponsored by Science & Technology and Biotechnology Department, Govt. of West Bengal'
         },
         {
-            id:4,
+            id:5,
             title:'Study of Quantum Attack on Stream Ciphers',
             PI:'Dr. Imon Mukjerjee and Co-PI: Dr. Uma Das',
             value:'42.25 lakhs',
             desc:'Sponsored by DRDO'
         },
         {
-            id:5,
+            id:6,
             title:'Long Short Term Memory based Neural Network Approach for Prediction of Wintertime Fog over Northern India',
             PI:'Dr. Uma Das and Co-PI: Dr. Oishila Bandyopadhyay and Dr. Dalia Nandi',
             value:'24.37 Lakhs',
             desc:'Sponsored by Ministry of Earth Sciences (MoES)'
         },
         {
-            id:6,
+            id:7,
             title:'Development of Code based PQC Algorithms and its Security Analysis',
             PI:'Dr. Debasish Bera and Co-PI: Dr. Bhaskar Biswas',
             value:'49.97 Lakhs',

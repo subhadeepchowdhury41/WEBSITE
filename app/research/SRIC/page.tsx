@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 import NavBar from "../../sections/appbar/secondNav";
 import Footer from '../../sections/footer/footer';
-import "../../../styles/Research/SRIC/sric.css";
+import "../../../styles/research/sric/sric.css";
 import sricData from './data'
 import { ImportExport } from "@mui/icons-material";
 

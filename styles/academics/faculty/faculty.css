@@ -75,7 +75,8 @@
 
 @media screen and (max-width:1024px){
     .faculty-main-bar{
-        border: 2px solid black;
+        border: 1px solid black;
+        width: 70%;
         border-radius: 5px;
     }
     .faculty-line{
@@ -88,7 +89,7 @@
     }
     .faculty-topic{
         height: 20vh;
-        width: 55vh;
+        width: 80%;
         justify-content: center;
         font-size: min(2vh,2vw);
         border: none;
@@ -103,7 +104,8 @@
 }
 @media screen and (max-width:768px){
     .faculty-main-bar{
-        border: 2px solid black;
+        border: 1px solid black;
+        width: 80%;
         border-radius: 5px;
     }
     .faculty-line{
@@ -116,7 +118,7 @@
     }
     .faculty-topic{
         height: 20vh;
-        width: 55vh;
+        width: 90%;
         justify-content: center;
         font-size: max(1.7vh,1.7vw);
         border: none;

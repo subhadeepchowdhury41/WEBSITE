@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 import NavBar from "../../sections/appbar/secondNav";
 import Footer from '../../sections/footer/footer';
-import "../../../styles/Research/NISP/nisp.css";
+import "../../../styles/research/nisp/nisp.css";
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 import nispData from './data'
 

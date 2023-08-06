@@ -10,7 +10,7 @@
     padding: 1%;
 }
 .carrer-main h1{
-    font-size: max(2.5vw,4vh);
+    font-size: max(2.5vw,3vh);
     margin-bottom: 1%;
 }
 .career-info{
@@ -46,7 +46,7 @@
     background-color: rgb(236, 247, 255);
     border-radius: 5px;
     box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-    font-size: max(1vw,2vh) ;
+    font-size: max(1vw,1.5vh) ;
 }
 .career-btn-group{
     width: 100%;

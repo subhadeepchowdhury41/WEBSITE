@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 import NavBar from "../../sections/appbar/secondNav";
 import Footer from '../../sections/footer/footer';
-import "../../../styles/Research/Publications/publications.css";
+import "../../../styles/research/publications/publications.css";
 import publicationData from './data'
 
 const Publications = () => {
