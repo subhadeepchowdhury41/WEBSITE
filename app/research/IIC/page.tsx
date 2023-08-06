@@ -1,7 +1,7 @@
 'use client'
 import React,{useEffect} from 'react';
 import Image from 'next/image';
-import '../../../styles/Research/IIC/iic.css'
+import '../../../styles/research/iic/iic.css'
 import NavBar from '../../sections/appbar/secondNav';
 import Footer from '../../sections/footer/footer';
 import iicData from './data'

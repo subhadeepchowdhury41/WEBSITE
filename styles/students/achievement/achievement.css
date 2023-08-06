@@ -10,11 +10,11 @@
     padding: 1%;
 }
 .aci-main h1{
-    font-size: max(2vw,3vh);
+    font-size: max(2vw,2.5vh);
     margin-bottom: 1%;
 }
 .aci-container{
-    width: 75%;
+    width: 85%;
     height: fit-content;
     border: 1px solid rgb(59, 193, 255);
     padding: 1%;
@@ -23,7 +23,7 @@
     border-radius: 10px;
 }
 .aci-container h2{
-    font-size: max(1.3vw,2.5vh);
+    font-size: max(1.3vw,2vh);
     border-bottom: 1px solid rgb(28, 168, 255);
     width: 100%;
     text-align: left;

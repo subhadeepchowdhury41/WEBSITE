@@ -1,9 +1,9 @@
 "use client";
+import React,{ useEffect } from "react";
 import NavBar from "../../sections/appbar/secondNav";
 import Footer from '../../sections/footer/footer';
-import "../../../styles/Students/regulatoryRules/regulatoryRules.css";
+import "../../../styles/students/regulatoryRules/regulatoryRules.css";
 import Data from "./data"
-import { useEffect } from "react";
 
 
 const regulatoryRules = () => {
