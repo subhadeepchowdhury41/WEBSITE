@@ -55,7 +55,7 @@ const array = [
       },
       {
         label: "Admission details",
-        link: "",
+        link: "/academics/admissions/pages/phd",
       },
     ],
   },
@@ -108,7 +108,7 @@ const Admissions = () => {
         <div className="admission-channels">
 
           <div className="admission-card">
-            <AdmissionCard heading="B.Tech" data={[["Admission details", "/admissions/pdfs/btech/admission_brochure_2023.pdf", true], ["Admission Form", "/admissions/pdfs/btech/Admission%20Form%202023.pdf", true], ["Annexure 7", "/admissions/pdfs/btech/Annexure7.pdf", true]]} />
+            <AdmissionCard heading="B.Tech" data={[["B.Tech Admission", "/academics/admissions/pages/btech", false], ["Admission details", "/admissions/pdfs/btech/admission_brochure_2023.pdf", true], ["Admission Form", "/admissions/pdfs/btech/Admission%20Form%202023.pdf", true], ["Annexure 7", "/admissions/pdfs/btech/Annexure7.pdf", true]]} />
           </div>
 
           <div className="admission-card">
@@ -116,7 +116,7 @@ const Admissions = () => {
           </div>
 
           <div className="admission-card">
-            <AdmissionCard heading="PhD" data={[["Year: 2021", "", false], ["Admission details", "", false]]} />
+            <AdmissionCard heading="PhD" data={[["PhD Admission", "/academics/admissions/pages/phd", false], ["Year: 2021", "", false], ["Admission details", "", false]]} />
           </div>
 
         </div>

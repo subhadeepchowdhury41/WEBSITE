@@ -1,0 +1,113 @@
+.fluid-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aci-main{
+    width: 100%;
+    height: fit-content;
+    flex-direction: column;
+    padding: 1%;
+}
+.aci-main h1{
+    font-size: max(2vw,2.5vh);
+    margin-bottom: 1%;
+}
+.aci-container{
+    width: 85%;
+    height: fit-content;
+    border: 1px solid rgb(59, 193, 255);
+    padding: 1%;
+    margin-bottom: 1%;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.aci-container h2{
+    font-size: max(1.3vw,2vh);
+    border-bottom: 1px solid rgb(28, 168, 255);
+    width: 100%;
+    text-align: left;
+    margin: 1%;
+}
+.aci-data-contain{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.tro_thumb{
+    width: 15%;
+    margin: 1%;
+}
+.aci-data{
+    margin: 1%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 30%;
+    min-width: 320px;
+    aspect-ratio: 3/2;
+    padding: 1%;
+    border-radius: 10px;
+}
+.card::after,
+  .card img {
+      border-radius: 50%;
+    }
+    
+.card {
+    width: 27%;
+    min-width: 320px;
+    aspect-ratio: 4/5;
+    border-radius: 10px;
+    padding: 3%;
+    margin: 2%;
+    position: relative;
+    transform-style: preserve-3d;
+    box-shadow:  5px 5px 10px #93c2d9, -5px -5px 10px #c7ffff;
+    overflow: hidden;
+    transition: transform .2s;
+    font-size: max(0.9vw,1.7vh);
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .card::before,
+  .card::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+  }
+  .card::after {
+    height: 15rem;
+    width: 15rem;
+    background-color: #7dd4ffaa;
+    top: -8rem;
+    right: -8rem;
+    box-shadow: 2rem 6rem 0 -3rem #FFF
+  }
+  .card:hover{
+    transform: scale(1.1);
+  }
+  .prev_achi{
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    border-radius:5px ;
+    border: 1px solid rgb(79, 172, 235);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: max(1.1vw,1.7vh);
+    margin-bottom: 1% ;    
+  }
+  .prev_achi:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+
+@media screen and (max-width:1024px){
+    .card{
+        margin-bottom: 7%;
+        padding: 5%;
+    }
+}
+@media screen and (max-width:768px){
+    .card{
+        margin: 7% 7%;
+        padding: 5%;
+    }
+}

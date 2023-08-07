@@ -1,7 +1,7 @@
 'use client';
 import NavBar from '../../sections/appbar/secondNav';
 import Footer from '../../sections/footer/footer';
-import '../../../styles/Students/achievement/achievement.css'
+import '../../../styles/students/achievement/achievement.css'
 import { useEffect } from 'react';
 import achiData from './data';
 import Image from 'next/image';

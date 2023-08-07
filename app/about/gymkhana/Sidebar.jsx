@@ -19,7 +19,7 @@ function Sidebar(props) {
                                         className={
                                             props.ActiveIndex === index.id &&
                                                 i.id === props.ActiveId
-                                                ? "font-[400] text-[16px] text-[rgb(173,100,225)] pl-8 cursor-pointer"
+                                                ? "font-[400] text-[16px] text-[rgb(73,93,181)] pl-8 cursor-pointer"
                                                 : "font-[400] text-[16px] text-[rgb(0,0,0)] pl-8 cursor-pointer"
                                         }
                                         onClick={() => {

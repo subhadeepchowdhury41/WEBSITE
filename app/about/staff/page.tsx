@@ -45,15 +45,15 @@ const Staff = () => {
 
     const MapDP = new Map();
 
-    MapDP.set("Samim", "https://iiitkalyani.ac.in/images/staff/samim.jpg");
-    MapDP.set("Amit", "https://iiitkalyani.ac.in/images/staff/amit.jpg");
-    MapDP.set("Sreejoyee", "https://iiitkalyani.ac.in/php/images/318715061_5597810140335137_7513907662518930724_n.jpg");
-    MapDP.set("Moupriya", "https://iiitkalyani.ac.in/images/staff/md.jpg");
-    MapDP.set("Rathin", "https://iiitkalyani.ac.in/images/staff/rp.jpg");
-    MapDP.set("Sanju", "https://iiitkalyani.ac.in/images/staff/sb.jpg");
-    MapDP.set("Twinkle", "https://iiitkalyani.ac.in/images/Twinkle_1.jpg");
-    MapDP.set("Sourav", "https://iiitkalyani.ac.in/images/sourav%20gope%20iiit%20kalyani.jpg");
-    MapDP.set("Debottam", "https://iiitkalyani.ac.in/images/20220211_120900.jpg");
+    MapDP.set("Samim", "/staff/samim.webp");
+    MapDP.set("Amit", "/staff/amit.webp");
+    MapDP.set("Sreejoyee", "/staff/srejoyee.webp");
+    MapDP.set("Moupriya", "/staff/md.webp");
+    MapDP.set("Rathin", "/staff/rp.webp");
+    MapDP.set("Sanju", "/staff/sb.webp");
+    MapDP.set("Twinkle", "/staff/Twinkle.webp");
+    MapDP.set("Sourav", "/staff/sourav.webp");
+    MapDP.set("Debottam", "/staff/db.webp");
 
     return (
         <>

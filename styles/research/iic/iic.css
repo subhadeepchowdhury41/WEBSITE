@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+}
+.fluid-center{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+.iic-main-page{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+.iic-main-page h1{
+    margin-top: 2%;
+    font-size: max(2vw,2.5vh);
+    width: fit-content;
+    text-align: center ;
+    padding: 0% 5% 0% 5%;
+    border-bottom: 2px solid #82cff5;
+}
+.iic-certificate{
+    margin:2% 0% 2% 0% ;
+    width: 90%;
+    height: 90%;
+    flex-direction: column;
+}
+.iic-certificate h2{
+    position: relative;
+    top: 20px;
+    background-color: white;
+    padding: 2px 20px 2px 20px;
+    font-size: max(1.2vw,2vh);
+    border-radius: 10px ;
+    border: 1px solid rgb(85, 173, 241);
+}
+.iic-certificate-img{
+    width: 50%;
+    min-width: 400px;
+    height: fit-content;
+    border-radius: 5px;
+    padding: 30px;
+    border: 1px solid rgb(85, 173, 241);
+}
+.iic-buttons{
+    margin: 1% 2% 3% 2%;
+    width: 70%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+ .iic-btn{
+    width: 40%;
+    min-width: 300px;
+    padding: 1% 1% 1% 1%;
+    font-size: max(1.5vh,1.05vw);
+    text-align: center;
+    margin: 1% 2% 1% 2%;
+    border: 2px solid #82cff5;
+    border-radius: 5px;
+    transition: all .2s;  
+}
+.iic-btn:hover{
+    transform: scale(1.1);
+    background-color: rgb(172, 227, 255);
+    box-shadow:  9px 9px 18px #93c2d9, -9px -9px 18px #c7ffff;
+}
