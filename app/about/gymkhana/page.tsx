@@ -16,7 +16,7 @@ const App: React.FC = () => {
     const [activeIndex, setActiveIndex] = useState(1);
     const [activeId, setActiveId] = useState(1);
     const [matchingItem, setMatchingItem] = useState(
-        data.find((item) => item.id === activeIndex)?.children.find((child) => child.id === activeId)
+        data.find((item) => item.id === activeIndex)?.children.find((child: any) => child.id === activeId)
     );
     const [windowWidth, setWindowWidth] = useState(1250);
 
@@ -50,7 +50,7 @@ const App: React.FC = () => {
                         <div className={`font-bold ${windowWidth > 1200 ? 'text-4xl' : 'text-3xl'}`}>{matchingItem?.title}{matchingItem?.subtitle ? `${' - ' + matchingItem.subtitle}` : ''}</div>
                     </div>
                     <Carousel carouselData={matchingItem?.mainCarousel} />
-                    {matchingItem?.description.map((index) => {
+                    {matchingItem?.description.map((index: any) => {
                         return (
                             <div className='w-full h-fit'>
                                 {index.type === 'text' && <div className='font-[400] text-[16px]'>{index.title}</div>}
@@ -66,7 +66,7 @@ const App: React.FC = () => {
                                                 <div className='mb-2 font-[400] text-gray-700'>{index.description}</div>
                                             </div>
                                             <div className='flex w-full h-auto mb-4 flex-wrap gap-2'>
-                                                {index.tags?.map((tag) => {
+                                                {index.tags?.map((tag: any) => {
                                                     return (
                                                         <Link href={tag.link} target={'_blank'} aria-label={tag.text}>
                                                             <div className='flex items-center gap-1 py-1 px-2 rounded-3xl bg-[rgb(122,215,246)]'>

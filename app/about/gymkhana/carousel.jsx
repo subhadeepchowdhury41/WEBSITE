@@ -36,6 +36,9 @@ function Carousel(props) {
         const id = setInterval(AddOne, 3000)
         return () => clearInterval(id)
     }, [AddOne]);
+    useEffect(() => {
+        AddOne();
+    }, [props.carouselData])
     return (
         <div className="w-full flex items-center justify-center">
             <div
