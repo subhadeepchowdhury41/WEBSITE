@@ -54,6 +54,34 @@ const GymkhanaData = [
                             },
 
                         ]
+                    },
+                    {
+                        type: 'carousel',
+                        title: 'Event 1',
+                        data: [
+                            {
+                                index: 0,
+                                url: 'https://t3.ftcdn.net/jpg/02/78/42/76/360_F_278427683_zeS9ihPAO61QhHqdU1fOaPk2UClfgPcW.jpg',
+                            },
+                            {
+                                index: 1,
+                                url: 'https://media.istockphoto.com/id/1141191007/vector/sports-set-of-athletes-of-various-sports-disciplines-isolated-vector-silhouettes-run-soccer.jpg?s=612x612&w=0&k=20&c=SEabW4SHZ7blMHJPxZNSTl_anOMHO3whQI7HIMxFpSg='
+                            }
+                        ],
+                        description: 'This is a few line description about the event hue hue hue.It serves as a platform where students from diverse backgrounds come together to engage in sports and fitness activities that go beyond the classroom. Driven by the belief that a healthy body nurtures a healthy mind, the club offers a variety of sports and recreational opportunities, catering to different interests and skill levels. From regular practice sessions to competitive tournaments, the club provides an avenue for students to showcase their talents and develop essential qualities such as discipline, teamwork, and leadership.',
+                        tags: [
+                            {
+                                link: '',
+                                text: 'Watch on YouTube',
+                                icon: 'https://www.iconpacks.net/icons/2/free-youtube-logo-icon-2431-thumb.png'
+                            },
+                            {
+                                link: '',
+                                text: 'Instagram Post',
+                                icon: 'https://p7.hiclipart.com/preview/729/192/1024/computer-icons-instagram-logo-sticker-logo.jpg',
+                            },
+
+                        ]
                     }
                 ],
             },
