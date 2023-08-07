@@ -1,0 +1,151 @@
+.placement-record {
+    width: 90%;
+    margin: 5vh auto;
+}
+
+.placement-box {
+    display: flex;
+    /* gap: 10px; */
+}
+
+.placement-stats {
+    width: 40%;
+}
+
+.charts {
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.placement-stats-card {
+    width: 90%;
+    margin: 5vh auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid #204584;
+    border-radius: 10px;
+    padding-bottom: 2vh;
+}
+
+.stats-header {
+    background-color: #204584;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: 3%;
+    margin-bottom: 5vh;
+}
+
+.stats-item {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+    /* background-color: yellow; */
+    margin: 5px;
+    border-radius: 7px;
+}
+
+.stats-item div {
+    cursor: pointer;
+    width: 98.5%;
+    padding: 2% 10%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.stats-item div:hover {
+    background-color: rgb(243, 240, 240);
+    border-radius: 7px 0 0 7px;
+}
+
+.record-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 2vh;
+}
+
+.records {
+    width: 30%;
+    margin: 1.6%;
+    text-align: center;
+    background-color: #142E57;
+    color: white;
+    padding: 1.5%;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    font-weight: 300;
+}
+
+.records:hover {
+    background-color: #204584;
+}
+
+@media (max-width:900px) {
+    .placement-box {
+        flex-direction: column;
+    }
+
+    .placement-stats {
+        width: 100%;
+        margin: auto;
+    }
+
+    .charts {
+        width: 90vw;
+        /* height: 50%; */
+        margin: auto;
+        font-size: 5px;
+    }
+
+    .graph {
+        height: 50vh;
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .records {
+        font-size: 0.8rem;
+    }
+
+    .stats-header {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:500px) {
+
+    .stats-item {
+        font-size: 0.8rem;
+    }
+
+    .charts {
+        width: 90vw;
+        /* height: 50%; */
+        margin: auto;
+        font-size: 5px;
+    }
+
+    .graph {
+        height: 100vh;
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .records {
+        width: 45%;
+        margin: 2.5%;
+        border-radius: 5px;
+    }
+
+}

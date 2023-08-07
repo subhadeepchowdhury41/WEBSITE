@@ -1,0 +1,249 @@
+.card-container {
+    height: fit-content;
+    /* width: 55vw; */
+    /* box-shadow: 0 0 5px #CFB2B2; */
+    border-radius: 5px;
+    margin: 15px;
+}
+
+.card-header {
+    height: fit-content;
+    background-color: white;
+    border: 2px solid #82cff5;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 10px;
+    width: 90%;
+    margin: auto;
+    /* margin: 5px; */
+}
+
+.card-header div {
+    color: black;
+}
+
+.admission-channels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 95vw;
+    /* margin-left: 50px; */
+}
+
+.admission-card {
+    /* align-items: center; */
+    width: 100%;
+    margin-left: 0;
+    /* margin: auto; */
+    padding: 0;
+    top: 20px;
+}
+
+.card-body {
+    height: fit-content;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    border-top: 2px solid #82cff5;
+    border-right: 2px solid #82cff5;
+    border-left: 2px solid #82cff5;
+    margin: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-container {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.card-body li {
+    padding: 5px;
+    margin: 10px;
+    margin-left: 30px;
+    font-size: small;
+    font-weight: bold;
+}
+
+.data-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.data-item a {
+    margin-top: 3px;
+    transition: 0.5s;
+}
+
+.data-item a:hover {
+    background-color: #93c2d9;
+    border-radius: 4px;
+    padding: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.new-announcement {
+    padding: 5px;
+    margin-left: 5px;
+    font-size: 8px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 100%;
+    animation: blinking 2.5s infinite;
+}
+
+.mtech-details {
+    margin: 20px;
+}
+
+.admin-incharge {
+    width: 20vw;
+    min-width: 180px;
+    height: fit-content;
+    border-radius: 10px;
+    margin: 30px;
+    box-shadow: 0 0 5px gray;
+}
+
+.admin-heading {
+    height: fit-content;
+    width: 100%;
+    background-color: rgb(121, 130, 106);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.admin-name {
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(197, 178, 155);
+    padding: 10px;
+}
+
+.admin-name:hover {
+    background-color: gray;
+}
+
+.admin-details {
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(197, 178, 155);
+    padding: 10px;
+    border-top: 1px solid #000;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.details-item {
+    margin-bottom: 10px;
+    padding: 20px;
+    background-color: rgb(149, 147, 167);
+    border-radius: 10px;
+    width: fit-content;
+    margin-bottom: 25px;
+}
+
+.item-heading {
+    font-size: large;
+    font-weight: bold;
+}
+
+.specialization {
+    font-weight: bolder;
+    font-style: 20px;
+    padding: 4px;
+    margin: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.process {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.admission-form {
+    animation: form-blinking 1.5s infinite;
+}
+
+.details-imp {
+    color: #003e8a;
+    font-weight: bold;
+}
+
+@keyframes blinking {
+    16% {
+        background-color: violet;
+    }
+
+    33% {
+        background-color: indigo;
+    }
+
+    50% {
+        background-color: green;
+    }
+
+    66% {
+        background-color: yellow;
+    }
+
+    83% {
+        background-color: orange;
+    }
+
+    100% {
+        background-color: red;
+    }
+}
+
+@keyframes form-blinking {
+    0% {
+        color: blue;
+    }
+
+    100% {
+        color: white;
+    }
+}
+
+@media(min-width: 700px) {
+    .specialization {
+        width: 40%;
+    }
+}
+
+@media(min-width: 900px) {
+    .card-container {
+        /* width: 24vw; */
+        width: 100%;
+    }
+
+    .admission-card {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .card-body {
+        min-height: 40vh;
+        /* width: 90%; */
+    }
+
+    .admission-channels {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        height: auto;
+    }
+
+}

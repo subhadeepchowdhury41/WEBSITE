@@ -1,0 +1,33 @@
+.icc-header{
+    /* width: 90%; */
+    margin-left: auto;
+    margin-right: auto;
+}
+.icc-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.icc-links{
+    margin-top: 30px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.link{
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 2px #82cff5 solid;
+    background-color: white;
+    border-radius: 10px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+.link:hover{
+    transform: scaleY(1.12);
+    background-color: #c1eaff;
+}

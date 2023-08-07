@@ -6,14 +6,23 @@ import { Reveal, Fade } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
-import PhotoFilterIcon from '@mui/icons-material/PhotoFilter';
-// import ArrowBackwardIosIcon from '@mui/icons-material/ArrowBackwardIos';
-// import ArrowBackwardIosIcon from '@mui/icons-material/ArrowBackwardIos';
-// import gsap from 'gsap';
-import ITKButton from "../../designSystem/ITKButton";
 import ContactlessOutlinedIcon from "@mui/icons-material/ContactlessOutlined";
 
 const Discover = () => {
+    useEffect(() => {
+        document.title = 'Home | Indian Institute of Information Technology, Kalyani';
+    }, []);
+    const [windowWidth, setWindowWidth] = useState(0);
+    const updateWindowWidth = () => {
+        setWindowWidth(window.innerWidth);
+    };
+    useEffect(() => {
+        updateWindowWidth();
+        window.addEventListener('resize', updateWindowWidth);
+        return () => {
+            window.removeEventListener('resize', updateWindowWidth);
+        };
+    }, []);
 
     const customAnimation = keyframes`
     from {
@@ -38,7 +47,6 @@ const Discover = () => {
     }
 `;
     const [i, setI] = useState(1);
-
     let l = ImageData.length;
     const ReduceOne = () => {
         if (i === 1)
@@ -47,15 +55,13 @@ const Discover = () => {
             setI(i - 1);
     }
     const AddOne = () => {
-        const screenWidth = globalThis.window?.innerWidth;
-
-        if (screenWidth > 1450) {
+        if (windowWidth > 1450) {
             if (i === l - 2 && scrolling === 1) {
                 setI(1);
             } else if (scrolling === 1) {
                 setI(i + 1);
             }
-        } else if (screenWidth >= 975 && screenWidth <= 1500) {
+        } else if (windowWidth >= 975 && windowWidth <= 1500) {
             if (i === l - 1 && scrolling === 1) {
                 setI(1);
             } else if (scrolling === 1) {
@@ -90,11 +96,11 @@ const Discover = () => {
             </Reveal>
             <Reveal keyframes={customAnimation2} triggerOnce>
                 <div className='discover-slider' onMouseEnter={() => { setScrolling(0) }} onMouseLeave={() => { setScrolling(1) }}>
-                    <div className='discover-slide-track' style={globalThis.window?.innerWidth > 550 ? { transform: `translate(${(-480 * (i - 1))}px,0px)` } : globalThis.window?.innerWidth > 350 ? { transform: `translate(${(-330 * (i - 1))}px,0px)` } : { transform: `translate(${(-270 * (i - 1))}px,0px)` }}>
+                    <div className='discover-slide-track' style={windowWidth > 550 ? { transform: `translate(${(-480 * (i - 1))}px,0px)` } : windowWidth > 350 ? { transform: `translate(${(-330 * (i - 1))}px,0px)` } : { transform: `translate(${(-270 * (i - 1))}px,0px)` }}>
                         {ImageData.map((index) => {
                             return (<div key={index.id}>
                                 <div className='discover-slides' key={index.id}>
-                                    <img src={index.url} />
+                                    <img src={index.url} alt="discover" />
                                     <div className='discover-slides-text'>
                                         <div className='slide-heading'>{index.heading}</div>
                                         <div className='slide-description'>{index.description}</div>
@@ -109,10 +115,10 @@ const Discover = () => {
 
                 <div className='discover-navigation'>
                     {/* <ITKButton text="View More" /> */}
-                    <div className='view-more'>View More</div>
+                    <div className='view-more'><a href="/about/gallery/parikshapecharcha2022">View More</a></div>
                     <div className='discover-buttons'>
-                        <button className='button-prev' onClick={() => { ReduceOne() }}><ArrowLeftIcon className="hover:bg-purple-100" style={{ fontSize: "30px", borderRadius: "50%", boxShadow: "1px 1px 2px rgb(0,0,0,0.3)", marginRight: "10px" }} /></button>
-                        <button className='button-next' onClick={() => { AddOne() }}><ArrowRightIcon className="hover:bg-purple-100" style={{ fontSize: "30px", borderRadius: "50%", boxShadow: "1px 1px 2px rgb(0,0,0,0.3)" }} /></button>
+                        <button className='button-prev' id="alb-prev" aria-label="Previous" onClick={() => { ReduceOne() }}><ArrowLeftIcon className="hover:bg-purple-100" style={{ fontSize: "30px", borderRadius: "50%", boxShadow: "1px 1px 2px rgb(0,0,0,0.3)", marginRight: "10px" }} /></button>
+                        <button className='button-next' id="alb-next" aria-label="Next" onClick={() => { AddOne() }}><ArrowRightIcon className="hover:bg-purple-100" style={{ fontSize: "30px", borderRadius: "50%", boxShadow: "1px 1px 2px rgb(0,0,0,0.3)" }} /></button>
                     </div>
 
                 </div>

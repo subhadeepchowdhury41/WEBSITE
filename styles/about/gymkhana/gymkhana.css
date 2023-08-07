@@ -1,0 +1,26 @@
+.pd-adjst{
+    padding: 20px 40px;
+}
+
+@media (max-width: 1200px){
+    .resp-program{
+        flex-direction: column;
+    }
+    .pd-adjst{
+        padding: 16px;
+    }
+    .ht-adj{
+        aspect-ratio: 2;
+        min-height: none;
+    }
+    .pos-adj{
+        position: relative;
+        top: 0;
+    }
+}
+
+@media (max-width: 900px){
+    .col900{
+        flex-direction: column;
+    }
+}

@@ -2,7 +2,7 @@
 import '../../../styles/achievement.css';
 import achievement from './achievement'
 import { useState, useEffect } from "react";
-import { Reveal} from "react-awesome-reveal";
+import { Reveal } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 import CelebrationOutlinedIcon from '@mui/icons-material/CelebrationOutlined';
 import HEADER from '../../designSystem/header';
@@ -11,8 +11,8 @@ import HEADER from '../../designSystem/header';
 
 
 
-const Achievement = () => { 
-  const customAnimation = keyframes`
+const Achievement = () => {
+    const customAnimation = keyframes`
     from {
         opacity: 0;
         transform: translate3d(-200px, 0, 0);
@@ -34,7 +34,7 @@ const Achievement = () => {
         transform: translate3d(0, 0, 0);
     }
 `;
-  const [i, setI] = useState(1);
+    const [i, setI] = useState(1);
     const [scrolling, setScrolling] = useState(1)
     let l = achievement.length;
     const ReduceOne = () => {
@@ -66,26 +66,26 @@ const Achievement = () => {
                     <p>Achievements</p>
                     <hr/>
                 </span> */}
-                <HEADER text='Achievements'/>
+                <HEADER text='Achievements' />
             </Reveal>
             <div className='slider' >
                 <div className='discover-slide-track' >
                     {/* {achievement.map((index) => {
                     return (<> */}
                     <div className='achievment-slides'>
-                        <img src={achievement[i].url} />
-                        <div className='slide-box' style={{display:'flex', flexDirection:'column'}}>
+                        <img src={achievement[i].url} alt="discover" />
+                        <div className='slide-box' style={{ display: 'flex', flexDirection: 'column' }}>
                             <div className='slide-box-heading'>{achievement[i].title}</div>
                             <div className='slide-box-description'>{achievement[i].description}</div>
-                        </div> 
+                        </div>
                     </div>
                     {/* </>)
                     })} */}
                 </div>
             </div>
-            <hr className='line'/>
+            <hr className='line' />
         </div>
-  )
+    )
 }
 
 export default Achievement;

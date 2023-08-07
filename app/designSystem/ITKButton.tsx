@@ -22,6 +22,7 @@ const ITKButton: React.FC<ButtonProps> = ({ text, onClick, disabled, size }) => 
       className={className}
       onClick={onClick}
       disabled={disabled}
+      aria-disabled={disabled}
     >
       {text}
     </button>

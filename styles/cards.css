@@ -244,7 +244,7 @@
     flex-direction: row;
     width: 100%;
     height: fit-content;
-    justify-content: start;
+    justify-content: flex-start;
     flex-wrap: nowrap;
     align-items: center;
     overflow-x: scroll;
@@ -368,7 +368,7 @@
     padding: 20px 20px 0 20px;
     display: flex;
     flex-direction: row;
-    align-items: start;
+    align-items: flex-start;
     gap: 30px;
 }
 

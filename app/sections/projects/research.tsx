@@ -29,7 +29,7 @@ const Research = () => {
                         <TravelExploreOutlinedIcon style={{ marginLeft: "3px", marginBottom: "5px", fontSize: "32px" }} />
                     </span>
                 </Reveal>
-                <a href='https://iiitkalyani.ac.in/php/proj_spons.php' target='_blank' >
+                <a href='/research/sponsored_projects' >
                     <div className='MoreProjects ReadMore'>
                         {/* <ITKButton text="Read More" />  */}
                         <div className='view-more'>View More</div>
@@ -44,13 +44,22 @@ const Research = () => {
                                     <span className='card-heading-small'>{index.title}</span>
                                 </div>
                                 <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-                                    <span className='tag-pi'>Project Value : {index.value}</span>
-                                    <div className='sponsor-row'>
-                                        {index.sponsors.map((e) => {
+                                    {/* {index.value && <span className='tag-pi'>Project Value : {index.value}</span>} */}
+                                    {/* <div className='sponsor-row'>
+                                        {index.sponsors?.map((e) => {
                                             return (
                                                 <div className='sponsor-tag' key={e.id}>
                                                     <div className='tag-image' style={{ backgroundImage: `url('${e.img}')` }}></div>
                                                     {e.shortForm ? e.shortForm : e.name}
+                                                </div>
+                                            )
+                                        })}
+                                    </div> */}
+                                    <div className='sponsor-row'>
+                                        {index.paperlinks?.map((i) => {
+                                            return (
+                                                <div className='tag-pi mb-1' key={i.id}>
+                                                    <a href={i.url} className='flex' target={'_blank'} aria-label="Exteral link">External Link {i.id}</a>
                                                 </div>
                                             )
                                         })}

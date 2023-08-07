@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+.staff-outer-container {
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: row;
+}
+
+.staff-container {
+    max-width: 78vw;
+    margin: auto;
+    margin: 0 20px;
+}
+
+.staff-main-heading {
+    margin-top: 20px;
+}
+
+.staff-sub-header {
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-size: 30px;
+    font-weight: 600;
+    /* margin-left: 4vw; */
+    margin-top: 50px;
+    /* margin-left: 20px; */
+}
+
+.staff-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 30px;
+}
+
+.small-staff-cards {
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.employee-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 40px;
+    gap: 30px;
+}
