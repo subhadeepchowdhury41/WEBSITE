@@ -18,7 +18,7 @@ const GymkhanaData = [
                         url: '/gymkhana/SportsCricketGroup.webp'
                     },
                     {
-                        inedx: 2,
+                        index: 2,
                         url: '/gymkhana/SportsCricket3.webp',
                     }
                 ],

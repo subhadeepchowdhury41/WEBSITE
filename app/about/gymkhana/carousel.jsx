@@ -37,13 +37,14 @@ function Carousel(props) {
         return () => clearInterval(id)
     }, [AddOne]);
     useEffect(() => {
-        AddOne();
+        console.log('data changed')
+        setI(0)
     }, [props.carouselData])
     return (
         <div className="w-full flex items-center justify-center">
             <div
                 className={`relative w-full bg-gray-400 ${props.height === 'small' ? `h-[300px]` : 'h-adjust'} ${props.border === 'none' ? '' : 'rounded-2xl'}`}
-                style={{
+                style={props.carouselData[i] && {
                     backgroundImage: `url(${props.carouselData[i].url})`,
                     backgroundSize: "100% 100%",
                 }}
