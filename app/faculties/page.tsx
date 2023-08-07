@@ -3,8 +3,7 @@
 import NavBar from "../sections/appbar/secondNav";
 import Footer from '../sections/footer/footer';
 import facultyData from "./facultyData";
-import "../../styles/faculty/faculty.css";
-import "../../../styles/Academics/faculty/faculty.css";
+import "../../styles/Academics/faculty/faculty.css";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 
