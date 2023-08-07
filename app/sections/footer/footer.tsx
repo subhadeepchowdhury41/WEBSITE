@@ -178,7 +178,7 @@ export default function Footer() {
                     </li>
 
                     <li>
-                      <a href="http://iiitkalyani.ac.in/placement/" className="text-white-footer" target="blank">
+                      <a href="/placement-portal" className="text-white-footer">
                         Placement Portal
                       </a>
                       <hr className="hiddenLine" />
