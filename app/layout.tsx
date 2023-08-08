@@ -14,7 +14,7 @@ const RootLayout = ({
                 <meta name="Indian Institute of Information Technology, Kalyani" content="Official Website of IIIT Kalynai" />
                 <meta name="keywords" content="IIIT Kalyani, Indian Institute of Information Technology,Kalyani, Computer Science, Electronics, Electronics and Communication, Engineering, Telecommunication, Education, Research" />
                 <meta name="author" content="IIIT Kalyani" />
-                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
 
                 {/*Meta tags for Open Graph*/}
                 <meta property="og:title" content="IIIT Kalyani" />

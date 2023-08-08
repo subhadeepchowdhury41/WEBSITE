@@ -12,7 +12,7 @@ const images = [
 
 const About = () => {
   return (
-    <div id="about" class="about-section">
+    <div id="about" className="about-section">
       <div className="about-text">
         <h3 className="about-head">
           Indian Institute of Information Technology Kalyani

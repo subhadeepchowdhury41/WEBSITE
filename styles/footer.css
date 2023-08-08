@@ -11,7 +11,7 @@
 .footer-logo-block {
     display: flex;
     flex-direction: column;
-    width: 22vw;
+    width: 26vw;
 }
 
 .footer-logo-block h6 {
@@ -91,7 +91,7 @@
 
 .list-unstyled {
     list-style: none;
-    width: 26vw;
+    width: 24vw;
     margin-left: 4vw;
     margin-right: 4vw;
 }

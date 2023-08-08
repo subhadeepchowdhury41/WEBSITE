@@ -56,7 +56,7 @@ const App: React.FC = () => {
           <div className="content">
             <h1 className="aboutheading">About IIIT Kalyani</h1>
             {/* <hr /> */}
-            <img className="image" src="/images/webel.jpg" alt="IIIT Kalyani" />
+            <img className="image h-adj-aboutus " src="/images/webel.webp" alt="IIIT Kalyani" />
 
             <div>
               <p className="aboutparagraph">IIIT Kalyani strives to evolve into a world-class academic institution with the highest quality

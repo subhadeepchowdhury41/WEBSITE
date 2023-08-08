@@ -3,8 +3,16 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   experimental: {
-    appDir: true
-  }
-}
+    appDir: true,
+  },
+  // async rewrites() {
+  //   return [
+  //     {
+  //       source: "/",
+  //       destination: "/html/index.html",
+  //     },
+  //   ];
+  // },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

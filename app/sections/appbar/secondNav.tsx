@@ -148,7 +148,7 @@ const notifications = [
   {
     items: [
       { label: "E-Notice Board", link: "/e-notice-board" },
-      { label: "Archive", link: "https://iiitkalyani.ac.in/php/archive.php" },
+      { label: "Archive", link: "/archive/archive.html" },
     ],
   }
 ]
@@ -164,7 +164,7 @@ const mobileMenu = [
       { label: "Students", index: 6, submenu: students },
       { label: "Career", index: 7, submenu: career },
       { label: "Placements", index: 8, submenu: placements },
-      { label: "Notifications", index: 8, submenu: notifications },
+      { label: "Notifications", index: 9, submenu: notifications },
     ],
   },
 ];
