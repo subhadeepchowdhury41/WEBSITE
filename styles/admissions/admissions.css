@@ -1,7 +1,7 @@
 .card-container {
     height: fit-content;
     /* width: 55vw; */
-    /* box-shadow: 0 0 5px #CFB2B2; */
+    box-shadow: 0 0 5px #CFB2B2;
     border-radius: 5px;
     margin: 15px;
 }

@@ -78,7 +78,7 @@ const page = () => {
                             <div className="details">
                               {e.details.map((i)=>{
                                 return(
-                                  <>{i.label} <br /></>
+                                  <React.Fragment key={i.id}>{i.label} <br /></React.Fragment>
                                 )
                               })}
                             </div>
@@ -90,7 +90,7 @@ const page = () => {
         <div className="btn-reg" style={{margin:'3%'}}>
           {datapdf.map((p) => {
                         return (
-                          <a href={p.link} target="_blank" style={{padding:"10px"}}><PictureAsPdfIcon/> {p.name} </a>
+                          <a key={p.id} href={p.link} target="_blank" rel='noreferrer' style={{padding:"10px"}}><PictureAsPdfIcon/> {p.name} </a>
                         );
                     })}
         </div>
@@ -103,7 +103,7 @@ const page = () => {
           <div className="lists">
           <ol>
             <li>Dept : Computer Science and Engineering</li>
-            <li><a href="https://scholar.google.co.in/citations?user=yKaKpWYAAAAJ&hl=en" target={'_blank'}> <AccountCircleIcon/> Profile</a></li>
+            <li><a href="https://scholar.google.co.in/citations?user=yKaKpWYAAAAJ&hl=en" target={'_blank'} rel='noreferrer'> <AccountCircleIcon/> Profile</a></li>
             <li><a href = "mailto: oishila@iiitkalyani.ac.in"> <EmailIcon/>oishila@iiitkalyani.ac.in</a></li>
           </ol>
           </div>

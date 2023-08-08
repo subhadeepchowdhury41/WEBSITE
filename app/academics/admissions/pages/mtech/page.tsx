@@ -1,118 +1,65 @@
 'use client'
-import '../../../../../styles/admissions/admissions.css'
 import React from 'react';
 import NavBar from '../../../../sections/appbar/secondNav';
 import Footer from '../../../../sections/footer/footer';
-import Sidebar from '../../../../designSystem/sidebar';
-import HEADER from '../../../../designSystem/header';
-
-const array = [
-  {
-    headings: [
-      { label: "B.Tech Admissions", id: 1 },
-      { label: "M.Tech Admissions", id: 2 },
-      { label: "Ph.D Admissions", id: 3 },
-    ],
-  },
-  {
-    subheadings: [
-      {
-        label: "Admission details",
-        link: "",
-      },
-      {
-        label: "Admission form",
-        link: "",
-      },
-      {
-        label: "Annexure 7",
-        link: "",
-      },
-    ],
-  },
-  {
-    subheadings: [
-      {
-        label: "Executive M.Tech Admission - 2023",
-        link: "",
-      },
-      {
-        label: "CEP Admission 2023",
-        link: "",
-      },
-      {
-        label: "Application Form",
-        link: "",
-      },
-    ],
-  },
-  {
-    subheadings: [
-      {
-        label: "Year: 2021",
-        link: "",
-      },
-      {
-        label: "Admission details",
-        link: "",
-      },
-    ],
-  },
-
-];
+import '../../../../../styles/phdadmission/phdadmission.css'
 
 const MtechAdmissions = () => {
 
   return (
     <>
       <NavBar />
-      <div className="admissions-container">
-        <Sidebar location='Academics > Admissions' page="Admissions" array={array} />
-        <div className="mtech-container">
-          <HEADER text='Executive M.Tech Admissions: 2023' />
-          <div className="specialization">
-            (Specialization: Artificial Intelligence and Data Science)
+      <div className='flex-set main-container'>
+        <h1>Executive M.Tech Admissions: 2023 <hr /> </h1>
+        <h2 style={{fontSize:'max(1.1vw,1.7vh)'}}>(Specialization: Artificial Intelligence and Data Science)</h2>
+        <div className='main-content'>
+          <h2>M.Tech Admission Incharge</h2>
+          <h4>Dr. Sanjoy Pratihar</h4>
+          <div className="lists">
+            <ol>
+              <h6>Ph. 9862346244</h6>
+              <h6>Email id: cep@iiitkalyani.ac.in </h6>
+            </ol>
           </div>
-          <div className="admin-incharge">
-            <div className="admin-heading">M.Tech Admission Incharge</div>
-            <div className="admin-name"><a href="https://iiitkalyani.ac.in/php/facultymainpage/sp.html?" target='_blank' rel='noreferrer'>Dr. Sanjoy Pratihar</a></div>
-            <div className="admin-details">
-              Ph. 9862346244<br />
-              Email id:<br />
-              cep@iiitkalyani.ac.in<br />
-            </div>
+        </div>
+        <div className='main-content'>
+          <h2>Admission Process</h2>
+          <h4>1. Fill the <a className='admission-form-pdf' href='/admissions/pdfs/mtech/Executive-MTech-Admission-Form-2023.pdf' target='_blank' rel='noreferrer'>Admission Form</a></h4>
+          <h4>2. The candidates need to pay the Institute fees as shown below for the July-Dec, 2023 semester</h4>
+          <div className="lists" style={{textAlign:'justify'}}>
+            <ol >
+              <li>a. Semester registration fee: INR 10000</li>
+              <li>b. Registration fee for two theory courses (3+3: 6 credits): 6 X INR 5000 = INR 30000</li>
+              <li>c. Registration fee for sessional paper (2 credits): 2 X INR 3000 = INR 6000</li>
+            </ol>
           </div>
-          <div className="process">
-            Admission Process:
+          <div className="lists" style={{textAlign:'justify'}}>
+            <ol>
+              <li>Total: (a) + (b) + (c) = INR 46000</li>
+            </ol>
           </div>
-          <div className="mtech-details">
-            <div className="details-item">
-              <div className='item-heading'>1. Fill the <a className='admission-form' href='http://iiitkalyani.ac.in/images/Executive-MTech-Admission-Form-2023.pdf' target='_blank' rel='noreferrer'>Admission Form</a></div>
-            </div>
-            <div className="details-item">
-              <div className='item-heading'>2. The candidates need to pay the Institute fees as shown below for the July-Dec, 2023 semester:</div><br />
-              a. Semester registration fee: INR 10000<br />
-              b. Registration fee for two theory courses (3+3: 6 credits): 6 X INR 5000 = INR 30000<br />
-              c. Registration fee for sessional paper (2 credits): 2 X INR 3000 = INR 6000<br /><br />
-
-              Total: (a) + (b) + (c) = INR 46000<br /><br />
-
-              Account information for payment:<br />
-              Account Name: CONTINUING EDUCATION PROGRAMME (CEP) IIIT KALYANI<br />
-              Account Number: 40031861091<br />
-              IFSC Code: SBIN0006701<br />
-            </div>
-            <div className="details-item">
-              <div className='item-heading' id='item-3'>3. Send the filled-in admission form along with the payment receipts and self attested documents over email to:</div><br /> cep@iiitkalyani.ac.in with cc to arf@iiitkalyani.ac.in, debottam@iiitkalyani.ac.in as <div className='details-imp'>a single PDF on or before July 26, 2023.</div>
-            </div>
-            <div className="details-item">
-              <div className='item-heading'>4. Documents required (self attested):</div><br />
-              i. Class 10 marksheet / certificate<br />
-              ii. Class 10+2 marksheet / certificate<br />
-              iii. B.Tech/B.E./MSc/MS/MCA or equivalent (as written in the application form): Final Semester marksheet / certificate<br />
-              iv. Copy of Aadhaar card<br />
-            </div>
-
+          <div className="lists" style={{textAlign:'justify'}}>
+            <ol>
+              <h4>Account information for payment</h4>
+              <li>1. Account Name: CONTINUING EDUCATION PROGRAMME (CEP) IIIT KALYANI</li>
+              <li>2. Account Number: 40031861091</li>
+              <li>3. IFSC Code: SBIN0006701</li>
+            </ol>
+          </div>
+          <h4>3. Send the filled-in admission form along with the payment receipts and self attested documents over email to : </h4>
+          <div className="lists" style={{textAlign:'justify'}}>
+            <ol>
+              <li>cep@iiitkalyani.ac.in with cc to arf@iiitkalyani.ac.in, debottam@iiitkalyani.ac.in as <strong>a single PDF on or before July 26, 2023.</strong> </li>
+            </ol>
+          </div>
+          <h4>4. Documents required (self attested):</h4>
+          <div className="lists" style={{textAlign:'justify'}}>
+            <ol>
+              <li>1. Class 10 marksheet / certificate</li>
+              <li>2. Class 10+2 marksheet / certificate</li>
+              <li>3. B.Tech/B.E./MSc/MS/MCA or equivalent (as written in the application form): Final Semester marksheet / certificate</li>
+              <li>4. Copy of Aadhaar card</li>
+            </ol>
           </div>
         </div>
       </div>
