@@ -13,15 +13,6 @@ const downloads = () => {
         <div className="container">
           <div className="iiitppp">
             &nbsp;
-            {/*<div class="notificationmenu">
-    <ul class="nav nav-pills pull-right">
-  <li class="active"><a href="#phd">Phd Admission</a></li>
-  <li><a href="#Studentnotice">Student Notice</a></li>
-  <li><a href="#Recruitment">Recruitment</a></li>
-     <li><a href="#Tender">Tender</a></li>
-    </ul>
-    
-</div>*/}
             <h1>Archives</h1>
             <br />
             *** Old Notifications ***

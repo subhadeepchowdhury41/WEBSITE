@@ -53,7 +53,7 @@ export default function Footer() {
         <div className="container">
           {/* <!-- Section: Social media --> */}
           <section className="footer-logo-block">
-            <Reveal keyframes={customAnimation}>
+            <Reveal keyframes={customAnimation} triggerOnce>
               <div className="footer-logo-div">
                 <Image className="footer-logo" src={logo} alt="logo" />
                 <div className="footer-logo-name">
