@@ -54,10 +54,10 @@ function ProgramPage() {
                 </div>
                 <div className={`flex-[2] w-full h-[100vh] bg-[rgb(245,235,209)] flex flex-col gap-1 p-[16px] ${windowWidth < 1200 ? 'relative top-0' : 'sticky top-[70px]'}`}>
                     <div className='font-semibold text-[26px] '>Resources</div>
-                    {matchingItem?.resources?.map((index) => {
+                    {matchingItem?.resources?.map((index, i) => {
                         return (
                             // <a href={index.url} target="_blank" rel="noopener noreferrer">
-                            <div style={{ cursor: "pointer" }} onClick={() => handleButtonClick(index.url)} className='border border-black p-[4px] my-1 rounded-[5px]'>{index.heading}</div>
+                            <div key={i} style={{ cursor: "pointer" }} onClick={() => handleButtonClick(index.url)} className='border border-black p-[4px] my-1 rounded-[5px]'>{index.heading}</div>
                             // </a>
                         )
                     })}
