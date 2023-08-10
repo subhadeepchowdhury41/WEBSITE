@@ -56,7 +56,7 @@
     height: fit-content;
     min-height: 450px;
     flex-direction: row;
-    background: rgb(254, 243, 222);
+    margin-top: 5vh;
 }
 
 .row1-card1 {
@@ -118,7 +118,7 @@
 }
 
 .card1-scroll {
-    max-height: 248px;
+    max-height: 244px;
     overflow-y: hidden;
     text-align: justify;
 }

@@ -15,8 +15,8 @@ const HomePage = () => {
             <PayButton />
             <Carousel />
             {/* <Events /> */}
-            <Discover />
             <DirectorsMessage />
+            <Discover />
             <Research />
             <EventSection />
             <Achievements />
