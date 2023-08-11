@@ -25,21 +25,22 @@ const customAnimation = keyframes`
 
 const DirectorsMessage = () => {
     let card1ImageLink = '/images/director.webp'
+    const [scrolling, setScrolling] = useState(1);
     const [seconds, setSeconds] = useState(1);
     const [i, setI] = useState(1);
     useEffect(() => {
         const interval = setInterval(() => {
             setSeconds(seconds => seconds + 1);
             AddOne();
-        }, 3000);
+        }, 1000);
         return () => { clearInterval(interval) };
     }, [seconds]);
     let l = announcement.length;
     const AddOne = () => {
-        if (i === l - 2)
+        if (i === l - 2 && scrolling === 1)
             setI(1);
-        else
-            setI(i + 1);
+        else if(scrolling === 1)
+            setI(i + 1 );
     }
     return (
         <div>
@@ -76,7 +77,7 @@ const DirectorsMessage = () => {
                     <div className='announcement-container scrollOff'>
                         {announcement.map((index) => {
                             return (
-                                <div key={index.id}>
+                                <div key={index.id} onMouseEnter={() => { setScrolling(0) }} onMouseLeave={() => { setScrolling(1) }}>
                                     <div className='announcement-tab' style={{ transform: `translate(0px,${-100 * i}px)` }}>
                                         <div className='announcement-heading card-heading-medium'><a target='_blank' href={index.description} >{index.title}</a></div>
                                     </div>

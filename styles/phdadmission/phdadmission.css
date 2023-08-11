@@ -1,6 +1,5 @@
 .flex-set{
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
 }
@@ -20,7 +19,6 @@
     border: 2px solid #82cff5;
     border-radius: 10px;
     background-color:whitesmoke;
-    box-shadow: 9px 9px 18px #93c2d9, -9px -9px 18px #c7ffff;
 }
 .main-content h2{
     font-size: max(2.5vh,2vw);
@@ -28,7 +26,6 @@
     padding: 1%;
     border-radius: 5px;
     width: fit-content;
-    /* background-color: rgb(154, 230, 255); */
 }
 .main-content h4{
     font-size: max(1.8vh,1.3vw);
@@ -49,7 +46,6 @@
     display: flex;
     padding: 1%;
     padding-left:5%;
-    /* justify-content: center; */
     font-size: max(1.6vh,1.05vw);
     font-weight: 400;
     margin: 0.5%;
@@ -109,6 +105,17 @@
     background-color: whitesmoke;
     color: black;
 }
+
+.admission-form-pdf{
+    background-color:  #98d8f8;
+    padding: 0.5%;
+    border-radius: 5px;
+    transition: all .3s;
+}
+.admission-form-pdf:hover{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
 @media (max-width:1000px) {
     .main-content{
         width: 90%;

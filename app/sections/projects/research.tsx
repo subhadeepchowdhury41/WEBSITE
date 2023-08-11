@@ -25,7 +25,7 @@ const Research = () => {
             <div className='row2-card'>
                 <Reveal keyframes={customAnimation} triggerOnce>
                     <span className='card-heading'>
-                        Research
+                        Ongoing Projects
                         <TravelExploreOutlinedIcon style={{ marginLeft: "3px", marginBottom: "5px", fontSize: "32px" }} />
                     </span>
                 </Reveal>
