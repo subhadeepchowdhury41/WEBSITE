@@ -100,6 +100,24 @@ const allFacultiesData = [
                         link:''
                     }
                 ]
+            },
+            {
+                HeadingElement:'Suggested Links and Downloads',
+                subHeading:'',
+                elements:[
+                    {
+                        elementData:'Data Structure',
+                        link:''
+                    },
+                    {
+                        elementData:'Course 2',
+                        link:''
+                    },
+                    {
+                        elementData:'Course 3',
+                        link:''
+                    }
+                ]
             }
         ]
     },
@@ -1167,6 +1185,24 @@ const allFacultiesData = [
                         link:''
                     }
                 ]
+            },
+            {
+                HeadingElement:'Suggested Links and Downloads',
+                subHeading:'',
+                elements:[
+                    {
+                        elementData:'Machine Learing',
+                        link:''
+                    },
+                    {
+                        elementData:'Industrial Prog. Lab',
+                        link:''
+                    },
+                    {
+                        elementData:'FLAT',
+                        link:''
+                    }
+                ]
             }
         ]
     },
@@ -1313,6 +1349,24 @@ const allFacultiesData = [
                         link:'https://clarivate.com/products/scientific-and-academic-research/research-discovery-and-workflow-solutions/researcher-profiles/'
                     }
                 ]
+            },
+            {
+                HeadingElement:'Suggested Links and Downloads',
+                subHeading:'',
+                elements:[
+                    {
+                        elementData:'Computer Networks',
+                        link:''
+                    },
+                    {
+                        elementData:'Computer Networks Lab',
+                        link:''
+                    },
+                    {
+                        elementData:'Course 3',
+                        link:''
+                    }
+                ]
             }
         ]
     },
@@ -1337,7 +1391,7 @@ const allFacultiesData = [
             }
         ],
         moreInfoLink:'https://www.researchgate.net/profile/Sudeshna-Mondal',
-        cv:'',
+        cv:'https://scholar.google.com/citations?user=J%20AarooAAAAJ',
         mainData:[
             {
                 HeadingElement:'Recent Publications',
