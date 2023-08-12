@@ -1,8 +1,14 @@
-import React from "react";
+"use client";
+
+import React, { useEffect } from "react";
 import educationProgram from "../sections/cardSection/educationProgram";
 import "./page.css";
 
 const page = () => {
+  useEffect(() => {
+    document.title =
+      "CEP | Indian Institute of Information Technology, Kalyani";
+  }, []);
   return (
     <div className="announcement-page">
       <h1>All Programs</h1>

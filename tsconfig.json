@@ -35,7 +35,7 @@
     "app/about/gallery/sidebar.jsx",
     "app/about/gallery/iiitkalyanionlineevents/page.tsx",
     "app/about/gymkhana/carousel.jsx"
-, "app/placement-portal/components/ImageCarousel.jsx", "api/server.jsx", "app/test/page.jsx", "app/announcements/page.jsx"  ],
+, "app/placement-portal/components/ImageCarousel.jsx", "api/server.jsx", "app/announcements/page.jsx"  ],
   "exclude": [
     "node_modules"
   ]
