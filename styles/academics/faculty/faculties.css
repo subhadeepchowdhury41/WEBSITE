@@ -10,68 +10,87 @@
     width: 100%;
     height: fit-content;
     flex-direction: column;
-    padding-top: 150px;
+    padding: 1%;
+}
+.fac-info{
+    width: 90%;
+    background-color: #fff5df;
+    height: fit-content;
+    margin: 1%;
+    padding: 1%;
+    justify-content: flex-start;
+    border-radius: 5px;
 }
 .card {
-    width: 13%;
-    min-width: 200px;
+    width: 15%;
+    min-width: 120px;
     aspect-ratio: 1/1;
     border-radius: 50%;
     background: #ffffff;
     padding: 0.5%;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 .card .card-image{
     border-radius: 50%;
     width: 100%;
     height: 100%;
 }
-.fac-main{
-    width: 80%;
-    height: fit-content;
-    min-height: min(50vh,450px);
-    border-radius: 10px;
-    border: 1px solid rgb(110, 197, 240);
-    padding: 1% 1% 1% 1%;
-    margin: 0% 1% 1% 1%;
-    flex-direction: column;
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-}
 .profile-detail{
     flex-direction: column;
-    width: 80%;
+    width: fit-content;
     height: fit-content;
-    margin: 2%;
+    align-items: flex-start;
+    margin-left: 2%;
 }
 .profile-detail h1{
     font-weight: 600;
-    font-size: max(1.2vw,2vh);
+    font-size: max(1.7vw,2vh);
+    margin-bottom: 1%;
 }
 .profile-detail p{
     font-size: max(1vw,1.3vh);
-    width: 100%;
     height: fit-content;
     text-align: center;
-    margin-bottom: 0.5%;
+    margin-bottom: 1%;
 }
 .profile-icon{
     font-size: max(1.6vw,1.8vh);
     cursor: pointer;
 }
+.fac-main{
+    width: 90%;
+    height: fit-content;
+    border-radius: 10px;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 .res-int{
-    width: 95%;
+    width: 21%;
+    min-width: 280px;
+    flex-direction: row;
+    background-color: #f4f4f4;
     height: fit-content;
     flex-wrap: wrap;
+    margin-bottom: 2%;
+    padding-left: 1%;
+    border-radius: 5px;
+}
+.res-int-main{
+    width: 76%;
+    flex-direction: row;
+    height: fit-content;
+    background-color: #f4f4f4;
+    flex-wrap: wrap;
+    border-radius: 5px;
 }
 .inter-details{
-    width: 25%;
-    min-width: 200px;
-    margin: 2%;
-    padding: 3%;
+    width: 100%;
+    min-width: 300px;
+    margin: 1%;
+    padding: 5%;
     border-radius: 10px;
-    justify-content: left;
     flex-direction: column;
-    box-shadow:  9px 9px 18px #93c2d9, -9px -9px 18px #c7ffff;
 }
 .inter-details h1{
     font-weight: 500;
@@ -80,8 +99,8 @@
     border-bottom: 1px solid rgb(0, 179, 255);
 }
 .inter-details ul{
-    font-size: max(1vw,1.35vh);
-    width: 90%;
+    font-size: max(.8vw,1.35vh);
+    width: 100%;
     margin: 3%;
 }
 .f-d-c{
@@ -93,26 +112,19 @@
 .pad{
     padding: 1%;
 }
-.publi-btns{
-    width: 80%;
-    height: 100px;
-}
-.publi-bt{
-    width: 50%;
-    height: fit-content;
-    background-color: #bebebe;
-    font-size: max(1vw,1.4vh);
+.btns-grp{
+    justify-content: flex-start;
 }
 .publi{
-    width: 100%;
+    width: 97%;
     height: fit-content;
-    border: 2px solid rgb(96, 210, 255);
     border-radius: 10px;
     justify-content: left;
+    padding: 1% 2% 1% 2%;
 }
 .publi h1{
     font-weight: 500;
-    border-bottom: 2px solid rgb(96, 210, 255);
+    border-bottom: 1px solid rgb(96, 210, 255);
     font-size: max(1vw,1.4vh);
     width: 100%;
 }
@@ -143,12 +155,13 @@
     font-weight: 500;
     letter-spacing: 0.4px;
     color: #7e97b8;
-    background-color: #e0e8ef;
-    border: 2px solid rgba(68, 132, 162, 0.374);;
+    background-color: #ffe59f;
+    border: 2px solid rgba(255, 219, 17, 0.374);;
     border-radius: 5px;
     padding: 0.5% 5% 0.5% 5%;
+    margin-right: 2%;
 }
-   
+
 .btn:hover {
     background-color: #ffffff;
     box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgb(95 157 231 / 48%);
@@ -156,4 +169,22 @@
    
 .btn:active {
     box-shadow: none;
+}
+@media screen and (max-width:1200px){
+    .fac-main{
+        justify-content: center;
+    }
+    .profile-detail{
+        align-items: center;
+    }
+    .btns-grp{
+        justify-content: center;
+    }
+    .res-int{
+        width: 100%;
+    }
+    .res-int-main{
+        width: 100%;
+    }
+
 }
