@@ -79,7 +79,7 @@ const Placement = () => {
       <div className="placement-box">
         <div className="placement-stats">
           <div className="placement-stats-card">
-            <span className="stats-header">Placement Statistics - 2023</span>
+            <div className="stats-header">Placement Statistics - 2023</div>
             <div className="stats-item" style={{ backgroundColor: "#14AAA3" }}>
               <div>
                 <span>No. of Students Registered</span>
@@ -125,8 +125,7 @@ const Placement = () => {
           </div>
         </div>
         <div className="charts">
-          {!isMobile ? <Bar className="graph" options={options} data={data} /> :
-            <img src="/img/graph.png" alt="graph" />}
+          {!isMobile ? <div><Bar className="graph" options={options} data={data} /> </div> : <div><img src="/img/graph.png" alt="" /></div>}
         </div>
       </div>
       <div className="record-buttons">
