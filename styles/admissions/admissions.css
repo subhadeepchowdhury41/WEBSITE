@@ -1,9 +1,14 @@
 .card-container {
     height: fit-content;
     /* width: 55vw; */
-    box-shadow: 0 0 5px #CFB2B2;
+    /* box-shadow: 0 0 5px #CFB2B2; */
     border-radius: 5px;
     margin: 15px;
+}
+
+.admissions-container {
+    width: 90%;
+    margin: 5vh auto;
 }
 
 .card-header {
@@ -28,7 +33,7 @@
     align-items: center;
     justify-content: center;
     margin: auto;
-    width: 95vw;
+    width: 100%;
     /* margin-left: 50px; */
 }
 
