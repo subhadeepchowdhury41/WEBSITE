@@ -39,8 +39,8 @@ const DirectorsMessage = () => {
     const AddOne = () => {
         if (i === l - 2 && scrolling === 1)
             setI(1);
-        else if(scrolling === 1)
-            setI(i + 1 );
+        else if (scrolling === 1)
+            setI(i + 1);
     }
     return (
         <div>
@@ -60,7 +60,7 @@ const DirectorsMessage = () => {
                         </div>
                         <div className='card1-inner-col2'>
                             <div className='card1-scroll'><span className='card1-message'>{message}</span></div>
-                            <a href="/director_desk">
+                            <a href="/director_desk" target='_blank'>
                                 {/* <ITKButton text="Read More" /> */}
                                 <div className='view-more' style={{ marginTop: '10px' }}>View More</div>
                             </a>
@@ -69,17 +69,23 @@ const DirectorsMessage = () => {
                 </div>
                 <div className='row1-card2'>
                     <Reveal keyframes={customAnimation} triggerOnce delay={500}>
-                        <span className='card-heading'>
-                            Announcements
-                            <CampaignOutlinedIcon style={{ marginLeft: "7px", fontSize: "35px", marginBottom: "5px" }} />
-                        </span>
+                        <div style={{ display: "flex", justifyContent: "space-between" }}>
+                            <span className='card-heading'>
+                                Announcements
+                                <CampaignOutlinedIcon style={{ marginLeft: "7px", fontSize: "35px", marginBottom: "5px" }} />
+                            </span>
+                            <a href="/announcements" target='_blank'>
+                                {/* <ITKButton text="Read More" /> */}
+                                <div className='view-more' style={{ marginTop: '10px' }}>View More</div>
+                            </a>
+                        </div>
                     </Reveal>
                     <div className='announcement-container scrollOff'>
                         {announcement.map((index) => {
                             return (
                                 <div key={index.id} onMouseEnter={() => { setScrolling(0) }} onMouseLeave={() => { setScrolling(1) }}>
-                                    <div className='announcement-tab' style={{ transform: `translate(0px,${-100 * i}px)` }}>
-                                        <div className='announcement-heading card-heading-medium'><a target='_blank' href={index.description} >{index.title}</a></div>
+                                    <div className='announcement-tab' style={{ transform: `translate(0px,${-75 * i}px)` }}>
+                                        <div className='announcement-heading'><a target='_blank' href={index.description} >{index.title}</a></div>
                                     </div>
                                 </div>
                             )

@@ -17,7 +17,7 @@ const HomePage = () => {
             {/* <Events /> */}
             <DirectorsMessage />
             <Discover />
-            <Research />
+            {/* <Research /> */}
             <EventSection />
             <Achievements />
             <Footer />

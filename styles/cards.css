@@ -56,7 +56,8 @@
     height: fit-content;
     min-height: 450px;
     flex-direction: row;
-    margin-top: 5vh;
+    padding-top: 5vh;
+    background: rgb(254, 243, 222);
 }
 
 .row1-card1 {
@@ -75,11 +76,10 @@
 
 .card1-image {
     margin-top: 20px;
-    height: 200px;
+    height: 250px;
     width: 90%;
     border: 0.87px solid rgb(162, 156, 156);
     border-radius: 5px;
-
     margin: 20px 0 20px 0;
     background-size: cover;
     background-position: center;
@@ -118,7 +118,7 @@
 }
 
 .card1-scroll {
-    max-height: 244px;
+    max-height: 315px;
     overflow-y: hidden;
     text-align: justify;
 }
@@ -129,7 +129,7 @@
 
 .announcement-container {
     margin-top: 20px;
-    max-height: 290px;
+    max-height: 365px;
     overflow-y: scroll;
     overflow-x: hidden;
     padding-top: 5px;
@@ -147,18 +147,18 @@
 .announcement-tab {
     /* transform: translate(0,-250px); */
     transition: all 1s;
-
     width: 98%;
-    height: 80px;
-    padding: 20px;
+    height: 55px;
+    padding: 10px;
     margin: auto;
     background: white;
     /* border: 0.8px solid rgb(150, 149, 149); */
-    box-shadow: 0px 0px 2px rgb(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 3px rgb(0, 0, 0, 0.5);
     margin: 0 20px 20px 5px;
-    border-radius: 5px;
+    border-radius: 7px;
     display: flex;
     align-items: center;
+    font-size: 15px;
     /* background: linear-gradient(to left, transparent 0%, #FFFFE8 100%); *
     /* border-radius: 20px 0 20px 0; */
 }
