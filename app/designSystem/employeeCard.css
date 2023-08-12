@@ -1,63 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap');
 
 
-.employee-card{
-    width: 16vw;
-    min-width: 220px;
-    height: fit-content;
+.employee-card {
+    width: 30%;
+    height: 100%;
     box-shadow: 0 0 5px grey;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    /* margin-bottom: 20px; */
-    margin-top: 20px;
-    margin-left: 5px;
-    /* margin-bottom: 20px; */
-    margin-right: 5px;
+    /* justify-content: center; */
+    margin: 1.6%;
     border-radius: 1rem;
+    height: auto;
     background-color: rgb(255, 255, 255);
+    position: relative;
+    padding: 2%;
+    transition: all 0.2s ease-in;
 }
-hr{
-    width: 25vw;
-    /* max-width: 190px; */
-    margin-bottom: 20px;
-    height: 2px;
-    background-color: (99, 50, 50);
-}
-.employee-dp img{
-    height: 200px;
+
+
+.employee-dp img {
     width: 100%;
+    aspect-ratio: 1/1;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
 }
-.employee-details{
-    height: fit-content;
-    margin-top: 10px;
-    margin-left: 5px;
-    margin-right: 5px;
+
+.employee-details {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 2vh;
 }
-.employee-name{
+
+.employee-name {
     font-size: 18px;
     font-weight: bold;
-    font-family: 'Lumanosimo', cursive;
 }
-.employee-position{
+
+.employee-card:hover {
+    transform: scale(1.05);
+}
+
+.employee-position {
     font-size: 16px;
     font-weight: bold;
-    justify-content: center;
+    color: grey;
 }
-.employee-position>p{
-    text-align: center;
+
+.employee-email {
+    position: absolute;
+    top: 9%;
+    right: 9%;
 }
-.employee-name>p{
-    text-align: center;
+
+.employee-email:hover {
+    color: red;
 }
-.employee-email{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 20px;
+
+@media (max-width:650px) {
+    .employee-card {
+        width: 45%;
+        margin: 2.5%;
+        padding: 3%;
+    }
 }
-.employee-email>p{
-    text-align: center;
-    margin-left: 5px;
+
+@media (max-width:550px) {
+    .employee-card {
+        width: 70%;
+        padding: 5%;
+    }
 }

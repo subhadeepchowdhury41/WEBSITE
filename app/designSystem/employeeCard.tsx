@@ -3,43 +3,36 @@ import "./employeeCard.css";
 import EmailIcon from '@mui/icons-material/Email';
 
 interface EmployeeProps {
-  name: string;
-  position: string;
-  email: string;
-  dp: string;
+    name: string;
+    position: string;
+    email: string;
+    dp: string;
 }
 
 const EmployeeCard: React.FC<EmployeeProps> = ({ name, position, email, dp }) => {
-  let className = "employee-card";
+    let className = "employee-card";
 
-  return (
-    // <a href={site} target="_blank" rel="noreferrer" className="employee-card">
+    return (
+        // <a href={site} target="_blank" rel="noreferrer" className="employee-card">
         <div className="employee-card">
             <div className="employee-dp">
                 <img src={dp} alt={name} />
             </div>
-            <hr />
             <div className="employee-details">
                 <div className="employee-name">
-                    <p>
-                        {name}
-                    </p>
+                    {name}
                 </div>
                 <div className="employee-position">
-                    <p>
-                        {position}
-                    </p>
+                    {position}
                 </div>
                 <div className="employee-email">
-                    <EmailIcon/>
-                    <p>
-                        {email}
-                    </p>
+                    <a href={`mailto:${email}`}>
+                        <EmailIcon />
+                    </a>
                 </div>
             </div>
-        </div>
-    // </a>
-  );
+        </div >
+    );
 };
 
 export default EmployeeCard;
