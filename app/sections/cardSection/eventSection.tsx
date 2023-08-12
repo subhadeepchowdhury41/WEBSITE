@@ -10,6 +10,8 @@ import PaymentsIcon from '@mui/icons-material/Payments';
 import { useState, useEffect } from 'react';
 import events from './events';
 
+
+
 const EventSection = () => {
     const customAnimation = keyframes`
     from {
@@ -74,6 +76,29 @@ const EventSection = () => {
     }, [seconds]);
 
     const [scrolling, setScrolling] = useState(1);
+
+    // ==========================================================================
+
+    const [scroll, setScroll] = useState(1);
+    const [second, setSecond] = useState(1);
+    const [j, setJ] = useState(1);
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setSecond(second => second + 1);
+            addOne();
+        }, 1000);
+        return () => { clearInterval(interval) };
+    }, [second]);
+    let len = educationProgram.length;
+    const addOne = () => {
+        if (j === len - 2 && scroll === 1)
+            setJ(1);
+        else if (scroll === 1)
+            setJ(j + 1);
+    }
+
+    // ==========================================================================
+
     return (
         <div className="card-row3">
             <div className='row3-card1' style={windowWidth > 1500 ? { width: '600px' } : { width: '100%' }}>
@@ -87,8 +112,8 @@ const EventSection = () => {
 
                     {educationProgram.map((index) => {
                         return (
-                            <div key={index.id}>
-                                <div className='announcement-tab cep'>
+                            <div key={index.id} onMouseEnter={() => { setScroll(0) }} onMouseLeave={() => { setScroll(1) }}>
+                                <div className='announcement-tab cep' style={{ transform: `translate(0px,${-75 * i}px)` }}>
                                     <div className='announcement-heading card-heading-small'><a target='_blank' href={index.url} rel="noreferrer" >{index.title}</a></div>
                                 </div>
                             </div>
