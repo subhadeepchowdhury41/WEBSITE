@@ -86,13 +86,13 @@ const EventSection = () => {
         const interval = setInterval(() => {
             setSecond(second => second + 1);
             addOne();
-        }, 1000);
+        }, 3000);
         return () => { clearInterval(interval) };
     }, [second]);
     let len = educationProgram.length;
     const addOne = () => {
-        if (j === len - 2 && scroll === 1)
-            setJ(1);
+        if (j === len - 3 && scroll === 1)
+            setJ(0);
         else if (scroll === 1)
             setJ(j + 1);
     }
@@ -113,14 +113,20 @@ const EventSection = () => {
                     {educationProgram.map((index) => {
                         return (
                             <div key={index.id} onMouseEnter={() => { setScroll(0) }} onMouseLeave={() => { setScroll(1) }}>
-                                <div className='announcement-tab cep' style={{ transform: `translate(0px,${-75 * i}px)` }}>
+                                <div className='announcement-tab cep' style={{ transform: `translate(0px,${-75 * j}px)` }}>
                                     <div className='announcement-heading card-heading-small'><a target='_blank' href={index.url} rel="noreferrer" >{index.title}</a></div>
                                 </div>
                             </div>
                         )
                     })}
 
+
+                    <a href='/cep' rel="noreferrer" target='_blank'>
+                        {/* <ITKButton text="View All Events" />  */}
+                        <div className='view-more' style={{ width: "fit-content" }}>View All</div>
+                    </a>
                 </div>
+
 
             </div>
             <div className='row3-card2'>
@@ -156,6 +162,7 @@ const EventSection = () => {
                 </div>
 
             </div>
+
         </div>
 
     )

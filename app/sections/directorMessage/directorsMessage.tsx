@@ -76,7 +76,7 @@ const DirectorsMessage = () => {
                             </span>
                             <a href="/announcements" target='_blank'>
                                 {/* <ITKButton text="Read More" /> */}
-                                <div className='view-more' style={{ marginTop: '10px' }}>View More</div>
+                                <div className='view-more' style={{ marginTop: '10px' }}>View All</div>
                             </a>
                         </div>
                     </Reveal>
