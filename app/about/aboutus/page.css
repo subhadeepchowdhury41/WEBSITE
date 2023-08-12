@@ -112,7 +112,7 @@
 
 .travel {
     /* background-color: wheat; */
-    box-shadow: 0 0 5px grey;
+    box-shadow: 0 0 5px skyblue;
     margin: 15px auto;
     padding: 25px;
     border-radius: 10px;
@@ -129,7 +129,7 @@
     font-size: 18px;
     font-weight: 400;
     background-color: rgb(255, 255, 255, 0.8);
-    box-shadow: 0 0 5px whitesmoke;
+    box-shadow: 0 0 2px skyblue;
     padding: 10px;
     border-radius: 10px;
 }
@@ -138,7 +138,7 @@
     margin: 7px 0px;
     padding: 10px;
     border-radius: 5px;
-    box-shadow: 0 0 2px grey;
+    box-shadow: 0 0 2px skyblue;
     width: fit-content;
 }
 
@@ -156,7 +156,7 @@
 .historyBody {
     margin: 10px;
     padding: 20px;
-    box-shadow: 0 0 5px #191919;
+    box-shadow: 0 0 2px skyblue;
     border-radius: 12px;
 }
 
