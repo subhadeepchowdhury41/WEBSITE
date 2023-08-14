@@ -21,9 +21,9 @@ const SponsoredProjects = () => {
           {projectsData.ongoing.map((item) => {
             return (
               <div key={item.id} className="fluid-center projects-card">
-                <h2>{item.title}</h2>
+                <h2 className="fluid-center">{item.title}</h2>
                 <h4>{item.desc}</h4>
-                <section>
+                <section className="show">
                   <h3>PI : {item.PI}</h3>
                   <h3>Project value : {item.value}</h3>
                 </section>
@@ -36,9 +36,9 @@ const SponsoredProjects = () => {
           {projectsData.completed.map((item) => {
             return (
               <div key={item.id} className="fluid-center projects-card">
-                <h2>{item.title}</h2>
+                <h2 className="fluid-center">{item.title}</h2>
                 <h4>{item.desc}</h4>
-                <section>
+                <section className="show">
                   <h3>PI : {item.PI}</h3>
                   <h3>Project value : {item.value}</h3>
                 </section>

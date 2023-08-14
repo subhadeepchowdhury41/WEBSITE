@@ -57,7 +57,6 @@ const data={
             PI:'Dr. Uma Das',
             value:'20.3064 Lakhs',
             desc:'Science and Engineering Research Board (SERB), Department of Science and Technology (DST), Govt. of India sponsored project ECR/2017/002258, Domain: Atmospheric Physics and Data Analytics, Grant Type: Early Career Research Award (ECRA), Duration: May 2018 – May 2021'
-            
         },
         {
             id:2,

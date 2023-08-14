@@ -1,7 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap'); */
-
 *{
-    /* font-family: 'Quicksand', sans-serif; */
     box-sizing: border-box;
 }
 .fluid-center{
@@ -17,10 +14,10 @@
 }
 .projects-main-page h1{
     margin-top: 1%;
-    font-size: max(2.5vw,4vh);
+    font-size: max(2vw,4vh);
 }
 .main-projects-card{
-    width: 82%;
+    width: 90%;
     height: fit-content;
     flex-direction: row;
     flex-wrap: wrap;
@@ -30,46 +27,83 @@
     font-size: max(1.1vw,2vh);
     width: 80%;
     margin: 2%;
+    margin-bottom: 5%;
     text-align: center;
     border-radius: 30px;
     padding: 1%;
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 .projects-card{
-    width: max(370px,2.2vw);
-    min-width: 280px;
+    width: 18%;
+    min-width: 150px;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
-    aspect-ratio: 9/11;
+    /* align-items: flex-start; */
+    aspect-ratio: 9/10;
+    /* min-height: fit-content; */
     border: 2px solid #82cff5;
+    /* border: 2px solid red; */
     border-radius: 5px;
-    margin: 1% 1% 0.5% 0.5%;
-    padding: 2%;
-    transition: transform .3s;    
+    margin: 2%;
+    padding: 1%;
+    transition: all .3s;
+    overflow: visible;
+    background-color: white;
+}
+.show{
+    display: none;
+    /* border: 2px solid red; */
+    width: 100%;
+    transition: all .5s;
 }
 .projects-card:hover{
-    transform: scale(1.05);
+    transform: scale(1.2);
+    padding: 1.5% ;
     border-radius: 10px;
-    box-shadow:  9px 9px 18px #93c2d9, -9px -9px 18px #c7ffff;
+    position: relative;
+    box-shadow:  4px 4px 8px #93c2d9, -4px -4px 8px #c7ffff;
+}
+.projects-card:hover > .show{
+    z-index: 2;
+    display: block;
+}
+.projects-card:hover > h2{
+    height: fit-content;
+    overflow: visible;  
+}
+.projects-card:hover > h4{
+    height: fit-content;
+    overflow: visible;  
 }
 .projects-card h2{
     font-weight:600;
+    height: 50%;
+    overflow: hidden;
     text-align: left;
-    font-size: max(16px);
+    /* justify-content: ; */
+    
+    font-size: max(0.82vw,1.3vh);
     padding-bottom: 5px;
     border-bottom:2px solid #82cff5 ;
 }
 .projects-card h3{
-    font-weight:800;
+    /* display: none; */
+    font-weight:600;
+    font-size: .65rem;
     margin-bottom: 2%;
     width: fit-content;
     text-align: left;
 }
 .projects-card h4{
+    /* display: none; */
+    width: 100%;
+    /* border: 2px solid red; */
+    height: 40%;
+    overflow: hidden;
     font-weight:200;
-    text-align: left;
-    font-size: 14px;
+    text-align: center;
+    font-size: 0.75rem;
+    margin-bottom: 2%;
 }
 
 @media screen and (max-width:1024px){
@@ -77,12 +111,14 @@
         width: 100%;
     }
     .projects-card{
-        margin:1% ;
+        margin:2% ;
+        width: 25%;
     }
     .projects-card h2{
         text-align: center;
         width: 100%;
-        font-size: medium;
+        /* font-size: medium; */
+        align-items: flex-start;
     }
     .projects-card section{
         width: 100%;
@@ -91,12 +127,13 @@
         text-align: center;
         border:none;
         width: 100%;
-        font-size: small;
+        /* font-size: small; */
     }
     .projects-card h4{
         text-align: center;
-        font-size: small;
+        /* font-size: small; */
         width: 100%;
+        /* border: 2px solid red; */
     }
 }
 @media screen and (max-width:768px){
@@ -111,13 +148,12 @@
     }
     .projects-card{
         margin:2% ;
-        height: 36vh;
-        min-height: 300px;
+        width: 35%;
     }
     .projects-card h2{
         text-align: center;
         width: 100%;
-        font-size: small;
+        
     }
     .projects-card section{
         width: 100%;
@@ -126,11 +162,11 @@
         text-align: center;
         border:none;
         width: 100%;
-        font-size: small;
+        /* font-size: small; */
     }
     .projects-card h4{
         text-align: center;
-        font-size: small;
+        /* font-size: small; */
         width: 100%;
     }
 }
