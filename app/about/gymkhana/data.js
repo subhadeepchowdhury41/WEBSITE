@@ -206,12 +206,8 @@ const GymkhanaData = [
                     {
                         type: 'text',
                         title: 'Pixel is a dynamic club at Gymkhana, IIIT Kalyani, dedicated to fostering creativity and overall development among students. Through its focus on arts, mathematics, and various other creative pursuits, Pixel provides students with opportunities to explore their talents and think critically. By organizing workshops, competitions, and exhibitions, the club encourages students to express themselves artistically and develop a multidimensional perspective. Pixel\'s emphasis on creativity and holistic development aligns perfectly with the goals of the placement brochure, as it equips students with valuable skills that go beyond academics and can make them stand out in the professional world.'
-                    },
-                    {
-                        type: 'heading',
-                        title: 'Recent Events',
                     }
-                ],
+                ]
             },
             {
                 id: 3,
