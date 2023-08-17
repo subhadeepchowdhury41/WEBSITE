@@ -73,7 +73,9 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .navItems li {
-  padding: 2.4vh 0.5vh 2.4vh 0.5vh;
+  padding: 1vh 0.5vh 1vh 0.5vh;
+  margin-top: 1.6vh;
+  margin-bottom: 1.6vh;
   border-radius: 10px;
 }
 
@@ -93,18 +95,18 @@ body::-webkit-scrollbar-thumb:hover {
   /* display: none; */
   border-radius: 10px;
   position: absolute;
-  background-color: #525151;
+  /* background-color: #525151; */
   background-color: rgba(0, 0, 0, 0.83);
   min-width: 100px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1000;
   /* margin-left: 500px; */
+  height: fit-content;
 }
 
 .dropdown-link {
   float: none;
   color: black;
-  padding: 12px 16px;
   text-decoration: none;
   display: block;
   text-align: left;
@@ -126,7 +128,7 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: 16px;
   color: white;
   /* text-align: center; */
-  padding: 14px 16px;
+  padding: 10px 16px;
   text-decoration: none;
 }
 

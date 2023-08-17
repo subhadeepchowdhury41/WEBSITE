@@ -240,7 +240,7 @@ const NavBar = () => {
       </div>
       {/* Option for custom color subhadeep*/}
       <div
-        className={`flex text-white animate-left-college-name-swipe-animation transition duration-500 font-semibold ${stick ? " navBar" : ""}
+        className={`flex h-fit text-white animate-left-college-name-swipe-animation transition duration-500 font-semibold ${stick ? " navBar" : ""}
                ${stick ? "fixed top-0 justify-between" : "justify-center"
           } w-full`}
         style={
