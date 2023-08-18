@@ -15,7 +15,7 @@ const data = [
         "type": "Regular",
         "fellowship": "Regular (Institute Teaching Assistantship)",
         "links": "https://orcid.org/0000-0003-2825-1234",
-        "img": "https://drive.google.com/open?id=1Y0lfdkwntc44qTT7iEV4QgdS9LAFw2aT",
+        "img": "/phd/souravKarmakar.webp",
     },
     {
         "index": 2,
@@ -631,7 +631,7 @@ const data = [
         "type": "Part time (On Service)",
         "fellowship": "",
         "links": "NA",
-        "img": "https://drive.google.com/open?id=1FX0F-6BoYVKRzEbqh8lAj7Gs0iJDJKOS"
+        "img": "/phd/shilpuDas.webp"
     },
     {
         "index": 41,
@@ -803,7 +803,7 @@ const data = [
         "Mention your Company/ Office (For working Part time  students only)": "S.N. Bose Govt. Polytechnic, Malda",
         "fellowship": "",
         "links": "https://scholar.google.com/citations?hl=en&user=hR31ytkAAAAJ",
-        "img": "https://drive.google.com/open?id=1j_r8BTM-TQuOLzvvI-TssXUXwJ0"
+        "img": "/phd/SouravMandal.webp"
     },
     {
         "index": 51,
