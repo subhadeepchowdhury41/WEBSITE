@@ -194,6 +194,11 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 12px;
     line-height: 18px;
   }
+  .mobile-white{
+    background: white;
+    color: black;
+    box-shadow: none;
+  }
 
   .hindi-name {
     /* margin-left: 6; */
@@ -225,12 +230,7 @@ body::-webkit-scrollbar-thumb:hover {
   }
 
   .planned {
-    bottom: 47vh;
-    font-size: 1vh;
-    border-radius: 5px;
-    padding: 5px 5px;
-    left: 5vw;
-    /* display: none; */
+    display: none;
   }
 }
 
@@ -259,11 +259,6 @@ body::-webkit-scrollbar-thumb:hover {
 
   .carousel {
     height: 45vh;
-  }
-
-  .planned {
-    bottom: 57vh;
-    /* display: none; */
   }
 }
 
@@ -304,11 +299,6 @@ body::-webkit-scrollbar-thumb:hover {
   .carousel {
     height: 40vh;
   }
-
-  .planned {
-    bottom: 61vh;
-    /* display: none; */
-  }
 }
 
 @media (max-width:450px) {
@@ -340,12 +330,8 @@ body::-webkit-scrollbar-thumb:hover {
   }
 
   .iiitk-name {
-    padding-left: 3vw;
-  }
-
-  .planned {
-    bottom: 62vh;
-    /* display: none; */
+    /* padding-left: 2vw; */
+    padding-right: 15px;
   }
 }
 
@@ -371,11 +357,6 @@ body::-webkit-scrollbar-thumb:hover {
 
   .carousel {
     height: 30vh;
-  }
-
-  .planned {
-    bottom: 65vh;
-    /* display: none; */
   }
 }
 
@@ -410,11 +391,6 @@ body::-webkit-scrollbar-thumb:hover {
   .iiitk-name {
     padding-left: 4vw;
   }
-
-  .planned {
-    /* bottom: 61vh; */
-    display: none;
-  }
 }
 
 @media (max-width:310px) {
@@ -440,16 +416,19 @@ body::-webkit-scrollbar-thumb:hover {
     padding-right: 20px;
     align-items: center;
     justify-content: flex-end;
+    background: white;
   }
 
   .Menu-trigger-nd {
     display: flex;
     position: relative;
     width: 100%;
+    height: auto;
     padding: 10px;
     padding-right: 20px;
     align-items: center;
     justify-content: flex-end;
+    background: white;
   }
 }
 

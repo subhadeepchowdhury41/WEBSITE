@@ -238,15 +238,13 @@ export default function AppBar() {
           </div>
           {/* Option for custom color subhadeep*/}
           <div
-            className={`flex text-white font-semibold ${stick ? " navBar" : ""}
+            className={`flex border-b-[1px] border-b-[rgba(0,0,0,0.5)] text-white font-semibold ${stick ? " navBar" : ""}
                ${stick ? "fixed top-0" : "justify-center"} w-full`}
             style={
               !stick
                 ? { zIndex: "100000" }
                 : {
                   zIndex: "100",
-                  boxShadow: "0 0 5px black",
-                  backgroundColor: "rgb(0,0,0,0.8 )",
                 }
             }
           >
@@ -254,7 +252,7 @@ export default function AppBar() {
               width={53}
               className={`px-2 py-3 h-[70px]
                  ${stick
-                  ? "opacity-100 transition-opacity ease-in-out duration-500"
+                  ? "opacity-100 transition-opacity ease-in-out duration-500 mobile-white"
                   : "hidden"
                 }`}
               src={IIITKalyaniLogo}
@@ -356,7 +354,7 @@ const MobileNav: React.FC<MobileNavItemProps> = ({ menu }) => {
   const [showMobileMenu, setShowMobileMenu] = React.useState(false);
 
   return (
-    <div className="Menu-trigger">
+    <div className="Menu-trigger mobile-white ">
       <span onClick={() => setShowMobileMenu(true)}>
         {!showMobileMenu && <MenuIcon fontSize="large" />}
       </span>

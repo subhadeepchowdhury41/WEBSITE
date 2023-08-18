@@ -170,14 +170,6 @@ const mobileMenu = [
 ];
 
 const NavBar = () => {
-  // const [stick, setStick] = useState<Boolean>(false);
-  // const handleScroll = () => {
-  //   if (globalThis.window?.scrollY > 1118) {
-  //     setStick(true);
-  //   } else {
-  //     setStick(false);
-  //   }
-  // };
   const [stick, setStick] = useState(false);
 
   const handleScroll = () => {
@@ -188,6 +180,7 @@ const NavBar = () => {
       setStick(false);
     }
   };
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -240,16 +233,15 @@ const NavBar = () => {
       </div>
       {/* Option for custom color subhadeep*/}
       <div
-        className={`flex h-fit text-white animate-left-college-name-swipe-animation transition duration-500 font-semibold ${stick ? " navBar" : ""}
+        className={`flex bg-white h-fit border-b-[1px] border-b-[rgba(0,0,0,0.5)] text-white animate-left-college-name-swipe-animation transition duration-500 font-semibold ${stick ? " navBar" : ""}
                ${stick ? "fixed top-0 justify-between" : "justify-center"
           } w-full`}
         style={
           !stick
-            ? { zIndex: "100" }
+            ? { zIndex: "100", }
             : {
               zIndex: "100",
-              boxShadow: "0 0 5px black",
-              backgroundColor: "rgb(0,0,0,0.8 )",
+              color: 'black'
             }
         }
       >
@@ -257,13 +249,12 @@ const NavBar = () => {
           width={53}
           className={`px-2 py-3 h-[70px] animate-left-college-name-swipe-animation
                  ${stick
-              ? "opacity-100 transition-opacity ease-in-out duration-500"
+              ? "opacity-100 transition-opacity ease-in-out duration-500 mobile-white"
               : "hidden"
             }`}
           src={IIITKalyaniLogo}
           alt="IIIT Kalynai Logo"
         />
-        {/* { <MobileNav menu={<MobileNavMenu menus={mobileMenu} />} />} */}
         {stick ? (
           <MobileNav menu={<MobileNavMenu menus={mobileMenu} />} />
         ) : (
