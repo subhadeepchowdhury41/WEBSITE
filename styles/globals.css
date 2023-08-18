@@ -199,6 +199,10 @@ body::-webkit-scrollbar-thumb:hover {
     color: black;
     box-shadow: none;
   }
+  .mobile-noshadow{
+    box-shadow: none;
+    background: white;
+  }
 
   .hindi-name {
     /* margin-left: 6; */

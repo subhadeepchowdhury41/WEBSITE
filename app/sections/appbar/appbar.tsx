@@ -238,18 +238,8 @@ export default function AppBar() {
           </div>
           {/* Option for custom color subhadeep*/}
           <div
-            className={`flex text-white font-semibold ${stick ? " navBar" : ""}
-               ${stick ? "fixed top-0" : "justify-center"} w-full`}
-            style={
-              !stick
-                ? { zIndex: "100000" }
-                : {
-                  zIndex: "100",
-                  boxShadow: "0 0 5px black",
-                  backgroundColor: "rgb(0,0,0,0.8 )",
-                }
-            }
-          >
+            className={`flex mobile-noshadow text-white font-semibold ${stick ? " navBar" : ""}
+               ${stick ? "fixed top-0 z-[100] shadow-md bg-black bg-opacity-80" : "justify-center z-[100000]"} w-full`} >
             <Image
               width={53}
               className={`px-2 py-3 h-[70px]
