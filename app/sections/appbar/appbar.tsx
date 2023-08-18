@@ -10,6 +10,13 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import Link from "next/link";
 
+const home = [
+  {
+    items: [
+      { label: 'Home', link: "/" }
+    ]
+  }
+]
 const acadamics = [
   {
     items: [
@@ -150,6 +157,7 @@ const notifications = [
 const mobileMenu = [
   {
     items: [
+      { label: 'Home', index: 0, submenu: home },
       { label: "Academics", index: 1, submenu: acadamics },
       { label: "About", index: 2, submenu: about },
       { label: "Adminstration", index: 3, submenu: administration },
@@ -161,7 +169,10 @@ const mobileMenu = [
     ],
   },
 ];
-export default function AppBar() {
+interface AppBarProps {
+  isHomepage?: boolean;
+}
+const AppBar: React.FC<AppBarProps> = ({ isHomepage }) => {
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
@@ -236,25 +247,15 @@ export default function AppBar() {
               </div>
             </div>
           </div>
-          {/* Option for custom color subhadeep*/}
+
           <div
-            className={`flex text-white font-semibold ${stick ? " navBar" : ""}
-               ${stick ? "fixed top-0" : "justify-center"} w-full`}
-            style={
-              !stick
-                ? { zIndex: "100000" }
-                : {
-                  zIndex: "100",
-                  boxShadow: "0 0 5px black",
-                  backgroundColor: "rgb(0,0,0,0.8 )",
-                }
-            }
-          >
+            className={`flex mobile-noshadow text-white font-semibold ${stick ? " navBar mobile-border " : ""}
+               ${stick ? "fixed top-0 z-[100] shadow-md bg-black bg-opacity-80" : "justify-center z-[100000]"} w-full`} >
             <Image
               width={53}
               className={`px-2 py-3 h-[70px]
                  ${stick
-                  ? "opacity-100 transition-opacity ease-in-out duration-500"
+                  ? "opacity-100 transition-opacity ease-in-out duration-500 mobile-white"
                   : "hidden"
                 }`}
               src={IIITKalyaniLogo}
@@ -268,10 +269,12 @@ export default function AppBar() {
             <ul
               className={`flex navItems ${stick
                 ? "animate-randimation absolute top-0 right-0 opacity-100"
-                : "animate-randimation-reverse opacity-100"
+                : "animate-randimation-reverse opacity-100 pl-[40px]"
                 }`}
               style={{ listStyle: "none" }}
             >
+              {!isHomepage && <NavItem title="Home" menu={<MegaMenu menus={home} />} />}
+
               <NavItem title="About" menu={<MegaMenu menus={about} />} />
 
               <NavItem
@@ -356,7 +359,7 @@ const MobileNav: React.FC<MobileNavItemProps> = ({ menu }) => {
   const [showMobileMenu, setShowMobileMenu] = React.useState(false);
 
   return (
-    <div className="Menu-trigger">
+    <div className="Menu-trigger mobile-white">
       <span onClick={() => setShowMobileMenu(true)}>
         {!showMobileMenu && <MenuIcon fontSize="large" />}
       </span>
@@ -368,4 +371,4 @@ const MobileNav: React.FC<MobileNavItemProps> = ({ menu }) => {
   );
 };
 
-// export default AppBar;
+export default AppBar;

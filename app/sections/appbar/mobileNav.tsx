@@ -25,40 +25,48 @@ interface MegaMenuProps {
 
 const MobileNavMenu: React.FC<MegaMenuProps> = ({ menus }) => {
     const [sub, setSub] = useState(0)
+
     const ShowSubMenuFunc = (id: React.SetStateAction<number>) => {
+        // console.log(menus[0].items[0].submenu[0].items.length)
         if (sub === id)
             setSub(0)
         else
             setSub(id)
     }
-    return (
 
+    return (
         < div className='mobile-menu-outbox' >
             {
                 menus.map((menu, idx) => (
                     <div className='menu-box'>
                         {menu.items.map((index) => (
                             <div className='menu-title' onClick={() => ShowSubMenuFunc(index.index)}>
-                                <span>{index.label}</span>
+                                {index.submenu[0].items.length != 1 ? <span>{index.label}</span> : <a href={index.submenu[0].items[0].link}><span>{index.label}</span> </a>}
                                 <hr className='menu-hr' />
-                                <span>{index?.submenu?.map((iter) => (
-                                    <div className={sub === index.index ? 'menu-sub-box active' : 'menu-sub-box'}
-                                        style={sub === index.index ? { height: `${iter.items.length * 32 + 20}px` } : {}}>
-                                        {iter?.items?.map((ind) => (
-                                            // eslint-disable-next-line react/jsx-key
-                                            <div className='menu-sub-title'>
-                                                <a href={ind.link}>{ind.label}</a>
-                                            </div>
-                                        ))}
-                                    </div>
-                                ))}</span>
+                                <span>
+                                    {index?.submenu?.map((iter) => {
+                                        return (
+                                            <>
+                                                {iter.items.length != 1 &&
+                                                    <div className={sub === index.index ? 'menu-sub-box active' : 'menu-sub-box'}
+                                                        style={sub === index.index ? { height: `auto` } : {}}>
+                                                        {iter?.items?.map((ind) => (
+                                                            <div className='menu-sub-title'>
+                                                                <a href={ind.link}>{ind.label}</a>
+                                                            </div>
+                                                        ))}
+                                                    </div>}
+                                            </>
+
+                                        )
+                                    })}
+                                </span>
                             </div>
                         ))}
                     </div>
                 ))
             }
         </div >
-
     );
 };
 
