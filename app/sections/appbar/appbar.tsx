@@ -238,13 +238,15 @@ export default function AppBar() {
           </div>
           {/* Option for custom color subhadeep*/}
           <div
-            className={`flex border-b-[1px] border-b-[rgba(0,0,0,0.5)] text-white font-semibold ${stick ? " navBar" : ""}
+            className={`flex text-white font-semibold ${stick ? " navBar" : ""}
                ${stick ? "fixed top-0" : "justify-center"} w-full`}
             style={
               !stick
                 ? { zIndex: "100000" }
                 : {
                   zIndex: "100",
+                  boxShadow: "0 0 5px black",
+                  backgroundColor: "rgb(0,0,0,0.8 )",
                 }
             }
           >

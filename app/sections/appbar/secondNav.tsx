@@ -233,7 +233,7 @@ const NavBar = () => {
       </div>
       {/* Option for custom color subhadeep*/}
       <div
-        className={`flex bg-white h-fit border-b-[1px] border-b-[rgba(0,0,0,0.5)] text-white animate-left-college-name-swipe-animation transition duration-500 font-semibold ${stick ? " navBar" : ""}
+        className={`flex mobile-white h-fit text-white animate-left-college-name-swipe-animation transition duration-500 font-semibold ${stick ? " navBar" : ""}
                ${stick ? "fixed top-0 justify-between" : "justify-center"
           } w-full`}
         style={
@@ -241,7 +241,8 @@ const NavBar = () => {
             ? { zIndex: "100", }
             : {
               zIndex: "100",
-              color: 'black'
+              boxShadow: "0 0 5px black",
+              backgroundColor: "rgb(0,0,0,0.8 )",
             }
         }
       >

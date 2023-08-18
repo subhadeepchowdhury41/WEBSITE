@@ -54,7 +54,6 @@ const MobileMegaMenu: React.FC<MegaMenuProps> = ({ menus }) => {
                                                         ))}
                                                     </div>}
                                             </>
-
                                         )
                                     })}
                                 </span>
