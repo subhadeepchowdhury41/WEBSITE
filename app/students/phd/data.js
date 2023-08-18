@@ -1,3 +1,5 @@
+
+
 const data = [
     {
         "index": 1,
@@ -30,7 +32,7 @@ const data = [
         "fellowship": "",
         "institute": "Indian Institute of Technology (Indian School of Mines) Dhanbad",
         "links": "https://sites.google.com/view/shuklamondal",
-        "img": "https://drive.google.com/open?id=18hfgOgh1ImtRfPBAY3YeRJ___KuNhOIt",
+        "img": "/phd/ShuklaMondal.webp",
     },
     {
         "index": 3,
@@ -47,7 +49,7 @@ const data = [
         "Mention your Company/ Office (For working Part time  students only)": "Institute of Engineering & Management, Kolkata",
         "fellowship": "",
         "links": "https://scholar.google.com/citations?hl=en&view_op=list_works&authuser=1&gmla=ABEO0YpoAtcstkCCA63_cAkZwVdpfRq0alRcWLmreb1dWEm5AHZsA9D9hXHzVJBZI7mzgw9KbfzSveTEDOkveA&user=-FAQnC4AAAAJ",
-        "img": "https://drive.google.com/open?id=1FyUH3kZ8QxBSoeixVbdbwqIkzn4y-gfJ",
+        "img": "/phd/NirbanKumarSaha.webp",
     },
     {
         "index": 5,
@@ -63,7 +65,7 @@ const data = [
         "type": "Regular",
         "fellowship": "Regular (Institute Teaching Assistantship)",
         "links": "https://orcid.org/0000-0001-5088-0382",
-        "img": "https://drive.google.com/open?id=1f8_fbYcVgqwoWa3FmCEpJcgXEUEZd4P7"
+        "img": "/phd/subhajitDebnath.webp"
     },
     {
         "index": 6,
@@ -79,7 +81,7 @@ const data = [
         "type": "Regular",
         "fellowship": "Regular (Institute Teaching Assistantship)",
         "links": "https://scholar.google.com/citations?user=SpKQtZsAAAAJ&hl=en",
-        "img": "https://drive.google.com/open?id=17WxKt3ISO-_v_zc6u1B7NBgurvEE1IEg"
+        "img": "/phd/Abishekgosh.webp"
     },
     {
         "index": 7,
@@ -94,7 +96,7 @@ const data = [
         "status": "Ongoing",
         "type": "Regular",
         "fellowship": "Regular (Net Fellowship)",
-        "img": "https://drive.google.com/open?id=1qKWR-Ta5zFcfVwL2NrsuXpARmQyFEaMr"
+        "img": "/phd/SabnurRahaman.webp"
     },
     {
         "index": 8,
@@ -109,7 +111,7 @@ const data = [
         "status": "Ongoing",
         "type": "Regular",
         "fellowship": "Regular (Institute Teaching Assistantship)",
-        "img": "https://drive.google.com/open?id=1CtXMPh4GxwXYqCutYk3GPEtRNSe9qw9G"
+        "img": "/phd/DebarpitaPaul.webp"
     },
     {
         "index": 9,
@@ -125,7 +127,7 @@ const data = [
         "type": "Regular",
         "fellowship": "Regular ( Visvesvaraya Fellowship)",
         "links": "https://scholar.google.com/citations?user=_yBL9wYAAAAJ&hl=en",
-        "img": "https://drive.google.com/open?id=12xKfGmrMMFbECmc4TVpn2tRkO7k_dmKN"
+        "img": "/phd/DebmaniSaha.webp"
     },
     {
         "index": 10,
@@ -142,7 +144,7 @@ const data = [
         "Mention your Company/ Office (For working Part time  students only)": "IEM",
         "fellowship": "",
         "links": "https://orcid.org/0000-0003-2569-2886?lang=en",
-        "img": "https://drive.google.com/open?id=1KLaTo5sBXz2ee--POeVE4P8jxub6oU_T"
+        "img": "/phd/SomaDas.webp"
     },
     {
         "index": 11,
@@ -159,7 +161,7 @@ const data = [
         "type": "Regular",
         "fellowship": "Regular (Project Staff)",
         "links": "https://scholar.google.com/citations?user=zY8ENr8AAAAJ&hl=en",
-        "img": "https://drive.google.com/open?id=1EHIWjjOAIUKZEwUAAelJgiYXDh6v3rzk"
+        "img": "/phd/SayanDe.webp"
     },
     {
         "index": 12,
@@ -175,7 +177,7 @@ const data = [
         "type": "Regular",
         "fellowship": "Regular (Project Staff)",
         "links": "https://orcid.org/0009-0007-9507-1192",
-        "img": "https://drive.google.com/open?id=1AwhLIxRFF-V_XvQbeCjI1kxEzexCU03f"
+        "img": "/phd/ArijitDas.webp"
     },
     {
         "index": 13,
@@ -193,7 +195,7 @@ const data = [
         "Mention your Institute (For External students only)": "New Alipore College, University of Calcutta",
         "fellowship": "",
         "links": "https://www.researchgate.net/profile/Pooja-Rai-8",
-        "img": "https://drive.google.com/open?id=1reUR5aIor8Ihkhl1UXw5cQwSR07KBnGl"
+        "img": "/phd/poojarai.webp"
     },
     {
         "index": 14,
@@ -208,7 +210,7 @@ const data = [
         "status": "Ongoing",
         "type": "Regular",
         "fellowship": "Regular (Project Staff)",
-        "img": "https://drive.google.com/open?id=11TTl6_LsRr3lBv0geuGBoWi_WNoEihk4"
+        "img": "/phd/SayantanChatterjee.webp"
     },
     {
         "index": 15,
@@ -224,7 +226,7 @@ const data = [
         "type": "Regular",
         "fellowship": "Regular (Institute Teaching Assistantship)",
         "links": "https://www.linkedin.com/in/soumen-bajpayee-96a02a119",
-        "img": "https://drive.google.com/open?id=1SBVmxonAmO05gbiNTPqnFih4B-l93fte"
+        "img": "/phd/SoumenBajpayee.webp"
     },
     {
         "index": 16,
@@ -240,7 +242,7 @@ const data = [
         "type": "Regular",
         "fellowship": "Regular (Institute Teaching Assistantship)",
         "links": "https://www.linkedin.com/in/soumen-bajpayee-96a02a119",
-        "img": "https://drive.google.com/open?id=1Lk6MTXGgX0Ashhyc-4_-9DpczexDyKhF"
+        "img": "/phd/SoumenBajpayee.webp"
     },
     {
         "index": 17,
@@ -256,7 +258,7 @@ const data = [
         "type": "Regular",
         "fellowship": "Regular (Institute Teaching Assistantship)",
         "links": "https://www.linkedin.com/itashi-saha-52237a216/",
-        "img": "https://drive.google.com/open?id=1yLngTj01pLmuQcEtHOV7RWaipz9sy4XI"
+        "img": "/phd/AtashiSaha.webp"
     },
     {
         "index": 18,
@@ -273,7 +275,7 @@ const data = [
         "type": "Regular",
         "fellowship": "Regular (Net Fellowship)",
         "links": "https://scholar.google.com/citations?user=qWTTEJ4AAAAJ&hl=en",
-        "img": "https://drive.google.com/open?id=14SJBtKmkyriW6W40HSEZ7bKJR3a_aq8Q"
+        "img": "/phd/SREEPARNAGANGULY.webp"
     },
     {
         "index": 19,
@@ -290,7 +292,7 @@ const data = [
         "Mention your Company/ Office (For working Part time  students only)": "NSEC",
         "fellowship": "",
         "links": "",
-        "img": "https://drive.google.com/open?id=1r75nnfwx7cvPBhV2Br4UG-ySzuDpeeCv"
+        "img": "/phd/ShaonBandyopadhyay.webp"
     },
     {
         "index": 20,
@@ -307,7 +309,7 @@ const data = [
         "type": "Regular",
         "fellowship": "Regular (Project Staff)",
         "links": "https://orcid.org/0009-0005-2351-8296",
-        "img": "https://drive.google.com/open?id=1mOohn9NxO5cyTqyJf8Yz0ptji85vxo6i"
+        "img": "/phd/SourabhBiswas.webp"
     },
     {
         "index": 21,
@@ -324,7 +326,7 @@ const data = [
         "Mention your Company/ Office (For working Part time  students only)": "IBM India Pvt Ltd",
         "fellowship": "",
         "links": "https://orcid.org/0000-0003-0247-7200",
-        "img": "https://drive.google.com/open?id=1DvQuVLm3uQgD5nfCbZSUfRWY3Bmz5LJQ"
+        "img": "/phd/ABHISEKBANERJEE.webp"
     },
     {
         "index": 23,
@@ -341,7 +343,7 @@ const data = [
         "Mention your Company/ Office (For working Part time  students only)": "Brainware University",
         "fellowship": "",
         "links": "https://orcid.org/0009-0003-0522-2016",
-        "img": "https://drive.google.com/open?id=1t_6Mj9caPGoSiCQt5I58v6GLlf7MEk3V"
+        "img": "/phd/RITESHPRASAD.webp"
     },
     {
         "index": 24,
@@ -358,7 +360,7 @@ const data = [
         "Mention your Company/ Office (For working Part time  students only)": "St. Xavier's College (Autonomous), Kolkata",
         "fellowship": "",
         "links": "https://scholar.google.com/citations?hl=en&authuser=1&user=GF-2Z18AAAAJ",
-        "img": "https://drive.google.com/open?id=1c1N5Wao69zLDKHRscbTXm5u77HobpQ6F"
+        "img": "/phd/SOUMYAJITPAL.webp"
     },
     {
         "index": 25,
@@ -375,7 +377,7 @@ const data = [
         "Mention your Institute (For External students only)": "Indian Institute of Science",
         "fellowship": "",
         "links": "https://sites.google.com/view/amukhopadhyay/home",
-        "img": "https://drive.google.com/open?id=1MWhy7McsTWz19JH8sRPCHwaOInQH6dMk"
+        "img": "/phd/AbhishekMukhopadhyay.webp"
     },
     {
         "index": 26,
@@ -391,7 +393,7 @@ const data = [
         "type": "Regular",
         "fellowship": "Regular ( Visvesvaraya Fellowship)",
         "links": "https://scholar.google.com/citations?hl=en&user=Jzr9P9IAAAAJ",
-        "img": "https://drive.google.com/open?id=1YXU7jDiTgt0Wvg_8uX8rU4PwkdpRj9tX"
+        "img": "/phd/SubhajitPaul.webp"
     },
     {
         "index": 27,
@@ -407,7 +409,7 @@ const data = [
         "type": "Regular",
         "fellowship": "Regular (Project Staff)",
         "links": "https://scholar.google.com/citations?user=zY8ENr8AAAAJ&hl=en",
-        "img": "https://drive.google.com/open?id=1cP2oCHKVirmGlLB7a1Z5r00rZhJPGHw3"
+        "img": "/phd/SayanDe.webp"
     },
     {
         "index": 28,
@@ -422,7 +424,7 @@ const data = [
         "status": "Ongoing",
         "type": "Regular",
         "fellowship": "Regular (Project Staff)",
-        "img": "https://drive.google.com/open?id=1zL1FEf86FAQSuCtlOyG4kpJOrq2imTgG"
+        "img": "/phd/SarbaniSen.webp"
     },
     {
         "index": 29,
@@ -438,7 +440,7 @@ const data = [
         "type": "Regular",
         "fellowship": "Regular (Net Fellowship)",
         "links": "https://www.researchgate.net/profile/Subhendu-Mandal-3",
-        "img": "https://drive.google.com/open?id=1NwmHvLfDGuTLTyj_Tf0phtg9go6Q_Vd5"
+        "img": "/phd/SubhenduMandal.webp"
     },
     {
         "index": 30,
@@ -455,7 +457,7 @@ const data = [
         "Mention your Institute (For External students only)": "Institute of Engineering and Management",
         "fellowship": "",
         "links": "",
-        "img": "https://drive.google.com/open?id=1iZ11l36Xbt2dSpF0JCupAYyNQaXzXLae"
+        "img": "/phd/SHUBHASRIROY.webp"
     },
     {
         "index": 31,
@@ -471,7 +473,7 @@ const data = [
         "type": "Part time (On Service)",
         "fellowship": "",
         "links": "https://scholar.google.com/citations?user=DpzqC8UAAAAJ",
-        "img": "https://drive.google.com/open?id=1u13VpavITTMAkki7FPan7s_ZU2n8CjPO"
+        "img": "/phd/MadhuchhandaDasgupta.webp"
     },
     {
         "index": 32,
@@ -487,7 +489,7 @@ const data = [
         "type": "Regular",
         "fellowship": "Regular (Net Fellowship)",
         "links": "https://orcid.org/0009-0008-0667-8601",
-        "img": "https://drive.google.com/open?id=1nJY46c7b3-vH7UI7gwnKcr_P7eNwj10D"
+        "img": "/phd/SOUMENSANTRA.webp"
     },
     {
         "index": 33,
@@ -506,7 +508,7 @@ const data = [
         "Mention your Company/ Office (For working Part time  students only)": "Future Institute of Technology, Kolkata",
         "fellowship": "",
         "links": "https://sites.google.com/view/souravd-me/home?authuser=1",
-        "img": "https://drive.google.com/open?id=1BeILGy174kYlfZaZjKfj9SFwL4y9C8rD"
+        "img": "/phd/SOURAVDAS.webp"
     },
     {
         "index": 34,
@@ -524,7 +526,7 @@ const data = [
         "Mention your Company/ Office (For working Part time  students only)": "Academy of Technology",
         "fellowship": "",
         "links": "https://scholar.google.com/citations?user=FBp2IVcAAAAJ&hl=en&oi=ao",
-        "img": "https://drive.google.com/open?id=1ACTJeZENk3yB5hGNT-Ib4VYapk_vrSzq"
+        "img": "/phd/NayanRanjanDas.webp"
     },
     {
         "index": 35,
@@ -541,7 +543,7 @@ const data = [
         "Mention your Company/ Office (For working Part time  students only)": "Institute of Engineering & Management",
         "fellowship": "",
         "links": "https://scholar.google.com/citations?user=O572VK8AAAAJ&hl=en&oi=ao",
-        "img": "https://drive.google.com/open?id=1anzsEHqjd1b4kwGKdBi1xDIdz8PpHU2m"
+        "img": "/phd/BAVRABIGHOSH.webp"
     },
     {
         "index": 36,
@@ -559,7 +561,7 @@ const data = [
         "Mention your Company/ Office (For working Part time  students only)": "Guru Nanak Institute of Technology",
         "fellowship": "",
         "links": "https://orcid.org/0000-0003-1699-1390",
-        "img": "https://drive.google.com/open?id=1-pKzEXawHE-eMJ46z7POH1UlyyDSJ2O7"
+        "img": "/phd/SudeepGhosh.webp"
     },
     {
         "index": 37,
@@ -578,7 +580,7 @@ const data = [
         "Mention your Company/ Office (For working Part time  students only)": "Institute of Engineering and Management, Kolkata",
         "fellowship": "",
         "links": "https://scholar.google.com/citations?user=ryUB9fMAAAAJ&hl=en&oi=ao",
-        "img": "https://drive.google.com/open?id=1CqKFLJ6xiPeJlj2wv7cAz2fs_GsvLOOf"
+        "img": "/phd/SwagatamBasu.webp"
     },
     {
         "index": 38,
@@ -595,7 +597,7 @@ const data = [
         "type": "Part time (On Service)",
         "fellowship": "",
         "links": "0000-0001-6924-1847",
-        "img": "https://drive.google.com/open?id=17L1-hyQDWzCwyOlr_qxfdBnoRi-W2R8c"
+        "img": "/phd/SugamKumarBhunia.webp"
     },
     {
         "index": 39,
@@ -613,7 +615,7 @@ const data = [
         "Mention your Company/ Office (For working Part time  students only)": "University Institute of Technology, The University of Burdwan",
         "fellowship": "",
         "links": "https://orcid.org/0000-0003-0813-3919",
-        "img": "https://drive.google.com/open?id=1KUMMoXxZUf409cup9Ie9KZyCXRqNjU_k"
+        "img": "/phd/SouravSamanta.webp"
     },
     {
         "index": 40,
@@ -645,7 +647,7 @@ const data = [
         "type": "Regular",
         "fellowship": "Regular (Project Staff)",
         "links": "https://orcid.org/0000-0002-0457-578X",
-        "img": "https://drive.google.com/open?id=1lxcROI5iPtMoNz0dfqIaw1fRmUaX9pqU"
+        "img": "/phd/SharmisthaRakshit.webp"
     },
     {
         "index": 42,
@@ -662,7 +664,7 @@ const data = [
         "Mention your Institute (For External students only)": "MallaReddy Engineering College for Women",
         "fellowship": "",
         "links": "https://scholar.google.com/citations?user=J1-evCMAAAAJ&hl=en",
-        "img": "https://drive.google.com/open?id=1csuUqvfucgBqWhRsDSmGQ8CRSldu5vdN"
+        "img": "/phd/SRINIVASARAOYANDRAPU.webp"
     },
     {
         "index": 43,
@@ -679,7 +681,7 @@ const data = [
         "Mention your Company/ Office (For working Part time  students only)": "GURU NANAK INSTITUTE OF TECHNOLOGY, KOLKATA",
         "fellowship": "",
         "links": "https://orcid.org/0000-0001-5755-6753",
-        "img": "https://drive.google.com/open?id=1OvPdo601_h2QmXwEXLl8Tbr-NB0GpMq3"
+        "img": "/phd/SuparnaKarmakar.webp"
     },
     {
         "index": 44,
@@ -696,7 +698,8 @@ const data = [
         "type": "Regular",
         "fellowship": "Regular (Project Staff)",
         "links": "https://orcid.org/0000-0002-6852-9272",
-        "img": "https://drive.google.com/open?id=1VTpO1qinTT6YB3WxKFBbB9FFKGKsyFLJ"
+        "img": "/phd/ChiranjitPal.webp"
+        
     },
     {
         "index": 45,
@@ -714,7 +717,7 @@ const data = [
         "Mention your Company/ Office (For working Part time  students only)": "St. Xavier's College, Burdwan",
         "fellowship": "",
         "links": "https://orcid.org/0000-0001-5998-8621",
-        "img": "https://drive.google.com/open?id=1ntAM8Nt22Pig6uu8gBQcnuuUKvHobict"
+        "img": "/phd/AlokeparnaChoudhury.webp"
     },
     {
         "index": 46,
@@ -732,7 +735,7 @@ const data = [
         "Mention your Company/ Office (For working Part time  students only)": "Behala College",
         "fellowship": "",
         "links": "https://scholar.google.com/citations?user=KdTebhoAAAAJ&hl=en&oi=sra",
-        "img": "https://drive.google.com/open?id=1ZVq_PFuH7gMEqYOGsAnHIfOipziQ3oJK"
+        "img": "/phd/SusovanMondal.webp"
     },
     {
         "index": 47,
@@ -747,7 +750,7 @@ const data = [
         "status": "Ongoing",
         "type": "Regular",
         "fellowship": "Regular (Project Staff)",
-        "img": "https://drive.google.com/open?id=1aKheI8Lu1ABZfIKjTsv1Fm1DYv0FQdcJ"
+        "img": "/phd/SayantanChatterjee.webp"
     },
     {
         "index": 48,
@@ -764,7 +767,7 @@ const data = [
         "Mention your Company/ Office (For working Part time  students only)": "Assistant Prfessor,CSBS, Netaji Subhash Engineering College",
         "fellowship": "",
         "links": "https://orcid.org/0000-0002-0452-4472",
-        "img": "https://drive.google.com/open?id=1vgtZv68ykATcw_CEZXSSEueBaLVFq_jA"
+        "img": "/phd/ABHISEKSAHA.webp"
     },
     {
         "index": 49,
@@ -782,7 +785,7 @@ const data = [
         "Mention your Company/ Office (For working Part time  students only)": "Nehru Science center ",
         "fellowship": "",
         "links": "krishnendu814u",
-        "img": "https://drive.google.com/open?id=1BRsWYxaD3-YoKLwgU2w72XD5BlA1wENh"
+        "img": "/phd/KRISHNENDUCHOUDHURY.webp"
     },
     {
         "index": 50,
@@ -800,7 +803,7 @@ const data = [
         "Mention your Company/ Office (For working Part time  students only)": "S.N. Bose Govt. Polytechnic, Malda",
         "fellowship": "",
         "links": "https://scholar.google.com/citations?hl=en&user=hR31ytkAAAAJ",
-        "img": "https://drive.google.com/open?id=1j_r8BTM-TQuOLzvvI-TssXUXwJ06WdyA"
+        "img": "https://drive.google.com/open?id=1j_r8BTM-TQuOLzvvI-TssXUXwJ0"
     },
     {
         "index": 51,
@@ -817,7 +820,7 @@ const data = [
         "Mention your Institute (For External students only)": "INDIAN INSTITUTE OF TECHNOLOGY (INDIAN SCHOOL OF MINES) DHANBAD.",
         "fellowship": "",
         "links": "https://scholar.google.com/citations?hl=en&user=GYjJZe9MvpUC",
-        "img": "https://drive.google.com/open?id=1NaH1LBbSG8083Dmavp3tA3Sh1Gn0qd5s"
+        "img": "/phd/PramodKumar.webp"
     },
     {
         "index": 52,
@@ -836,7 +839,7 @@ const data = [
         "Mention your Company/ Office (For working Part time  students only)": "University of Engineering and Management Jaipur",
         "fellowship": "",
         "links": "https://scholar.google.com/citations?user=xyIo4dkAAAAJ&hl=en",
-        "img": "https://drive.google.com/open?id=1HzsLVqurjJyZK_RwfDFWrAs6-2IRxSdQ"
+        "img": "/phd/SagarikaGhosh.webp"
     },
     {
         "index": 53,
@@ -853,7 +856,7 @@ const data = [
         "Mention your Company/ Office (For working Part time  students only)": "ISI Kolkata",
         "fellowship": "",
         "links": "",
-        "img": "https://drive.google.com/open?id=1dW4ei2DUxRzBuspEtkHvbHaXPFdALEDN"
+        "img": "/phd/biswajit.webp"
     },
     {
         "index": 54,
@@ -870,7 +873,7 @@ const data = [
         "Mention your Company/ Office (For working Part time  students only)": "RCC Institute of Information Technology",
         "fellowship": "",
         "links": "https://orcid.org/0000-0002-1369-1264",
-        "img": "https://drive.google.com/open?id=13uLqzKPoQVn1Yn-OeeGUMDfG2bALSwd0"
+        "img": "/phd/RanjanJana.webp"
     },
     {
         "index": 55,
@@ -887,7 +890,7 @@ const data = [
         "Mention your Company/ Office (For working Part time  students only)": "Jadavpur University ",
         "fellowship": "",
         "links": "https://scholar.google.com/citations?user=Af_IYesAAAAJ&hl=en",
-        "img": "https://drive.google.com/open?id=1Zre0LLF0KL3eELTfEv6n_hEWyS24R2eY"
+        "img": "/phd/SrijitaBasu.webp"
     },
     {
         "index": 56,
@@ -904,7 +907,7 @@ const data = [
         "Mention your Company/ Office (For working Part time  students only)": "Techno International New Town",
         "fellowship": "",
         "links": "ORCID ID 0000000302609891",
-        "img": "https://drive.google.com/open?id=1oyFL_W4C5y5DcRWrixewRgKv4jlQRStZ"
+        "img": "/phd/SUMANTACHAKRABORTY.webp"
     },
     {
         "index": 57,
@@ -921,7 +924,7 @@ const data = [
         "Mention your Company/ Office (For working Part time  students only)": "Narula Institute of Technology(Assistant Professor)",
         "fellowship": "",
         "links": "https://scholar.google.co.in/citations?user=zZrjwKgAAAAJ&hl=en",
-        "img": "https://drive.google.com/open?id=170KZwzOxuJv97lf8lEnUz6TVlnbftKNe"
+        "img": "/phd/SusmitaDas.webp"
     },
     {
         "index": 58,
@@ -936,7 +939,7 @@ const data = [
         "status": "Ongoing",
         "type": "Regular",
         "fellowship": "Regular",
-        "img": "https://drive.google.com/open?id=1FgybYpUtR325dEddkrhwk_f3FB_HSbcF"
+        "img": "/phd/AmritesuPal.webp"
     },
     {
         "index": 59,
@@ -953,7 +956,7 @@ const data = [
         "Mention your Company/ Office (For working Part time  students only)": "The Durgapur Projects Ltd., Durgapur ",
         "fellowship": "",
         "links": "",
-        "img": "https://drive.google.com/open?id=1WagVOzYReAnXF52nqA2056FXCz34v6un"
+        "img": "/phd/santanuthandar.webp"
     },
 ]
 

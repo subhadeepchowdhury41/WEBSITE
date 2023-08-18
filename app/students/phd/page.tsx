@@ -29,7 +29,7 @@ const PHDStudents = () => {
                     return (
                         <div className='w-full py-8 border flex overflow-hidden gap-8 justify-around px-[10%] responsive'>
                             <div className='flex-[1] w-full min-w-[150px] center500'>
-                                <div className='h-36 w-36 rounded-[50%] ' style={{ backgroundImage: `url('https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg')`, backgroundSize: '100% 100%', backgroundPosition: 'center' }}>
+                                <div className='h-36 w-36 rounded-[50%] ' style={{ backgroundImage:`url(${index.img})`, backgroundSize: '100% 100%', backgroundPosition: 'center' }}>
                                 </div>
                             </div>
 
