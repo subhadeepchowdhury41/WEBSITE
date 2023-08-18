@@ -172,6 +172,9 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 @media (max-width:900px) {
+  .h-set-mobile{
+    height: 70px;
+  }
   .navItems li {
     padding: 2.8vh .1vh 2.8vh .1vh;
     font-size: 15px;

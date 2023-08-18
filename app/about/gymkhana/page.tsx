@@ -1,8 +1,9 @@
 'use client';
-import NavBar from '../../sections/appbar/secondNav';
+import NavBar from '../../sections/appbar/appbar'
 import Footer from '../../sections/footer/footer';
 import data from './data';
 import '../../../styles/about/gymkhana/gymkhana.css'
+import '../../../styles/globals.css'
 import Sidebar from './Sidebar'
 import { useEffect, useState } from 'react';
 import Carousel from './carousel'
@@ -32,7 +33,9 @@ const App: React.FC = () => {
 
     return (
         <>
-            <NavBar />
+            <div className='h-[220px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
+                <NavBar />
+            </div>
             <div className='flex w-full h-fit relative resp-program'>
                 {windowWidth > 1200 ?
                     <div className={`flex-[3] w-full h-[100vh] bg-[rgb(245,235,209)] pos-adj sticky top-[70px] `}>
