@@ -236,9 +236,9 @@ export default function AppBar() {
               </div>
             </div>
           </div>
-          {/* Option for custom color subhadeep*/}
+
           <div
-            className={`flex mobile-noshadow text-white font-semibold ${stick ? " navBar" : ""}
+            className={`flex mobile-noshadow text-white font-semibold ${stick ? " navBar mobile-border " : ""}
                ${stick ? "fixed top-0 z-[100] shadow-md bg-black bg-opacity-80" : "justify-center z-[100000]"} w-full`} >
             <Image
               width={53}

@@ -231,10 +231,10 @@ const NavBar = () => {
           </div>
         </div>
       </div>
-      {/* Option for custom color subhadeep*/}
+
       <div
         className={`flex mobile-white h-fit text-white animate-left-college-name-swipe-animation transition duration-500 font-semibold ${stick ? " navBar" : ""}
-               ${stick ? "fixed top-0 z-[100] shadow-md bg-black bg-opacity-80 justify-between" : "justify-center z-[100000]"
+               ${stick ? "fixed top-0 z-[100] shadow-md bg-black bg-opacity-80 justify-between mobile-border" : "justify-center z-[100000]"
           } w-full`}
       >
         <Image

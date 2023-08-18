@@ -203,7 +203,10 @@ body::-webkit-scrollbar-thumb:hover {
     box-shadow: none;
     background: white;
   }
-
+  .mobile-border{
+    box-shadow: 0 0 5px black;
+    /* transition: none; */
+  }
   .hindi-name {
     /* margin-left: 6; */
     /* display: none; */
