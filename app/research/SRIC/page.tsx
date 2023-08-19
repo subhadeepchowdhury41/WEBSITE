@@ -1,6 +1,6 @@
 "use client";
 import { useEffect } from "react";
-import NavBar from "../../sections/appbar/secondNav";
+import NavBar from "../../sections/appbar/appbar";
 import Footer from '../../sections/footer/footer';
 import "../../../styles/research/sric/sric.css";
 import sricData from './data'
@@ -13,7 +13,9 @@ const SIRC = () => {
   }, []);
   return (
     <>
-      <NavBar />
+      <div className='h-[220px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
+        <NavBar isHomepage={false} />
+      </div>
       <div className="fluid-center sric-main-page">
         <h1>Sponsored Research & Industrial Consultancy (SRIC) Cell</h1>
         <p>IIIT Kalyani encourages its faculty members to submit research proposals to various government funding agencies like, SERB, DST, MEITY, etc., and also to industries on problems related to current day applications as well as basic sciences in the fields of Computer Science and Engineering, Electronics Communication Engineering, Physics, and Mathematics. Administrative support required for proposal submission and project management including accounting, recruitment of JRF and other research personnel, etc., are provided.</p>

@@ -1,5 +1,5 @@
 "use client";
-import NavBar from "../../sections/appbar/secondNav";
+import NavBar from "../../sections/appbar/appbar";
 import Footer from '../../sections/footer/footer';
 import "../../../styles/research/sponsoredProjects/sponsoredProjects.css";
 import projectsData from './sponsoredProjectsData';
@@ -13,7 +13,9 @@ const SponsoredProjects = () => {
   }, []);
   return (
     <>
-      <NavBar />
+      <div className='h-[220px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
+        <NavBar isHomepage={false} />
+      </div>
       <div className="fluid-center projects-main-page">
         <h1>Sponsored Projects</h1>
         <div className="fluid-center main-projects-card">

@@ -1,6 +1,6 @@
 "use client";
 import Image from 'next/image'
-import NavBar from "../../sections/appbar/secondNav";
+import NavBar from "../../sections/appbar/appbar";
 import Footer from '../../sections/footer/footer';
 import FileOpenIcon from '@mui/icons-material/FileOpen';
 import "../../../styles/students/antiRagging/anti_ragging.css";
@@ -15,7 +15,9 @@ const Anti_Ragging = () => {
   }, []);
   return (
     <>
-      <NavBar />
+      <div className='h-[220px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
+        <NavBar isHomepage={false} />
+      </div>
       <div className="fluid-center ragging-main-page">
         <h1>Anti Ragging</h1>
         <p>IIIT Kalyani is a ragging-free campus. Ragging here is an offence. An anti-ragging committee monitors all the ragging related activities. All students are required to submit the ‘Anti Ragging Undertaking’ to IIIT Kalyani Office (Room 107, WEBEL IT Park) in the prescribed format as given in the website http://www.antiragging.in/ by 20 July 2017.</p>

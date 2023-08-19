@@ -1,6 +1,6 @@
 "use client";
 import { useEffect } from "react";
-import NavBar from "../../sections/appbar/secondNav";
+import NavBar from "../../sections/appbar/appbar";
 import Footer from '../../sections/footer/footer';
 import "../../../styles/research/nisp/nisp.css";
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
@@ -13,7 +13,9 @@ const NISP = () => {
   }, []);
   return (
     <>
-      <NavBar />
+      <div className='h-[220px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
+        <NavBar isHomepage={false} />
+      </div>
       <div className="fluid-center nisp-main-page">
         <h1>National Innovation and Startup Policy</h1>
         <div className="fluid-center nisp-buttons">

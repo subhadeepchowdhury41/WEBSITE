@@ -1,6 +1,6 @@
 "use client";
 import { useEffect } from "react";
-import NavBar from "../../sections/appbar/secondNav";
+import NavBar from "../../sections/appbar/appbar";
 import Footer from '../../sections/footer/footer';
 import "../../../styles/research/publications/publications.css";
 import publicationData from './data'
@@ -12,7 +12,9 @@ const Publications = () => {
   }, []);
   return (
     <>
-      <NavBar />
+      <div className='h-[220px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
+        <NavBar isHomepage={false} />
+      </div>
       <div className="fluid-center publications-main-page">
         <h1>Publications</h1>
         <div className="fluid-center publications-info">

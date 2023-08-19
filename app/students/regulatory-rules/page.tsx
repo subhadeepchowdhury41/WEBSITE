@@ -1,19 +1,21 @@
 "use client";
 import React,{ useEffect } from "react";
-import NavBar from "../../sections/appbar/secondNav";
+import NavBar from "../../sections/appbar/appbar";
 import Footer from '../../sections/footer/footer';
 import "../../../styles/students/regulatoryRules/regulatoryRules.css";
 import Data from "./data"
 
 
-const regulatoryRules = () => {
+const RegulatoryRules = () => {
   useEffect(() => {
     document.title =
       "Regulatory Rules | Indian Institute of Information Technology, Kalyani";
   }, []);
   return (
     <>
-      <NavBar />
+      <div className='h-[220px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
+        <NavBar isHomepage={false} />
+      </div>
       <div className="fluid-center rr-main-page">
         <h1>Regulatory Rules</h1>
         <p>Compliance to Institute Rules, all students are bound by the institute rules and must obey such orders as may be issued from time to time by the competent authority. Serious breach of institute rules may entail removal from the institute. The following rules should be rigidly adhered to.</p>
@@ -38,4 +40,4 @@ const regulatoryRules = () => {
   );
 };
 
-export default regulatoryRules;
+export default RegulatoryRules;

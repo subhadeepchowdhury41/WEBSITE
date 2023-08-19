@@ -1,13 +1,13 @@
 "use client"
 import Image from 'next/image';
 import React from 'react'
-import NavBar from '../sections/appbar/secondNav';
+import NavBar from '../sections/appbar/appbar';
 import Footer from '../sections/footer/footer';
 import '../../styles/career/career.css'
 import careerData from './data'
 import { useEffect } from 'react';
 
-const career = () => {
+const Career = () => {
     const handleClick = (url: string) => {
         window.open(url, "_blank");
     }
@@ -17,7 +17,9 @@ const career = () => {
     }, []);
     return (
         <>
-            <NavBar />
+            <div className='h-[220px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
+                <NavBar isHomepage={false} />
+            </div>
             <div className='fluid-center carrer-main'>
                 <h1>Career</h1>
                 <div className="fluid-center career-info">
@@ -58,4 +60,4 @@ const career = () => {
     )
 }
 
-export default career;
+export default Career;
