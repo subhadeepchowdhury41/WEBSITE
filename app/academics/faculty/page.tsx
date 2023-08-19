@@ -38,7 +38,7 @@ const Faculty = () => {
                     {item.eduaction}
                   </h2>
                   <div>
-                    <EmailIcon className="faculty-profile-icon" color="primary" style={{ 'color': 'black' }} onClick={() => { navigator.clipboard.writeText(item.email[0]) }} />
+                    <EmailIcon className="faculty-profile-icon" color="primary" style={{ 'color': 'black' }} onClick={() => { window.open(`mailto:${item.email[0]}`,'_blank') }} />
                     {item.more.substring(0,4)=="http"?<LaunchIcon className="faculty-profile-icon" onClick={() => { window.open(item.more,'_blank')}} />: <Link className="faculty-more"  href={{ pathname: `/academics/faculty/${item.more}`, query: { slug: item.more } }} target="_blank" rel="noreferrer" ><LaunchIcon className="faculty-profile-icon" /></Link> }
                     
                   </div>
