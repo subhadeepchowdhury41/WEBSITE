@@ -340,7 +340,8 @@ const MobileNav: React.FC<MobileNavItemProps> = ({ menu }) => {
   const [showMobileMenu, setShowMobileMenu] = React.useState(false);
 
   return (
-    <div className="Menu-trigger-nd">
+    <div className="Menu-trigger
+-nd">
       <span onClick={() => setShowMobileMenu(true)}>
         {!showMobileMenu && <MenuIcon fontSize="large" />}
       </span>

@@ -136,7 +136,11 @@ body::-webkit-scrollbar-thumb:hover {
   display: none;
 }
 
-.Menu-trigger-nd {
+.Menu-trigger -nd {
+  display: none;
+}
+
+.menu-trigger-box {
   display: none;
 }
 
@@ -173,9 +177,14 @@ body::-webkit-scrollbar-thumb:hover {
 
 @media (max-width:900px) {
   .h-set-mobile {
-    height: 110px;
+    height: 165px;
     background-color: rgb(80, 80, 80);
-    margin-bottom: 40px;
+    /* background-color: black; */
+    margin-bottom: 30px;
+  }
+
+  .menu-trigger-box {
+    background-color: gray;
   }
 
   .navItems li {
@@ -251,11 +260,13 @@ body::-webkit-scrollbar-thumb:hover {
   .planned {
     display: none;
   }
+
+
 }
 
 @media (max-width: 660px) {
   .h-set-mobile {
-    height: 100px;
+    height: 140px;
   }
 
   .mobile-head {
@@ -450,7 +461,7 @@ body::-webkit-scrollbar-thumb:hover {
     /* background: white; */
   }
 
-  .Menu-trigger-nd {
+  .Menu-trigger -nd {
     display: flex;
     position: relative;
     width: 100%;
@@ -460,6 +471,11 @@ body::-webkit-scrollbar-thumb:hover {
     align-items: center;
     justify-content: flex-end;
     /* background: white;  */
+  }
+
+  .menu-trigger-box {
+    width: 100%;
+    display: flex;
   }
 }
 

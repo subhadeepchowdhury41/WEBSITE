@@ -265,7 +265,7 @@ const AppBar: React.FC<AppBarProps> = ({ isHomepage }) => {
               <MobileNav menu={<MobileMegaMenu menus={mobileMenu} />} />
             ) : (
               isHomepage ? <></> :
-                <div style={{ width: "100%", background: "gray" }}>
+                <div className="menu-trigger-box" >
                   <MobileNav menu={<MobileMegaMenu menus={mobileMenu} />} />
                 </div>
             )}
@@ -374,7 +374,8 @@ const MobileNav: React.FC<MobileNavItemProps> = ({ menu }) => {
   const [showMobileMenu, setShowMobileMenu] = React.useState(false);
 
   return (
-    <div className="Menu-trigger mobile-white">
+    <div className="Menu-trigger
+ mobile-white">
       <span onClick={() => setShowMobileMenu(true)}>
         {!showMobileMenu && <MenuIcon fontSize="large" />}
       </span>
