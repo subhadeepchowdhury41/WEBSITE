@@ -41,7 +41,7 @@ const page = () => {
                             Candidate’s Name-JEE-Main application-number-Form.pdf
                         </p>
                         <p style={{ paddingTop: '2%' }}><b>Step 3.</b> Download the payment receipts when payments are made for</p>
-                        <ul style={{ listStyle: 'circle', paddingLeft: '2%' }}>
+                        <ul style={{ listStyle: 'circle', paddingLeft: '5%' }}>
                             <li>Institute Fees (Part: A) </li>
                             <li>and Hostel Fees (Part: B)</li>
                         </ul>
@@ -52,12 +52,11 @@ const page = () => {
                             B. Tech. Admission 2022: Candidate’s Name-Candidate’s JEE Main Application No
                         </p>
                         <p><span style={{ color: 'red', fontWeight: 'bold' }}>NOTE:</span> The two PDFs to be sent to us as attachments are:</p>
-                        <ul style={{ listStyle: 'circle', paddingLeft: '2%' }}>
+                        <ul style={{ listStyle: 'circle', paddingLeft: '5%' }}>
                             <li><b>Candidate’s Name-JEE-main application-number-Form.pdf</b></li>
                             <li><b>Candidate’s Name-JEE-main application-number-Payments.pdf</b></li>
                         </ul>
-                        <p style={{ padding: '2%', paddingBottom: '0%' }}>Also upload the ZIP folder containing the two PDF files in this Google form:</p>
-                        <a href='' target='_blank'>https://docs.google.com/forms/d/e/1FAIpQLSfn5u0suZQ7nl1gqQBwJL_W1m5V0nTWin8_tUt8tdr42cJ_GA/viewform</a>
+                        <p style={{ padding: '2%', paddingBottom: '0%' }}>Also upload the ZIP folder containing the two PDF files in this <a style={{ color: "blue" }} href='https://docs.google.com/forms/d/e/1FAIpQLSfn5u0suZQ7nl1gqQBwJL_W1m5V0nTWin8_tUt8tdr42cJ_GA/viewform' target='_blank'>Google Form</a></p>
                         <p style={{ paddingTop: '1%' }}><b>Step 5.</b>Get reporting confirmation over email.</p>
                     </div>
                     <div className="main-content">
