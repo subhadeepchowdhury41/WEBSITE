@@ -250,7 +250,7 @@ const AppBar: React.FC<AppBarProps> = ({ isHomepage }) => {
 
           <div
             className={`flex mobile-noshadow text-white font-semibold ${stick ? " navBar mobile-border " : ""}
-               ${stick ? "fixed top-0 z-[100] shadow-md bg-black bg-opacity-80" : "justify-center z-[100000]"} w-full`} >
+               ${stick ? "fixed top-0 z-[100] shadow-md bg-black bg-opacity-80" : "justify-center z-[100000]"} w-full`}>
             <Image
               width={53}
               className={`px-2 py-3 h-[70px]
@@ -264,7 +264,10 @@ const AppBar: React.FC<AppBarProps> = ({ isHomepage }) => {
             {stick ? (
               <MobileNav menu={<MobileMegaMenu menus={mobileMenu} />} />
             ) : (
-              <></>
+              isHomepage ? <></> :
+                <div style={{ width: "100%", background: "gray" }}>
+                  <MobileNav menu={<MobileMegaMenu menus={mobileMenu} />} />
+                </div>
             )}
             <ul
               className={`flex navItems ${stick
@@ -316,7 +319,8 @@ const AppBar: React.FC<AppBarProps> = ({ isHomepage }) => {
         </div>
       ) : (
         <></>
-      )}
+      )
+      }
     </>
   );
 }
