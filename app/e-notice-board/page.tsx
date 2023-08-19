@@ -1,5 +1,5 @@
 'use client'
-import NavBar from '../sections/appbar/secondNav'
+import NavBar from '../sections/appbar/appbar'
 import Footer from '../sections/footer/footer'
 import React, { useState, useRef, useEffect } from 'react'
 import data from './data'
@@ -43,7 +43,9 @@ function ENoticeBoard() {
     }, []);
     return (
         <div className='w-full h-fit'>
-            <NavBar />
+            <div className='h-[220px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
+                <NavBar isHomepage={false} />
+            </div>
             <div className='w-full font-semibold text-4xl py-4 text-center'>E-Notice Board</div>
             <div className='w-full font-semibold text-gray-500 text-center pb-8'>Note : These are the latest notices, for previous notices please visit Archive section</div>
             <div className='w-full h-fit p-2 flex items-center justify-center'>

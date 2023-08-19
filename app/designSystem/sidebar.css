@@ -1,13 +1,11 @@
 .sidebar {
     position: sticky;
     top: 70px;
-    height: inherit;
-    max-height: 100vh;
-    min-height: 72vh;
+    height: 95.5vh;
     width: calc(min(25vw, 250px));
     padding: 20px;
     /* margin-right: 20px; */
-    background-color: rgba(245, 235, 209, 0.953);
+    background-color: rgba(245, 245, 245, 0.953);
 }
 
 .sidebar-location {

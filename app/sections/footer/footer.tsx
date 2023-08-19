@@ -143,7 +143,7 @@ export default function Footer() {
                     </li>
 
                     <li>
-                      <a href="/downloads/downloads.html" className="text-white-footer"  >
+                      <a href="/download" className="text-white-footer" >
                         Downloads
                       </a>
                       <hr />

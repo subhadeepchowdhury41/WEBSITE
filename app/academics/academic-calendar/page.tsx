@@ -1,5 +1,6 @@
 'use client'
-import NavBar from '../../sections/appbar/secondNav'
+import NavBar from '../../sections/appbar/appbar'
+
 import Footer from '../../sections/footer/footer'
 import React from 'react'
 import '../../../styles/academiccalender/academiccalender.css'
@@ -15,7 +16,9 @@ function AcademicCalendar() {
     }, []);
     return (
         <React.Fragment>
-            <NavBar />
+            <div className='h-[220px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
+                <NavBar isHomepage={false} />
+            </div>
             <div className='flexCon main-container'>
                 <h1>Academic Calendar and Holiday List</h1>
                 <div className='flexCon main-calender'>

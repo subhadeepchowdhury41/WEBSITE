@@ -1,5 +1,5 @@
 "use client";
-import NavBar from "../../sections/appbar/secondNav";
+import NavBar from "../../sections/appbar/appbar";
 import Footer from '../../sections/footer/footer';
 import "../../../styles/research/sponsoredProjects/sponsoredProjects.css";
 import projectsData from './sponsoredProjectsData';
@@ -13,7 +13,9 @@ const SponsoredProjects = () => {
   }, []);
   return (
     <>
-      <NavBar />
+      <div className='h-[220px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
+        <NavBar isHomepage={false} />
+      </div>
       <div className="fluid-center projects-main-page">
         <h1>Sponsored Projects</h1>
         <div className="fluid-center main-projects-card">
@@ -21,9 +23,9 @@ const SponsoredProjects = () => {
           {projectsData.ongoing.map((item) => {
             return (
               <div key={item.id} className="fluid-center projects-card">
-                <h2>{item.title}</h2>
+                <h2 className="fluid-center">{item.title}</h2>
                 <h4>{item.desc}</h4>
-                <section>
+                <section className="show">
                   <h3>PI : {item.PI}</h3>
                   <h3>Project value : {item.value}</h3>
                 </section>
@@ -36,9 +38,9 @@ const SponsoredProjects = () => {
           {projectsData.completed.map((item) => {
             return (
               <div key={item.id} className="fluid-center projects-card">
-                <h2>{item.title}</h2>
+                <h2 className="fluid-center">{item.title}</h2>
                 <h4>{item.desc}</h4>
-                <section>
+                <section className="show">
                   <h3>PI : {item.PI}</h3>
                   <h3>Project value : {item.value}</h3>
                 </section>

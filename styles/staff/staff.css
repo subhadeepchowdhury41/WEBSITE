@@ -2,14 +2,16 @@
 
 .staff-outer-container {
     /* height: 100vh; */
+    /* width: 100%; */
+    margin: auto;
     display: flex;
     flex-direction: row;
 }
 
 .staff-container {
     max-width: 78vw;
+    padding-bottom: 5vh;
     margin: auto;
-    margin: 0 20px;
 }
 
 .staff-main-heading {
@@ -21,7 +23,7 @@
     align-items: center;
     text-align: center;
     display: flex;
-    font-size: 30px;
+    font-size: min(3vh, 3vw);
     font-weight: 600;
     /* margin-left: 4vw; */
     margin-top: 50px;
@@ -48,9 +50,13 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     margin: auto;
-    margin-bottom: 40px;
-    gap: 30px;
+}
+
+@media (max-width:900px) {
+    .staff-container {
+        max-width: 90vw;
+    }
 }

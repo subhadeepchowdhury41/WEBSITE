@@ -11,13 +11,13 @@ import Achievements from "./sections/achievement/achievementSection";
 const HomePage = () => {
     return (
         <div>
-            <AppBar />
+            <AppBar isHomepage={true} />
             <PayButton />
             <Carousel />
             {/* <Events /> */}
             <DirectorsMessage />
             <Discover />
-            <Research />
+            {/* <Research /> */}
             <EventSection />
             <Achievements />
             <Footer />

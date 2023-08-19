@@ -3,7 +3,8 @@ import '../../../styles/Phd/phd.css'
 import React from 'react';
 import { useState } from 'react';
 import data from './data'
-import NavBar from '../../sections/appbar/secondNav';
+import NavBar from '../../sections/appbar/appbar'
+
 import Footer from '../../sections/footer/footer';
 import Link from 'next/link';
 import { useEffect } from "react";
@@ -20,7 +21,9 @@ const PHDStudents = () => {
     return (
 
         <div style={{}}>
-            <NavBar />
+            <div className='h-[220px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
+                <NavBar isHomepage={false} />
+            </div>
             <div className='w-full font-[800] text-4xl pl-8 my-8'>
                 IIIT Kalyani PhD students
             </div>
@@ -29,7 +32,7 @@ const PHDStudents = () => {
                     return (
                         <div className='w-full py-8 border flex overflow-hidden gap-8 justify-around px-[10%] responsive'>
                             <div className='flex-[1] w-full min-w-[150px] center500'>
-                                <div className='h-36 w-36 rounded-[50%] ' style={{ backgroundImage: `url('https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg')`, backgroundSize: '100% 100%', backgroundPosition: 'center' }}>
+                                <div className='h-36 w-36 rounded-[50%] ' style={{ backgroundImage: `url(${index.img})`, backgroundSize: '100% 100%', backgroundPosition: 'center' }}>
                                 </div>
                             </div>
 

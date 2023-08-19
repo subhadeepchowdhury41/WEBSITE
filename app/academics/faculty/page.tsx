@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import NavBar from "../../sections/appbar/secondNav";
+import NavBar from "../../sections/appbar/appbar";
 import Footer from '../../sections/footer/footer';
 import facultyData from "./data";
 import "../../../styles/academics/faculty/faculty.css";
@@ -18,7 +18,9 @@ const Faculty = () => {
   }, []);
   return (
     <>
-      <NavBar />
+      <div className='h-[220px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
+        <NavBar isHomepage={false} />
+      </div>
       <div className="fluid-center faculty-main-page">
         <h1>IIIT Kalyani Faculties</h1>
         <div className="fluid-center faculty-line">
@@ -38,7 +40,7 @@ const Faculty = () => {
                   </h2>
                   <div>
                     <EmailIcon className="faculty-profile-icon" color="primary" style={{ 'color': 'black' }} onClick={() => { navigator.clipboard.writeText(item.email[0]) }} />
-                    {item.more.substring(0,4)=="http"?<LaunchIcon className="faculty-profile-icon" onClick={() => { window.location.href = item.more }} />: <Link className="faculty-more"  href={{ pathname: `/academics/faculty/${item.more}`, query: { slug: item.more } }} target="_blank" rel="noreferrer" ><LaunchIcon className="faculty-profile-icon" /></Link> }
+                    {item.more.substring(0,4)=="http"?<LaunchIcon className="faculty-profile-icon" onClick={() => { window.open(item.more,'_blank')}} />: <Link className="faculty-more"  href={{ pathname: `/academics/faculty/${item.more}`, query: { slug: item.more } }} target="_blank" rel="noreferrer" ><LaunchIcon className="faculty-profile-icon" /></Link> }
                     
                   </div>
                 </div>

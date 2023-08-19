@@ -1,6 +1,6 @@
 'use client'
 import React from 'react';
-import NavBar from '../../../../sections/appbar/secondNav';
+import NavBar from '../../../../sections/appbar/appbar';
 import Footer from '../../../../sections/footer/footer';
 import '../../../../../styles/phdadmission/phdadmission.css'
 
@@ -8,7 +8,9 @@ const MtechAdmissions = () => {
 
   return (
     <>
-      <NavBar />
+      <div className='h-[220px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
+        <NavBar isHomepage={false} />
+      </div>
       <div className='flex-set main-container'>
         <h1>Executive M.Tech Admissions: 2023 <hr /> </h1>
         <h2 style={{fontSize:'max(1.1vw,1.7vh)'}}>(Specialization: Artificial Intelligence and Data Science)</h2>

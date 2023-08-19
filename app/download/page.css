@@ -1,0 +1,93 @@
+.downloads {
+    width: 80%;
+    margin: 5vh auto;
+}
+
+.downloads-container {
+    box-shadow: 0 0 5px skyblue;
+    margin: 2vh auto;
+    padding: 3%;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.downloads-container a {
+    color: blue;
+}
+
+.downloads-container a:hover {
+    color: purple;
+}
+
+.downloads h2 {
+    font-weight: 600;
+    font-size: min(3vh, 3vw);
+    margin-bottom: 2vh;
+}
+
+.table {
+    width: 100%;
+}
+
+.danger,
+.warning,
+.success {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.warning,
+.success {
+    box-shadow: 0 0 1px skyblue;
+    padding: 1%;
+    margin: 1vh auto;
+}
+
+.downloads-container .downloads-container {
+    background-color: whitesmoke;
+    width: 100%;
+}
+
+.downloads-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.downloads-row div {
+    width: 30%;
+    margin: 1.6%;
+}
+
+@media (max-width:950px) {
+    .downloads {
+        font-size: 0.5em;
+    }
+
+}
+
+@media (max-width:550px) {
+    .downloads {
+        font-size: 0.3em;
+    }
+
+}
+
+.downloads-row button {
+    box-shadow: 0 0 5px skyblue;
+    padding: 2%;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.downloads-row button:hover {
+    box-shadow: 0 0 5px white;
+    background-color: skyblue;
+    transform: scale(1.05);
+}
+
+#myModal1 {
+    transition: all 0.5s ease-in;
+}

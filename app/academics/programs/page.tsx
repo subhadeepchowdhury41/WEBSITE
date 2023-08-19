@@ -1,5 +1,6 @@
 'use client'
-import NavBar from '../../sections/appbar/secondNav'
+import NavBar from '../../sections/appbar/appbar'
+
 import Footer from '../../sections/footer/footer'
 import React, { useState } from 'react'
 import Sidebar from './Sidebar'
@@ -39,7 +40,9 @@ function ProgramPage() {
     }, []);
     return (
         <div>
-            <NavBar />
+            <div className='h-[220px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
+                <NavBar isHomepage={false} />
+            </div>
             <div className='flex w-full h-fit relative resp-program'>
                 <div className={`flex-[3] w-full h-[100vh] bg-[rgb(245,235,209)] pos-adj ${windowWidth < 1200 ? 'relative top-0' : 'sticky top-[70px]'} `}>
                     <Sidebar data={data} setActiveIndex={setActiveIndex} setActiveId={setActiveId} setMatchingItem={setMatchingItem}

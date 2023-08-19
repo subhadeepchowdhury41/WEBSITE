@@ -1,7 +1,8 @@
 'use client'
 
 import React from 'react'
-import NavBar from '../../sections/appbar/secondNav'
+import NavBar from '../../sections/appbar/appbar'
+
 import Footer from '../../sections/footer/footer'
 import FileCopyIcon from '@mui/icons-material/FileCopy';
 import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
@@ -16,7 +17,9 @@ const page = () => {
     }, []);
     return (
         <React.Fragment>
-            <NavBar />
+            <div className='h-[220px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
+                <NavBar isHomepage={false} />
+            </div>
             <div className='flexCon main-container'>
                 <h1>Fee Structure and Payments</h1>
                 <div className='flexCon main-calender'>

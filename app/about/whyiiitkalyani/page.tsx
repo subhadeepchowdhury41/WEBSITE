@@ -7,7 +7,7 @@ import { useState } from 'react';
 // import InstagramIcon from '@mui/icons-material/Instagram';
 // import LinkedInIcon from '@mui/icons-material/LinkedIn';
 // import InsertLinkIcon from '@mui/icons-material/InsertLink';
-import NavBar from '../../sections/appbar/secondNav';
+import NavBar from '../../sections/appbar/appbar'
 import Footer from '../../sections/footer/footer';
 import HEADER from '../../designSystem/header';
 import logo from "../../../assets/logos/iiit_kalyani_logo.png"
@@ -20,8 +20,8 @@ const PHDStudents = () => {
 
     return (
         <>
-            <div className="navbar">
-                <NavBar />
+            <div className='h-[220px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
+                <NavBar isHomepage={false} />
             </div>
             <div className='why-container'>
 

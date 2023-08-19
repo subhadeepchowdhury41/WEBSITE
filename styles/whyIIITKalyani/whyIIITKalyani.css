@@ -1,4 +1,4 @@
-.why-container{
+.why-container {
     max-width: 90vw;
     margin: auto;
     margin-top: 10vh;
@@ -10,39 +10,45 @@
     text-align: justify;
     background-color: rgb(253, 255, 237, 0.7);
 }
-.why-main-heading{
+
+.why-main-heading {
     margin-bottom: 50px;
 }
-.why-main-heading>h1{
+
+.why-main-heading h1 {
     font-size: 5rem;
     font-weight: 600;
 }
-.why-sub-heading>h2{
+
+.why-sub-heading h2 {
     font-size: 1.65rem;
     font-weight: 550;
     margin: 20px 0 10px 0px;
 }
 
-.why-sub-sub-heading>h3{
+.why-sub-sub-heading>h3 {
     font-size: 1.4rem;
     font-weight: 550;
     margin: 10px 0 5px 0px;
 }
-.why-bold-text{
+
+.why-bold-text {
     font-weight: bolder;
     margin-top: 15px;
 }
 
-.middle-para{
+.middle-para {
     margin: 40px 20px;
 }
 
 .divider {
     width: auto;
-    border-top: 10px solid #000; /* Set the color and thickness of the line */
-    margin: 10px 0; /* Adjust the spacing above and below the divider */
+    border-top: 10px solid #000;
+    /* Set the color and thickness of the line */
+    margin: 10px 0;
+    /* Adjust the spacing above and below the divider */
 }
-  
-.why-highlighted-text{
+
+.why-highlighted-text {
     color: rgb(40, 170, 213);
 }

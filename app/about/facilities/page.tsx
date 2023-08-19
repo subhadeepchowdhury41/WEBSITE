@@ -1,6 +1,6 @@
 'use client';
 import '../../../styles/about/carousel/carousel.css'
-import NavBar from '../../sections/appbar/secondNav';
+import NavBar from '../../sections/appbar/appbar'
 import Footer from '../../sections/footer/footer';
 import Carousel from './carousel';
 import { useEffect } from 'react';
@@ -39,7 +39,9 @@ const App: React.FC = () => {
     }, []);
     return (
         <>
-            <NavBar />
+            <div className='h-[220px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
+                <NavBar isHomepage={false} />
+            </div>
             <Carousel carouselData={carouselData} />
             <div className='w-full h-auto flex flex-col pad-adjust items-center justify-center'>
                 {Data.map((index) => {

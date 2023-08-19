@@ -2,7 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 'use client';
 import React, { useEffect } from 'react';
-import NavBar from '../../sections/appbar/secondNav';
+import NavBar from '../../sections/appbar/appbar'
 import Footer from '../../sections/footer/footer';
 import './page.css';
 import map from '../../../assets/map/map.png';
@@ -33,7 +33,9 @@ const App: React.FC = () => {
   return (
     <>
       <div className="page-container">
-        <NavBar />
+        <div className='h-[220px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
+          <NavBar isHomepage={false} />
+        </div>
         <div className="page-body">
           <div className="sidebar1">
             <div className="sidebar2" id="sidebar">
@@ -48,8 +50,8 @@ const App: React.FC = () => {
                 {/* <a href='https://goo.gl/maps/ZsFRFctaRJsphZwi7' target="_blank">
                   <Image src={map} alt="map" ></Image>
                 </a> */}
-                <iframe className='side-img' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.7124704321814!2d88.43170931534432!3d22.960814024394352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f894fc95000001%3A0x56bfd0b3bdadb903!2sIndian%20Institute%20of%20Information%20Technology%20Kalyani!5e0!3m2!1sen!2sin!4v1678731580741!5m2!1sen!2sin" style={{border:"0"}} loading="lazy" ></iframe>
-        
+                <iframe className='side-img' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.7124704321814!2d88.43170931534432!3d22.960814024394352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f894fc95000001%3A0x56bfd0b3bdadb903!2sIndian%20Institute%20of%20Information%20Technology%20Kalyani!5e0!3m2!1sen!2sin!4v1678731580741!5m2!1sen!2sin" style={{ border: "0" }} loading="lazy" ></iframe>
+
               </div>
               <p className="reach">Indian Institute of Information Technology Kalyani, Kalyani, India-741235</p>
               <p className="reach">Email: <a href="mailto:office@iiitkalyani.ac.in" target="_blank" rel="noreferrer">office@iiitkalyani.ac.in</a></p>
@@ -58,7 +60,7 @@ const App: React.FC = () => {
           <div className="content">
             <h1 className="aboutheading">About IIIT Kalyani</h1>
             {/* <hr /> */}
-            <img className="image h-adj-aboutus " src="/images/webel.webp" alt="IIIT Kalyani" />
+            <img className="image h-adj-aboutus " src="/img/cllg.jpg" alt="IIIT Kalyani" />
 
             <div>
               <p className="aboutparagraph">IIIT Kalyani strives to evolve into a world-class academic institution with the highest quality

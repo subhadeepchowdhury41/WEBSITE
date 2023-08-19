@@ -125,7 +125,7 @@ const Placement = () => {
           </div>
         </div>
         <div className="charts">
-          {!isMobile ? <Bar className="graph" options={options} data={data} /> : <Bar className="graph" options={mobileoptions} data={data} />}
+          {!isMobile ? <div><Bar className="graph" options={options} data={data} /> </div> : <div><img src="/img/graph.png" alt="" /></div>}
         </div>
       </div>
       <div className="record-buttons">

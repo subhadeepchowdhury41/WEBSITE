@@ -2,7 +2,7 @@
 import React,{useEffect} from 'react';
 import Image from 'next/image';
 import '../../../styles/research/iic/iic.css'
-import NavBar from '../../sections/appbar/secondNav';
+import NavBar from '../../sections/appbar/appbar';
 import Footer from '../../sections/footer/footer';
 import iicData from './data'
 
@@ -13,7 +13,9 @@ const IIC = () => {
   }, []);
   return (
     <>
-      <NavBar />
+      <div className='h-[220px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
+        <NavBar isHomepage={false} />
+      </div>
       <div className="fluid-center iic-main-page">
         <h1>Institution&apos;s Innovation Council</h1>
         <div className='fluid-center iic-certificate'>

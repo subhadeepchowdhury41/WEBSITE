@@ -1,0 +1,31 @@
+.announcement-page {
+    width: 90%;
+    margin: 5vh auto;
+    padding: 3%;
+    box-shadow: 0 0 5px skyblue;
+    border-radius: 10px;
+}
+
+.announcement-page h1 {
+    font-size: min(5vh, 8vw);
+    width: 100%;
+    text-align: center;
+}
+
+.announcement-page ul {
+    padding-left: 5%;
+}
+
+.announcement-page ul li {
+    margin: 20px auto;
+    box-shadow: 0 0 5px skyblue;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.1s ease-in;
+    cursor: pointer;
+}
+
+.announcement-page ul li:hover {
+    color: skyblue;
+    transform: scale(1.01);
+}

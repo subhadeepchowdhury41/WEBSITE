@@ -1,6 +1,7 @@
 'use client'
 import React from 'react'
-import NavBar from '../../sections/appbar/secondNav'
+import NavBar from '../../sections/appbar/appbar'
+
 import Footer from '../../sections/footer/footer'
 import '../../../styles/regulations/regulations.css';
 import data from './data';
@@ -14,7 +15,9 @@ const page = () => {
     }, []);
     return (
         <React.Fragment>
-            <NavBar />
+            <div className='h-[220px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
+                <NavBar isHomepage={false} />
+            </div>
             <div className="flexCon1 main-container">
                 <h1 style={{ marginBottom: "20px" }}>Regulations</h1>
                 <div className="flexCon main-course">
