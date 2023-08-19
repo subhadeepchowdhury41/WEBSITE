@@ -377,10 +377,10 @@ const MobileNav: React.FC<MobileNavItemProps> = ({ menu }) => {
     <div className="Menu-trigger
  mobile-white">
       <span onClick={() => setShowMobileMenu(true)}>
-        {!showMobileMenu && <MenuIcon fontSize="large" />}
+        {!showMobileMenu && <MenuIcon fontSize="medium" />}
       </span>
       <span onClick={() => setShowMobileMenu(false)}>
-        {showMobileMenu && <MenuOpenIcon fontSize="large" />}
+        {showMobileMenu && <MenuOpenIcon fontSize="medium" />}
       </span>
       {menu && showMobileMenu && <div className="">{menu}</div>}
     </div>
