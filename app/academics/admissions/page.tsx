@@ -1,7 +1,8 @@
 'use client'
 import '../../../styles/admissions/admissions.css'
 import React from 'react';
-import NavBar from '../../sections/appbar/secondNav';
+import NavBar from '../../sections/appbar/appbar'
+
 import Footer from '../../sections/footer/footer';
 import Sidebar from '../../designSystem/sidebar';
 import { useEffect } from "react";
@@ -102,7 +103,9 @@ const Admissions = () => {
 
   return (
     <>
-      <NavBar />
+      <div className='h-[220px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
+        <NavBar isHomepage={false} />
+      </div>
       <div className="admissions-container">
         {/* <Sidebar location="" page="Admissions" array={array} /> */}
         <div className="admission-channels">

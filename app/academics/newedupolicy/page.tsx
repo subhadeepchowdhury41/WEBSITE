@@ -1,6 +1,7 @@
 'use client'
 import React from 'react'
-import NavBar from '../../sections/appbar/secondNav'
+import NavBar from '../../sections/appbar/appbar'
+
 import Footer from '../../sections/footer/footer'
 import '../../../styles/newedupolicy/newedupolicy.css'
 import TextSnippetIcon from '@mui/icons-material/TextSnippet';
@@ -12,7 +13,9 @@ const page = () => {
   }, []);
   return (
     <React.Fragment>
-      <NavBar />
+      <div className='h-[220px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
+        <NavBar isHomepage={false} />
+      </div>
       <div className="fluid-center nisp-main-page">
         <h1>New National Education Policy-2020</h1>
         <div className="fluid-center nisp-buttons">

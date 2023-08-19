@@ -114,7 +114,7 @@ const EventSection = () => {
                         </a>
                     </Reveal>
                 </div>
-                <div className='announcement-container' style={{ minHeight: '300px' }}>
+                <div className='announcement-container' style={{ minHeight: '300px', overflow: "hidden" }}>
                     {educationProgram.map((index) => {
                         return (
                             <div key={index.id} onMouseEnter={() => { setScroll(0) }} onMouseLeave={() => { setScroll(1) }}>

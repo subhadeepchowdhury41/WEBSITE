@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import "./page.css";
-import NavBar from "../sections/appbar/secondNav";
+import NavBar from "../sections/appbar/appbar";
 import Footer from "../sections/footer/footer";
 
 const page = () => {
@@ -16,7 +16,9 @@ const page = () => {
   }, []);
   return (
     <>
-      <NavBar />
+      <div className="h-[220px] bg-[rgba(0,0,0,0.8)] h-set-mobile">
+        <NavBar isHomepage={false} />
+      </div>
       <div className="downloads">
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <style

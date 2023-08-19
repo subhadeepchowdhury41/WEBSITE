@@ -1,6 +1,6 @@
 'use client'
 import { useSearchParams } from 'next/navigation';
-import NavBar from '../../../sections/appbar/secondNav';
+import NavBar from '../../../sections/appbar/appbar'
 import Footer from '../../../sections/footer/footer';
 import Carousel from '../carousel';
 import React from 'react'
@@ -14,7 +14,9 @@ function Facility() {
     const filterData = Data.filter(item => item.slug === slug)
     return (
         <>
-            <NavBar />
+            <div className='h-[220px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
+                <NavBar isHomepage={false} />
+            </div>
             <div className='w-full flex items-center justify-center mt-8'>
                 <HEADER text={filterData[0].heading} />
             </div>

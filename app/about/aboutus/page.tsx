@@ -2,7 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 'use client';
 import React, { useEffect } from 'react';
-import NavBar from '../../sections/appbar/secondNav';
+import NavBar from '../../sections/appbar/appbar'
 import Footer from '../../sections/footer/footer';
 import './page.css';
 import map from '../../../assets/map/map.png';
@@ -33,7 +33,9 @@ const App: React.FC = () => {
   return (
     <>
       <div className="page-container">
-        <NavBar />
+        <div className='h-[220px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
+          <NavBar isHomepage={false} />
+        </div>
         <div className="page-body">
           <div className="sidebar1">
             <div className="sidebar2" id="sidebar">

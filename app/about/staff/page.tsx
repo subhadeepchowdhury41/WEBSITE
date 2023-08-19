@@ -3,7 +3,7 @@ import '../../../styles/staff/staff.css'
 import React from 'react';
 import { useEffect, useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
-import NavBar from '../../sections/appbar/secondNav';
+import NavBar from '../../sections/appbar/appbar'
 import Footer from '../../sections/footer/footer';
 import StaffCard from '../../designSystem/staffCard'
 import SmallStaffCard from '../../designSystem/smallStaffCard';
@@ -58,8 +58,8 @@ const Staff = () => {
     return (
 
         <>
-            <div className="navbar">
-                <NavBar />
+            <div className='h-[220px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
+                <NavBar isHomepage={false} />
             </div>
             <div className="staff-outer-container">
                 <Sidebar page='Staff' array={array} location={''} />

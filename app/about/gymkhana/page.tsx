@@ -38,11 +38,11 @@ const App: React.FC = () => {
             </div>
             <div className='flex w-full h-fit relative resp-program'>
                 {windowWidth > 1200 ?
-                    <div className={`flex-[3] w-full h-[100vh] bg-[rgb(245,235,209)] pos-adj sticky top-[70px] `}>
+                    <div className={`flex-[3] w-full h-[100vh] bg-[rgb(245,245,245)] pos-adj sticky top-[70px] `}>
                         <Sidebar data={data} setActiveIndex={setActiveIndex} setActiveId={setActiveId} setMatchingItem={setMatchingItem}
                             ActiveIndex={activeIndex} ActiveId={activeId} />
                     </div> :
-                    <div className={`flex-[3] w-full h-[100vh] bg-[rgb(245,235,209)] pos-adj relative top-0 `}>
+                    <div className={`flex-[3] w-full h-[100vh] bg-[rgb(245,245,245)] pos-adj relative top-0 `}>
                         <Sidebar data={data} setActiveIndex={setActiveIndex} setActiveId={setActiveId} setMatchingItem={setMatchingItem}
                             ActiveIndex={activeIndex} ActiveId={activeId} />
                     </div>

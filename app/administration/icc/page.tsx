@@ -2,7 +2,7 @@
 
 import React from 'react'
 import FileCopyIcon from '@mui/icons-material/FileCopy';
-import NavBar from '../../sections/appbar/secondNav';
+import NavBar from '../../sections/appbar/appbar'
 import Footer from '../../sections/footer/footer';
 import data from './data';
 import '../../../styles/coursestr/coursestr.css';
@@ -15,7 +15,9 @@ const page = () => {
   }, []);
   return (
     <React.Fragment>
-      <NavBar />
+      <div className='h-[220px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
+        <NavBar isHomepage={false} />
+      </div>
       <div className='flexCon main-container'>
         <h1>Internal Complaint Committee</h1>
         <div className='flexCon main-calender'>

@@ -1,5 +1,6 @@
 'use client'
-import NavBar from '../../sections/appbar/secondNav'
+import NavBar from '../../sections/appbar/appbar'
+
 import Footer from '../../sections/footer/footer'
 import React from 'react'
 import Carousel from './carousel'
@@ -14,7 +15,9 @@ function Nptel() {
     }, []);
     return (
         <React.Fragment>
-            <NavBar />
+            <div className='h-[220px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
+                <NavBar isHomepage={false} />
+            </div>
 
             {Data.map((index) => {
                 return (

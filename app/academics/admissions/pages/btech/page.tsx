@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import NavBar from '../../../../sections/appbar/secondNav'
+import NavBar from '../../../../sections/appbar/appbar'
 import Footer from '../../../../sections/footer/footer'
 import '../../../../../styles/phdadmission/phdadmission.css'
 import { type } from 'os'
@@ -22,7 +22,9 @@ const datapdf = [
 const page = () => {
     return (
         <React.Fragment>
-            <NavBar />
+            <div className='h-[220px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
+                <NavBar isHomepage={false} />
+            </div>
             <div className="flex-set main-container">
                 <h1>BTech Admissions 2022-2023 <hr /> </h1>
                 <div className="main-content">
@@ -43,8 +45,8 @@ const page = () => {
                             <li>Institute Fees (Part: A) </li>
                             <li>and Hostel Fees (Part: B)</li>
                         </ul>
-                        <p>using the SBI portal (two payments are to be done separately) and make a single PDF with name<br/>
-                        <span style={{}}>Candidate’s Name-JEE-Main application-number-Payments.pdf</span>
+                        <p>using the SBI portal (two payments are to be done separately) and make a single PDF with name<br />
+                            <span style={{}}>Candidate’s Name-JEE-Main application-number-Payments.pdf</span>
                         </p>
                         <p style={{ paddingTop: '2%' }}><b>Step 4.</b>Send the two PDFs to <EmailIcon />admission@iiitkalyani.ac.in with the subject line:<br />
                             B. Tech. Admission 2022: Candidate’s Name-Candidate’s JEE Main Application No
@@ -85,7 +87,7 @@ const page = () => {
                     <div className="main-content">
                         <h5>Part - B: The Hostel Fees - The amount for the First semester is INR 39,080/- (on actual basis).</h5>
                         <p>The components are:</p>
-                        <ol style={{ listStyle: 'decimal' ,paddingLeft: '3%' }}>
+                        <ol style={{ listStyle: 'decimal', paddingLeft: '3%' }}>
                             <li style={{ padding: '1%', paddingLeft: '0%' }}>Hostel Admission Fee Rs. 1000/- (One-Time)</li>
                             <li style={{ padding: '1%', paddingLeft: '0%' }}> Hostel Caution Money Deposit (Refundable) Rs. 3000/- (One-Time)</li>
                             <li style={{ padding: '1%', paddingLeft: '0%' }}>Hostel Establishment & Maintenance Charge Rs. 1000/- (per semester)</li>
@@ -173,7 +175,7 @@ const page = () => {
                 </div>
                 <div className='main-content'>
                     <h2>Information Links:</h2>
-                    <ul  style={{ listStyle: "disc", paddingLeft: '3%' }}>
+                    <ul style={{ listStyle: "disc", paddingLeft: '3%' }}>
                         <li>Link to JoSAA: <a href='https://josaa.nic.in' target='_blank' style={{ color: "blue" }}>https://josaa.nic.in/</a></li>
                         <li>JoSAA Business rule: <a style={{ color: "blue" }} href='https://josaa.nic.in/document/josaa-2022-business-rule/' target='_blank'>https://josaa.nic.in/document/josaa-2022-business-rule/</a></li>
                         <li>Certificate formats: <a style={{ color: "blue" }} href='https://josaa.nic.in/document/certficate-formats/' target='_blank'>https://josaa.nic.in/document/certficate-formats/</a></li>
@@ -181,11 +183,11 @@ const page = () => {
                 </div>
                 <div className="main-content">
                     <h2>About IIIT KALYANI</h2>
-                    <p style={{ padding: '1%' }}><b>Indian Institute of Information Technology Kalyani</b> was set up in 2014. It was among the eighteen IIITs set up by the Ministry of Human Resource Development, Government of India, under the Not for profit Public-Private Partnership (N-PPP) model. A Memorandum of Understanding (MoU) was signed between the Government of India, Government of West Bengal, and Industry Partners, viz; Coal India Limited, Rolta Foundation, and WEBEL for setting up of Indian Institute of Information Technology 
-                    (IIIT) at Kalyani using the above model. The stakes of the partners mentioned above were at a ratio of 50:35:15 respectively in 2014. The Institute has been declared an Institute of National Importance as per The Indian Institutes of Information Technology (Public-Private Partnership) Act, 2017. The Indian Institute of Information Technology Kalyani has been set up to produce best-in-class human resources in IT and to harness the multidimensional facets of IT in various domains. IIIT Kalyani strives to evolve 
-                    into a world-class academic institution with the highest education and research facilities and produce industry-ready IT graduates to meet the industry demands. The institute will act as a catalyst in fostering an innovative ecosystem to ensure that new products, solutions, and innovations are created, taking advantage of the state's intellectual capital. IIIT Kalyani offers semester-oriented undergraduate and research programs to impart high-quality science and engineering education. Admission to the academic 
-                    programs is synchronized with the academic year and occurs according to the procedure laid down by JoSAA and CSAB (for UG level). IIIT Kalyani offers a Doctoral program also in various subject areas. IIIT Kalyani aims to excel in education and research in Information Technology and allied areas. The institute is committed to providing state-of-the-art technical education in computer science and catalyzing transmission of knowledge using the latest developments in pedagogy. 
-                    While the construction work for the permanent campus (Phase -I) has been initiated, the institute is presently running from the campus at WEBEL IT Park, Kalyani, West Bengal. For more details: www.iiitkalyani.ac.in.</p>
+                    <p style={{ padding: '1%' }}><b>Indian Institute of Information Technology Kalyani</b> was set up in 2014. It was among the eighteen IIITs set up by the Ministry of Human Resource Development, Government of India, under the Not for profit Public-Private Partnership (N-PPP) model. A Memorandum of Understanding (MoU) was signed between the Government of India, Government of West Bengal, and Industry Partners, viz; Coal India Limited, Rolta Foundation, and WEBEL for setting up of Indian Institute of Information Technology
+                        (IIIT) at Kalyani using the above model. The stakes of the partners mentioned above were at a ratio of 50:35:15 respectively in 2014. The Institute has been declared an Institute of National Importance as per The Indian Institutes of Information Technology (Public-Private Partnership) Act, 2017. The Indian Institute of Information Technology Kalyani has been set up to produce best-in-class human resources in IT and to harness the multidimensional facets of IT in various domains. IIIT Kalyani strives to evolve
+                        into a world-class academic institution with the highest education and research facilities and produce industry-ready IT graduates to meet the industry demands. The institute will act as a catalyst in fostering an innovative ecosystem to ensure that new products, solutions, and innovations are created, taking advantage of the state's intellectual capital. IIIT Kalyani offers semester-oriented undergraduate and research programs to impart high-quality science and engineering education. Admission to the academic
+                        programs is synchronized with the academic year and occurs according to the procedure laid down by JoSAA and CSAB (for UG level). IIIT Kalyani offers a Doctoral program also in various subject areas. IIIT Kalyani aims to excel in education and research in Information Technology and allied areas. The institute is committed to providing state-of-the-art technical education in computer science and catalyzing transmission of knowledge using the latest developments in pedagogy.
+                        While the construction work for the permanent campus (Phase -I) has been initiated, the institute is presently running from the campus at WEBEL IT Park, Kalyani, West Bengal. For more details: www.iiitkalyani.ac.in.</p>
                 </div>
                 <div className="main-content">
                     <h2>Academic Units</h2>
@@ -299,7 +301,7 @@ const page = () => {
                     <p><b>**</b>with 10% increase every year.</p>
                     <h5>The fee structure is the same irrespective of the category (SC/ST/OBC/EWS/PwD) of students.</h5>
                 </div>
-                <div className="btn-reg" style={{margin:'3%'}}>
+                <div className="btn-reg" style={{ margin: '3%' }}>
                     <a href='https://www.onlinesbi.sbi/sbicollect/icollecthome.htm' target='_blank'>Payment</a>
                 </div>
             </div>

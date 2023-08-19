@@ -174,7 +174,7 @@ body::-webkit-scrollbar-thumb:hover {
 @media (max-width:900px) {
   .h-set-mobile {
     height: 110px;
-    background-color: gray;
+    background-color: rgb(80, 80, 80);
   }
 
   .navItems li {
@@ -201,15 +201,15 @@ body::-webkit-scrollbar-thumb:hover {
   }
 
   .mobile-white {
-    background: rgb(255, 255, 255);
-    color: black;
+    background: rgb(0, 0, 0, 0.5);
+    color: white;
     box-shadow: none;
   }
 
   .mobile-noshadow {
     box-shadow: none;
     background: white;
-    background: rgb(255, 255, 255);
+    background: rgb(0, 0, 0, 0.5);
 
   }
 
@@ -254,7 +254,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 @media (max-width: 660px) {
   .h-set-mobile {
-    height: 90px;
+    height: 100px;
   }
 
   .mobile-head {
@@ -286,7 +286,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 @media (max-width:580px) {
   .h-set-mobile {
-    height: 80px;
+    height: 90px;
   }
 
   .navItems li {
@@ -329,7 +329,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 @media (max-width:450px) {
   .h-set-mobile {
-    height: 70px;
+    height: 85px;
   }
 
   .mobile-head {
