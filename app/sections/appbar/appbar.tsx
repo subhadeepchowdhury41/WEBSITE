@@ -7,7 +7,7 @@ import MegaMenu from "./MegaMenu";
 import MobileMegaMenu from "./MobileMegaMenu";
 import "../../../styles/globals.css";
 import MenuIcon from "@mui/icons-material/Menu";
-import CloseIcon from "@mui/icons-material/Close";
+import MenuOpenIcon from "@mui/icons-material/MenuOpen";
 import Link from "next/link";
 
 const home = [
@@ -273,7 +273,18 @@ const AppBar: React.FC<AppBarProps> = ({ isHomepage }) => {
                 }`}
               style={{ listStyle: "none" }}
             >
-              {!isHomepage && <NavItem title="Home" menu={<MegaMenu menus={home} />} />}
+              {!isHomepage && <li>
+                <a
+                  style={{
+                    fontSize: "22px",
+                    paddingRight: "10px",
+                    paddingLeft: "10px",
+                  }}
+                  href="/"
+                >
+                  Home
+                </a>
+              </li>}
 
               <NavItem title="About" menu={<MegaMenu menus={about} />} />
 
@@ -364,7 +375,7 @@ const MobileNav: React.FC<MobileNavItemProps> = ({ menu }) => {
         {!showMobileMenu && <MenuIcon fontSize="large" />}
       </span>
       <span onClick={() => setShowMobileMenu(false)}>
-        {showMobileMenu && <CloseIcon fontSize="large" />}
+        {showMobileMenu && <MenuOpenIcon fontSize="large" />}
       </span>
       {menu && showMobileMenu && <div className="">{menu}</div>}
     </div>

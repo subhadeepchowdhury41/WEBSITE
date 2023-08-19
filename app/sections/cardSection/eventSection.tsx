@@ -91,7 +91,7 @@ const EventSection = () => {
     }, [second]);
     let len = educationProgram.length;
     const addOne = () => {
-        if (j === len - 3 && scroll === 1)
+        if (j === len - 5 && scroll === 1)
             setJ(0);
         else if (scroll === 1)
             setJ(j + 1);
@@ -101,15 +101,20 @@ const EventSection = () => {
 
     return (
         <div className="card-row3">
-            <div className='row3-card1' style={windowWidth > 1500 ? { width: '600px' } : { width: '100%' }}>
-                <Reveal keyframes={customAnimation} triggerOnce>
-                    <div className='card-heading '>
-                        Continuing Education Program
-                        <SchoolOutlinedIcon style={{ marginLeft: "5px", fontSize: "35px", marginBottom: "5px" }} />
-                    </div>
-                </Reveal>
+            <div className='row3-card1' >
+                {/* style={windowWidth > 1700 ? { width: '600px' } : { width: '100%' }} */}
+                <div style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
+                    <Reveal keyframes={customAnimation} triggerOnce >
+                        <div className='card-heading cep-head'>
+                            Continuing Education Program
+                            <SchoolOutlinedIcon className='cep-icon' style={{ marginLeft: "5px", marginBottom: "5px" }} />
+                        </div>
+                        <a href='/cep' rel="noreferrer" target='_blank'>
+                            <div className='view-more' style={{ width: "fit-content" }}>View All</div>
+                        </a>
+                    </Reveal>
+                </div>
                 <div className='announcement-container' style={{ minHeight: '300px' }}>
-
                     {educationProgram.map((index) => {
                         return (
                             <div key={index.id} onMouseEnter={() => { setScroll(0) }} onMouseLeave={() => { setScroll(1) }}>
@@ -121,11 +126,10 @@ const EventSection = () => {
                     })}
 
 
-                    <a href='/cep' rel="noreferrer" target='_blank'>
-                        {/* <ITKButton text="View All Events" />  */}
-                        <div className='view-more' style={{ width: "fit-content" }}>View All</div>
-                    </a>
                 </div>
+                {/* <a href='/cep' rel="noreferrer" target='_blank'>
+                    <div className='view-more' style={{ width: "fit-content" }}>View All</div>
+                </a> */}
 
 
             </div>

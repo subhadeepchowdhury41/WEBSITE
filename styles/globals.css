@@ -73,9 +73,9 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .navItems li {
-  padding: 1vh 0.5vh 1vh 0.5vh;
-  margin-top: 1.6vh;
-  margin-bottom: 1.6vh;
+  padding: 2vh 0.5vh 2vh 0.5vh;
+  margin-top: 0.3vh;
+  /* margin-bottom: 1.6vh; */
   border-radius: 10px;
 }
 
@@ -172,9 +172,11 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 @media (max-width:900px) {
-  .h-set-mobile{
-    height: 70px;
+  .h-set-mobile {
+    height: 110px;
+    background-color: gray;
   }
+
   .navItems li {
     padding: 2.8vh .1vh 2.8vh .1vh;
     font-size: 15px;
@@ -197,19 +199,25 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 12px;
     line-height: 18px;
   }
-  .mobile-white{
-    background: white;
+
+  .mobile-white {
+    background: rgb(255, 255, 255);
     color: black;
     box-shadow: none;
   }
-  .mobile-noshadow{
+
+  .mobile-noshadow {
     box-shadow: none;
     background: white;
+    background: rgb(255, 255, 255);
+
   }
-  .mobile-border{
-    box-shadow: 0 0 5px black;
+
+  .mobile-border {
+    box-shadow: 0 0 3px rgb(0, 0, 0, 0.9);
     /* transition: none; */
   }
+
   .hindi-name {
     /* margin-left: 6; */
     /* display: none; */
@@ -245,6 +253,10 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 @media (max-width: 660px) {
+  .h-set-mobile {
+    height: 90px;
+  }
+
   .mobile-head {
     font-size: 10px;
     line-height: 15px;
@@ -273,6 +285,10 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 @media (max-width:580px) {
+  .h-set-mobile {
+    height: 80px;
+  }
+
   .navItems li {
     padding: 1.6vh .1vh 1.6vh .1vh;
     font-size: 12px;
@@ -312,6 +328,10 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 @media (max-width:450px) {
+  .h-set-mobile {
+    height: 70px;
+  }
+
   .mobile-head {
     font-size: 8px;
     line-height: 10px;
@@ -426,7 +446,7 @@ body::-webkit-scrollbar-thumb:hover {
     padding-right: 20px;
     align-items: center;
     justify-content: flex-end;
-    background: white;
+    /* background: white; */
   }
 
   .Menu-trigger-nd {
@@ -438,7 +458,7 @@ body::-webkit-scrollbar-thumb:hover {
     padding-right: 20px;
     align-items: center;
     justify-content: flex-end;
-    background: white;
+    /* background: white;  */
   }
 }
 
