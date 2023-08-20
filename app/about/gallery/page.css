@@ -76,10 +76,11 @@ body {
     height: 100%;
     width: fit-content;
     min-width: 400px;
-    max-width: 100%;
+    max-width: 90%;
     border-radius: 15px;
     box-shadow: 0 0 3px grey;
-    margin-top: 5vh;
+    margin: auto;
+    margin-top: 3vh;
 }
 
 
