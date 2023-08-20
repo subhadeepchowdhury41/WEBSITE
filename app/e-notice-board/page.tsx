@@ -17,30 +17,31 @@ interface DataType {
     children: Array<ChildInterface>;
 }
 function ENoticeBoard() {
-    const [activeArr, setActiveArr] = useState<number[]>([]);
-    const transitioningRefs = useRef<(HTMLDivElement | null)[]>([]);
+    const [active, setActive] = useState<null | number>(null);
     const toggleActive = (index: number) => {
-        if (activeArr.includes(index)) {
-            setActiveArr(activeArr.filter(itemIndex => itemIndex !== index));
-        } else {
-            setActiveArr([...activeArr, index]);
+        if (active != index) {
+            setActive(index);
+        }
+        else {
+            setActive(null)
         }
     };
-    useEffect(() => {
-        transitioningRefs.current.forEach((ref, index) => {
-            if (ref) {
-                if (activeArr.includes(index)) {
-                    ref.style.maxHeight = `${ref.scrollHeight + 30}px`;
-                } else {
-                    ref.style.maxHeight = '0px';
-                }
-            }
-        });
-    }, [activeArr]);
     useEffect(() => {
         document.title =
             "e-Notice Board | Indian Institute of Information Technology, Kalyani";
     }, []);
+    const transitioningRefs = useRef<(HTMLDivElement | null)[]>(data.map(() => null));
+    useEffect(() => {
+        transitioningRefs.current.forEach((ref, index) => {
+            if (ref) {
+                if (active === index) {
+                    ref.style.maxHeight = `${ref.scrollHeight + 30}px`; // Open the active element
+                } else {
+                    ref.style.maxHeight = '0px'; // Close all other elements
+                }
+            }
+        });
+    }, [active]);
     return (
         <div className='w-full h-fit'>
             <div className='h-[212px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
@@ -51,14 +52,14 @@ function ENoticeBoard() {
             <div className='w-full h-fit p-2 flex items-center justify-center'>
                 <div className='w-full flex justify-center max-w-[1200px] flex-wrap gap-4 mb-8'>
                     {
-                        data.map((index: DataType) => {
+                        data.map((index: DataType, i) => {
                             return (
                                 <div className='min-w-[250px] w-[30%] max-w-[350px] flex flex-col cursor-pointer'>
                                     <StyledDiv className='w-full h-[32px] max-h-[32px] text-center' onClick={() => toggleActive(index.id)}>
                                         {index.title}
                                     </StyledDiv>
 
-                                    <StyledDivTwo className={`w-full border overflow-hidden transition-all duration-500 ${activeArr.includes(index.id) ? `` : 'h-[0px]'}`} ref={el => (transitioningRefs.current[index.id] = el)}>
+                                    <StyledDivTwo className={`w-full border transition-all duration-500 overflow-hidden relative ${active === index.id ? 'active' : ''}`} ref={el => (transitioningRefs.current[i] = el)} >
                                         <ul className='py-2 px-4 mx-[12px]' style={{ listStyleType: 'disc' }}>
                                             {index.children.map((i) => {
                                                 return (

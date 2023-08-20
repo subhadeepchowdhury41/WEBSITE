@@ -1,6 +1,6 @@
 const noticeBoardData = [
   {
-    id: 1,
+    id: 0,
     title: "General Notice",
     children: [
       {
@@ -27,7 +27,7 @@ const noticeBoardData = [
     ],
   },
   {
-    id: 2,
+    id: 1,
     title: "Ph.D Notification",
     children: [
       {
@@ -38,7 +38,7 @@ const noticeBoardData = [
     ],
   },
   {
-    id: 3,
+    id: 2,
     title: "Recruitment",
     children: [
       {
@@ -103,7 +103,7 @@ const noticeBoardData = [
     ],
   },
   {
-    id: 4,
+    id: 3,
     title: "Admission Notice",
     children: [
       {
@@ -148,7 +148,7 @@ const noticeBoardData = [
     ],
   },
   {
-    id: 5,
+    id: 4,
     title: "Student Notice",
     children: [
       {
@@ -159,7 +159,7 @@ const noticeBoardData = [
     ],
   },
   {
-    id: 6,
+    id: 5,
     title: "Tender",
     children: [
       {
