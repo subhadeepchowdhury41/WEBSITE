@@ -28,10 +28,10 @@ const page = () => {
             <div className="flex-set main-container">
                 <h1>BTech Admissions 2022-2023 <hr /> </h1>
                 <div className="main-content">
-                    <h2>Announcement</h2>
+                    <h2 style={{ padding: "0", paddingBottom: "2%" }}>Announcement</h2>
                     <h6>Reporting for Admission at IIIT Kalyani will be done in Hybrid mode during Nov 04 - Nov 09, 2022.</h6>
                     <h6>Candidates may complete the admission procedure either online (Option 1) or being physically present at IIIT Kalyani (Option 2).</h6>
-                    <div className="main-content">
+                    <div className="main-contents">
                         <h4>Option 1: ONLINE Reporting (candidates need not visit the Institute for admission/reporting):</h4>
                         <p style={{ paddingTop: '2%' }}><b>Step 1.</b> Download the admission form and fill-up the form.
                             <a href="/programresources/IIITKALYANIAdmissionForm.pdf" target="_blank" style={{ color: 'blue' }}>Click Here to download</a>
@@ -42,8 +42,8 @@ const page = () => {
                         </p>
                         <p style={{ paddingTop: '2%' }}><b>Step 3.</b> Download the payment receipts when payments are made for</p>
                         <ul style={{ listStyle: 'circle', paddingLeft: '5%' }}>
-                            <li>Institute Fees (Part: A) </li>
-                            <li>and Hostel Fees (Part: B)</li>
+                            <li style={{ fontSize: ".9em" }}>Institute Fees (Part: A) </li>
+                            <li style={{ fontSize: ".9em" }}>and Hostel Fees (Part: B)</li>
                         </ul>
                         <p>using the SBI portal (two payments are to be done separately) and make a single PDF with name<br />
                             <span style={{}}>Candidate’s Name-JEE-Main application-number-Payments.pdf</span>
@@ -77,7 +77,7 @@ const page = () => {
                     <div className="main-content">
                         <h5>Part - A: The Institute Fees for the first semester is INR 1,04,120/- (see Institute fee structure).</h5>
                         <p>Total amount paid to JoSAA and/or CSAB excluding the JoSAA/CSAB processing charges must be subtracted from INR 1,04,120 to calculate the remaining amount to be paid to IIIT Kalyani with respect to the Institute fee (Part A).</p>
-                        <ul style={{ listStyle: "square", paddingLeft: '3%' }}>
+                        <ul style={{ listStyle: "square", paddingLeft: '7%' }}>
                             <li style={{ padding: '1%', paddingLeft: '0%' }}>Case 1: General/Gen-EWS/OBC-NCL: Remaining amount to be paid to IIIT Kalyani = INR 104120 - (INR 75000 - INR 3000) = INR 32,120. In the SBI portal during payment, write Tution Fee = INR 18000 and the other components are fixed.</li>
                             <li style={{ padding: '1%', paddingLeft: '0%' }}>Case 2: SC/ST/PwD: Remaining amount to be paid to IIIT Kalyani = INR 104120 - (INR 35000 - INR 3000) = INR 72,120. In the SBI portal during payment, write Tution Fee = INR 58000 keeping the other components as they are.</li>
                         </ul>
@@ -86,7 +86,7 @@ const page = () => {
                     <div className="main-content">
                         <h5>Part - B: The Hostel Fees - The amount for the First semester is INR 39,080/- (on actual basis).</h5>
                         <p>The components are:</p>
-                        <ol style={{ listStyle: 'decimal', paddingLeft: '3%' }}>
+                        <ol style={{ listStyle: 'decimal', paddingLeft: '7%' }}>
                             <li style={{ padding: '1%', paddingLeft: '0%' }}>Hostel Admission Fee Rs. 1000/- (One-Time)</li>
                             <li style={{ padding: '1%', paddingLeft: '0%' }}> Hostel Caution Money Deposit (Refundable) Rs. 3000/- (One-Time)</li>
                             <li style={{ padding: '1%', paddingLeft: '0%' }}>Hostel Establishment & Maintenance Charge Rs. 1000/- (per semester)</li>
@@ -104,7 +104,7 @@ const page = () => {
                 <div className="main-content">
                     <h2>Instructions to pay fees online:</h2>
                     <p>The students / parents paying the fees through online payment systems should follow the following process for paying the fees.</p>
-                    <ul style={{ paddingLeft: '3%', listStyle: 'disc' }}>
+                    <ul style={{ paddingLeft: '7%', listStyle: 'disc' }}>
                         <li>Click on the Payment option given on our website.</li>
                         <li>Select 'West Bengal' as State of Corporate/Institution.</li>
                         <li>Select 'Educational Institution' as type of Corporate/Institution.</li>
@@ -118,26 +118,26 @@ const page = () => {
                 </div>
                 <div className='main-content'>
                     <h2>List of Documents for Admission(scan or submit)</h2>
-                    <ul style={{ listStyle: 'decimal', paddingLeft: "3%" }}>
+                    <ul style={{ listStyle: 'decimal', paddingLeft: "7%", paddingBottom: "2%" }}>
                         <li>Filled-in Admission form (Download the form here::<a href='/programresources/IIITKALYANIAdmissionForm.pdf' target='_blank' style={{ color: "blue" }}>Click Here to download</a>)</li>
                         <li>
-                            <ol style={{ listStyle: 'lower-roman', paddingLeft: "3%" }}>
+                            <ol style={{ listStyle: 'lower-roman', paddingLeft: "5%" }}>
                                 <li>Payment Proofs (for all the payments made to JoSAA and/or CSAB)</li>
                                 <li>Proof of payment of the remaining amount of Institute Fees (Part A)</li>
                                 <li>Proof of payment of the Hostel Fees (Part B).</li>
                             </ol>
                         </li>
                         <li>
-                            <ol style={{ listStyle: 'lower-roman', paddingLeft: "3%" }}>
+                            <ol style={{ listStyle: 'lower-roman', paddingLeft: "5%" }}>
                                 <li>Aadhaar Card</li>
                                 <li>
-                                    <ol style={{ listStyle: 'lower-alpha', paddingLeft: "3%" }}>
+                                    <ol style={{ listStyle: 'lower-alpha', paddingLeft: "5%" }}>
                                         <li>Provisional Seat Allotment Letter</li>
                                         <li>Document Verification-cum-Seat Acceptance Letter</li>
                                     </ol>
                                 </li>
                                 <li>
-                                    <ol style={{ listStyle: 'lower-alpha', paddingLeft: "3%" }}>
+                                    <ol style={{ listStyle: 'lower-alpha', paddingLeft: "5%" }}>
                                         <li>Admit Card of JEE (Main)-2022</li>
                                         <li>Score Card / Rank Card of JEE (Main)-2022</li>
                                     </ol>
@@ -154,13 +154,13 @@ const page = () => {
                 <div className='main-content'>
                     <h2>Anti Ragging Details</h2>
                     <p>The procedure to be followed by the student:</p>
-                    <ol style={{ listStyle: 'square', paddingLeft: "3%" }}>
+                    <ol style={{ listStyle: 'square', paddingLeft: "5%" }}>
                         <li><b>Step 1:</b> A student will submit his/her details on the website http://www.antiragging.in/; read and confirm that he/she and his/her parents/Guardians have read and understood the regulations on curbing the menace of ragging. He/She will confirm & agree that he/she will not engage in ragging in any form.</li>
                         <li><b>Step 2:</b> The student will receive an Email with his/her registration number (to be written in Admission form, Page 05) and a web link. The student will forward the link to: office@iiitkalyani.ac.in</li>
                     </ol>
                     <p style={{ paddingTop: '2%', paddingBottom: '2%' }}>During submission of details the fields marked with * are compulsory Institute related data are given herewith:</p>
                     <p style={{ fontWeight: '700' }}>Register for Anti Ragging Undertaking as University</p>
-                    <ol style={{ paddingLeft: "3%", listStyle: "disc" }}>
+                    <ol style={{ paddingLeft: "7%", listStyle: "disc", paddingBottom: "2%" }}>
                         <li>College Name: Indian Institute of Information Technology Kalyani</li>
                         <li>Director's Name: Prof. Santanu Chattopadhyay</li>
                         <li>College Phone Number: +91 9831264161</li>
@@ -174,7 +174,7 @@ const page = () => {
                 </div>
                 <div className='main-content'>
                     <h2>Information Links:</h2>
-                    <ul style={{ listStyle: "disc", paddingLeft: '3%' }}>
+                    <ul style={{ listStyle: "disc", paddingLeft: '5%' }}>
                         <li>Link to JoSAA: <a href='https://josaa.nic.in' target='_blank' style={{ color: "blue" }}>https://josaa.nic.in/</a></li>
                         <li>JoSAA Business rule: <a style={{ color: "blue" }} href='https://josaa.nic.in/document/josaa-2022-business-rule/' target='_blank'>https://josaa.nic.in/document/josaa-2022-business-rule/</a></li>
                         <li>Certificate formats: <a style={{ color: "blue" }} href='https://josaa.nic.in/document/certficate-formats/' target='_blank'>https://josaa.nic.in/document/certficate-formats/</a></li>
