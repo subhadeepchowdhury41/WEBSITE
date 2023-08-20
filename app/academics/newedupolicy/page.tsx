@@ -13,7 +13,7 @@ const page = () => {
   }, []);
   return (
     <React.Fragment>
-      <div className='h-[220px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
+      <div className='h-[212px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
         <NavBar isHomepage={false} />
       </div>
       <div className="fluid-center nisp-main-page">

@@ -14,7 +14,7 @@ function Facility() {
     const filterData = Data.filter(item => item.slug === slug)
     return (
         <>
-            <div className='h-[220px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
+            <div className='h-[212px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
                 <NavBar isHomepage={false} />
             </div>
             <div className='w-full flex items-center justify-center mt-8'>

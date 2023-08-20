@@ -13,13 +13,13 @@ const SponsoredProjects = () => {
   }, []);
   return (
     <>
-      <div className='h-[220px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
+      <div className='h-[212px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
         <NavBar isHomepage={false} />
       </div>
       <div className="fluid-center projects-main-page">
         <h1>Sponsored Projects</h1>
         <div className="fluid-center main-projects-card">
-        <p>Ongoing Sponsored Research Projects</p>
+          <p>Ongoing Sponsored Research Projects</p>
           {projectsData.ongoing.map((item) => {
             return (
               <div key={item.id} className="fluid-center projects-card">
@@ -34,7 +34,7 @@ const SponsoredProjects = () => {
           })}
         </div>
         <div className="fluid-center main-projects-card">
-        <p>Completed Sponsored Research Projects</p>
+          <p>Completed Sponsored Research Projects</p>
           {projectsData.completed.map((item) => {
             return (
               <div key={item.id} className="fluid-center projects-card">
