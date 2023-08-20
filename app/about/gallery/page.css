@@ -7,7 +7,7 @@ body {
 .gallery {
     display: flex;
     flex-direction: row;
-    margin-top: 00px;
+    /* margin-top: 00px; */
 }
 
 .main {
@@ -61,9 +61,9 @@ body {
 
 .main h1 {
     font-size: 1.8rem;
-    width: 70%;
+    width: fit-content;
     margin: auto;
-    margin-top: 3vh;
+    margin-top: 2vh;
     line-height: 1rem;
     font-weight: 400;
     background-color: rgba(0, 0, 0, 0.089);
@@ -79,6 +79,7 @@ body {
     max-width: 100%;
     border-radius: 15px;
     box-shadow: 0 0 3px grey;
+    margin-top: 5vh;
 }
 
 
@@ -110,7 +111,7 @@ body {
 @media (min-width:900px) {
     .gallery-side {
         overflow-y: scroll;
-        max-height: 75vh;
+        max-height: 80vh;
         /* margin-top: 70px; */
     }
 }

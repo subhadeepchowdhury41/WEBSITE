@@ -80,7 +80,7 @@ export default function Sidebar({ array, scroll }) {
             <a href={index.link}>
               <Image
                 className="gallery-side-image"
-                src={require(`../../../assets/gallery/${index.url}.jpg`)}
+                src={require(`../../../assets/gallery/${index.url}.webp`)}
                 alt=""
               />
             </a>
