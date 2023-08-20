@@ -196,7 +196,7 @@ const AppBar: React.FC<AppBarProps> = ({ isHomepage }) => {
     <>
       {isClient ? (
         <div className={`grid content-center bg-transparent z-50 w-full ${!stick ? "animate-randimation-reverse opacity-100 absolute top-0" : ""}bg-blue-900`} style={{ backgroundImage: "linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7))", WebkitBackdropFilter: "blur(8px)", }}>
-          <div className={`flex mx-auto iiitk-name hideit m-6 items-center ${isHomepage ? "" : "checker"} `}>
+          <div className={`flex mx-auto iiitk-name m-6 items-center ${isHomepage ? "" : "checker hideit"} `}>
             <div className="flex flex-col hindi-name mobile-head text-2xl ml-[45] text-white mx-6 py-3 border-t-2 border-b-2 tracking-wide animate-left-college-name-swipe-animation " style={{ alignItems: "center", textAlign: "center", marginLeft: "4.5vw", }}>
               भारतीय सूचना प्रौद्योगिकी संस्थान, कल्याणी
               <br />
@@ -215,7 +215,7 @@ const AppBar: React.FC<AppBarProps> = ({ isHomepage }) => {
           </div>
 
           <div className={`flex mobile-noshadow text-white font-semibold ${stick ? " navBar mobile-border " : ""} ${stick ? "fixed top-0 z-[100] shadow-md  black-bg" : "justify-center z-[100000]"} w-full`}>
-            <a href="/"><Image width={50} className={`px-2 py-3 h-[60px] ${stick ? "opacity-100 transition-opacity ease-in-out duration-500 mobile-white" : " transition-opacity ease-in-out duration-500 mobile-white"}`} src={IIITKalyaniLogo} alt="IIIT Kalynai Logo" /></a>
+            <a href="/"><Image width={51} className={`px-2 py-3 h-[60px] ${stick ? `opacity-100 transition-opacity ease-in-out duration-500 mobile-white` : `${isHomepage ? 'second-logo' : 'hidelogo'} transition-opacity ease-in-out duration-500 mobile-white`}`} src={IIITKalyaniLogo} alt="IIIT Kalynai Logo" /></a>
             {stick ? (
               <MobileNav menu={<MobileMegaMenu menus={mobileMenu} />} />
             ) : (
