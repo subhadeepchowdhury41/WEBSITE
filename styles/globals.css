@@ -626,3 +626,14 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 /*######################## Payment Portal ############################################### */
+
+@media (max-width: 1150px){
+  .hideit{
+    display: none !important;
+  }
+  .h-set-mobile{
+    height: 60px;
+    /* background: white; */
+    /* border-bottom: 1px solid rgb(0, 0, 0, 0.3); */
+  }
+}
