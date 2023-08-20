@@ -73,10 +73,10 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .navItems li {
-  padding: 2vh 0.5vh 2vh 0.5vh;
-  margin-top: 0.3vh;
-  /* margin-bottom: 1.6vh; */
-  border-radius: 10px;
+  padding: 1.5vh 0.5vh 1.5vh 0.5vh;
+  margin-top: 0.2vh;
+  margin-bottom: 0;
+  border-radius: 8px;
 }
 
 .navItems li:hover {
