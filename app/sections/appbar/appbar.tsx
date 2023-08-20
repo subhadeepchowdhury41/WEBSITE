@@ -215,7 +215,7 @@ const AppBar: React.FC<AppBarProps> = ({ isHomepage }) => {
           </div>
 
           <div className={`flex mobile-noshadow text-white font-semibold ${stick ? " navBar mobile-border " : ""} ${stick ? "fixed top-0 z-[100] shadow-md  black-bg" : "justify-center z-[100000]"} w-full`}>
-            <Image width={45} className={`px-2 py-3 h-[60px] ${stick ? "opacity-100 transition-opacity ease-in-out duration-500 mobile-white" : "second-logo transition-opacity ease-in-out duration-500 mobile-white"}`} src={IIITKalyaniLogo} alt="IIIT Kalynai Logo" />
+            <a href="/"><Image width={45} className={`px-2 py-3 h-[60px] ${stick ? "opacity-100 transition-opacity ease-in-out duration-500 mobile-white" : "second-logo transition-opacity ease-in-out duration-500 mobile-white"}`} src={IIITKalyaniLogo} alt="IIIT Kalynai Logo" /></a>
             {stick ? (
               <MobileNav menu={<MobileMegaMenu menus={mobileMenu} />} />
             ) : (
