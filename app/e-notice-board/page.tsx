@@ -30,6 +30,7 @@ function ENoticeBoard() {
         document.title =
             "e-Notice Board | Indian Institute of Information Technology, Kalyani";
     }, []);
+    // used ref for transition as h-auto pe css does not css (no transition happens for h-auto or h-fit)
     const transitioningRefs = useRef<(HTMLDivElement | null)[]>(data.map(() => null));
     useEffect(() => {
         transitioningRefs.current.forEach((ref, index) => {
