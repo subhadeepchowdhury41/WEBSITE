@@ -22,13 +22,8 @@ const SponsoredProjects = () => {
           <p>Ongoing Sponsored Research Projects</p>
           {projectsData.ongoing.map((item) => {
             return (
-              <div key={item.id} className="fluid-center projects-card">
-                <h2 className="fluid-center">{item.title}</h2>
-                <h4>{item.desc}</h4>
-                <section className="show">
-                  <h3>PI : {item.PI}</h3>
-                  <h3>Project value : {item.value}</h3>
-                </section>
+              <div key={item.id} className="projects-card">
+                {item.id}. <strong>Title: {item.title}</strong>, {item.desc}, PI : {item.PI}, Project value : {item.value}
               </div>
             );
           })}
@@ -37,13 +32,8 @@ const SponsoredProjects = () => {
           <p>Completed Sponsored Research Projects</p>
           {projectsData.completed.map((item) => {
             return (
-              <div key={item.id} className="fluid-center projects-card">
-                <h2 className="fluid-center">{item.title}</h2>
-                <h4>{item.desc}</h4>
-                <section className="show">
-                  <h3>PI : {item.PI}</h3>
-                  <h3>Project value : {item.value}</h3>
-                </section>
+              <div key={item.id} className="projects-card">
+                {item.id}. <strong>Title: {item.title}</strong>, {item.desc}, PI : {item.PI}, Project value : {item.value}
               </div>
             );
           })}

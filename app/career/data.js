@@ -12,76 +12,79 @@ const careerData = {
         },
         {
             id:2,
-            name:'Shortlisted candidates for Caretaker (On outsourcing basis)',
-            link:'/career/Shortlisted candidates list for website.pdf',
-            doc:''
-        },
-        {
-            id:3,
             name:'Advertisement for the post of Registrar',
             link:'/career/Advertisement_for_the _post_of_Registrar.pdf',
             doc:''
         },
         {
-            id:4,
-            name:'Shortlisted candidates list for Junior Assistant (Finance) (On Contract)',
-            link:'/career/Shortlisted candidates list for website JAF.pdf',
-            doc:''
-        },
-        {
-            id:5,
+            id:3,
             name:'Advertisement for JRF under DRDO Project',
             link:'/career/Advertisement for JRF under DRDO Project.pdf',
             doc:''
         },
         {
-            id:6,
+            id:4,
             name:'Advertisement for Hostel Resident Caretaker',
             link:'/career/Advertisement for Hostel Resident Caretaker.pdf',
             doc:''
         },
         {
-            id:7,
+            id:5,
             name:'Advertisement for Cook',
             link:'/career/Advertisement for Cook.pdf',
             doc:''
         },
         {
-            id:8,
+            id:6,
             name:'Advertisement for Junior Assistant Finance',
             link:'/career/Advertisement for Junior Assistant Finance.pdf',
             doc:''
+        }
+    ],
+    shortlisted:[
+        {
+            id:1,
+            name:'Shortlisted candidates for Caretaker (On outsourcing basis)',
+            link:'/career/Shortlisted candidates list for website.pdf',
+            doc:''
         },
         {
-            id:9,
+            id:2,
+            name:'Shortlisted candidates list for Junior Assistant (Finance) (On Contract)',
+            link:'/career/Shortlisted candidates list for website JAF.pdf',
+            doc:''
+        },
+        {
+            id:3,
             name:'Shortlisted Candidates for the post of Junior Technicican',
             link:'/career/Shortlisted Candidates for the post of Junior Technicican.pdf',
             doc:''
         },
         {
-            id:10,
+            id:4,
             name:'Shortlisted Candidates for the post of Junior Assistant',
             link:'/career/Shortlisted Candidates for the post of Junior Assistant.pdf',
             doc:''
         },
         {
-            id:11,
+            id:5,
             name:'Shortlisted Candidates for the post of JTS',
             link:'/career/Shortlisted Candidates for the post of JTS.pdf',
             doc:''
         },
         {
-            id:12,
+            id:6,
             name:'Shortlisted candidates for ITest/Interview [DRDO Project]',
             link:'/career/Shortlisted JRF Advt-2 Website.pdf',
             doc:''
         },
         {
-            id:13,
+            id:7,
             name:'Shortlisted Candidates for the post of Assistant Professor ECE',
             link:'/career/Shortlisted Candidates for the post of Assistant Professor ECE.pdf',
             doc:''
         }
+
     ],
     carrerForm:[
         {
