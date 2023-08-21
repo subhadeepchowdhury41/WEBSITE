@@ -36,23 +36,21 @@
     text-align: center;
 }
 .career-buttons{
-    margin: 1%;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 30%;
-    min-width: 280px;
-    aspect-ratio: 2/1;
+    margin: 0.5%;
+    justify-content: space-between;
+    width: 100%;
+    text-align: left;
     padding: 1%;
-    background-color: rgb(236, 247, 255);
+    background-color: rgb(226, 243, 255);
     border-radius: 5px;
-    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-    font-size: max(0.9vw,1.4vh) ;
+    font-size: max(0.9vw,1.5vh) ;
 }
 .career-btn-group{
-    width: 100%;
+    width: fit-content;
+    min-width: 40px;
 }
 .career-btn{
-    width: 3rem;
+    width: 2.5rem;
     transition: all .2s;
     cursor: pointer;
 }
@@ -62,7 +60,7 @@
 }
 @media screen and (max-width:1024px){
     .career-info{
-        width: 80%;
+        width: 85%;
     }
     .career-buttons{
         margin: 1.5% 1%;
@@ -71,7 +69,7 @@
 }
 @media screen and (max-width:768px){
     .career-info{
-        width: 90%;
+        width: 95%;
     }
     .career-buttons{
         margin: 1% 0.5%;

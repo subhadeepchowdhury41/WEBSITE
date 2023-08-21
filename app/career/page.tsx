@@ -28,7 +28,7 @@ const Career = () => {
                         {careerData.careerPDF.map((item) => {
                             return (
                                 <div key={item.id} className="fluid-center career-buttons">
-                                    {item.name}
+                                    {item.id}. {item.name}
                                     <div className='fluid-center career-btn-group'>
                                         <Image src={careerData.pdfIcon} width={50} height={100} className='career-btn' onClick={() => { handleClick(item.link) }} alt={''} />
                                         {item.doc.length > 0 && <Image src={careerData.docIcon} width={50} height={100} className='career-btn' onClick={() => { handleClick(item.doc) }} alt={''} />}
@@ -44,7 +44,7 @@ const Career = () => {
                         {careerData.shortlisted.map((item) => {
                             return (
                                 <div key={item.id} className="fluid-center career-buttons">
-                                    {item.name}
+                                    {item.id}. {item.name}
                                     <div className='fluid-center career-btn-group'>
                                         <Image src={careerData.pdfIcon} width={50} height={100} className='career-btn' onClick={() => { handleClick(item.link) }} alt={''} />
                                         {item.doc.length > 0 && <Image src={careerData.docIcon} width={50} height={100} className='career-btn' onClick={() => { handleClick(item.doc) }} alt={''} />}
@@ -60,7 +60,7 @@ const Career = () => {
                         {careerData.carrerForm.map((item) => {
                             return (
                                 <div key={item.id} className="fluid-center career-buttons">
-                                    {item.name}
+                                    {item.id}. {item.name}
                                     <div className='fluid-center career-btn-group'>
                                         <Image src={careerData.pdfIcon} width={50} height={100} className='career-btn' onClick={() => { handleClick(item.link) }} alt={''} />
                                         {item.doc.length > 0 && <Image src={careerData.docIcon} width={50} height={100} className='career-btn' onClick={() => { handleClick(item.doc) }} alt={''} />}
