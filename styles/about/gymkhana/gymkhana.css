@@ -10,7 +10,7 @@
 
 @media (max-width: 1200px) {
     .resp-program {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .pd-adjst {
