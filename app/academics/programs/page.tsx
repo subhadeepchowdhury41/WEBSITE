@@ -48,7 +48,7 @@ function ProgramPage() {
                     <Sidebar data={data} setActiveIndex={setActiveIndex} setActiveId={setActiveId} setMatchingItem={setMatchingItem}
                         ActiveIndex={activeIndex} ActiveId={activeId} />
                 </div>
-                <div className='flex-[8] w-full h-auto py-[16px] px-[64px] flex flex-col gap-4 pd-adjst'>
+                <div className='flex-[8] w-full h-auto py-[16px] px-[24px] flex flex-col gap-4 pd-adjst'>
                     <div className='text-[28px] font-semibold'>{matchingItem?.label}</div>
                     <div className='w-full aspect-[2] ht-adj' style={{ backgroundImage: `url(${matchingItem?.img})`, backgroundSize: '100% 100%', borderRadius: "10px", boxShadow: "0 0 5px grey" }}></div>
                     <div className='w-full text-[18px]' style={{ fontSize: "16px", textAlign: "justify" }}>

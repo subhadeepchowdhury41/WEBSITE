@@ -98,7 +98,7 @@ const page = () => {
                     <p>Write JEE Main Application Number in place of Registration Number.</p>
                     <p><b>Note:</b> The candidates need to pay the Institute Fees (Part A) and the Hostel Fees (Part B) through the SBI Collect Portal only.<br />
                         NO OTHER MODE OF PAYMENTS will be there.<br />
-                        The SBI Portal can be accessed using this link: <a href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm" target='_blank' style={{ color: "blue" }}>https://www.onlinesbi.sbi/sbicollect/icollecthome.htm</a>
+                        The SBI Portal can be accessed using this <a href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm" target='_blank' style={{ color: "blue" }}> link</a>
                     </p>
                 </div>
                 <div className="main-content">
