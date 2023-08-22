@@ -1,0 +1,19 @@
+@import '@fontsource/montserrat';
+
+.why-main-heading h1 {
+    font-size: 40px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 5vh;
+    /* margin-bottom: 5vh; */
+    font-weight: 500;
+}
+
+
+@media(max-width:570px) {
+    .txtxm {
+        font-size: 14px;
+        text-align: justify;
+    }
+}

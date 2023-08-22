@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import "./page.css";
 
 function Card(props) {
   return (
@@ -10,7 +11,7 @@ function Card(props) {
         query: { slug: props.cellData.slug },
       }}
     >
-      <div className="max-w-[1250px] max-h-[1000px] h-fit w-full flex items-center justify-between row-switch card gap-4">
+      <div className="max-w-[1250px] max-h-[1000px] h-fit font-sans w-full flex items-center justify-between row-switch card gap-4 txtxm">
         <div className="w-full min-h-[250px] h-[250px] flex-[4] flex justify-800">
           <div
             className="w-full h-[250px] max-w-[375px] rounded-2xl"
@@ -20,11 +21,11 @@ function Card(props) {
             }}
           ></div>
         </div>
-        <div className="w-full h-[250px] min-h-[250px] flex-[8] flex flex-col text-style justify-between">
-          <div className="font-bold text-3xl">
+        <div className="w-full h-[250px] min-h-[250px] flex-[8] flex font-sans flex-col text-style justify-between">
+          <div className="font-bold font-sans text-3xl">
             {props.cellData?.index}. {props.cellData?.heading}
           </div>
-          <div className="text-[19px] italic">{props.cellData?.shorttext}</div>
+          <div className=" font-sans">{props.cellData?.shorttext}</div>
           <div className="h-[80px] w-full flex gap-4 resize m-2">
             {props.cellData.tags?.map((index) => {
               return (

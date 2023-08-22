@@ -15,7 +15,7 @@ let Data = [
       },
       {
         text: "WEBEL IT PARK KALYANI",
-        style: "text-[30px] text-blue-400 mt-[50px] mb-[10px] text-justify",
+        style: "text-[20px] text-blue-400 mt-[50px] mb-[10px] text-justify",
       },
       {
         text: "West Bengal Electronics Industry Development Corporation Limited (WBEIDC Ltd.), under the aegis of Department of Information Technology and Electronics, Government of West Bengal, the nodal body is driving Information Technology (IT) related investments across the state through its IT Parks, Hardware Parks and Electronic Manufacturing Clusters (EMCs). Our institute, Indian Instiute Of Information Technology Kalyani, is presently running in one of these IT parks.",
