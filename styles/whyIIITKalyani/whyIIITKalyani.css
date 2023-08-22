@@ -1,23 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 .why-container {
-    max-width: 90vw;
+    max-width: 1250px;
     margin: auto;
-    margin-top: 10vh;
+    width: 90%;
+    margin-top: 3vh;
     margin-bottom: 10vh;
     border-radius: 7px;
     /* border: 3px dotted rgb(0, 0, 0); */
-    box-shadow: 0px 0px 5px grey;
-    padding: 50px;
+    /* box-shadow: 0px 0px 5px grey; */
+    /* padding: 50px; */
     text-align: justify;
-    background-color: rgb(253, 255, 237, 0.7);
+    font-family: 'Montserrat', sans-serif;
+    /* background-color: rgb(253, 255, 237, 0.7); */
 }
 
 .why-main-heading {
-    margin-bottom: 50px;
+    width: 100%;
 }
 
 .why-main-heading h1 {
-    font-size: 5rem;
-    font-weight: 600;
+    font-size: 40px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 5vh;
+    font-weight: 500;
 }
 
 .why-sub-heading h2 {
@@ -38,7 +46,7 @@
 }
 
 .middle-para {
-    margin: 40px 20px;
+    margin: 20px 20px;
 }
 
 .divider {
@@ -51,4 +59,13 @@
 
 .why-highlighted-text {
     color: rgb(40, 170, 213);
+}
+
+@media (max-width:570px) {
+    .why-main-heading h1 {
+        font-size: 30px;
+        text-align: left;
+        width: 100%;
+        margin-bottom: 2vh;
+    }
 }

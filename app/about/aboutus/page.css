@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
 .page-body {
     flex-grow: 1;
     /* overflow-y: auto; */
     display: flex;
     position: relative;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .sidebar1 {
@@ -133,7 +137,7 @@
     box-shadow: 0 0 2px skyblue;
     padding: 10px;
     border-radius: 10px;
-    color: #706e6e;
+    color: #302f2f;
 }
 
 .travel h5 {
@@ -173,6 +177,7 @@
         font-size: 20px;
     }
 
+
     .page-body {
         flex-direction: column-reverse;
     }
@@ -200,11 +205,16 @@
     }
 
     .h-adj-aboutus {
-        max-height: 300px;
+        /* max-height: 300px; */
+        height: auto;
+        aspect-ratio: 16/9;
+        margin-bottom: 2vh;
     }
 
     .side-img {
-        display: none;
+        /* display: none; */
+        aspect-ratio: 4/3;
+        width: 100%;
     }
 
     .sidebar1 {
