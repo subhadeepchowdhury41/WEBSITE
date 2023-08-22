@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 
 .staff-outer-container {
     /* height: 100vh; */
@@ -6,6 +8,7 @@
     margin: auto;
     display: flex;
     flex-direction: row;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .staff-container {
@@ -23,10 +26,10 @@
     align-items: center;
     text-align: center;
     display: flex;
-    font-size: min(3vh, 3vw);
-    font-weight: 600;
+    font-size: 40px;
+    font-weight: 500;
     /* margin-left: 4vw; */
-    margin-top: 50px;
+    margin-top: 2vh;
     /* margin-left: 20px; */
 }
 
@@ -53,10 +56,33 @@
     /* align-items: center; */
     justify-content: center;
     margin: auto;
+    margin-top: 1vh;
+    margin-bottom: 6vh;
+}
+
+.staff-container hr {
+    display: none;
 }
 
 @media (max-width:900px) {
     .staff-container {
         max-width: 90vw;
     }
+
+    .staff-sub-header {
+        font-size: 30px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width:570px) {
+    .staff-sub-header {
+        font-size: 25px;
+    }
+
+
 }
