@@ -24,7 +24,7 @@ const PHDStudents = () => {
             <div className='h-[212px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
                 <NavBar isHomepage={false} />
             </div>
-            <div className='w-full font-[800] text-4xl pl-8 my-8'>
+            <div className='w-full font-[800] text-2xl pl-8 my-8'>
                 IIIT Kalyani PhD students
             </div>
             {
