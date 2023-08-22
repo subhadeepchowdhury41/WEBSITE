@@ -81,7 +81,7 @@
     padding: 3%;
     background-color: #fef2ef;
     box-shadow: 0 0 5px grey;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: all 0.2s ease-in-out;
     position: relative;
     padding-bottom: 5%;
@@ -97,7 +97,7 @@
     box-shadow: 0 0 5px grey;
     margin: 0;
     left: 0;
-    border-radius: 0 0 5px 5px;
+    border-radius: 0 0 10px 10px;
     transform: translate(0, 25px);
     transition: all 0.4s ease-in-out;
     padding: 2%;
@@ -111,7 +111,7 @@
 
 .social li {
     list-style: none;
-    color: grey;
+    /* color: grey; */
     margin: 0 2%;
 }
 
@@ -121,10 +121,11 @@
 
 .img-fluid {
     margin: auto;
-    width: 60%;
+    width: 100%;
+    border-radius: 10px;
     aspect-ratio: 1/1;
-    border-radius: 50%;
-    margin-top: 2vh;
+    /* border-radius: 50%; */
+    /* margin-top: 2vh; */
 }
 
 .contact-card:hover {
@@ -134,6 +135,16 @@
 .name {
     margin-top: 2vh;
     font-size: 1.5rem;
+}
+
+.mail {
+    position: absolute;
+    top: 8%;
+    right: 12%;
+}
+
+.mail:hover {
+    color: red;
 }
 
 
@@ -184,5 +195,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .mail {
+        top: 6%;
+        right: 10%;
     }
 }

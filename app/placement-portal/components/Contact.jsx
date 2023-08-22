@@ -22,14 +22,13 @@ const TeamMember = ({
       <div className="team-content">
         <h3 className="name">{name}</h3>
         <h4 className="title">{title}</h4>
-        <h6 style={{ marginTop: "5px" }}>
+        <h6 className="mail" style={{ marginTop: "5px" }}>
           <a href={`mailto:${email}`}>
             <MailIcon />
-            {email}
           </a>
         </h6>
         <h6>
-          <PhoneIcon />
+          {/* <PhoneIcon /> */}
           {phone}
         </h6>
       </div>
@@ -170,7 +169,7 @@ const Contact = () => {
               <div className="picture">
                 <img
                   className="img-fluid"
-                  src="./img/contactus_tnp.png"
+                  src="/adminstrative/profile.webp"
                   alt="Training and Placement"
                 />
               </div>
@@ -179,18 +178,17 @@ const Contact = () => {
                 <h4 className="title">
                   Training & Placement Cell, IIIT Kalyani
                 </h4>
-                <h6 style={{ marginTop: "5px" }}>
-                  <a href="mailto:tnp@iiitkalyani.ac.in">
+                <h6 className="mail" style={{ marginTop: "5px" }}>
+                  <a href="mailto:tnp@iiitkalyani.ac.in, studentcoordinator_placement@iiitkalyani.ac.in">
                     <MailIcon />
-                    <span> TnP</span>
                   </a>
                 </h6>
-                <h6 style={{ marginTop: "5px" }}>
+                {/* <h6 style={{ marginTop: "5px" }}>
                   <a href="mailto:studentcoordinator_placement@iiitkalyani.ac.in">
-                    <MailIcon />
+                    <MailIcon fontSize="small" />
                     <span> Student Coordinator</span>
                   </a>
-                </h6>
+                </h6> */}
               </div>
               <ul className="social">
                 <li>
@@ -205,7 +203,7 @@ const Contact = () => {
                 </li>
                 <li>
                   <a
-                    href="mailto:tnp@iiitkalyani.ac.in"
+                    href="mailto:tnp@iiitkalyani.ac.in,studentcoordinator_placement@iiitkalyani.ac.in"
                     className="fa fa-google-plus"
                     aria-hidden="true"
                   >
