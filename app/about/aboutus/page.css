@@ -29,9 +29,9 @@
     height: 60vh;
     margin: 10px auto;
     background-size: cover;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 5px rgba(20, 20, 20, 0.8);
+    border-radius: 5px;
+    margin-bottom: 5vh;
+    /* box-shadow: 0 0 5px rgba(20, 20, 20, 0.8); */
 }
 
 .mottoSection {
@@ -80,14 +80,14 @@
 .content {
     padding: 40px;
     padding-top: 10px;
-    background-color: #f6f8fa;
+    /* background-color: #f6f8fa; */
     font-size: 18px;
     flex-grow: 1;
     overflow-y: auto;
 }
 
 .aboutheading {
-    font-weight: 400;
+    font-weight: 500;
     text-align: left;
     margin-bottom: 0;
     font-size: 40px;
@@ -112,7 +112,7 @@
 
 .travel {
     /* background-color: wheat; */
-    box-shadow: 0 0 5px skyblue;
+    box-shadow: 0 0 3px skyblue;
     margin: 15px auto;
     padding: 25px;
     border-radius: 10px;
@@ -121,22 +121,25 @@
 .travel h4 {
     margin: 10px auto;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .travel li {
     margin: 5px auto;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
     background-color: rgb(255, 255, 255, 0.8);
     box-shadow: 0 0 2px skyblue;
     padding: 10px;
     border-radius: 10px;
+    color: #706e6e;
 }
 
 .travel h5 {
     margin: 7px 0px;
     padding: 10px;
+    font-weight: 500;
+    color: black;
     border-radius: 5px;
     box-shadow: 0 0 2px skyblue;
     width: fit-content;
@@ -156,7 +159,7 @@
 .historyBody {
     margin: 10px;
     padding: 20px;
-    box-shadow: 0 0 2px skyblue;
+    box-shadow: 0 0 3px skyblue;
     border-radius: 12px;
 }
 
@@ -206,6 +209,11 @@
         border-radius: 10px;
         height: fit-content;
     }
+
+    .travel {
+        width: 96%;
+        margin: 2vh auto;
+    }
 }
 
 @media (max-width:570px) {
@@ -227,6 +235,7 @@
     .image {
         margin: auto;
         margin-top: 3vh;
+        margin-bottom: 3vh;
         width: 95%;
     }
 

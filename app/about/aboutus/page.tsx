@@ -99,7 +99,7 @@ const App: React.FC = () => {
                     <p>From Sealdah Railway station you will get many local trains towards Kalyani.</p>
                   </li>
                   <li><h5>KALYANI TO IIIT KALYANI</h5>
-                    <p>As you will leave the premise of Kalyani Railway Station, you should be able to find public transports (mostly TATA Magic, beware usually e-rickshaws would not take you to Webel IT Park), towards your right. They will drop you right in front of the gate of Webel IT Park.</p>
+                    <p>As you will leave the premise of Kalyani Railway Station, you should be able to find public transports towards your right. They will drop you right in front of the gate of Webel IT Park.</p>
                   </li>
                 </ul>
               </div>
@@ -116,7 +116,7 @@ const App: React.FC = () => {
                     <p>Naihati is just 3 stops away from Kalyani. This is an intermediate stop for local trains which run between Sealdah and Kalyani mention in the Sealdah To Kalyani route above.</p>
                   </li>
                   <li><h5>KALYANI TO IIIT KALYANI</h5>
-                    <p>As you will leave the premise of Kalyani Railway Station, you should be able to find public transports (mostly TATA Magic, beware usually e-rickshaws would not take you to Webel IT Park), towards your right. They will drop you right in front of the gate of Webel IT Park.</p>
+                    <p>As you will leave the premise of Kalyani Railway Station, you should be able to find public transports towards your right. They will drop you right in front of the gate of Webel IT Park.</p>
                   </li>
                 </ul>
               </div>
@@ -130,7 +130,7 @@ const App: React.FC = () => {
                     <p>From Sealdah Railway station you will get many local trains towards Kalyani.</p>
                   </li>
                   <li><h5>KALYANI TO IIIT KALYANI</h5>
-                    <p>As you will leave the premise of Kalyani Railway Station, you should be able to find public transports (mostly TATA Magic, beware usually e-rickshaws would not take you to Webel IT Park), towards your right. They will drop you right in front of the gate of Webel IT Park.</p>
+                    <p>As you will leave the premise of Kalyani Railway Station, you should be able to find public transports towards your right. They will drop you right in front of the gate of Webel IT Park.</p>
                   </li>
                 </ul>
               </div>
@@ -146,7 +146,7 @@ const App: React.FC = () => {
                   <li>From Durganagar there are 72 locals running towards Dum Dum. All the locals to Sealdah pass through Dum Dum.</li>
                   <li>After coming to Dum Dum Jn you will get many locals running towards Kalyani.</li>
                   <li><h5>KALYANI TO IIIT KALYANI</h5>
-                    <p>As you will leave the premise of Kalyani Railway Station, you should be able to find public transports (mostly TATA Magic, beware usually e-rickshaws would not take you to Webel IT Park), towards your right. They will drop you right in front of the gate of Webel IT Park.</p>
+                    <p>As you will leave the premise of Kalyani Railway Station, you should be able to find public transports towards your right. They will drop you right in front of the gate of Webel IT Park.</p>
                   </li>
                 </ul>
               </div>
