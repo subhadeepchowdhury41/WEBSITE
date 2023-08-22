@@ -31,7 +31,7 @@ const Publications = () => {
               )
             })}
           </div>
-          <div className="fluid-center publications-info-students publications-info-faculty">
+          {/* <div className="fluid-center publications-info-students publications-info-faculty">
             <h2>Publications by Faculty</h2>
             {publicationData.faculty.map((item) => {
               return (
@@ -40,7 +40,7 @@ const Publications = () => {
                 </a>
               )
             })}
-          </div>
+          </div> */}
         </div>
       </div>
       <Footer />

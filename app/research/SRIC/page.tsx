@@ -35,7 +35,7 @@ const SIRC = () => {
             {sricData.ongoing.map((item) => {
               return (
                 <div key={item.id} className="fluid-center projects-card">
-                  <h2>{item.title}</h2>
+                  <h5>{item.title}</h5>
                   <h4>{item.desc}</h4>
                   <section>
                     <h3>PI : {item.PI}</h3>
@@ -52,7 +52,7 @@ const SIRC = () => {
             {sricData.completed.map((item) => {
               return (
                 <div key={item.id} className="fluid-center projects-card">
-                  <h2>{item.title}</h2>
+                  <h5>{item.title}</h5>
                   <h4>{item.desc}</h4>
                   <section>
                     <h3>PI : {item.PI}</h3>
