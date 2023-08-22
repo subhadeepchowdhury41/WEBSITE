@@ -47,7 +47,7 @@ const App: React.FC = () => {
                 {Data.map((index) => {
                     return (
                         <React.Fragment key={index.slug}>
-                            <div className='bg-gray-200 h-[2px] max-w-[1250px] text-justify w-full my-8'></div>
+                            <div className='bg-gray-200 h-[2px] max-w-[1250px] text-justify w-full my-8 '></div>
                             <Card cellData={index} />
                         </React.Fragment>
 
