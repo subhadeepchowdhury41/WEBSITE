@@ -168,10 +168,11 @@ body::-webkit-scrollbar-thumb:hover {
 .black-bg {
   background: rgb(0, 0, 0, 0.8);
 }
+
 /*######################## Appbar ############################################### */
 
-@media (min-width:1150px){
-  .hidelogo{
+@media (min-width:1150px) {
+  .hidelogo {
     opacity: 0;
   }
 }
@@ -193,6 +194,7 @@ body::-webkit-scrollbar-thumb:hover {
     height: 175px;
     /* height: auto; */
     background-color: rgb(80, 80, 80);
+    background-color: white;
     /* background-color: black; */
     margin-bottom: 10px;
   }
@@ -632,11 +634,12 @@ body::-webkit-scrollbar-thumb:hover {
 
 /*######################## Payment Portal ############################################### */
 
-@media (max-width: 1150px){
-  .hideit{
+@media (max-width: 1150px) {
+  .hideit {
     display: none !important;
   }
-  .h-set-mobile{
+
+  .h-set-mobile {
     height: 60px;
     /* background: white; */
     /* border-bottom: 1px solid rgb(0, 0, 0, 0.3); */
