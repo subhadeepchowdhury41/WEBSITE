@@ -10,6 +10,7 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
+
 import { Bar } from "react-chartjs-2";
 
 
@@ -36,19 +37,6 @@ const options = {
   },
 };
 
-const mobileoptions = {
-  responsive: true,
-  indexAxis: 'y' as const,
-  plugins: {
-    legend: {
-      position: 'top' as const,
-    },
-    title: {
-      display: true,
-      text: 'Placement Statistics',
-    },
-  },
-};
 
 const labels = ['2014-2018', '2015-2019', '2016-2020', '2017-2021', '2018-2022', '2019-2023'];
 
@@ -58,18 +46,20 @@ const data = {
     {
       label: 'Highest Package in LPA',
       data: [10, 10, 17, 17, 15, 26.4],
+      minBarLength: 10,
       backgroundColor: 'rgba(56,113,207, 1)',
     },
     {
       label: 'Average Package in LPA',
       data: [3, 3.4, 6.2, 8, 10.7, 12.7],
+      minBarLength: 8,
       backgroundColor: 'rgba(219,68,55, 1)',
     },
   ],
 };
 
 const Placement = () => {
-  const isMobile = useMediaQuery({ query: "(max-width: 500px)" });
+  const isMobile = useMediaQuery({ query: "(max-width: 340px)" });
 
   return (
     <div id="placement-record" className="placement-record">
@@ -124,9 +114,9 @@ const Placement = () => {
             </div>
           </div>
         </div>
-        <div className="charts">
-          {!isMobile ? <div><Bar className="graph" options={options} data={data} /> </div> : <div><img src="/img/graph.png" alt="" /></div>}
-        </div>
+        {/* <div className="charts"> */}
+        {!isMobile ? <div className="charts"><Bar className="graph" data={data} /> </div> : <div className="charts"><img src="/img/graph.png" alt="" /></div>}
+        {/* </div> */}
       </div>
       <div className="record-buttons">
         <a className="records" href="#">
