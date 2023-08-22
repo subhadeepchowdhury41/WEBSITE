@@ -5,6 +5,8 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Montserrat", "sans-serif"],
+        custom: ["Poppins", "sans-serif"],
+        navbar: ["Nunito", "sans-serif"],
       },
       transitionProperty: {
         justify: "justify-content",

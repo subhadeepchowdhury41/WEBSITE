@@ -1,7 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* @import '@fontsource/montserrat'; */
+@import '@fontsource/montserrat';
+@import '@fontsource/poppins';
+@import '@fontsource/nunito';
 
 * {
   box-sizing: border-box;
@@ -10,7 +12,7 @@
 }
 
 /* body {
-  @apply font-sans;
+  @apply font-custom;
 } */
 
 
@@ -75,6 +77,11 @@ body::-webkit-scrollbar-thumb:hover {
   /* padding-top: 1.8vh; */
   /* padding-right: 1vw; */
   font-weight: 400;
+  @apply font-sans;
+}
+
+.iiitk-name {
+  @apply font-navbar;
 }
 
 .navItems li {
@@ -172,6 +179,10 @@ body::-webkit-scrollbar-thumb:hover {
 
 .black-bg {
   background: rgb(0, 0, 0, 0.8);
+}
+
+.hindi-name {
+  @apply font-custom;
 }
 
 /*######################## Appbar ############################################### */

@@ -1,3 +1,5 @@
+@import '@fontsource/montserrat';
+
 .card-heading {
     position: relative;
     font-size: 36px;
@@ -58,6 +60,7 @@
     flex-direction: row;
     padding-top: 5vh;
     background: rgb(254, 243, 222);
+    @apply font-sans;
 }
 
 .row1-card1 {
@@ -158,7 +161,6 @@
     border-radius: 7px;
     display: flex;
     align-items: center;
-    font-size: 15px;
     /* background: linear-gradient(to left, transparent 0%, #FFFFE8 100%); *
     /* border-radius: 20px 0 20px 0; */
 }
@@ -506,7 +508,7 @@
     }
 
     .announcement-heading {
-        font-size: 20px;
+        font-size: 15px;
     }
 }
 

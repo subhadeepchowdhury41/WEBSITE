@@ -37,7 +37,7 @@ const DirectorsMessage = () => {
     }, [seconds]);
     let l = announcement.length;
     const AddOne = () => {
-        if (i === l - 2 && scrolling === 1)
+        if (i === l - 4 && scrolling === 1)
             setI(1);
         else if (scrolling === 1)
             setI(i + 1);
