@@ -196,7 +196,7 @@ body::-webkit-scrollbar-thumb:hover {
     background-color: rgb(80, 80, 80);
     background-color: white;
     /* background-color: black; */
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
   }
 
   .checker {

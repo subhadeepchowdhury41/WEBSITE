@@ -59,7 +59,7 @@ const App: React.FC = () => {
                                 {index.type === 'text' && <div className='font-[400] text-[16px]'>{index.title}</div>}
                                 {index.type === 'heading' && <div className='font-semibold text-[28px]'>{index.title}</div>}
                                 {index.type === 'carousel' &&
-                                    <div className='w-full h-auto flex border rounded-2xl overflow-hidden col900'>
+                                    <div className='w-full h-auto flex border rounded-2xl overflow-hidden col900' style={{ boxShadow: "0 0 2px skyblue" }}>
                                         <div className='w-full h-[300px] flex-[4]'>
                                             <Carousel carouselData={index.data} border={'none'} height={'small'} />
                                         </div>
