@@ -7,6 +7,7 @@ import Carousel from './carousel'
 import Data from './data'
 import { useEffect } from "react";
 import { textAlign } from '@mui/system'
+import './page.css';
 
 
 function Nptel() {
@@ -24,12 +25,12 @@ function Nptel() {
                 return (
                     <div className='flex items-center justify-center text-justify px-2' style={{ width: "90%", margin: "auto" }}>
                         <div className='w-full max-w-[1000px] flex flex-col items-center justify-center mt-8'>
-                            <div className='w-full text-3xl font-bold'>{index.heading}</div>
+                            <div className='w-full text-2xl font-bold'>{index.heading}</div>
 
                             <Carousel carouselData={index.images} />
                             {index.paragraphs.map((i) => {
                                 return (
-                                    <div className='w-full mb-8'>{i.text}</div>
+                                    <div className='w-full mb-8 txtxm'>{i.text}</div>
                                 )
                             })}
                         </div>
