@@ -35,7 +35,6 @@
 .projects-card{
     width: 100%;
     min-width: 150px;
-    border-bottom: 2px solid #82cff5;
     margin: 0.5%;
     padding: 1%;
     transition: all .3s;
