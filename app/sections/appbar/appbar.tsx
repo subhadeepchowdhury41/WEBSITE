@@ -180,7 +180,7 @@ const AppBar: React.FC<AppBarProps> = ({ isHomepage }) => {
   }, []);
   const [stick, setStick] = useState<Boolean>(false);
   const handleScroll = () => {
-    if (globalThis.window?.scrollY > 118) {
+    if (globalThis.window?.scrollY > 118 || (globalThis.window.innerWidth < 1150 && !isHomepage)) {
       setStick(true);
     } else {
       setStick(false);

@@ -30,7 +30,7 @@
 @media (max-width:1000px) {
     .about-section {
         flex-direction: column-reverse;
-        margin-top: 10vh;
+        margin-top: 5vh;
     }
 
     .about-text {
