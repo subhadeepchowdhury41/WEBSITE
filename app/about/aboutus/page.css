@@ -15,7 +15,7 @@
     flex-shrink: 0;
     background-color: rgb(232, 237, 249);
     position: sticky;
-    top: 70px;
+    top: 60px;
 }
 
 .side-img {
@@ -31,7 +31,7 @@
     background-size: cover;
     border-radius: 5px;
     margin-bottom: 5vh;
-    /* box-shadow: 0 0 5px rgba(20, 20, 20, 0.8); */
+    box-shadow: 0 0 1px rgba(20, 20, 20, 0.8);
 }
 
 .mottoSection {
@@ -39,7 +39,7 @@
 }
 
 .mottoSection h2 {
-    font-size: 30px;
+    font-size: 25px;
     text-align: left;
     font-weight: 500;
     margin: 0;
@@ -58,11 +58,11 @@
 }
 
 .mottoSlogan {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .mottoSloganMeaning {
-    font-size: 18px;
+    font-size: 17px;
     margin-bottom: 20px;
 }
 
@@ -90,7 +90,7 @@
     font-weight: 500;
     text-align: left;
     margin-bottom: 0;
-    font-size: 40px;
+    font-size: 30px;
     margin-top: 20px;
 }
 
@@ -106,7 +106,8 @@
 
 .aboutparagraph {
     text-align: left;
-    font-size: 18px;
+    font-size: 15px;
+    text-align: justify;
     margin: 7px;
 }
 
@@ -157,9 +158,12 @@
 }
 
 .historyBody {
-    margin: 10px;
+    margin: 3vh 10px;
     padding: 20px;
-    box-shadow: 0 0 3px skyblue;
+    box-shadow: 0 0 1px skyblue;
+    background-color: whitesmoke;
+    background-color: rgb(232, 237, 249);
+
     border-radius: 12px;
 }
 
@@ -214,6 +218,10 @@
         width: 96%;
         margin: 2vh auto;
     }
+
+    .reach {
+        display: none;
+    }
 }
 
 @media (max-width:570px) {
@@ -234,8 +242,8 @@
 
     .image {
         margin: auto;
-        margin-top: 3vh;
-        margin-bottom: 3vh;
+        margin-top: 1vh;
+        margin-bottom: 2vh;
         width: 95%;
     }
 
@@ -249,6 +257,10 @@
 
     .h-adj-aboutus {
         max-height: 250px;
+    }
+
+    .aboutparagraph {
+        font-size: 12px;
     }
 }
 
