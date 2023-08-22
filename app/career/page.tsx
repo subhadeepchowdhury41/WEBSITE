@@ -28,7 +28,7 @@ const Career = () => {
                         {careerData.careerPDF.map((item) => {
                             return (
                                 <div key={item.id} className="fluid-center career-buttons">
-                                    {item.name}
+                                    {item.id}. {item.name}
                                     <div className='fluid-center career-btn-group'>
                                         <Image src={careerData.pdfIcon} width={50} height={100} className='career-btn' onClick={() => { handleClick(item.link) }} alt={''} />
                                         {item.doc.length > 0 && <Image src={careerData.docIcon} width={50} height={100} className='career-btn' onClick={() => { handleClick(item.doc) }} alt={''} />}
@@ -39,12 +39,28 @@ const Career = () => {
                     </div>
                 </div>
                 <div className="fluid-center career-info">
+                    <h2>Shortlisted candidates</h2>
+                    <div className='fluid-center career-info-group'>
+                        {careerData.shortlisted.map((item) => {
+                            return (
+                                <div key={item.id} className="fluid-center career-buttons">
+                                    {item.id}. {item.name}
+                                    <div className='fluid-center career-btn-group'>
+                                        <Image src={careerData.pdfIcon} width={50} height={100} className='career-btn' onClick={() => { handleClick(item.link) }} alt={''} />
+                                        {item.doc.length > 0 && <Image src={careerData.docIcon} width={50} height={100} className='career-btn' onClick={() => { handleClick(item.doc) }} alt={''} />}
+                                    </div>
+                                </div>
+                            )
+                        })}
+                    </div>
+                </div>
+                <div className="fluid-center career-info">
                     <h2>Forms</h2>
                     <div className='fluid-center career-info-group'>
                         {careerData.carrerForm.map((item) => {
                             return (
                                 <div key={item.id} className="fluid-center career-buttons">
-                                    {item.name}
+                                    {item.id}. {item.name}
                                     <div className='fluid-center career-btn-group'>
                                         <Image src={careerData.pdfIcon} width={50} height={100} className='career-btn' onClick={() => { handleClick(item.link) }} alt={''} />
                                         {item.doc.length > 0 && <Image src={careerData.docIcon} width={50} height={100} className='career-btn' onClick={() => { handleClick(item.doc) }} alt={''} />}
