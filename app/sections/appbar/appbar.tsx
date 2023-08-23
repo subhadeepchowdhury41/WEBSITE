@@ -197,7 +197,7 @@ const AppBar: React.FC<AppBarProps> = ({ isHomepage }) => {
       {isClient ? (
         <div className={`grid content-center bg-transparent z-50 w-full ${!stick ? "animate-randimation-reverse opacity-100 absolute top-0" : ""}bg-blue-900`} style={{ backgroundImage: "linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7))", WebkitBackdropFilter: "blur(8px)", }}>
           <div className={`flex mx-auto iiitk-name m-6 items-center ${isHomepage ? "" : "checker hideit"} `}>
-            <div className="flex flex-col hindi-name mobile-head text-2xl ml-[25] text-white mx-6 py-3 border-t-2 border-b-2 tracking-wide animate-left-college-name-swipe-animation " style={{ alignItems: "center", textAlign: "center", marginLeft: "4.5vw", }}>
+            <div className="flex flex-col hindi-name mobile-head text-2xl text-white mx-6 py-3 border-t-2 border-b-2 tracking-wide animate-left-college-name-swipe-animation " style={{ alignItems: "center", textAlign: "center", marginLeft: "3.5vw", }}>
               भारतीय सूचना प्रौद्योगिकी संस्थान, कल्याणी
               <br />
               <div className="text-2xl mobile-head hindi-name" style={{ letterSpacing: "0px" }}>

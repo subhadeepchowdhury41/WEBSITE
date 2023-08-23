@@ -393,8 +393,8 @@ body::-webkit-scrollbar-thumb:hover {
   }
 
   .mobile-head {
-    font-size: 8px;
-    line-height: 10px;
+    font-size: 7px;
+    line-height: 9px;
     margin: 0 10px;
   }
 
@@ -407,8 +407,8 @@ body::-webkit-scrollbar-thumb:hover {
     /* margin-left: 6; */
     /* display: none; */
     letter-spacing: .5px;
-    font-size: 8px;
-    line-height: 10px;
+    font-size: 7px;
+    line-height: 9px;
   }
 
   .carousel {
