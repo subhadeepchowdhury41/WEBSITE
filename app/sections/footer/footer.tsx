@@ -157,7 +157,7 @@ export default function Footer() {
                     </li>
 
                     <li>
-                      <a href="/administration/administrativeBody" className="text-white-footer"  >
+                      <a href="/administration/administrative-body" className="text-white-footer"  >
                         Adminstartive Body
                       </a>
                       <hr />
