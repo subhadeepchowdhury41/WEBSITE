@@ -84,7 +84,7 @@ const DirectorsMessage = () => {
                         {announcement.map((index) => {
                             return (
                                 <div key={index.id} onMouseEnter={() => { setScrolling(0) }} onMouseLeave={() => { setScrolling(1) }}>
-                                    <div className='announcement-tab' style={{ transform: `translate(0px,${-75 * i}px)` }}>
+                                    <div className='announcement-tab' style={{ transform: `translate(0px,${-65 * i}px)` }}>
                                         <div className='announcement-heading'><a target='_blank' href={index.description} >{index.title}</a></div>
                                     </div>
                                 </div>
