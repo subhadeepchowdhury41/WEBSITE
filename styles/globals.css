@@ -526,7 +526,7 @@ body::-webkit-scrollbar-thumb:hover {
     display: flex;
   }
 
-  .mobile-head {
+  /* .mobile-head {
     font-size: 18px;
     line-height: 24px;
   }
@@ -534,22 +534,28 @@ body::-webkit-scrollbar-thumb:hover {
   .hindi-name {
     font-size: 18px;
     line-height: 24px;
-  }
+  } */
 
   /* .h-set-mobile {
     height: 200px;
   } */
 }
 
-@media (max-width:1200px) {
+
+@media (min-width:1150px) and (max-width:1200px) {
   .mobile-head {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .mobile-logo {
+    width: 75px;
+    height: 90px;
   }
 
   .hindi-name {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 22px;
+    line-height: 28px;
   }
 }
 
