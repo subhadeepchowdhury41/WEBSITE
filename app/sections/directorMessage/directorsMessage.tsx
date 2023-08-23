@@ -69,7 +69,7 @@ const DirectorsMessage = () => {
                 </div>
                 <div className='row1-card2'>
                     <Reveal keyframes={customAnimation} triggerOnce delay={500}>
-                        <div style={{ display: "flex", justifyContent: "space-between" }}>
+                        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                             <span className='card-heading'>
                                 Announcements
                                 <CampaignOutlinedIcon style={{ marginLeft: "7px", fontSize: "35px", marginBottom: "5px" }} />
