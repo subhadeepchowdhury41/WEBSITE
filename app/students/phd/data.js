@@ -13,7 +13,7 @@ const data = [
     type: "Regular",
     fellowship: "Regular (Institute Teaching Assistantship)",
     links: "https://orcid.org/0000-0003-2825-1234",
-    img: "/phd/souravKarmakar.webp",
+    img: "/phd/souravkarmakar.webp",
   },
   {
     index: 2,
