@@ -14,11 +14,14 @@ function Carousel(props) {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  const [scroll, setScroll] = useState(1);
+
   const AddOne = () => {
     let len = props.carouselData.length;
-    if (i < len - 1) {
+    if (i < len - 1 && scroll === 1) {
       setI(i + 1);
-    } else {
+    } else if (scroll === 1) {
       setI(0);
     }
   };
@@ -39,7 +42,15 @@ function Carousel(props) {
     setI(0);
   }, [props.carouselData]);
   return (
-    <div className="w-full flex items-center justify-center">
+    <div
+      className="w-full flex items-center justify-center"
+      onMouseEnter={() => {
+        setScroll(0);
+      }}
+      onMouseLeave={() => {
+        setScroll(1);
+      }}
+    >
       <div
         className={`relative w-full bg-gray-400 ${
           props.height === "small" ? `h-[300px]` : "h-adjust"
