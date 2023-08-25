@@ -17,11 +17,13 @@ function Carousel(props) {
   }, []);
 
   const [i, setI] = useState(0);
+  const [scroll, setScroll] = useState(1);
+
   const AddOne = () => {
     let len = props.carouselData.length;
-    if (i < len - 1) {
+    if (i < len - 1 && scroll === 1) {
       setI(i + 1);
-    } else {
+    } else if (scroll === 1) {
       setI(0);
     }
   };
@@ -38,7 +40,15 @@ function Carousel(props) {
     return () => clearInterval(id);
   }, [AddOne]);
   return (
-    <div className="w-full pad-adjust flex items-center font-sans justify-center">
+    <div
+      className="w-full pad-adjust flex items-center font-sans justify-center"
+      onMouseEnter={() => {
+        setScroll(0);
+      }}
+      onMouseLeave={() => {
+        setScroll(1);
+      }}
+    >
       <div
         className="relative w-full max-w-[1250px] bg-gray-400 h-adjust rounded-2xl"
         style={{
