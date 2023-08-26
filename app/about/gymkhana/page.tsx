@@ -31,6 +31,21 @@ const App: React.FC = () => {
         };
     }, []);
 
+    // -------------------------------------------------------------
+    const [scrollToSectionId, setScrollToSectionId] = useState<string | null>(null);
+
+    useEffect(() => {
+        if (scrollToSectionId) {
+            scrollToSection(scrollToSectionId);
+        }
+    }, [scrollToSectionId]);
+
+    const scrollToSection = (sectionId: string) => {
+        document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+        setScrollToSectionId(null);
+    };
+    // --------------------------------------------------------------
+
     return (
         <>
             <div className='h-[212px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
@@ -40,14 +55,14 @@ const App: React.FC = () => {
                 {windowWidth > 1200 ?
                     <div className={`flex-[3] w-full h-[100vh] bg-[rgb(245,245,245)] pos-adj sticky top-[70px] `}>
                         <Sidebar data={data} setActiveIndex={setActiveIndex} setActiveId={setActiveId} setMatchingItem={setMatchingItem}
-                            ActiveIndex={activeIndex} ActiveId={activeId} />
+                            ActiveIndex={activeIndex} ActiveId={activeId} setScrollToSectionId={setScrollToSectionId} />
                     </div> :
                     <div className={`flex-[3] w-full h-[100vh] bg-[rgb(245,245,245)] pos-adj relative top-0 `}>
                         <Sidebar data={data} setActiveIndex={setActiveIndex} setActiveId={setActiveId} setMatchingItem={setMatchingItem}
-                            ActiveIndex={activeIndex} ActiveId={activeId} />
+                            ActiveIndex={activeIndex} ActiveId={activeId} setScrollToSectionId={setScrollToSectionId} />
                     </div>
                 }
-                <div className='flex-[11] w-full h-fit py-[20px] flex flex-col pd-adjst gap-8'>
+                <div className='flex-[11] w-full h-fit py-[20px] flex flex-col pd-adjst gap-8' id="hello">
                     <div className='w-full flex h-fit items-center gap-4'>
                         <div className='w-16 h-16 min-w-[64px] min-h-[64px] border rounded-[50%]' style={{ backgroundImage: `url(${matchingItem?.icon_url})`, backgroundSize: '100% 100%' }}></div>
                         <div className={`font-bold ${windowWidth > 1200 ? 'text-4xl' : 'text-3xl'}`}>{matchingItem?.title}{matchingItem?.subtitle ? `${' - ' + matchingItem.subtitle}` : ''}</div>
