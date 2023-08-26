@@ -38,6 +38,21 @@ function ProgramPage() {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
+
+    // -------------------------------------------------------------
+    const [scrollToSectionId, setScrollToSectionId] = useState<string | null>(null);
+
+    useEffect(() => {
+        if (scrollToSectionId) {
+            scrollToSection(scrollToSectionId);
+        }
+    }, [scrollToSectionId]);
+
+    const scrollToSection = (sectionId: string) => {
+        document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+        setScrollToSectionId(null);
+    };
+    // --------------------------------------------------------------
     return (
         <div>
             <div className='h-[212px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
@@ -46,9 +61,9 @@ function ProgramPage() {
             <div className='flex w-full h-fit relative resp-program'>
                 <div className={`flex-[3] w-full h-[100vh] bg-[rgb(245,235,209)] pos-adj ${windowWidth < 1200 ? 'relative top-0' : 'sticky top-[70px]'} `}>
                     <Sidebar data={data} setActiveIndex={setActiveIndex} setActiveId={setActiveId} setMatchingItem={setMatchingItem}
-                        ActiveIndex={activeIndex} ActiveId={activeId} />
+                        ActiveIndex={activeIndex} ActiveId={activeId} setScrollToSectionId={setScrollToSectionId} />
                 </div>
-                <div className='flex-[8] w-full h-auto py-[16px] px-[24px] flex flex-col gap-4 pd-adjst'>
+                <div className='flex-[8] w-full h-auto py-[16px] px-[24px] flex flex-col gap-4 pd-adjst' id="prog">
                     <div className='text-[28px] font-semibold'>{matchingItem?.label}</div>
                     <div className='w-full aspect-[2] ht-adj' style={{ backgroundImage: `url(${matchingItem?.img})`, backgroundSize: '100% 100%', borderRadius: "10px", boxShadow: "0 0 5px grey" }}></div>
                     <div className='w-full text-[18px]' style={{ fontSize: "16px", textAlign: "justify" }}>
