@@ -7,7 +7,7 @@ import MegaMenu from "./MegaMenu";
 import MobileMegaMenu from "./MobileMegaMenu";
 import "../../../styles/globals.css";
 import MenuIcon from "@mui/icons-material/Menu";
-import MenuOpenIcon from "@mui/icons-material/MenuOpen";
+import CloseIcon from '@mui/icons-material/Close';
 import Link from "next/link";
 
 const home = [
@@ -329,7 +329,7 @@ const MobileNav: React.FC<MobileNavItemProps> = ({ menu }) => {
         {!showMobileMenu && <MenuIcon fontSize="medium" />}
       </span>
       <span onClick={() => setShowMobileMenu(false)}>
-        {showMobileMenu && <MenuOpenIcon fontSize="medium" />}
+        {showMobileMenu && <CloseIcon fontSize="medium" />}
       </span>
       {menu && showMobileMenu && <div className="">{menu}</div>}
     </div>
