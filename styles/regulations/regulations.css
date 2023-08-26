@@ -4,12 +4,14 @@
     align-items: center;
     flex-direction: row;
 }
+
 .flexCon1 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+
 .main-container {
     /* border:  2px solid red; */
     width: 100vw;
@@ -36,15 +38,16 @@
     font-weight: 400;
     width: 100%;
 }
-.main-course{
-     /* border: 2px solid blue; */
-     height: fit-content;
-     width: 75%;
-     flex-direction: row;
-     flex-wrap: wrap;
+
+.main-course {
+    /* border: 2px solid blue; */
+    height: fit-content;
+    width: 75%;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.flexCon2{
+.flexCon2 {
     width: 90vw;
     margin: auto;
     display: flex;
@@ -54,7 +57,7 @@
     /* text-align: center; */
 }
 
-.card{
+.card {
     width: 45%;
     background-color: whitesmoke;
     border: 2px solid #82cff5;
@@ -66,12 +69,14 @@
     margin: 2%;
     cursor: pointer;
 }
-.card-btn{
+
+.card-btn {
     width: 100%;
     height: 100%;
-    font-size: max(2vh,1.2vw);
+    font-size: max(2vh, 1.2vw);
     margin: 0.5%;
 }
+
 .card:hover {
     transform: scale(1.02);
     /* border: 2px solid ; */
@@ -80,6 +85,10 @@
 }
 
 @media (max-width: 900px) {
+    .main-container {
+        margin-top: 2vh;
+    }
+
     .main-courses {
         width: 90%;
         display: flex;
@@ -88,26 +97,31 @@
         font-weight: 100%;
         flex-direction: column;
     }
-    .card{
+
+    .card {
         height: 60px;
     }
-    .card-btn{
+
+    .card-btn {
         width: 100%;
         height: 100%;
-        font-size: max(1.7vh,1.2vw);
-        margin: 5%;
+        font-size: max(1.7vh, 1.2vw);
+        margin: 2vh;
     }
-    .flexCon2{
+
+    .flexCon2 {
         width: 80vw;
         margin: auto;
         margin-bottom: 50px;
     }
-    .card{
+
+    .card {
         width: 100%;
     }
 }
+
 @media (max-width:1150px) {
-    .main-course{
+    .main-course {
         width: 100%;
     }
 }

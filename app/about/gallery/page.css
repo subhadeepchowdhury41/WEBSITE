@@ -7,7 +7,7 @@ body {
 .gallery {
     display: flex;
     flex-direction: row;
-    margin-top: 00px;
+    /* margin-top: 00px; */
 }
 
 .main {
@@ -60,12 +60,15 @@ body {
 }
 
 .main h1 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     width: fit-content;
     margin: auto;
-    margin-top: 5vh;
+    margin-top: 2vh;
     line-height: 1rem;
-    font-weight: 600;
+    font-weight: 400;
+    background-color: rgba(0, 0, 0, 0.089);
+    padding: 20px 15px;
+    border-radius: 7px;
     text-align: center;
 }
 
@@ -73,10 +76,13 @@ body {
     height: 100%;
     width: fit-content;
     min-width: 400px;
-    max-width: 100%;
-    border-radius: 20px;
-    box-shadow: 0 0 5px grey;
+    max-width: 90%;
+    border-radius: 15px;
+    box-shadow: 0 0 3px grey;
+    margin: auto;
+    margin-top: 3vh;
 }
+
 
 .gallery-slide-text {
     width: 100%;
@@ -106,7 +112,7 @@ body {
 @media (min-width:900px) {
     .gallery-side {
         overflow-y: scroll;
-        max-height: 75vh;
+        max-height: 80vh;
         /* margin-top: 70px; */
     }
 }
@@ -150,9 +156,9 @@ body {
     }
 
     .carousel-image {
-        margin-top: 50px;
-        margin-bottom: 50px;
-        min-height: 30vh;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        min-height: 20vh;
         max-height: 90%;
         /* margin-right: 5px; */
     }
@@ -161,13 +167,19 @@ body {
         font-size: 28px;
         line-height: 28px;
         margin: 10px;
-        width: 100%;
+        width: 90%;
+        margin: auto;
+        margin-top: 2vh;
+        /* width: 100%; */
     }
 }
 
 @media (max-width:410px) {
     .carousel-image {
         min-width: 350px;
+        /* width: 90%; */
+        height: fit-content;
+        min-height: 30vh;
     }
 
     .main h1 {

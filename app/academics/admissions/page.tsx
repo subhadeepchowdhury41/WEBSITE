@@ -72,6 +72,7 @@ const Admissions = () => {
   function AdmissionCard(props: { data: any[]; heading: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | React.ReactPortal | null | undefined; }) {
     return (
       <>
+
         <div className="card-container">
           <div className="card-body">
             {props.data.map((element, i) => {
@@ -103,8 +104,11 @@ const Admissions = () => {
 
   return (
     <>
-      <div className='h-[220px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
+      <div className='h-[212px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
         <NavBar isHomepage={false} />
+      </div>
+      <div className='why-main-heading'>
+        <h1>Addmissions</h1>
       </div>
       <div className="admissions-container">
         {/* <Sidebar location="" page="Admissions" array={array} /> */}

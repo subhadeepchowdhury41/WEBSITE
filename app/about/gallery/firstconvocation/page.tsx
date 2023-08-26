@@ -109,20 +109,18 @@ const App: React.FC = () => {
 
     return (
         <>
+            <div className='h-[212px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
+                <NavBar isHomepage={false} />
+            </div>
             <div className="gallery">
-                <div className='h-[220px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
-                    <NavBar isHomepage={false} />
-                </div>
-
                 <div className="main">
                     <h1>IIIT KALYANI FIRST CONVOCATION</h1>
                     <Carousel carouselData={carouselData} />
                 </div>
                 <Sidebar array={arr} scroll={scroll} />
 
-                <Footer />
             </div>
-
+            <Footer />
         </>
     );
 };

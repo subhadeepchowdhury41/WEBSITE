@@ -1,43 +1,50 @@
-.flexCon{
+.flexCon {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.main-container{
+
+.main-container {
     width: 100vw;
     height: 100%;
     justify-content: space-between;
     padding: 1%;
 }
-.main-container h1{
+
+.main-container h1 {
     text-align: center;
-    font-size: max(2.5vh,2.5vw);
+    font-size: max(2.5vh, 2.5vw);
     margin-top: 0.2%;
     margin-bottom: 1%;
 }
-.main-container h2{
-    font-size: max(2vh,2vw);
+
+.main-container h2 {
+    font-size: max(2vh, 2vw);
     margin: 1%;
     width: 100%;
 }
-.main-container h3{
-    font-size: max(2vh,2vw);
+
+.main-container h3 {
+    font-size: max(2vh, 2vw);
     margin: 1%;
     width: 100%;
 }
-.noteinfo{
-    font-size: max(1.5vh,1vw);
+
+.noteinfo {
+    font-size: max(1.5vh, 1vw);
     margin: 0%;
     width: 90%;
 }
-.main-calender{
+
+.main-calender {
     height: fit-content;
     width: 80%;
     flex-direction: row;
     flex-wrap: wrap;
 }
-.card{
+
+.card {
     height: fit-content;
     background-color: whitesmoke;
     border: 2px solid #82cff5;
@@ -51,11 +58,13 @@
     justify-content: space-between;
     transition: transform 0.3s;
 }
-.card a{
-    color:white;
+
+.card a {
+    color: white;
 }
-.card-btn{
-    background-color: rgb(5,170,240);
+
+.card-btn {
+    background-color: rgb(5, 170, 240);
     border: 2px solid rgb(141, 221, 255);
     height: 100%;
     width: 10%;
@@ -64,28 +73,58 @@
     transition: all 0.3s;
     padding: 0.5% 1%;
 }
-.card-btn:hover{
+
+.card-btn:hover {
     transform: scale(1.1);
     background-color: whitesmoke;
     color: black;
 }
-.card:hover{
+
+.card:hover {
     transform: scale(1.02);
     box-shadow: 9px 9px 18px #93c2d9, -9px -9px 18px #c7ffff;
-    
+
 }
 
-.instructions h3{
-    font-size: max(2vh,2vw);
+.instructions h3 {
+    font-size: max(2vh, 2vw);
     margin: 1%;
     width: 100%;
 }
-.instruct{
+
+.instruct {
     margin-left: 5%;
 }
-@media (max-width: 1200px){
-    .main-calender{
+
+@media (max-width: 1200px) {
+    .main-calender {
         width: 95%;
     }
-    
+
+    .main-container h1 {
+        margin: 1vh auto;
+    }
+
+    .main-calender {
+        width: 95%;
+        margin-bottom: 3vh;
+    }
+
+    .main-calender div {
+        width: 100%;
+        margin: .5vh auto;
+        text-align: center;
+
+    }
+}
+
+@media (max-width:570px) {
+    .main-calender div {
+        font-size: 12px;
+    }
+
+    .main-calender div a {
+        font-size: 10px;
+    }
+
 }

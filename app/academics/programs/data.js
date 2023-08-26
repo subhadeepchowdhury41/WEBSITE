@@ -17,11 +17,11 @@ const SidebarData = [
         resources: [
           {
             heading: "New Curriculum from July 2021 onwards",
-            url: "/programresources/AnnexureCSE.pdf",
+            url: "./programresources/AnnexureCSE.pdf",
           },
           {
             heading: "Old Curriculum",
-            url: "/programresources/Btechcoursestructureold.pdf",
+            url: "./programresources/Btechcoursestructureold.pdf",
           },
           {
             heading: "UG Admissions",
@@ -38,7 +38,7 @@ const SidebarData = [
           {
             heading:
               "Electronics and Communication Engineering Course Structure",
-            url: "/programresources/AnnexureECE.pdf",
+            url: "./programresources/AnnexureECE.pdf",
           },
         ],
       },
@@ -55,7 +55,7 @@ const SidebarData = [
         text: "Artificial Intelligence (AI) and Data Science are two rapidly evolving fields at the forefront of modern technology. Both AI and Data Science are highly interrelated. Data serves as the foundation for training AI models, and AI algorithms are used to enhance the efficiency and effectiveness of data analysis. The synergy between these fields has led to remarkable advancements in various domains, including healthcare, finance, marketing, and more. AI and Data Science have revolutionized industries, enabling companies to make data-driven decisions, automate processes, and provide personalized services to customers. As technology continues to advance, these fields will play an increasingly critical role in shaping the future, paving the way for smarter and more efficient systems that will have a profound impact on society.",
         resources: [
           {
-            url: "/programresources/MTechAIandDS.pdf",
+            url: "./programresources/MTechAIandDS.pdf",
             heading: "M.Tech Course Structure AI and Data Science",
           },
         ],
@@ -69,7 +69,7 @@ const SidebarData = [
           {
             heading:
               "Course Structure-Advanced Communication Systems and Signal Processing",
-            url: "/programresources/MtechComAndSignals.pdf",
+            url: "./programresources/MtechComAndSignals.pdf",
           },
         ],
       },
@@ -87,11 +87,11 @@ const SidebarData = [
         resources: [
           {
             heading: "Ph.D Regulations",
-            url: "/programresources/PhdRegulation2021.pdf",
+            url: "./programresources/PhdRegulation2021.pdf",
           },
           {
             heading: "Ph.D Regulations (November 2017)",
-            url: "/programresources/Phdreg.pdf",
+            url: "./programresources/Phdreg.pdf",
           },
           {
             heading: "See PhD admissions (Old data)",

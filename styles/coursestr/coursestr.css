@@ -75,12 +75,35 @@
 .card:hover {
     transform: scale(1.02);
     box-shadow: 9px 9px 18px #93c2d9, -9px -9px 18px #c7ffff;
-    
+
 }
 
 @media (max-width: 1200px) {
+    .main-container {
+        margin: 3vh auto;
+        margin-bottom: 0;
+    }
+
+    .main-container h1 {
+        margin-bottom: 3vh;
+    }
+
     .main-calender {
         width: 95%;
+        margin-bottom: 2vh;
+    }
+
+    .main-calender div {
+        width: 100%;
+        margin: .5vh auto;
+        text-align: center;
+
+    }
+}
+
+@media (max-width:570px) {
+    .main-calender div a {
+        font-size: 10px;
     }
 
 }

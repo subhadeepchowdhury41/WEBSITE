@@ -6,6 +6,7 @@ import Carousel from '../carousel';
 import React from 'react'
 import Data from '../facilityData';
 import HEADER from '../../../designSystem/header';
+import "../page.css"
 
 
 function Facility() {
@@ -14,15 +15,15 @@ function Facility() {
     const filterData = Data.filter(item => item.slug === slug)
     return (
         <>
-            <div className='h-[220px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
+            <div className='h-[212px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
                 <NavBar isHomepage={false} />
             </div>
-            <div className='w-full flex items-center justify-center mt-8'>
+            <div className='w-full  font-sans flex items-center justify-center mt-8'>
                 <HEADER text={filterData[0].heading} />
             </div>
             <Carousel carouselData={filterData[0].tags} />
-            <div className='w-full h-fit flex items-center justify-center'>
-                <div style={{ backgroundColor: "whitesmoke", border: "2px solid #82cff5", padding: "2%", boxShadow: "9px 9px 18px #93c2d9, -9px -9px 18px #c7ffff", borderRadius: "10px" }} className='m-[40px] max-w-[1250px]'>
+            <div className='w-full h-fit flex items-center justify-center txtxm'>
+                <div style={{ backgroundColor: "whitesmoke", padding: "5%", boxShadow: "0 0 2px #c7ffff", borderRadius: "10px", width: "95%", marginBottom: "5vh" }} className='max-w-[1250px]'>
                     {filterData[0].paragraph?.map((item, index) => !item.text.startsWith('@$') ? (
                         <div style={{ marginBottom: "10px" }} className={item.style} key={index}>
                             {item.text}<br />

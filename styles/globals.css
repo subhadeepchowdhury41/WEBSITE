@@ -1,12 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import '@fontsource/montserrat';
+@import '@fontsource/poppins';
+@import '@fontsource/nunito';
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
+/* body {
+  @apply font-custom;
+} */
 
 
 .bodyOfGallery {
@@ -70,13 +77,18 @@ body::-webkit-scrollbar-thumb:hover {
   /* padding-top: 1.8vh; */
   /* padding-right: 1vw; */
   font-weight: 400;
+  @apply font-navbar;
+}
+
+.iiitk-name {
+  @apply font-navbar;
 }
 
 .navItems li {
-  padding: 2vh 0.5vh 2vh 0.5vh;
-  margin-top: 0.3vh;
-  /* margin-bottom: 1.6vh; */
-  border-radius: 10px;
+  padding: 1.5vh 0.5vh 1.5vh 0.5vh;
+  margin-top: 0.2vh;
+  margin-bottom: 0;
+  border-radius: 8px;
 }
 
 .navItems li:hover {
@@ -165,7 +177,22 @@ body::-webkit-scrollbar-thumb:hover {
     font-family: Roboto Serif;
 } */
 
+.black-bg {
+  background: rgb(0, 0, 0, 0.8);
+}
+
+.hindi-name {
+  @apply font-custom;
+}
+
 /*######################## Appbar ############################################### */
+
+@media (min-width:1150px) {
+  .hidelogo {
+    opacity: 0;
+    display: none;
+  }
+}
 
 @media (min-width:900px) {
   .hindi-name {
@@ -173,14 +200,28 @@ body::-webkit-scrollbar-thumb:hover {
     /* letter-spacing: 50em; */
   }
 
+  .second-logo {
+    display: none;
+  }
+
 }
 
 @media (max-width:900px) {
   .h-set-mobile {
-    height: 165px;
+    height: 175px;
+    /* height: auto; */
     background-color: rgb(80, 80, 80);
+    /* background-color: white; */
     /* background-color: black; */
-    margin-bottom: 30px;
+    /* margin-bottom: 10px; */
+  }
+
+  .checker {
+    display: none;
+  }
+
+  .second-logo {
+    opacity: 0;
   }
 
   .menu-trigger-box {
@@ -203,6 +244,8 @@ body::-webkit-scrollbar-thumb:hover {
     width: 100%;
     padding-top: 15px;
     padding-bottom: 10px;
+    margin-bottom: 0;
+    /* display: none; */
   }
 
   .mobile-head {
@@ -211,15 +254,17 @@ body::-webkit-scrollbar-thumb:hover {
   }
 
   .mobile-white {
-    background: rgb(0, 0, 0, 0.5);
+    /* background: rgb(0, 0, 0, 0.5); */
     color: white;
     box-shadow: none;
   }
 
+
+
   .mobile-noshadow {
     box-shadow: none;
-    background: white;
-    background: rgb(0, 0, 0, 0.5);
+    /* background: white; */
+    /* background: rgb(0, 0, 0, 0.5); */
 
   }
 
@@ -249,7 +294,10 @@ body::-webkit-scrollbar-thumb:hover {
   }
 
   .carousel {
-    height: 55vh;
+    width: 100vw;
+    aspect-ratio: 16/9;
+    height: auto;
+    /* height: 55vh; */
   }
 
   .mobile-logo {
@@ -266,7 +314,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 @media (max-width: 660px) {
   .h-set-mobile {
-    height: 140px;
+    height: 165px;
   }
 
   .mobile-head {
@@ -292,13 +340,13 @@ body::-webkit-scrollbar-thumb:hover {
   }
 
   .carousel {
-    height: 45vh;
+    height: auto;
   }
 }
 
 @media (max-width:580px) {
   .h-set-mobile {
-    height: 90px;
+    height: 145px;
   }
 
   .navItems li {
@@ -335,18 +383,18 @@ body::-webkit-scrollbar-thumb:hover {
   }
 
   .carousel {
-    height: 40vh;
+    height: auto;
   }
 }
 
 @media (max-width:450px) {
   .h-set-mobile {
-    height: 85px;
+    height: 140px;
   }
 
   .mobile-head {
-    font-size: 8px;
-    line-height: 10px;
+    font-size: 7px;
+    line-height: 9px;
     margin: 0 10px;
   }
 
@@ -359,12 +407,12 @@ body::-webkit-scrollbar-thumb:hover {
     /* margin-left: 6; */
     /* display: none; */
     letter-spacing: .5px;
-    font-size: 8px;
-    line-height: 10px;
+    font-size: 7px;
+    line-height: 9px;
   }
 
   .carousel {
-    height: 33vh;
+    height: auto;
   }
 
   .welcome-text {
@@ -398,7 +446,7 @@ body::-webkit-scrollbar-thumb:hover {
   }
 
   .carousel {
-    height: 30vh;
+    height: auto;
   }
 }
 
@@ -427,7 +475,7 @@ body::-webkit-scrollbar-thumb:hover {
   }
 
   .carousel {
-    height: 28vh;
+    height: auto;
   }
 
   .iiitk-name {
@@ -441,7 +489,7 @@ body::-webkit-scrollbar-thumb:hover {
   }
 
   .carousel {
-    height: 25vh;
+    height: auto;
   }
 
 }
@@ -477,7 +525,40 @@ body::-webkit-scrollbar-thumb:hover {
     width: 100%;
     display: flex;
   }
+
+  /* .mobile-head {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .hindi-name {
+    font-size: 18px;
+    line-height: 24px;
+  } */
+
+  /* .h-set-mobile {
+    height: 200px;
+  } */
 }
+
+
+@media (min-width:1150px) and (max-width:1200px) {
+  .mobile-head {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .mobile-logo {
+    width: 75px;
+    height: 90px;
+  }
+
+  .hindi-name {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+
 
 /*######################## Payment Portal ############################################### */
 
@@ -588,3 +669,15 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 /*######################## Payment Portal ############################################### */
+
+@media (max-width: 1150px) {
+  .hideit {
+    display: none !important;
+  }
+
+  .h-set-mobile {
+    height: 60px;
+    /* background: white; */
+    /* border-bottom: 1px solid rgb(0, 0, 0, 0.3); */
+  }
+}

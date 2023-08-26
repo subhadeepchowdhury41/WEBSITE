@@ -18,7 +18,7 @@ const AcadBody = () => {
 
   return (
     <>
-      <div className='h-[220px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
+      <div className='h-[212px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
         <NavBar isHomepage={false} />
       </div>
       <div className="fluid-center administrativeBody-main-page">
@@ -42,8 +42,10 @@ const AcadBody = () => {
                     {item.info}
                   </h2> */}
                   <div>
-                    <EmailIcon className="administrativeBody-profile-icon" color="primary" style={{ 'color': 'black', marginRight: '5px' }} onClick={() => { navigator.clipboard.writeText(item.email[0]) }} />
-                    <span>{item.email[0]}</span>
+                    <a href={`mailto:${item.email[0]}`}>
+                      <EmailIcon className="administrativeBody-profile-icon" color="primary" style={{ 'color': 'black', marginRight: '5px' }} onClick={() => { navigator.clipboard.writeText(item.email[0]) }} />
+                      <span>{item.email[0]}</span>
+                    </a>
                     {/* <LinkedInIcon className="administrativeBody-profile-icon" color="primary" onClick={()=>{window.location.href = item.linkedIn}} /> */}
                   </div>
                 </div>

@@ -13,6 +13,7 @@ import HEADER from '../../designSystem/header';
 import logo from "../../../assets/logos/iiit_kalyani_logo.png"
 import { useEffect } from 'react';
 
+
 const PHDStudents = () => {
     useEffect(() => {
         document.title = 'Why IIIT Kalyani | Indian Institute of Information Technology, Kalyani';
@@ -20,13 +21,13 @@ const PHDStudents = () => {
 
     return (
         <>
-            <div className='h-[220px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
+            <div className='h-[212px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
                 <NavBar isHomepage={false} />
             </div>
             <div className='why-container'>
 
                 <div className="why-main-heading">
-                    <HEADER text='Why IIIT Kalyani' />
+                    <h1>Why IIIT Kalyani</h1>
                 </div>
                 <div className="top-para">
                     <div>

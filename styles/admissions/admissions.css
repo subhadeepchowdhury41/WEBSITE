@@ -6,9 +6,20 @@
     margin: 15px;
 }
 
+
+.why-main-heading h1 {
+    font-size: 40px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 3vh;
+    margin-bottom: 0vh;
+    font-weight: 500;
+}
+
 .admissions-container {
     width: 90%;
-    margin: 5vh auto;
+    margin: 2vh auto;
 }
 
 .card-header {

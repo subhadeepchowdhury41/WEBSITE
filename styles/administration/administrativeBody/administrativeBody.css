@@ -123,7 +123,7 @@
 
 @media screen and (max-width:1024px) {
     .administrativeBody-main-bar {
-        border: 2px solid #82cff5;
+        border: 1px solid #82cff5;
         margin-bottom: 2vh;
         border-radius: 5px;
         height: fit-content;
@@ -166,7 +166,7 @@
 
 @media screen and (max-width:768px) {
     .administrativeBody-main-bar {
-        border: 2px solid #82cff5;
+        border: 1px solid #82cff5;
         border-radius: 5px;
         width: 95vw;
     }

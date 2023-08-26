@@ -6,7 +6,7 @@ const carouselData = [
     {
         url: '/images/carousel/Picture1.webp',
         title: 'Welcome to IIIT Kalyani',
-        subtitle: 'Planned IIIT Kalyani'
+        subtitle: ''
     },
 
     {
@@ -27,13 +27,13 @@ const carouselData = [
     {
         url: '/images/carousel/Picture2.webp',
         title: '',
-        subtitle: "Planned Boy's Hostel"
+        subtitle: ""
     },
 
     {
         url: '/images/carousel/Picture3.webp',
         title: '',
-        subtitle: "Planned Girl's Hostel"
+        subtitle: ""
     },
 
 ];

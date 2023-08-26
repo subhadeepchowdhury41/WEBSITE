@@ -37,7 +37,7 @@ const DirectorsMessage = () => {
     }, [seconds]);
     let l = announcement.length;
     const AddOne = () => {
-        if (i === l - 2 && scrolling === 1)
+        if (i === l - 4 && scrolling === 1)
             setI(1);
         else if (scrolling === 1)
             setI(i + 1);
@@ -69,7 +69,7 @@ const DirectorsMessage = () => {
                 </div>
                 <div className='row1-card2'>
                     <Reveal keyframes={customAnimation} triggerOnce delay={500}>
-                        <div style={{ display: "flex", justifyContent: "space-between" }}>
+                        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                             <span className='card-heading'>
                                 Announcements
                                 <CampaignOutlinedIcon style={{ marginLeft: "7px", fontSize: "35px", marginBottom: "5px" }} />
@@ -84,7 +84,7 @@ const DirectorsMessage = () => {
                         {announcement.map((index) => {
                             return (
                                 <div key={index.id} onMouseEnter={() => { setScrolling(0) }} onMouseLeave={() => { setScrolling(1) }}>
-                                    <div className='announcement-tab' style={{ transform: `translate(0px,${-75 * i}px)` }}>
+                                    <div className='announcement-tab' style={{ transform: `translate(0px,${-65 * i}px)` }}>
                                         <div className='announcement-heading'><a target='_blank' href={index.description} >{index.title}</a></div>
                                     </div>
                                 </div>

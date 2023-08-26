@@ -1,5 +1,5 @@
 "use client";
-import React,{ useEffect } from "react";
+import React, { useEffect } from "react";
 import NavBar from "../../sections/appbar/appbar";
 import Footer from '../../sections/footer/footer';
 import "../../../styles/students/regulatoryRules/regulatoryRules.css";
@@ -13,7 +13,7 @@ const RegulatoryRules = () => {
   }, []);
   return (
     <>
-      <div className='h-[220px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
+      <div className='h-[212px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
         <NavBar isHomepage={false} />
       </div>
       <div className="fluid-center rr-main-page">

@@ -1,3 +1,5 @@
+@import '@fontsource/montserrat';
+
 .card-heading {
     position: relative;
     font-size: 36px;
@@ -58,6 +60,7 @@
     flex-direction: row;
     padding-top: 5vh;
     background: rgb(254, 243, 222);
+    @apply font-sans;
 }
 
 .row1-card1 {
@@ -114,7 +117,7 @@
 .card1-message {
     font-size: 15px;
     font-weight: 550;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
 }
 
 .card1-scroll {
@@ -129,7 +132,7 @@
 
 .announcement-container {
     margin-top: 20px;
-    max-height: 365px;
+    max-height: 325px;
     overflow-y: scroll;
     overflow-x: hidden;
     padding-top: 5px;
@@ -154,11 +157,10 @@
     background: white;
     /* border: 0.8px solid rgb(150, 149, 149); */
     box-shadow: 0px 0px 3px rgb(0, 0, 0, 0.5);
-    margin: 0 20px 20px 5px;
+    margin: 0 10px 10px 5px;
     border-radius: 7px;
     display: flex;
     align-items: center;
-    font-size: 15px;
     /* background: linear-gradient(to left, transparent 0%, #FFFFE8 100%); *
     /* border-radius: 20px 0 20px 0; */
 }
@@ -506,7 +508,7 @@
     }
 
     .announcement-heading {
-        font-size: 20px;
+        font-size: 15px;
     }
 }
 
@@ -555,7 +557,7 @@
 }
 
 
-@media (max-width:1000px) {
+@media (max-width:1250px) {
     .card-row1 {
         flex-direction: column;
     }
@@ -576,7 +578,7 @@
         margin-top: 10px;
         width: 100%;
         margin-right: 30px;
-        height: 247px;
+        height: 246px;
     }
 
 }

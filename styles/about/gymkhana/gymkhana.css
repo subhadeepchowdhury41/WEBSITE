@@ -1,26 +1,39 @@
-.pd-adjst{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.pd-adjst {
     padding: 20px 40px;
 }
 
-@media (max-width: 1200px){
-    .resp-program{
+.resp-program {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 1200px) {
+    .resp-program {
         flex-direction: column;
     }
-    .pd-adjst{
+
+    .pd-adjst {
         padding: 16px;
     }
-    .ht-adj{
+
+    .ht-adj {
         aspect-ratio: 2;
         min-height: none;
     }
-    .pos-adj{
+
+    .pos-adj {
         position: relative;
         top: 0;
     }
 }
 
-@media (max-width: 900px){
-    .col900{
+@media (max-width: 900px) {
+    .col900 {
         flex-direction: column;
+    }
+
+    .resp-program {
+        font-size: 12px;
     }
 }

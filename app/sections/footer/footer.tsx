@@ -8,7 +8,6 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
 import { Reveal, Fade } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 import grey from "@mui/material/colors/grey";
@@ -157,7 +156,7 @@ export default function Footer() {
                     </li>
 
                     <li>
-                      <a href="/administration/administrativeBody" className="text-white-footer"  >
+                      <a href="/administration/administrative-body" className="text-white-footer"  >
                         Adminstartive Body
                       </a>
                       <hr />
@@ -348,7 +347,10 @@ export default function Footer() {
             </a>
           </Marquee>
           <hr style={{ marginTop: "2.5vh" }} />
-          <p aria-hidden='false'>© 2019 Indian Institute of Information Technology Kalyani</p>
+          <div className="copyright">
+            <p aria-hidden='false'>© 2019 Indian Institute of Information Technology Kalyani</p>
+            {/* <span className="visitor">Visitors Count: 999+</span> */}
+          </div>
         </div>
       </footer>
 

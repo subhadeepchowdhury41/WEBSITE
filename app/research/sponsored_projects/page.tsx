@@ -13,37 +13,27 @@ const SponsoredProjects = () => {
   }, []);
   return (
     <>
-      <div className='h-[220px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
+      <div className='h-[212px] bg-[rgba(0,0,0,0.8)] h-set-mobile'>
         <NavBar isHomepage={false} />
       </div>
       <div className="fluid-center projects-main-page">
         <h1>Sponsored Projects</h1>
         <div className="fluid-center main-projects-card">
-        <p>Ongoing Sponsored Research Projects</p>
+          <p>Ongoing Sponsored Research Projects</p>
           {projectsData.ongoing.map((item) => {
             return (
-              <div key={item.id} className="fluid-center projects-card">
-                <h2 className="fluid-center">{item.title}</h2>
-                <h4>{item.desc}</h4>
-                <section className="show">
-                  <h3>PI : {item.PI}</h3>
-                  <h3>Project value : {item.value}</h3>
-                </section>
+              <div key={item.id} className="projects-card">
+                {item.id}. <strong>Title: {item.title}</strong>, {item.desc}, PI : {item.PI}, Project value : {item.value}
               </div>
             );
           })}
         </div>
         <div className="fluid-center main-projects-card">
-        <p>Completed Sponsored Research Projects</p>
+          <p>Completed Sponsored Research Projects</p>
           {projectsData.completed.map((item) => {
             return (
-              <div key={item.id} className="fluid-center projects-card">
-                <h2 className="fluid-center">{item.title}</h2>
-                <h4>{item.desc}</h4>
-                <section className="show">
-                  <h3>PI : {item.PI}</h3>
-                  <h3>Project value : {item.value}</h3>
-                </section>
+              <div key={item.id} className="projects-card">
+                {item.id}. <strong>Title: {item.title}</strong>, {item.desc}, PI : {item.PI}, Project value : {item.value}
               </div>
             );
           })}

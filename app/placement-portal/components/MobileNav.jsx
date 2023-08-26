@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import MenuIcon from "@mui/icons-material/Menu";
-import MenuOpenIcon from "@mui/icons-material/MenuOpen";
+import CloseIcon from "@mui/icons-material/Close";
 import "./css/mobile.css";
 
 const MobileNav = ({ setScrollToSectionId }) => {
@@ -16,7 +16,7 @@ const MobileNav = ({ setScrollToSectionId }) => {
   return (
     <div className="mobile-nav">
       <div className="hamburger" onClick={toggleMenu}>
-        <span>{isMenuOpen ? <MenuOpenIcon /> : <MenuIcon />}</span>
+        <span>{isMenuOpen ? <CloseIcon /> : <MenuIcon />}</span>
       </div>
       <div className={`mobile-menu ${isMenuOpen ? "open" : ""}`}>
         <span>

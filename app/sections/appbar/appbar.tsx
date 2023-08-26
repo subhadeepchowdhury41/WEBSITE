@@ -7,7 +7,7 @@ import MegaMenu from "./MegaMenu";
 import MobileMegaMenu from "./MobileMegaMenu";
 import "../../../styles/globals.css";
 import MenuIcon from "@mui/icons-material/Menu";
-import MenuOpenIcon from "@mui/icons-material/MenuOpen";
+import CloseIcon from '@mui/icons-material/Close';
 import Link from "next/link";
 
 const home = [
@@ -180,7 +180,7 @@ const AppBar: React.FC<AppBarProps> = ({ isHomepage }) => {
   }, []);
   const [stick, setStick] = useState<Boolean>(false);
   const handleScroll = () => {
-    if (globalThis.window?.scrollY > 118) {
+    if (globalThis.window?.scrollY > 118 || (globalThis.window.innerWidth < 1150 && !isHomepage)) {
       setStick(true);
     } else {
       setStick(false);
@@ -195,51 +195,17 @@ const AppBar: React.FC<AppBarProps> = ({ isHomepage }) => {
   return (
     <>
       {isClient ? (
-        <div
-          className={`grid content-center bg-transparent z-50
-         w-full ${!stick
-              ? "animate-randimation-reverse opacity-100 absolute top-0"
-              : ""
-            }
-     bg-blue-900`}
-          style={{
-            backgroundImage:
-              "linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7))",
-            WebkitBackdropFilter: "blur(8px)",
-          }}
-        >
-          <div
-            className={`flex mx-auto iiitk-name m-6 items-center ${stick ? "hidden" : ""
-              }`}
-          >
-            <div
-              className="flex flex-col hindi-name mobile-head text-2xl ml-[45] text-white mx-6 py-3 border-t-2 border-b-2 tracking-wide animate-left-college-name-swipe-animation "
-              style={{
-                alignItems: "center",
-                textAlign: "center",
-                marginLeft: "4.5vw",
-              }}
-            >
+        <div className={`grid content-center bg-transparent z-50 w-full ${!stick ? "animate-randimation-reverse opacity-100 absolute top-0" : ""}bg-blue-900`} style={{ backgroundImage: "linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7))", WebkitBackdropFilter: "blur(8px)", }}>
+          <div className={`flex mx-auto iiitk-name m-6 items-center ${isHomepage ? "" : "checker hideit"} `}>
+            <div className="flex flex-col hindi-name mobile-head text-2xl text-white mx-6 py-3 border-t-2 border-b-2 tracking-wide animate-left-college-name-swipe-animation " style={{ alignItems: "center", textAlign: "center", marginLeft: "3.5vw", }}>
               भारतीय सूचना प्रौद्योगिकी संस्थान, कल्याणी
               <br />
-              <div
-                className="text-2xl mobile-head hindi-name"
-                style={{ letterSpacing: "0px" }}
-              >
+              <div className="text-2xl mobile-head hindi-name" style={{ letterSpacing: "0px" }}>
                 राष्ट्रीय महत्व का संस्थान
               </div>
             </div>
-            <Image
-              height={100}
-              className="h-[100px] display-sub2 mobile-logo"
-              src={IIITKalyaniLogo}
-              alt="IIIT Kalynai Logo"
-            />
-            <div
-              className="flex flex-col mobile-head text-2xl display-sub3 text-white py-3 mx-6 border-t-2 border-b-2 tracking-tighter
-                 animate-right-college-name-swipe-animation"
-              style={{ alignItems: "center", textAlign: "center" }}
-            >
+            <a href="/"><Image height={100} className="h-[100px] display-sub2 mobile-logo cursor-pointer" src={IIITKalyaniLogo} alt="IIIT Kalynai Logo" /></a>
+            <div className="flex flex-col mobile-head text-2xl display-sub3 text-white py-3 mx-6 border-t-2 border-b-2 tracking-tighter animate-right-college-name-swipe-animation" style={{ alignItems: "center", textAlign: "center" }}>
               Indian Institute of Information Technology, Kalyani
               <br />
               <div className="text-2xl mobile-head">
@@ -248,34 +214,17 @@ const AppBar: React.FC<AppBarProps> = ({ isHomepage }) => {
             </div>
           </div>
 
-          <div
-            className={`flex mobile-noshadow text-white font-semibold ${stick ? " navBar mobile-border " : ""}
-               ${stick ? "fixed top-0 z-[100] shadow-md bg-black bg-opacity-80" : "justify-center z-[100000]"} w-full`}>
-            <Image
-              width={53}
-              className={`px-2 py-3 h-[70px]
-                 ${stick
-                  ? "opacity-100 transition-opacity ease-in-out duration-500 mobile-white"
-                  : "hidden"
-                }`}
-              src={IIITKalyaniLogo}
-              alt="IIIT Kalynai Logo"
-            />
+          <div className={`flex mobile-noshadow text-white font-semibold ${stick ? " navBar mobile-border " : ""} ${stick ? "fixed top-0 z-[100] shadow-md  black-bg" : "justify-center z-[100000]"} w-full`}>
+            <a href="/"><Image width={49} className={`px-2 py-3 h-[60px] ml-1 ${stick ? `opacity-100 transition-opacity ease-in-out duration-500 mobile-white` : `${isHomepage ? 'second-logo' : 'hidelogo'} transition-opacity ease-in-out duration-500 mobile-white`}`} src={IIITKalyaniLogo} alt="IIIT Kalynai Logo" /></a>
             {stick ? (
               <MobileNav menu={<MobileMegaMenu menus={mobileMenu} />} />
             ) : (
               isHomepage ? <></> :
-                <div className="menu-trigger-box" >
-                  <MobileNav menu={<MobileMegaMenu menus={mobileMenu} />} />
-                </div>
+                // <div className="menu-trigger-box" >
+                <MobileNav menu={<MobileMegaMenu menus={mobileMenu} />} />
+              // </div>
             )}
-            <ul
-              className={`flex navItems ${stick
-                ? "animate-randimation absolute top-0 right-0 opacity-100"
-                : "animate-randimation-reverse opacity-100 pl-[40px]"
-                }`}
-              style={{ listStyle: "none" }}
-            >
+            <ul className={`flex navItems ${stick ? "animate-randimation absolute top-0 right-0 opacity-100" : "animate-randimation-reverse opacity-100 pl-[40px]"}`} style={{ listStyle: "none" }}>
               {!isHomepage && <li>
                 <a
                   style={{
@@ -380,7 +329,7 @@ const MobileNav: React.FC<MobileNavItemProps> = ({ menu }) => {
         {!showMobileMenu && <MenuIcon fontSize="medium" />}
       </span>
       <span onClick={() => setShowMobileMenu(false)}>
-        {showMobileMenu && <MenuOpenIcon fontSize="medium" />}
+        {showMobileMenu && <CloseIcon fontSize="medium" />}
       </span>
       {menu && showMobileMenu && <div className="">{menu}</div>}
     </div>

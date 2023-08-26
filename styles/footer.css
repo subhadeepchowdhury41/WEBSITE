@@ -203,6 +203,16 @@ hr {
     background-color: #1b1a1a;
 }
 
+.copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.visitor {
+    font-weight: 700;
+}
+
 @media (max-width:930px) {
     .container {
         flex-direction: column;
@@ -238,6 +248,10 @@ hr {
     .footer-copyright {
         font-size: 10px;
     }
+
+    .copyright {
+        flex-direction: column-reverse;
+    }
 }
 
 @media (max-width:470px) {
@@ -249,5 +263,4 @@ hr {
         width: 85vw;
         margin-right: 0;
     }
-
 }

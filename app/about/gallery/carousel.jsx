@@ -13,16 +13,18 @@ function Carousel(props) {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
     };
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
+  const [scroll, setScroll] = useState(1);
+
   const AddOne = () => {
     let len = props.carouselData.length;
-    if (i < len - 1) {
+    if (i < len - 1 && scroll === 1) {
       setI(i + 1);
-    } else {
+    } else if (scroll === 1) {
       setI(0);
     }
   };
@@ -39,7 +41,15 @@ function Carousel(props) {
     return () => clearInterval(id);
   }, [AddOne]);
   return (
-    <div className="w-fit m-auto pad-adjust flex items-center justify-center">
+    <div
+      className="w-fit m-auto flex items-center justify-center"
+      onMouseEnter={() => {
+        setScroll(0);
+      }}
+      onMouseLeave={() => {
+        setScroll(1);
+      }}
+    >
       <div
         className="relative max-w-[1250px] bg-gray-00 h-adjust animate rounded-2xl"
         style={{
@@ -52,13 +62,14 @@ function Carousel(props) {
       >
         <Image
           className="carousel-image animate"
-          src={require(`../../../assets/gallery/${props.carouselData[i].url}.jpg`)}
+          src={require(`../../../assets/gallery/${props.carouselData[i].url}.webp`)}
           alt="image"
         />
         <div className="absolute flex z-10 h-auto mb-8 gap-1 w-full bottom-0 items-center justify-center overflow-hidden">
           {props.carouselData.map((index) => {
             return (
               <div
+                key={index.index}
                 className={
                   index.index === i
                     ? "bg-white h-[5px] w-[20px] border cursor-pointer"

@@ -22,6 +22,7 @@ function Sidebar(props) {
                         : "font-[400] text-[16px] text-[rgb(120,120,120)] pl-8 cursor-pointer"
                     }
                     onClick={() => {
+                      props.setScrollToSectionId("hello");
                       props.setActiveIndex(index.id);
                       props.setActiveId(i.id);
                       props.setMatchingItem(

@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
 .page-body {
     flex-grow: 1;
     /* overflow-y: auto; */
     display: flex;
     position: relative;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .sidebar1 {
@@ -15,7 +19,7 @@
     flex-shrink: 0;
     background-color: rgb(232, 237, 249);
     position: sticky;
-    top: 70px;
+    top: 60px;
 }
 
 .side-img {
@@ -29,9 +33,9 @@
     height: 60vh;
     margin: 10px auto;
     background-size: cover;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 5px rgba(20, 20, 20, 0.8);
+    border-radius: 5px;
+    margin-bottom: 5vh;
+    box-shadow: 0 0 1px rgba(20, 20, 20, 0.8);
 }
 
 .mottoSection {
@@ -39,7 +43,7 @@
 }
 
 .mottoSection h2 {
-    font-size: 30px;
+    font-size: 25px;
     text-align: left;
     font-weight: 500;
     margin: 0;
@@ -58,11 +62,11 @@
 }
 
 .mottoSlogan {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .mottoSloganMeaning {
-    font-size: 18px;
+    font-size: 17px;
     margin-bottom: 20px;
 }
 
@@ -80,17 +84,17 @@
 .content {
     padding: 40px;
     padding-top: 10px;
-    background-color: #f6f8fa;
+    /* background-color: #f6f8fa; */
     font-size: 18px;
     flex-grow: 1;
     overflow-y: auto;
 }
 
 .aboutheading {
-    font-weight: 400;
+    font-weight: 500;
     text-align: left;
     margin-bottom: 0;
-    font-size: 40px;
+    font-size: 30px;
     margin-top: 20px;
 }
 
@@ -106,13 +110,14 @@
 
 .aboutparagraph {
     text-align: left;
-    font-size: 18px;
+    font-size: 15px;
+    text-align: justify;
     margin: 7px;
 }
 
 .travel {
     /* background-color: wheat; */
-    box-shadow: 0 0 5px skyblue;
+    box-shadow: 0 0 3px skyblue;
     margin: 15px auto;
     padding: 25px;
     border-radius: 10px;
@@ -121,22 +126,25 @@
 .travel h4 {
     margin: 10px auto;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .travel li {
     margin: 5px auto;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
     background-color: rgb(255, 255, 255, 0.8);
     box-shadow: 0 0 2px skyblue;
     padding: 10px;
     border-radius: 10px;
+    color: #302f2f;
 }
 
 .travel h5 {
     margin: 7px 0px;
     padding: 10px;
+    font-weight: 500;
+    color: black;
     border-radius: 5px;
     box-shadow: 0 0 2px skyblue;
     width: fit-content;
@@ -154,9 +162,12 @@
 }
 
 .historyBody {
-    margin: 10px;
+    margin: 3vh 10px;
     padding: 20px;
-    box-shadow: 0 0 2px skyblue;
+    box-shadow: 0 0 1px skyblue;
+    background-color: whitesmoke;
+    background-color: rgb(232, 237, 249);
+
     border-radius: 12px;
 }
 
@@ -165,6 +176,7 @@
         font-weight: 500;
         font-size: 20px;
     }
+
 
     .page-body {
         flex-direction: column-reverse;
@@ -176,7 +188,7 @@
 
     .aboutheading {
         font-size: 28px;
-        font-weight: 600;
+        /* font-weight: 600; */
     }
 
     .aboutparagraph {
@@ -193,11 +205,16 @@
     }
 
     .h-adj-aboutus {
-        max-height: 300px;
+        /* max-height: 300px; */
+        height: auto;
+        aspect-ratio: 16/9;
+        margin-bottom: 2vh;
     }
 
     .side-img {
-        display: none;
+        /* display: none; */
+        aspect-ratio: 4/3;
+        width: 100%;
     }
 
     .sidebar1 {
@@ -205,6 +222,15 @@
         margin: auto;
         border-radius: 10px;
         height: fit-content;
+    }
+
+    .travel {
+        width: 96%;
+        margin: 2vh auto;
+    }
+
+    .reach {
+        display: none;
     }
 }
 
@@ -226,7 +252,8 @@
 
     .image {
         margin: auto;
-        margin-top: 3vh;
+        margin-top: 1vh;
+        margin-bottom: 2vh;
         width: 95%;
     }
 
@@ -240,6 +267,10 @@
 
     .h-adj-aboutus {
         max-height: 250px;
+    }
+
+    .aboutparagraph {
+        font-size: 12px;
     }
 }
 

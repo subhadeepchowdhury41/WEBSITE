@@ -118,7 +118,7 @@ const EventSection = () => {
                     {educationProgram.map((index) => {
                         return (
                             <div key={index.id} onMouseEnter={() => { setScroll(0) }} onMouseLeave={() => { setScroll(1) }}>
-                                <div className='announcement-tab cep' style={{ transform: `translate(0px,${-75 * j}px)` }}>
+                                <div className='announcement-tab cep' style={{ transform: `translate(0px,${-65 * j}px)` }}>
                                     <div className='announcement-heading card-heading-small'><a target='_blank' href={index.url} rel="noreferrer" >{index.title}</a></div>
                                 </div>
                             </div>
@@ -136,9 +136,9 @@ const EventSection = () => {
             <div className='row3-card2'>
                 <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
                     <Reveal keyframes={customAnimation} triggerOnce delay={500}>
-                        <span className='card-heading'>
+                        <span className='card-heading' >
                             Events
-                            <EventNoteOutlinedIcon style={{ marginLeft: "5px", fontSize: "32px", marginBottom: "5px" }} />
+                            <EventNoteOutlinedIcon style={{ marginLeft: "5px", fontSize: "26px", marginBottom: "0px" }} />
                         </span>
                     </Reveal>
                     <a href='/about/gallery/parikshapecharcha2022' rel="noreferrer">
