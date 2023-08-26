@@ -1,90 +1,111 @@
-.fluid-center{
+.fluid-center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.director-main{
+
+.director-main {
     width: 100%;
-    height: fit-content ;
+    height: fit-content;
     padding-top: 5%;
     padding-bottom: 5%;
     background-color: aliceblue;
 }
-.director-img{
+
+.director-img {
     position: relative;
     width: 15%;
     height: fit-content;
-    left: 7%;  
+    left: 7%;
     padding: 1%;
 }
-.director-img img{
+
+.director-img img {
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     border-radius: 20px;
     transition: all .2s;
     transform: scale(1.25);
 }
-.director-img img:hover{
-    transform: scale(1.4) ;
+
+.director-img img:hover {
+    transform: scale(1.4);
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 15px 50px 4px;
     border-radius: 20px;
 }
-.director-main-info{
+
+.director-main-info {
     width: 75%;
     aspect-ratio: 7/3;
     border-radius: 10px;
     background-color: rgb(238, 248, 255);
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    box-shadow: 0 0 16px rgba(14, 30, 37, 0.12);
     flex-direction: column;
     padding: 1% 3% 0% 11%;
 }
-.director-main-info h1{
+
+.director-main-info h1 {
     width: 100%;
     margin: 1%;
-    font-size: max(1.6vw,2.3vh);
+    font-size: max(1.6vw, 2.3vh);
 }
-.director-main-info p{
+
+.director-main-info p {
     margin: 0.5%;
-    font-size: max(.9vw,1.3vh);
+    font-size: max(.9vw, 1.3vh);
 }
-.director-sig{
+
+.director-sig {
     width: 100%;
     height: fit-content;
     flex-direction: column;
     align-items: end;
     padding: 3%;
 }
-.director-sig img{
+
+.director-sig img {
     width: 43%;
 }
-.director-sig h2{
-    font-size: max(1.1vh,1.1vw);
+
+.director-sig h2 {
+    font-size: max(1.1vh, 1.1vw);
 }
-@media screen and (max-width:1024px){
-    .director-main{
+
+@media screen and (max-width:1024px) {
+    .director-main {
         flex-direction: column;
     }
-    .director-img{
+
+    .director-img {
         width: 20%;
-        left:0%;
+        left: 0%;
         top: 4vh;
     }
-    .director-main-info{
+
+    .director-main-info {
         padding: 4%;
         padding-top: 10%;
     }
 }
-@media screen and (max-width:768px){
-    .director-main{
+
+@media screen and (max-width:768px) {
+    .director-main {
         flex-direction: column;
     }
-    .director-img{
+
+    .director-img {
         position: relative;
-        width: 22%;
+        width: 27%;
         top: 4vh;
     }
-    .director-main-info{
+
+    .director-img img {
+        border-radius: 15px;
+    }
+
+    .director-main-info {
         padding: 4%;
-        padding-top: 10%;
+        padding-top: 15%;
+        width: 90%;
     }
 }
