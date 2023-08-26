@@ -349,7 +349,7 @@ export default function Footer() {
           <hr style={{ marginTop: "2.5vh" }} />
           <div className="copyright">
             <p aria-hidden='false'>© 2019 Indian Institute of Information Technology Kalyani</p>
-            <span className="visitor">Visitors Count: 999+</span>
+            {/* <span className="visitor">Visitors Count: 999+</span> */}
           </div>
         </div>
       </footer>
